@@ -1,79 +1,139 @@
 [
   {
-    "front": "Orthogonal Matrices",
     "back": "$Q^T = Q^{-1}$. The columns and rows of $Q$ form an orthonormal set, meaning each has unit length and is mutually perpendicular. Multiplying by $Q$ preserves vector norms.",
+    "front": "Orthogonal Matrices",
     "importance": 7,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 4
   },
   {
-    "front": "Symmetric Matrices",
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "importance": 0,
+    "tags": [
+      "18.0651"
+    ],
+    "understanding": 0
+  },
+  {
+    "back": "1. Null Space of $ A $ ( $ \\text{Null}(A) $ or $ N(A) $ ): <br><br>\n\n$$ \\text{Null}(A) = N(A) = \\{ \\mathbf{x} \\in \\mathbb{R}^n \\mid A \\mathbf{x} = \\mathbf{0} \\} $$ <br>\n\nThis set contains all vectors $ \\mathbf{x} $ that satisfy the homogeneous system $ A\\mathbf{x} = \\mathbf{0} $. <br><br>\n\n2. Null Space of $ A^T $ ( $ \\text{Null}(A^T) $ ): <br><br>\n\n$$ \\text{Null}(A^T) = N(A^T) = \\{ \\mathbf{y} \\in \\mathbb{R}^m \\mid A^T \\mathbf{y} = \\mathbf{0} \\} $$ <br>\n\nThis set consists of all vectors $ \\mathbf{y} $ such that $ A^T \\mathbf{y} = \\mathbf{0} $, which represents the orthogonal complement of the row space of $ A $. <br>",
+    "front": "Null space of $A$ and $A^T$",
+    "importance": 10,
+    "tags": [
+      "18.0651"
+    ],
+    "understanding": 0
+  },
+  {
+    "back": "$$\n\\text{dim} Row(A) + \\text{dim} Null(A) = n\n$$\n$$\n\\text{dim} Col(A) + \\text{dim} Null(A^T) = m\n$$",
+    "front": "Rank-Nullity Theorem (for a matrix $A \\in \\mathbb{R}^{n \\times m}$)",
+    "importance": 0,
+    "tags": [
+      "18.0651"
+    ],
+    "understanding": 0
+  },
+  {
     "back": "A symmetric matrix is one that satisfies $A = A^T$.<br><br>Key properties include:<br><ul><li>All eigenvalues are real.</li><li>It can be diagonalized by an orthogonal matrix.</li><li>Its quadratic form is always real.</li></ul>",
+    "front": "Symmetric Matrices",
     "importance": 6,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 3
   },
   {
-    "front": "Eigenvector and value",
     "back": "$Qx = \\lambda x$",
+    "front": "Eigenvector and value",
     "importance": 10,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 6
   },
   {
-    "front": "Inner product",
     "back": "An inner product on a vector space is a function that assigns a scalar to a pair of vectors. In $\\mathbb{R}^n$, the standard inner product is $x \\cdot y = \\sum_{i=1}^{n} x_i y_i$, which satisfies linearity, symmetry, and positive definiteness.",
+    "front": "Inner product",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 2
   },
   {
-    "front": "Outter product",
     "back": "The outer product of two vectors $x$ and $y$ is the matrix $xy^T$. This produces a rank-one matrix that is useful for constructing projections and low-rank approximations.",
+    "front": "Outter product",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 2
   },
   {
-    "front": "$ (AB)^{-1} = \\;\\;? $",
     "back": "$ (AB)^{-1} = B^{-1} A^{-1}$",
+    "front": "$ (AB)^{-1} = \\;\\;? $",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 7
   },
   {
-    "front": "LU Decomposition",
     "back": "The LU decomposition factors a square matrix $A$ into the product of a lower triangular matrix $L$ and an upper triangular matrix $U$, such that $A = LU$. This decomposition is useful for solving linear systems and numerical stability.",
+    "front": "LU Decomposition",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 4
   },
   {
-    "front": "QR Decomposition",
     "back": "The QR decomposition expresses a matrix $A$ as the product of an orthogonal matrix $Q$ and an upper triangular matrix $R$, such that $A = QR$. This is commonly used in least squares solutions and eigenvalue algorithms.",
+    "front": "QR Decomposition",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 5
   },
   {
-    "front": "Spectral Theorem (for symmetric matrices)",
     "back": "For any real symmetric matrix $S$, there exists an orthogonal matrix $Q$ and a diagonal matrix $\\Lambda$ such that $S = Q \\Lambda Q^T$. This means symmetric matrices can be diagonalized by an orthogonal transformation.",
+    "front": "Spectral Theorem (for symmetric matrices)",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 6
   },
   {
-    "front": "Eigen Decomposition",
     "back": "The eigen decomposition expresses a diagonalizable matrix $A$ as $A = X \\Lambda X^{-1}$, where $X$ is the matrix of eigenvectors and $\\Lambda$ is the diagonal matrix of eigenvalues.",
+    "front": "Eigen Decomposition",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 7
   },
   {
-    "front": "Singular Value Decomposition (SVD)",
     "back": "The singular value decomposition (SVD) of a matrix $A$ is given by $A = U \\Sigma V^T$, where $U$ and $V$ are orthogonal matrices, and $\\Sigma$ is a diagonal matrix containing singular values. This is widely used in dimensionality reduction and numerical analysis.",
+    "front": "Singular Value Decomposition (SVD)",
     "importance": 5,
-    "tags": ["linear algebra", "18.0651"],
+    "tags": [
+      "linear algebra",
+      "18.0651"
+    ],
     "understanding": 7
   }
 ]
