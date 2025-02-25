@@ -2,7 +2,7 @@
   {
     "back": "$Q^T = Q^{-1}$. The columns and rows of $Q$ form an orthonormal set, meaning each has unit length and is mutually perpendicular. Multiplying by $Q$ preserves vector norms.",
     "front": "Orthogonal Matrices",
-    "importance": 7,
+    "importance": 0,
     "tags": [
       "linear algebra",
       "18.0651"
@@ -10,22 +10,13 @@
     "understanding": 4
   },
   {
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "importance": 0,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 0
-  },
-  {
-    "back": "1. Null Space of $ A $ ( $ \\text{Null}(A) $ or $ N(A) $ ): <br><br>\n\n$$ \\text{Null}(A) = N(A) = \\{ \\mathbf{x} \\in \\mathbb{R}^n \\mid A \\mathbf{x} = \\mathbf{0} \\} $$ <br>\n\nThis set contains all vectors $ \\mathbf{x} $ that satisfy the homogeneous system $ A\\mathbf{x} = \\mathbf{0} $. <br><br>\n\n2. Null Space of $ A^T $ ( $ \\text{Null}(A^T) $ ): <br><br>\n\n$$ \\text{Null}(A^T) = N(A^T) = \\{ \\mathbf{y} \\in \\mathbb{R}^m \\mid A^T \\mathbf{y} = \\mathbf{0} \\} $$ <br>\n\nThis set consists of all vectors $ \\mathbf{y} $ such that $ A^T \\mathbf{y} = \\mathbf{0} $, which represents the orthogonal complement of the row space of $ A $. <br>",
+    "back": "$$ \\text{Null}(A) = N(A) = \\{ \\mathbf{x} \\in \\mathbb{R}^n \\mid A \\mathbf{x} = \\mathbf{0} \\} $$ <br><br>\n\nThe set contains all vectors $ \\mathbf{x} $ that satisfy the homogeneous system $ A\\mathbf{x} = \\mathbf{0} $. <br><br>\n\n$$ \\text{Null}(A^T) = N(A^T) = \\{ \\mathbf{y} \\in \\mathbb{R}^m \\mid A^T \\mathbf{y} = \\mathbf{0} \\} $$ <br><br>\n\nThis set consists of all vectors $ \\mathbf{y} $ such that $ A^T \\mathbf{y} = \\mathbf{0} $, which represents the orthogonal complement of the row space of $ A $.",
     "front": "Null space of $A$ and $A^T$",
     "importance": 10,
     "tags": [
       "18.0651"
     ],
-    "understanding": 0
+    "understanding": 5
   },
   {
     "back": "$$\n\\text{dim} Row(A) + \\text{dim} Null(A) = n\n$$\n$$\n\\text{dim} Col(A) + \\text{dim} Null(A^T) = m\n$$",
