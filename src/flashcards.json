@@ -1,210 +1,111 @@
 [
   {
-    "back": "$Q^T = Q^{-1}$ <br><br>\n\nThe columns and rows of $Q$ form an orthonormal set, meaning each has unit length and is mutually perpendicular. Multiplying by $Q$ preserves vector norms.",
-    "front": "Orthogonal Matrices",
-    "importance": 1,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 0
-  },
-  {
-    "back": "<ol>\n    <li>Row space, subspace of \\( \\mathbb{R}^{n} \\), \\( \\mathbf{C}(A^T) \\), \\( \\dim \\mathbf{C}(A^T) = r \\)</li>\n    <li>Column space, subspace of \\( \\mathbb{R}^{m} \\), \\( \\mathbf{C}(A) \\), \\( \\dim \\mathbf{C}(A) = r \\)</li>\n    <li>Null space (kernel), subspace of \\( \\mathbb{R}^{n} \\), \\( \\mathbf{N}(A) \\), \\( \\dim \\mathbf{N}(A) = n - r \\)</li>\n    <li>Left null space (cokernel), subspace of \\( \\mathbb{R}^{m} \\), \\( \\mathbf{N}(A^T) \\), \\( \\dim \\mathbf{N}(A^T) = m - r \\)</li>\n</ol>",
-    "front": "Four fundamental subspaces of a matrix $A \\in \\mathbb{R}^{n \\times m}$ \n<br><br>",
-    "importance": 3,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 2
-  },
-  {
-    "back": "The number of independent columns = the number of independent rows.",
-    "front": "The number of independent columns = ___",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 2
-  },
-  {
-    "back": "A symmetric matrix is one that satisfies $A = A^T$.<br><br>Key properties include:<br><ul><li>All eigenvalues are real.</li><li>It can be diagonalized by an orthogonal matrix.</li><li>Its quadratic form is always real.</li></ul>",
-    "front": "Symmetric Matrix",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "back": "An inner product on a vector space is a function that assigns a scalar to a pair of vectors. In $\\mathbb{R}^n$, the standard inner product is \\[x \\cdot y = \\sum_{i=1}^{n} x_i y_i\\], which satisfies linearity, symmetry, and positive definiteness.",
-    "front": "Inner product",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "back": "Given: <br>\n- A row vector \\( \\mathbf{v}^T \\in \\mathbb{R}^{1 \\times n} \\) <br>\n- A matrix \\( A \\in \\mathbb{R}^{n \\times m} \\) <br>\n\n<br>\nThe inner product is defined as: <br>\n$$\n\\mathbf{v}^T A \\in \\mathbb{R}^{1 \\times m}\n$$\n<br>\nwhich results in a row vector.\n\n<br><br>\nEach element of the resulting row vector is computed as a sum of products of elements:\n\n\\[\n(\\mathbf{v}^T A)_j = \\sum_{i=1}^{n} v_i A_{ij}, \\quad \\text{for } j = 1, 2, \\dots, m\n\\]\n<br>\nwhere \\( v_i \\) are the elements of \\( \\mathbf{v}^T \\) and \\( A_{ij} \\) are the elements of the matrix \\( A \\).",
-    "front": "What is the inner product between a row vector \\( \\mathbf{v}^T \\) and a matrix \\( A \\)?",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "back": "Given: <br>\n- A column vector \\( \\mathbf{u} \\in \\mathbb{R}^{m \\times 1} \\) <br>\n- A row vector \\( \\mathbf{v}^T \\in \\mathbb{R}^{1 \\times n} \\) <br><br>\n\nThe outer product is defined as: <br>\n$$\n\\mathbf{u} \\mathbf{v}^T \\in \\mathbb{R}^{m \\times n}\n$$\n<br>\nwhich results in an \\( m \\times n \\) matrix.\n\n<br><br>\nEach element of the resulting matrix is computed as the product of elements: <br>\n\n\\[\n(\\mathbf{u} \\mathbf{v}^T)_{ij} = u_i v_j, \\quad \\text{for } i = 1, 2, \\dots, m \\text{ and } j = 1, 2, \\dots, n\n\\]\n<br>\nwhere \\( u_i \\) are the elements of \\( \\mathbf{u} \\) and \\( v_j \\) are the elements of \\( \\mathbf{v}^T \\).",
-    "front": "What is the outer product of two vectors, and how is it computed?",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "back": "Given: <br>\n- A set of vectors \\( \\{\\mathbf{e}_1, \\mathbf{e}_2, \\dots, \\mathbf{e}_n\\} \\) in \\( \\mathbb{R}^n \\) <br><br>\n\nThe vectors form an **orthonormal basis** if they satisfy two conditions: <br>\n\n1. **Orthogonality**: Each pair of distinct vectors is perpendicular: <br>\n   \\[\n   \\mathbf{e}_i \\cdot \\mathbf{e}_j = 0, \\quad \\text{for } i \\neq j\n   \\]\n   <br>\n2. **Normalization**: Each vector has unit length: <br>\n   \\[\n   \\|\\mathbf{e}_i\\| = 1 \\quad \\Rightarrow \\quad \\mathbf{e}_i \\cdot \\mathbf{e}_i = 1\n   \\]\n   <br>\n\nAn orthonormal basis allows any vector \\( \\mathbf{v} \\in \\mathbb{R}^n \\) to be uniquely represented as a linear combination: <br>\n\\[\n\\mathbf{v} = c_1 \\mathbf{e}_1 + c_2 \\mathbf{e}_2 + \\dots + c_n \\mathbf{e}_n\n\\]\nwhere \\( c_i = \\mathbf{v} \\cdot \\mathbf{e}_i \\) are the **coordinates** of \\( \\mathbf{v} \\) in the orthonormal basis.",
-    "front": "What are orthonormal basis vectors, and what are their properties?",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "back": "The outer product of two vectors $x$ and $y$ is the matrix $xy^T$. This produces a rank-one matrix that is useful for constructing projections and low-rank approximations.",
-    "front": "Outter product",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "back": "TODO: New back content",
-    "front": "Matrix multiplication algorithm",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "back": "Given: <br>\n- A lower triangular matrix \\( L \\in \\mathbb{R}^{n \\times n} \\) <br>\n- A right-hand side vector \\( \\mathbf{b} \\in \\mathbb{R}^{n} \\) <br><br>\n\nThe solution is computed using forward substitution, solving for \\( x_1, x_2, \\dots, x_n \\) sequentially: <br><br>\n\nFor \\( i = 1, 2, \\dots, n \\) : <br><br>\n\\[\nx_i = \\frac{1}{L_{ii}} \\left( b_i - \\sum_{j=1}^{i-1} L_{ij} x_j \\right)\n\\]\n<br><br>\nwhere each \\( x_i \\) is computed using previously solved values.\n\n<br>\nSince \\( L \\) is lower triangular, the system is solved from top to bottom, ensuring that at each step, only previously computed values are used.",
-    "front": "Solve this linear system by forward substitution: <br><br>\n\nGiven a lower triangular system: <br>\n$$\nL \\mathbf{x} = \\mathbf{b}\n$$\n<br><br>\nwhere\n<br><br>\n$$\nL =\n\\begin{bmatrix}\nl_{11} & 0 & 0 & 0 \\\\\nl_{21} & l_{22} & 0 & 0 \\\\\nl_{31} & l_{32} & l_{33} & 0 \\\\\nl_{41} & l_{42} & l_{43} & l_{44}\n\\end{bmatrix},\n\\quad\n\\mathbf{x} =\n\\begin{bmatrix}\nx_1 \\\\ x_2 \\\\ x_3 \\\\ x_4\n\\end{bmatrix},\n\\quad\n\\mathbf{b} =\n\\begin{bmatrix}\nb_1 \\\\ b_2 \\\\ b_3 \\\\ b_4\n\\end{bmatrix}\n$$\n<br><br>\nWhat are the steps to compute \\( \\mathbf{x} \\) using forward substitution?\n<br>",
-    "importance": 2,
-    "tags": [
-      "18.0651"
-    ],
-    "understanding": 1
-  },
-  {
-    "front": "Taylor series of $f(x)$ at a point $x = a$ <br><br>\nvs. <br><br>\nTaylor series expansion of $f(x)$ at / around a point $x = a$ <br>",
     "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
+    "front": "Taylor series of $f(x)$ at a point $x = a$ <br><br>\nvs. <br><br>\nTaylor series expansion of $f(x)$ at / around a point $x = a$ <br>",
+    "importance": 2,
     "tags": [
       "18.0651",
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "Define the gradient of $f(x)$.",
     "back": "If $f: \\mathbb{R}^n \\to \\mathbb{R}$ is a differentiable function, the gradient of $f(x)$ is defined as:\n<br><br>\n\n$$\n\\nabla f(x) = \n\\begin{bmatrix}\n\\frac{\\partial f}{\\partial x_1} \\\\\n\\frac{\\partial f}{\\partial x_2} \\\\\n\\vdots \\\\\n\\frac{\\partial f}{\\partial x_n}\n\\end{bmatrix}.\n$$\n\n<br><br>\nEach component $\\frac{\\partial f}{\\partial x_i}$ represents the partial derivative of $f$ with respect to $x_i$.\n<br><br>\n\nThe gradient is a vector that points in the direction of the steepest increase of $f(x)$.",
+    "front": "Define the gradient of $f(x)$.",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 3,
     "understanding": 1
   },
   {
-    "front": "What is a <b>functional</b>?",
     "back": "A functional is a mapping from a space of functions to the real numbers. <br><br>\n\nMathematically, a functional $J$ takes a function $y(x)$ as input and returns a real number:\n<br><br>\n\n$$\nJ[y] = \\int_{a}^{b} F(x, y, y') \\, dx.\n$$\n\n<br><br>\nFunctionals are commonly used in calculus of variations and physics to express quantities such as energy or action.",
+    "front": "What is a <b>functional</b>?",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
+    "back": "The first variation of a functional is the first-order term in the Taylor expansion of the increment, providing a linear approximation of the change in the functional. <br><br>\n\nThe first variation of a functional $J[x(t)]$ with respect to a perturbation $\\delta x(t)$ is defined as:\n<br><br>\n\n$$\n\\delta J(x(t), \\delta x(t)) = \\left. \\frac{d}{d\\epsilon} J(x(t) + \\epsilon \\delta x(t)) \\right|_{\\epsilon=0}.\n$$\n<br><br>\n\n<b>TODO: fix beyond here to make more sense</b>\n<br><br>\n\nFor a functional $J[y]$, we express its perturbation as:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$ gives:\n<br><br>\n$$\nF(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br>\n\nSubstituting this into the integral:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nTaking the limit as $\\epsilon \\to 0$, we obtain the first variation:\n<br><br>\n$$\n\\delta J = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
     "front": "What is the definition of an <b>increment</b>?",
-    "back": "The increment of a function $f(x)$ due to a small change $\\delta x$ is given by:\n<br><br>\n\n$$\n\\Delta f = f(x + \\delta x) - f(x).\n$$\n\n<br><br>\nFor functionals, the increment of $J[y]$ due to a perturbation $\\delta y$ is:\n<br><br>\n\n$$\n\\Delta J = J[y + \\delta y] - J[y].\n$$",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
+    "back": "The first variation of functional is a linear approximation of the increment, i.e., first-order Taylor expansion of the increment.<br><br>\n\nThe **first variation** of a functional $J[x(t)]$ with respect to a perturbation $\\delta x(t)$ is defined as:\n<br><br>\n\n$$\n\\delta J(x(t), \\delta x(t)) = \\left. \\frac{d}{d\\epsilon} J(x(t) + \\epsilon \\delta x(t)) \\right|_{\\epsilon=0}.\n$$\n<br><br>\n\nFor a functional $J[y]$ and a small perturbation $\\delta y$, consider:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding the integrand $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$, we obtain:\n<br><br>\n$$\nF(\\cdot) = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br><br>\n\nSubstituting this expansion back into the integral gives:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b \\Bigg[ F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2) \\Bigg] dx.\n$$\n<br>\n\nThis can be rewritten as:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nThe first variation $\\delta J$ is defined as the first-order term:\n<br><br>\n$$\n\\delta J = \\lim_{\\epsilon \\to 0} \\frac{J[y + \\epsilon \\delta y] - J[y]}{\\epsilon} = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
     "front": "What is the definition of the <b>first variation</b>?",
-    "back": "For a functional $J[y]$ and a small perturbation $\\delta y$, consider:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding the integrand $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$, we obtain:\n<br><br>\n$$\nF(\\cdot) = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br><br>\n\nSubstituting this expansion back into the integral gives:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b \\Bigg[ F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2) \\Bigg] dx.\n$$\n<br>\n\nThis can be rewritten as:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nThe first variation $\\delta J$ is defined as the first-order term:\n<br><br>\n$$\n\\delta J = \\lim_{\\epsilon \\to 0} \\frac{J[y + \\epsilon \\delta y] - J[y]}{\\epsilon} = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "Define and derive the <b>Euler-Lagrange equation</b>.\n<br><br>",
     "back": "TODO: New back content",
+    "front": "Define and derive the <b>Euler-Lagrange equation</b>.\n<br><br>",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "Standard form of a constrained optimization problem.",
     "back": "$$\n\\min_{x \\in \\mathbb{R}^{n}}{f(x)}\n$$\n<br><br>\nsubject to: <br>\n$$\ng_{i}(x) \\leq 0, \\quad i \\in \\mathcal{I}, \\quad \\mathcal{I} = 1, \\dots, m \\quad \\text{(inequality constraints)}\n$$\n<br>\n$$\nh_{i}(x) = 0, \\quad j \\in \\mathcal{E}, \\quad \\mathcal{E} = 1, \\dots, p \\quad \\; \\text{(equality constraints)}\n$$\n<br><br>\nwhere:\n<ul>\n  <li>$$f(x)$$ is the objective function to be minimized.</li>\n  <li>$$g_i(x) \\leq 0$$ represents inequality constraints that must be satisfied.</li>\n  <li>$$h_j(x) = 0$$ represents equality constraints that must be exactly satisfied.</li>\n  <li>$$x \\in \\mathbb{R}^n$$ is the decision variable (a vector in \\( n \\)-dimensional space).</li>\n</ul>",
+    "front": "Standard form of a constrained optimization problem.",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "KKT Conditions.",
     "back": "<ol>\n\n  <li>Stationarity <br>\n    $$\n    \\nabla f(x^*) + \\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*) + \\sum_{j=1}^{p} \\mu_j \\nabla h_j(x^*) = 0\n    $$\n  </li>\n  <br>\n\n  <li>Primal feasibility <br>\n    $$\n    g_i(x^*) \\leq 0, \\quad \\forall i \\in \\{1, \\dots, m\\}\n    $$\n    <br>\n    $$\n    h_j(x^*) = 0, \\quad \\forall j \\in \\{1, \\dots, p\\}\n    $$\n  </li>\n  <br>\n\n  <li>Dual feasibility <br>\n    $$\n    \\lambda_i \\geq 0, \\quad \\forall i \\in \\{1, \\dots, m\\}\n    $$\n  </li>\n  <br>\n\n  <li>Complementary slackness <br>\n    $$\n    \\lambda_i g_i(x^*) = 0, \\quad \\forall i \\in \\{1, \\dots, m\\}\n    $$\n  </li>\n  <br>\n\n</ol>",
+    "front": "KKT Conditions.",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "Under what circumstances can we fail to choose Lagrange multipliers that satisfy the KKT conditions without contradiction?",
     "back": "When the gradients of the active constraints are linearly dependent\u2014that is, when the Linear Independence Constraint Qualification (LICQ) fails. In this case, the constraint gradients do not span enough directions to cancel out the gradient of the objective, meaning the stationarity condition cannot be met.",
+    "front": "Under what circumstances can we fail to choose Lagrange multipliers that satisfy the KKT conditions without contradiction?",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "Why must the stationarity condition hold at an optimal solution in constrained optimization?",
     "back": "At an optimal point $x^*$, the idea is that no small, feasible perturbation $d$ should be able to decrease the objective function. In other words, for every feasible direction $d$, we must have <br><br>\n\n$$\n\\nabla f(x^{*})^T d \\geq 0.\n$$\n\n<br><br>\nNow, when a constraint $g_i(x) \\leq 0$ is active (i.e. $g_i(x^*) = 0)$, any small movement d that keeps us feasible must satisfy <br><br>\n$$\n\\nabla g_i(x^{*})^T d \\leq 0.\n$$\n<br><br>\nThis means the feasible directions are limited by the gradients of the active constraints. For there to be no feasible descent direction\u2014that is, for the objective not to decrease along any $d$\u2014the entire gradient $\\nabla f(x^*)$ must be \u201cneutralized\u201d by the constraint forces. This requirement is captured by the stationarity condition: <br><br>\n$$\n\\nabla f(x^*) + \\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*) = 0.\n$$\n<br><br>\nHere, the multipliers $\\lambda_i$ adjust the contribution of each constraint\u2019s gradient so that they together cancel out $\\nabla f(x^*)$. This ensures that any movement allowed by the constraints does not provide a descent direction, preserving the optimality of $x^*$.\n<br>",
+    "front": "Why must the stationarity condition hold at an optimal solution in constrained optimization?",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "What is the geometric intuition behind the KKT stationarity condition?",
     "back": "At an optimal point $x^*$, the gradients of the active constraints, $\\nabla g_i(x^*)$ for all $i$ such that $g_i(x^*) = 0$, define the normal (or \u201cblocking\u201d) directions at $x^*$. They essentially tell us which directions are forbidden for movement if we want to remain feasible. <br><br>\n\nFor $x^*$ to be optimal, the gradient $\\nabla f(x^*)$ must not point in any direction that would allow us to decrease $f(x)$ while staying within the feasible region. This is only possible if $\\nabla f(x^*)$ lies entirely in the span of the constraint gradients. In mathematical terms, this means that there exist multipliers $\\lambda_i$ such that <br><br>\n\n$$\n\\nabla f(x^*) = -\\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*).\n$$\n\n<br><br>\nIf any component of $\\nabla f(x^*)$ were to lie outside of the span of the $\\nabla g_i(x^*)$, then there would be a feasible direction in which $f(x)$ could decrease, contradicting the optimality of $x^*$. <br><br>\n\nThus, the condition guarantees that all possible descent directions are \u201cblocked\u201d by the active constraints, ensuring that $x^*$ is indeed optimal.",
+    "front": "What is the geometric intuition behind the KKT stationarity condition?",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   },
   {
-    "front": "Linear Independence Constraint Qualification (LICQ) condition.",
     "back": "The LICQ condition states that at a feasible point $x^*$, the gradients of all active constraints must be linearly independent. <br><br>\n\nMathematically, if the set of active constraints at $x^*$ is given by:\n<br><br>\n$$\n\\mathcal{A} = \\{ i \\mid g_i(x^*) = 0 \\},\n$$\n<br><br>\nthen the gradients of these constraints,\n<br><br>\n$$\n\\{ \\nabla g_i(x^*) \\}_{i \\in \\mathcal{A}},\n$$\n<br><br>\nmust be linearly independent. This means that if there exists a set of scalars $\\lambda_i$ such that:\n<br><br>\n$$\n\\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*) = 0,\n$$\n<br><br>\nthen it must follow that $\\lambda_i = 0$ for all $i \\in \\mathcal{A}$. <br><br>\n\nIf LICQ holds, then the active constraint gradients span a well-defined space, ensuring that the KKT conditions hold without contradiction. <br><br>\n\nIf LICQ fails, the stationarity condition may not be satisfied, meaning no valid Lagrange multipliers exist.",
+    "front": "Linear Independence Constraint Qualification (LICQ) condition.",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   }
 ]
