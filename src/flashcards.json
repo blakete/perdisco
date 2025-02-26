@@ -1,6 +1,6 @@
 [
   {
-    "back": "$Q^T = Q^{-1}$. The columns and rows of $Q$ form an orthonormal set, meaning each has unit length and is mutually perpendicular. Multiplying by $Q$ preserves vector norms.",
+    "back": "$Q^T = Q^{-1}$ <br><br>\n\nThe columns and rows of $Q$ form an orthonormal set, meaning each has unit length and is mutually perpendicular. Multiplying by $Q$ preserves vector norms.",
     "front": "Orthogonal Matrices",
     "importance": 1,
     "tags": [
@@ -71,6 +71,24 @@
     "importance": 2,
     "tags": [
       "linear algebra",
+      "18.0651"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Matrix multiplication algorithm",
+    "importance": 2,
+    "tags": [
+      "18.0651"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "Given: <br>\n- A lower triangular matrix \\( L \\in \\mathbb{R}^{n \\times n} \\) <br>\n- A right-hand side vector \\( \\mathbf{b} \\in \\mathbb{R}^{n} \\) <br><br>\n\nThe solution is computed using forward substitution, solving for \\( x_1, x_2, \\dots, x_n \\) sequentially: <br><br>\n\nFor \\( i = 1, 2, \\dots, n \\):\n\\[\nx_i = \\frac{1}{L_{ii}} \\left( b_i - \\sum_{j=1}^{i-1} L_{ij} x_j \\right)\n\\]\n<br>\nwhere each \\( x_i \\) is computed using previously solved values.\n\n<br>\nSince \\( L \\) is lower triangular, the system is solved from top to bottom, ensuring that at each step, only previously computed values are used.",
+    "front": "Solve this linear system by forward substitution: <br><br>\n\nGiven a lower triangular system: <br>\n$$\nL \\mathbf{x} = \\mathbf{b}\n$$\n<br><br>\nwhere\n<br><br>\n$$\nL =\n\\begin{bmatrix}\nl_{11} & 0 & 0 & 0 \\\\\nl_{21} & l_{22} & 0 & 0 \\\\\nl_{31} & l_{32} & l_{33} & 0 \\\\\nl_{41} & l_{42} & l_{43} & l_{44}\n\\end{bmatrix},\n\\quad\n\\mathbf{x} =\n\\begin{bmatrix}\nx_1 \\\\ x_2 \\\\ x_3 \\\\ x_4\n\\end{bmatrix},\n\\quad\n\\mathbf{b} =\n\\begin{bmatrix}\nb_1 \\\\ b_2 \\\\ b_3 \\\\ b_4\n\\end{bmatrix}\n$$\n<br><br>\nWhat are the steps to compute \\( \\mathbf{x} \\) using forward substitution?\n<br>",
+    "importance": 2,
+    "tags": [
       "18.0651"
     ],
     "understanding": 1
