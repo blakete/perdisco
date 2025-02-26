@@ -110,11 +110,47 @@
   },
   {
     "front": "Define the gradient of $f(x)$.",
-    "back": "If $f: \\mathbb{R}^n \\to \\mathbb{R}$ is a differentiable function, the gradient of $f(x)$ is defined as:\n<br><br>\n\n$$\n\\nabla f(x) = \n\\begin{bmatrix}\n\\frac{\\partial f}{\\partial x_1} \\\\\n\\frac{\\partial f}{\\partial x_2} \\\\\n\\vdots \\\\\n\\frac{\\partial f}{\\partial x_n}\n\\end{bmatrix}.\n$$\n\n<br><br>\nEach component $\\frac{\\partial f}{\\partial x_i}$ represents the partial derivative of $f$ with respect to $x_i$. The gradient is a vector that points in the direction of the steepest increase of $f(x)$.",
+    "back": "If $f: \\mathbb{R}^n \\to \\mathbb{R}$ is a differentiable function, the gradient of $f(x)$ is defined as:\n<br><br>\n\n$$\n\\nabla f(x) = \n\\begin{bmatrix}\n\\frac{\\partial f}{\\partial x_1} \\\\\n\\frac{\\partial f}{\\partial x_2} \\\\\n\\vdots \\\\\n\\frac{\\partial f}{\\partial x_n}\n\\end{bmatrix}.\n$$\n\n<br><br>\nEach component $\\frac{\\partial f}{\\partial x_i}$ represents the partial derivative of $f$ with respect to $x_i$.\n<br><br>\n\nThe gradient is a vector that points in the direction of the steepest increase of $f(x)$.",
     "tags": [
       "16.32"
     ],
     "importance": 3,
+    "understanding": 1
+  },
+  {
+    "front": "What is a <b>functional</b>?",
+    "back": "A functional is a mapping from a space of functions to the real numbers. <br><br>\n\nMathematically, a functional $J$ takes a function $y(x)$ as input and returns a real number:\n<br><br>\n\n$$\nJ[y] = \\int_{a}^{b} F(x, y, y') \\, dx.\n$$\n\n<br><br>\nFunctionals are commonly used in calculus of variations and physics to express quantities such as energy or action.",
+    "tags": [
+      "16.32"
+    ],
+    "importance": 2,
+    "understanding": 1
+  },
+  {
+    "front": "What is the definition of an <b>increment</b>?",
+    "back": "The increment of a function $f(x)$ due to a small change $\\delta x$ is given by:\n<br><br>\n\n$$\n\\Delta f = f(x + \\delta x) - f(x).\n$$\n\n<br><br>\nFor functionals, the increment of $J[y]$ due to a perturbation $\\delta y$ is:\n<br><br>\n\n$$\n\\Delta J = J[y + \\delta y] - J[y].\n$$",
+    "tags": [
+      "16.32"
+    ],
+    "importance": 2,
+    "understanding": 1
+  },
+  {
+    "front": "What is the definition of the <b>first variation</b>?",
+    "back": "For a functional $J[y]$ and a small perturbation $\\delta y$, consider:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding the integrand $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$, we obtain:\n<br><br>\n$$\nF(\\cdot) = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br><br>\n\nSubstituting this expansion back into the integral gives:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b \\Bigg[ F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2) \\Bigg] dx.\n$$\n<br>\n\nThis can be rewritten as:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nThe first variation $\\delta J$ is defined as the first-order term:\n<br><br>\n$$\n\\delta J = \\lim_{\\epsilon \\to 0} \\frac{J[y + \\epsilon \\delta y] - J[y]}{\\epsilon} = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
+    "tags": [
+      "16.32"
+    ],
+    "importance": 2,
+    "understanding": 1
+  },
+  {
+    "front": "Define and derive the <b>Euler-Lagrange equation</b>.\n<br><br>",
+    "back": "TODO: New back content",
+    "tags": [
+      "16.32"
+    ],
+    "importance": 2,
     "understanding": 1
   },
   {
@@ -166,7 +202,7 @@
     "front": "Linear Independence Constraint Qualification (LICQ) condition.",
     "back": "The LICQ condition states that at a feasible point $x^*$, the gradients of all active constraints must be linearly independent. <br><br>\n\nMathematically, if the set of active constraints at $x^*$ is given by:\n<br><br>\n$$\n\\mathcal{A} = \\{ i \\mid g_i(x^*) = 0 \\},\n$$\n<br><br>\nthen the gradients of these constraints,\n<br><br>\n$$\n\\{ \\nabla g_i(x^*) \\}_{i \\in \\mathcal{A}},\n$$\n<br><br>\nmust be linearly independent. This means that if there exists a set of scalars $\\lambda_i$ such that:\n<br><br>\n$$\n\\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*) = 0,\n$$\n<br><br>\nthen it must follow that $\\lambda_i = 0$ for all $i \\in \\mathcal{A}$. <br><br>\n\nIf LICQ holds, then the active constraint gradients span a well-defined space, ensuring that the KKT conditions hold without contradiction. <br><br>\n\nIf LICQ fails, the stationarity condition may not be satisfied, meaning no valid Lagrange multipliers exist.",
     "tags": [
-      "18.0651"
+      "16.32"
     ],
     "importance": 2,
     "understanding": 1
