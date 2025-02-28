@@ -10,6 +10,51 @@
     "understanding": 1
   },
   {
+    "back": "The Taylor series for a vector-valued function \\( F(x) \\) expands it around \\( x \\): <br><br>\n$$\nF(x + \\Delta x) \\approx F(x) + g(x)^T \\Delta x + \\frac{1}{2} \\Delta x^T H(x) \\Delta x + \\dots\n$$\n<br><br>\n\nwhere: <br>\n\n- \\( g(x) \\) is the gradient of \\( F \\): <br><br>\n$$\ng = \\begin{bmatrix} \\frac{\\partial F}{\\partial x_1} \\\\ \\vdots \\\\ \\frac{\\partial F}{\\partial x_n} \\end{bmatrix}.\n$$\n\n<br><br>\n- \\( H(x) \\) is the Hessian matrix of second derivatives: <br><br>\n$$\nH =\n\\begin{bmatrix}\n\\frac{\\partial^2 F}{\\partial x_1^2} & \\cdots & \\frac{\\partial^2 F}{\\partial x_1 \\partial x_n} \\\\\n\\vdots & \\ddots & \\vdots \\\\\n\\frac{\\partial^2 F}{\\partial x_n \\partial x_1} & \\cdots & \\frac{\\partial^2 F}{\\partial x_n^2}\n\\end{bmatrix}.\n$$\n<br><br>\nTruncating the series gives a quadratic approximation of \\( F(x) \\) around \\( x \\).",
+    "front": "Taylor series for a vector-valued function \\( F(x) \\)",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "- Positive definiteness of a real $n \\times n$ symmetric matrix $A$ is defined as <br><br>\n$$\nx^T A x > 0, \\quad \\forall x \\neq 0, \\; x \\in \\mathbb{R}^n\n$$\n\n<br><br>\nwhile positive semi-definiteness is defined as <br><br>\n$$\nx^T A x \\geq 0, \\quad \\forall x \\in \\mathbb{R}^n\n$$\n<br><br>\n\n- Cannot be tested directly, because we cannot test the above inequalities for all possible $x$.",
+    "front": "Define positive definiteness (PD) of a real $n \\times n$ symmetric matrix $A$. <br><br>\n\nDefine positive semi-definiteness (PSD).",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "meeting some necessary conditions does not mean the thing is true but its required that the condition be true when the thing is true. <br><br>\n\nsufficient condition when meant means the thing of interest is true.",
+    "front": "necessary vs. sufficient condition.",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "A positive definite (PD) Hessian guarantees a local minimum, while a positive semi-definite (PSD) Hessian is only necessary\u2014it does not confirm a minimum on its own.<br><br>\n\n\\[\n\\begin{array}{|c|c|c|c|}\n\\hline\n\\textbf{Condition} & \\textbf{Hessian Type} & \\textbf{What It Means} & \\textbf{Conclusion} \\\\\n\\hline\n\\text{Necessary} & \\text{Positive Semi-Definite (PSD)} & \\text{No negative curvature, but could be flat in some directions} & \\text{Local min possible, but not guaranteed} \\\\\n\\hline\n\\text{Sufficient} & \\text{Positive Definite (PD)} & \\text{Strictly upward curvature in all directions} & \\text{Guarantees a local min} \\\\\n\\hline\n\\end{array}\n\\]",
+    "front": "Hessian necessary and sufficient conditions for a local minimum.",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "$$\ng(x^*) = 0\n$$\n<br><br>\ngradient is zero.",
+    "front": "Stationary point necessary condition.",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
     "back": "If $f: \\mathbb{R}^n \\to \\mathbb{R}$ is a differentiable function, the gradient of $f(x)$ is defined as:\n<br><br>\n\n$$\n\\nabla f(x) = \n\\begin{bmatrix}\n\\frac{\\partial f}{\\partial x_1} \\\\\n\\frac{\\partial f}{\\partial x_2} \\\\\n\\vdots \\\\\n\\frac{\\partial f}{\\partial x_n}\n\\end{bmatrix}.\n$$\n\n<br><br>\nEach component $\\frac{\\partial f}{\\partial x_i}$ represents the partial derivative of $f$ with respect to $x_i$.\n<br><br>\n\nThe gradient is a vector that points in the direction of the steepest increase of $f(x)$.",
     "front": "Define the gradient of $f(x)$.",
     "importance": 2,
@@ -46,8 +91,17 @@
     "understanding": 1
   },
   {
-    "back": "TODO: New back content",
+    "back": "The Euler-Lagrange equation states that for a function $g(x, \\dot{x}, t)$:\n<br><br>\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial g}{\\partial \\dot{x}} \\right) - \\frac{\\partial g}{\\partial x} = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{x}} \\right) - \\frac{\\partial L}{\\partial x} = 0\n$$\n\n<br><br>\nRewriting this:\n\n<br><br>\n$$\n\\frac{d}{dt} (g_{\\dot{x}}) - g_x = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} (L_{\\dot{x}}) - L_x = 0\n$$\n\n<br><br>\nwhich is the fundamental condition for extremizing a functional in the calculus of variations.",
     "front": "Define and derive the <b>Euler-Lagrange equation</b>.\n<br><br>",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "$$\nH(x, u, \\lambda, t) = f(x, u, t) \\cdot \\lambda + L(x, u, t).\n$$\n<br><br>\nwhere: <br>\n- x  is the state variable. <br>\n- u  is the control variable. <br>\n- \\lambda  is the costate (adjoint) variable (analogous to momentum in classical mechanics). <br>\n- L(x, u, t)  is the running cost.<br>\n- f(x, u, t)  describes the system dynamics.\n\n<br><br><br><br>\n$$\nH = \\dot{x} \\frac{\\partial L}{\\partial \\dot{x}} - L \n  \\quad \\text{or} \\quad \nH = \\dot{x} \\frac{\\partial g}{\\partial \\dot{x}} - g\n$$\n<br><br>\nRewriting as:<br><br>\n$$\nH = \\dot{x} L_{\\dot{x}} - L \n  \\quad \\text{or} \\quad \nH = \\dot{x} g_{\\dot{x}} - g\n$$\n\n<br><br>\n\nNote that:<br><br>\n$$\ng_t + \\frac{dH}{dt} = 0.\n$$\n\n<br><br>\nThe crucial property of the Hamiltonian is that:<br>\n- If  $L$  does not explicitly depend on time (i.e.,  $L_t = 0$ ), then  $H$  is conserved.<br>\n- This leads directly to the Beltrami identity, which states that:\n$$\n\\dot{x} g_{\\dot{x}} - g = \\text{constant}.\n$$",
+    "front": "Hamiltonian",
     "importance": 2,
     "tags": [
       "16.32"
@@ -106,6 +160,60 @@
     "tags": [
       "16.32"
     ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Collocation points.",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Interpolation points.",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "General way to express most optimal control problems: <br><br>\n\n\\[\n\\begin{array}{ll}\n\\textbf{Minimize} & J = \\phi\\Bigl(x(t_0),\\, x(t_f),\\, t_0,\\, t_f,\\, q,\\, s\\Bigr) \\\\\n\\\\\n\\textbf{with respect to} & x(t),\\; u(t),\\; t_0,\\; t_f,\\; s,\\; q \\\\\n\\\\\n\\textbf{subject to} & \\dot{x}(t) = f\\Bigl(x(t),\\, u(t),\\, t,\\, s\\Bigr), \\quad t \\in [t_0, t_f], \\\\\n\\\\\n& q = \\int_{t_0}^{t_f} g\\Bigl(x(t),\\, u(t),\\, t,\\, s\\Bigr) dt, \\\\\n\\\\\n& c\\Bigl(x(t),\\, u(t),\\, t,\\, s\\Bigr) \\le 0, \\quad t \\in [t_0, t_f], \\\\\n\\\\\n& \\psi\\Bigl(x(t_0),\\, x(t_f),\\, t_0,\\, t_f,\\, s\\Bigr) = 0, \\\\\n\\\\\n& \\text{and appropriate bounds on } x(t),\\, u(t),\\, s,\\, t_0,\\, t_f.\n\\end{array}\n\\]",
+    "front": "Bolza optimization problem formulation.",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content\n\n<br><br>\nThe following functions are transcendental:<br>\n<img src=\"/assets/Screenshot_2025-02-28_at_1.31.02_AM.png\">",
+    "front": "Transcendental equation",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content <br><br>\n\nWhat is it and what is the equation for it?",
+    "front": "Catenary curve.",
+    "importance": 2,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "front": "Catenoid.",
+    "back": "TODO: New back content <br><br>\n\nWhat is it and what is the equation for it?",
+    "tags": [
+      "16.32"
+    ],
+    "importance": 2,
     "understanding": 1
   }
 ]
