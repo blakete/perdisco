@@ -10,6 +10,16 @@
     "understanding": 1
   },
   {
+    "back": "Positive semi-definite matrix is defined as <br><br>\n$$\nx^T A x \\geq 0, \\quad \\forall x \\in \\mathbb{R}^n\n$$\n<br><br>",
+    "front": "Positive semi-definite (PSD) <br><br>\nDefine<br><br>\nHow to test for it",
+    "id": 1740891113103,
+    "tags": [
+      "18.065",
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
     "back": "A set of vectors that perfectly describes the space. <br><br>\n\nTheir combinations give one and only one way to produce every vector in the space.",
     "front": "Basis",
     "id": 1740885744839,
@@ -55,9 +65,19 @@
     "understanding": 2
   },
   {
-    "id": 1740890573566,
-    "front": "TODO: New front content",
     "back": "TODO: New back content",
+    "front": "Procedure for <b>eigenvalues</b> and <b>eigenvectors</b>",
+    "id": 1740890671935,
+    "tags": [
+      "18.065",
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Gauss elimination",
+    "id": 1740890812452,
     "tags": [
       "18.065"
     ],
@@ -97,7 +117,7 @@
     "tags": [
       "18.065"
     ],
-    "understanding": 1
+    "understanding": 2
   },
   {
     "back": "TODO: New back content",
@@ -128,8 +148,62 @@
   },
   {
     "back": "TODO: New back content",
+    "front": "Procedure for QR factorization",
+    "id": 1740890854848,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Procedure for $LU$ decomposition",
+    "id": 1740890882881,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Procedure for singular value decomposition",
+    "id": 1740890913235,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Prove that for any matrix $A \\in R^{m\u00d7n}$, that $A^{T}A$ and $A$ have\nthe same null space.",
+    "id": 1740890964079,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
     "front": "Symmetric matrix",
     "id": 1740890063445,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1740891657888,
+    "front": "Propose a function $x = linear\\_solver(U, b)$, where $U \\in R^{n \\times n}$ is an upper triangular matrix, $b \\in R^n$ is a vector, and $x \\in R^n$ is the solution to $Ux = b$. <br><br>\n\nThen apply your procedure to",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1740891867068,
+    "front": "The power method",
+    "back": "TODO: New back content",
     "tags": [
       "18.065"
     ],
@@ -145,8 +219,8 @@
     "understanding": 1
   },
   {
-    "back": "- Positive definiteness of a real $n \\times n$ symmetric matrix $A$ is defined as <br><br>\n$$\nx^T A x > 0, \\quad \\forall x \\neq 0, \\; x \\in \\mathbb{R}^n\n$$\n\n<br><br>\nwhile positive semi-definiteness is defined as <br><br>\n$$\nx^T A x \\geq 0, \\quad \\forall x \\in \\mathbb{R}^n\n$$\n<br><br>\n\n- Cannot be tested directly, because we cannot test the above inequalities for all possible $x$.",
-    "front": "Define positive definiteness (PD) of a real $n \\times n$ symmetric matrix $A$",
+    "back": "Positive definiteness of a real $n \\times n$ symmetric matrix $A$ is defined as <br><br>\n$$\nx^T A x > 0, \\quad \\forall x \\neq 0, \\; x \\in \\mathbb{R}^n\n$$",
+    "front": "Positive definite (PD) <br><br>\nDefine<br><br>\nHow to test for it",
     "importance": 2,
     "tags": [
       "16.32"
@@ -155,7 +229,7 @@
   },
   {
     "back": "meeting some necessary conditions does not mean the thing is true but its required that the condition be true when the thing is true. <br><br>\n\nsufficient condition when meant means the thing of interest is true.",
-    "front": "necessary vs. sufficient condition.",
+    "front": "Necessary vs. sufficient conditions",
     "importance": 2,
     "tags": [
       "16.32"
