@@ -10,15 +10,6 @@
     "understanding": 1
   },
   {
-    "id": 1740889518070,
-    "front": "TODO: New front content",
-    "back": "TODO: New back content",
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
     "back": "A set of vectors that perfectly describes the space. <br><br>\n\nTheir combinations give one and only one way to produce every vector in the space.",
     "front": "Basis",
     "id": 1740885744839,
@@ -62,6 +53,15 @@
       "18.065"
     ],
     "understanding": 2
+  },
+  {
+    "id": 1740890573566,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
   },
   {
     "back": "<ul>\n  <li>Denoted $rref(A)$</li>\n  <li>Rules:\n    <ol>\n      <li>Each leading 1 (pivot) is the only nonzero entry in its column.</li>\n      <li>The leading 1 in each row appears to the right of the leading 1 in the row above.</li>\n      <li>Any rows of all zeros appear in the bottom rows of the matrix.</li>\n    </ol>\n  </li>\n  <li>The first $r$ pivot columns form an identity-like structure.</li>\n  <li>The remaining $n - r$ columns, denoted as $F$, contain the free variables.</li>\n</ul>",
@@ -121,6 +121,15 @@
     "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/five_factorizations.jpeg\"></div>",
     "front": "The five factorizations of a matrix.",
     "id": 1740884244261,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Symmetric matrix",
+    "id": 1740890063445,
     "tags": [
       "18.065"
     ],
