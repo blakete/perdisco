@@ -1,11 +1,29 @@
 [
   {
     "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
-    "front": "Taylor series of $f(x)$ at a point $x = a$ <br><br>\nvs. <br><br>\nTaylor series expansion of $f(x)$ at / around a point $x = a$ <br>",
+    "front": "Taylor series of $f(x)$ at a point $x = a$ <br><br>\nvs. <br><br>\nTaylor series expansion of $f(x)$ at / around a point $x = a$<br>",
     "importance": 2,
     "tags": [
       "18.065",
       "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1740884070112,
+    "front": "Four fundamental subspaces.",
+    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/four_fundamental_subspaces.jpeg\"></div>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 2
+  },
+  {
+    "id": 1740884244261,
+    "front": "The five factorizations of a matrix.",
+    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/five_factorizations.jpeg\"></div>",
+    "tags": [
+      "18.065"
     ],
     "understanding": 1
   },
@@ -208,12 +226,12 @@
     "understanding": 1
   },
   {
-    "front": "Catenoid.",
     "back": "TODO: New back content <br><br>\n\nWhat is it and what is the equation for it?",
+    "front": "Catenoid.",
+    "importance": 2,
     "tags": [
       "16.32"
     ],
-    "importance": 2,
     "understanding": 1
   }
 ]
