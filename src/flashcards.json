@@ -10,13 +10,112 @@
     "understanding": 1
   },
   {
-    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/four_fundamental_subspaces.jpeg\"></div>",
+    "id": 1740889518070,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "A set of vectors that perfectly describes the space. <br><br>\n\nTheir combinations give one and only one way to produce every vector in the space.",
+    "front": "Basis",
+    "id": 1740885744839,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/four_fundamental_subspaces.jpeg\"></div>\n<br>\nDimensions: <br>\n$Col(A) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{n - r}$ <br>\n$Col(A^T) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{m - r}$ <br>",
     "front": "Four fundamental subspaces.",
     "id": 1740884070112,
     "tags": [
       "18.065"
     ],
     "understanding": 2
+  },
+  {
+    "back": "- denoted $Col(A) = C(A)$ <br>\n- the column space is a subspace of $\\mathbb{R}^m$ ($A \\in \\mathbb{R}^{n \\times m}$)<br>\n- consists of all linear combinations of $A$'s columns <br>\n- this is captured by the space spanned by $b$ in $Ax = b, \\, \\forall x$",
+    "front": "Column space of $A$",
+    "id": 1740886684323,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 2
+  },
+  {
+    "back": "- denoted $Col(A^T) = C(A)$, <br>\n- the column space is a subspace of $\\mathbb{R}^n$ (recall $A \\in \\mathbb{R}^{n \\times m}$)<br>\n- consists of all linear combinations of the columns of $A^T$'s <br>\n- this is captured by the space spanned by $b$ in $A^Ty = b, \\, \\forall y$",
+    "front": "Row space of $A$",
+    "id": 1740887337718,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 2
+  },
+  {
+    "back": "- contains all the solutions $x$ to $Ax = 0$, including $x = 0$.",
+    "front": "Null space of $A$",
+    "id": 1740887782700,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 2
+  },
+  {
+    "back": "<ul>\n  <li>Denoted $rref(A)$</li>\n  <li>Rules:\n    <ol>\n      <li>Each leading 1 (pivot) is the only nonzero entry in its column.</li>\n      <li>The leading 1 in each row appears to the right of the leading 1 in the row above.</li>\n      <li>Any rows of all zeros appear in the bottom rows of the matrix.</li>\n    </ol>\n  </li>\n  <li>The first $r$ pivot columns form an identity-like structure.</li>\n  <li>The remaining $n - r$ columns, denoted as $F$, contain the free variables.</li>\n</ul>",
+    "front": "Reduced row echelon form",
+    "id": 1740887871355,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "To solve $Ax = b$ is to <u>express b as a linear combination of the columns of $A$.</u>",
+    "front": "To solve $Ax = b$ is to ____.",
+    "id": 1740886790619,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "The equations $Ax = b$ are solvable iff <u>${b}$ is in the column space of $A$</u>",
+    "front": "The equations $Ax = b$ are solvable iff ____.",
+    "id": 1740887017912,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 2
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Invertible matrix",
+    "id": 1740887674549,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Singular matrix",
+    "id": 1740887684118,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Orthogonal matrix",
+    "id": 1740887687921,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
   },
   {
     "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/five_factorizations.jpeg\"></div>",
@@ -38,7 +137,7 @@
   },
   {
     "back": "- Positive definiteness of a real $n \\times n$ symmetric matrix $A$ is defined as <br><br>\n$$\nx^T A x > 0, \\quad \\forall x \\neq 0, \\; x \\in \\mathbb{R}^n\n$$\n\n<br><br>\nwhile positive semi-definiteness is defined as <br><br>\n$$\nx^T A x \\geq 0, \\quad \\forall x \\in \\mathbb{R}^n\n$$\n<br><br>\n\n- Cannot be tested directly, because we cannot test the above inequalities for all possible $x$.",
-    "front": "Define positive definiteness (PD) of a real $n \\times n$ symmetric matrix $A$. <br><br>\n\nDefine positive semi-definiteness (PSD).",
+    "front": "Define positive definiteness (PD) of a real $n \\times n$ symmetric matrix $A$",
     "importance": 2,
     "tags": [
       "16.32"
