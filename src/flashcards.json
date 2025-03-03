@@ -10,9 +10,9 @@
     "understanding": 2
   },
   {
-    "id": 1740974681658,
-    "front": "$$\nA^{\\top} \\cdot B\n$$\n\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_11.05.44_PM.png\"></div>",
     "back": "something",
+    "front": "$$\nA^{\\top} \\cdot B\n$$\n\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_11.05.44_PM.png\"></div>",
+    "id": 1740974681658,
     "tags": [
       "1234.56"
     ],
@@ -84,8 +84,8 @@
     "understanding": 2
   },
   {
-    "back": "TODO: New back content",
-    "front": "Procedure for <b>eigenvalues</b> and <b>eigenvectors</b>",
+    "back": "<u><b>Definition</b></u> <br>\n<p> \nFor matrix $A \\in \\mathbb{R}^{m \\times n}$, vector $x \\in \\mathbb{R}^{n} \\setminus\\{0\\}$, and scalar $\\lambda \\in \\mathbb{R}$ the eigenvalues $\\lambda$ and eigenvectors $x$ are such that $Ax = \\lambda x$ \n</p> \n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n    <li>Rearrange to \\( (A - \\lambda I)x = 0 \\)</li>\n    <li>If \\( x \\) is non-zero, the equation will only have a solution if \\( \\mid A - \\lambda I \\mid = 0 \\)</li>\n    <li>Therefore, solve for \\( \\lambda \\) values such that \\( (A - \\lambda I) = 0 \\)</li>\n    <li>Substitute \\( \\lambda \\) values into \\( (A - \\lambda I)x = 0 \\) and use the system of equations to solve for the variable elements of vector \\( x \\)</li>\n</ol>",
+    "front": "Eigenvalues and eigenvectors <br><br>\nDefine <br><br>\nProcedure",
     "id": 1740890671935,
     "tags": [
       "18.065",
@@ -238,7 +238,7 @@
     "understanding": 1
   },
   {
-    "back": "TODO: New back content",
+    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/IMG_3E1D74CC9C45-1.jpeg\"></div>",
     "front": "Similar matrix",
     "id": 1740892885417,
     "tags": [
