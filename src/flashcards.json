@@ -7,6 +7,15 @@
       "18.065",
       "16.32"
     ],
+    "understanding": 2
+  },
+  {
+    "id": 1740974681658,
+    "front": "$$\nA^{\\top} \\cdot B\n$$\n\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_11.05.44_PM.png\"></div>",
+    "back": "something",
+    "tags": [
+      "1234.56"
+    ],
     "understanding": 1
   },
   {
@@ -17,7 +26,7 @@
       "18.065",
       "16.32"
     ],
-    "understanding": 1
+    "understanding": 2
   },
   {
     "back": "A set of vectors that perfectly describes the space. <br><br>\n\nTheir combinations give one and only one way to produce every vector in the space.",
@@ -38,20 +47,30 @@
     "understanding": 2
   },
   {
+    "back": "TODO: New back content",
+    "front": "Card for mom",
+    "id": 1740894978704,
+    "tags": [
+      "14.13"
+    ],
+    "understanding": 3
+  },
+  {
     "back": "- denoted $Col(A) = C(A)$ <br>\n- the column space is a subspace of $\\mathbb{R}^m$ ($A \\in \\mathbb{R}^{n \\times m}$)<br>\n- consists of all linear combinations of $A$'s columns <br>\n- this is captured by the space spanned by $b$ in $Ax = b, \\, \\forall x$",
     "front": "Column space of $A$",
     "id": 1740886684323,
     "tags": [
       "18.065"
     ],
-    "understanding": 2
+    "understanding": 3
   },
   {
     "back": "- denoted $Col(A^T) = C(A)$, <br>\n- the column space is a subspace of $\\mathbb{R}^n$ (recall $A \\in \\mathbb{R}^{n \\times m}$)<br>\n- consists of all linear combinations of the columns of $A^T$'s <br>\n- this is captured by the space spanned by $b$ in $A^Ty = b, \\, \\forall y$",
-    "front": "Row space of $A$",
+    "front": "Row space of $A$ <br><br>",
     "id": 1740887337718,
     "tags": [
-      "18.065"
+      "18.065",
+      "hello"
     ],
     "understanding": 2
   },
@@ -72,7 +91,7 @@
       "18.065",
       "16.32"
     ],
-    "understanding": 1
+    "understanding": 2
   },
   {
     "back": "TODO: New back content",
@@ -109,6 +128,15 @@
       "18.065"
     ],
     "understanding": 2
+  },
+  {
+    "back": "Inner product / dot product as implied by the multiplication of a transposed column vector $1 \\times n$ and a column vector $n \\times 1$.<br><br>\n\nThe dot product is given by: <br><br>\n$$\n\\mathbf{a}^\\top \\mathbf{b} =\n\\begin{bmatrix} a_1 & a_2 & \\dots & a_n \\end{bmatrix}\n\\begin{bmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_n \\end{bmatrix} =\n\\sum_{i=1}^{n} a_i b_i\n$$",
+    "front": "Let  $\\mathbf{a}$  and  $\\mathbf{b}$  be column vectors in $\\mathbb{R}^n$. <br><br>\n\nWhat is $a^\\top b$ ?\n",
+    "id": 1740895695348,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
   },
   {
     "back": "TODO: New back content",
@@ -156,13 +184,13 @@
     "understanding": 1
   },
   {
-    "back": "TODO: New back content",
-    "front": "Procedure for $LU$ decomposition",
+    "back": "Definition: factorization of $A$ into upper $U$ and lower $L$ triangular matrices.\n\n<br><br>\nExample a  $3 \\times 3$  matrix: <br><br>\n$$\nA =\n\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33}\n\\end{bmatrix}\n$$\n\n<br><br>\nLU decomposition gives: <br><br>\n$$\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\nl_{21} & 1 & 0 \\\\\nl_{31} & l_{32} & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\nu_{11} & u_{12} & u_{13} \\\\\n0 & u_{22} & u_{23} \\\\\n0 & 0 & u_{33}\n\\end{bmatrix}\n$$\n\n<br><br>\nApplication: solving linear systems.\n<br><br>\n\nProcedure:\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_1.34.36_AM.png\"></div>",
+    "front": "$LU$ decomposition <br><br>\nDefine <br><br>\nApplications <br><br>\nProcedure",
     "id": 1740890882881,
     "tags": [
       "18.065"
     ],
-    "understanding": 1
+    "understanding": 3
   },
   {
     "back": "TODO: New back content",
@@ -192,18 +220,27 @@
     "understanding": 1
   },
   {
-    "id": 1740891657888,
-    "front": "Propose a function $x = linear\\_solver(U, b)$, where $U \\in R^{n \\times n}$ is an upper triangular matrix, $b \\in R^n$ is a vector, and $x \\in R^n$ is the solution to $Ux = b$. <br><br>\n\nThen apply your procedure to",
     "back": "TODO: New back content",
+    "front": "Propose a function $x = linear\\_solver(U, b)$, where $U \\in R^{n \\times n}$ is an upper triangular matrix, $b \\in R^n$ is a vector, and $x \\in R^n$ is the solution to $Ux = b$. <br><br>\n\nThen apply your procedure to",
+    "id": 1740891657888,
     "tags": [
       "18.065"
     ],
     "understanding": 1
   },
   {
-    "id": 1740891867068,
-    "front": "The power method",
     "back": "TODO: New back content",
+    "front": "The power method",
+    "id": 1740891867068,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Similar matrix",
+    "id": 1740892885417,
     "tags": [
       "18.065"
     ],
