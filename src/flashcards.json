@@ -7,11 +7,11 @@
       "18.065",
       "16.32"
     ],
-    "understanding": 2
+    "understanding": 1
   },
   {
     "back": "something",
-    "front": "$$\nA^{\\top} \\cdot B\n$$\n\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_11.05.44_PM.png\"></div>",
+    "front": "$$\nA^{\\top} \\cdot B\n$$",
     "id": 1740974681658,
     "tags": [
       "1234.56"
@@ -27,6 +27,15 @@
       "16.32"
     ],
     "understanding": 2
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741037590836,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
   },
   {
     "back": "A set of vectors that perfectly describes the space. <br><br>\n\nTheir combinations give one and only one way to produce every vector in the space.",
