@@ -10,28 +10,54 @@
     "understanding": 1
   },
   {
-    "back": "something",
-    "front": "$$\nA^{\\top} \\cdot B\n$$",
-    "id": 1740974681658,
+    "id": 1741038606887,
+    "front": "Euler method <br><br>\nDefine <br><br>\nPractical purpose",
+    "back": "<b><u>Definition</u></b> <br>\nThe Euler method is a first-order explicit numerical method that uses the current point to estimate the next point in a step wise fashion.\n<br><br>\n\n<b><u>Practical Purpose</u></b> <br>\nIt is used to approximate solutions to ODEs.\n",
     "tags": [
-      "1234.56"
+      "16.32"
     ],
     "understanding": 1
   },
   {
-    "back": "Positive semi-definite matrix is defined as <br><br>\n$$\nx^T A x \\geq 0, \\quad \\forall x \\in \\mathbb{R}^n\n$$\n<br><br>",
-    "front": "Positive semi-definite (PSD) <br><br>\nDefine<br><br>\nHow to test for it",
-    "id": 1740891113103,
+    "id": 1741038908417,
+    "front": "Trapezoidal Rule <br><br>\n\nPractical use <br><br>\n\nDefinition",
+    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/trapezoid_rule.webp\"></div>",
     "tags": [
-      "18.065",
       "16.32"
     ],
-    "understanding": 2
+    "understanding": 1
+  },
+  {
+    "id": 1741041716871,
+    "front": "Midpoint Rule <br><br>\n\nPractical use <br><br>\n\nDefinition",
+    "back": "Approach to discretely approximating integrals.\n\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/midpoint_rule.jpg\"></div>",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
   },
   {
     "back": "TODO: New back content",
     "front": "TODO: New front content",
-    "id": 1741037590836,
+    "id": 1741038503663,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741038486234,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741038456351,
     "tags": [
       "18.065"
     ],
@@ -101,6 +127,24 @@
       "16.32"
     ],
     "understanding": 2
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741038374600,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741038371699,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
   },
   {
     "back": "TODO: New back content",
@@ -409,8 +453,8 @@
     "understanding": 1
   },
   {
-    "back": "TODO: New back content",
-    "front": "Collocation points.",
+    "back": "TODO",
+    "front": "Collocation points",
     "importance": 2,
     "tags": [
       "16.32"
