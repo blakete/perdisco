@@ -78,7 +78,7 @@
     "tags": [
       "18.065"
     ],
-    "understanding": 3
+    "understanding": 2
   },
   {
     "attempts": [],
@@ -303,10 +303,18 @@
     "understanding": 1
   },
   {
-    "attempts": [],
-    "back": "<u><b>Definition</b></u> <br>\n<p>\nThe <b>Power Method</b> (or <b>Power Iteration</b>) is an iterative numerical algorithm used to approximate the dominant eigenvalue and its corresponding eigenvector of a matrix $A$. It works best when:\n$$\n|\\lambda_1| > |\\lambda_2| > \\dots > |\\lambda_n|\n$$\nand the eigenvectors form a basis for $\\mathbb{R}^n$.\n</p>\n<br>\n\n<u><b>Derivation</b></u> <br>\n<ul>\n  <li>\n    Any nonzero vector $v$ can be expressed as a linear combination of the eigenvectors of $A$: <br>\n    $$\n    v = c_1 v_1 + c_2 v_2 + \\dots + c_n v_n.\n    $$\n  </li>\n  <li>\n    Multiplying by $A$ gives: <br>\n    $$\n    A v = c_1 \\lambda_1 v_1 + c_2 \\lambda_2 v_2 + \\dots + c_n \\lambda_n v_n.\n    $$\n  </li>\n  <li>\n    Iterating $k$ times, we have: <br>\n    $$\n    A^k v = c_1 \\lambda_1^k v_1 + c_2 \\lambda_2^k v_2 + \\dots + c_n \\lambda_n^k v_n.\n    $$\n  </li>\n  <li>\n    If $c_1 \\neq 0$, as $k \\to \\infty$, the term $c_1 \\lambda_1^k v_1$ dominates because $|\\lambda_1|$ is strictly larger than the other eigenvalues.\n  </li>\n  <li>\n    Thus, the direction of $A^k v$ converges to $v_1$, the dominant eigenvector.\n  </li>\n</ul>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Choose an initial random vector $x_0$ (ensuring $x_0 \\neq 0$).</li>\n  <li>For $k = 0, 1, 2, \\dots$, compute:\n    $$\n    x_{k+1} = \\frac{A x_k}{\\|A x_k\\|_2}.\n    $$\n  </li>\n  <li>Continue iterating until the sequence $\\{x_k\\}$ converges. Then, approximate the dominant eigenvector and eigenvalue by setting:\n    $$\n    v_1 \\approx x_k \\quad \\text{and} \\quad \\lambda_1 \\approx \\frac{x_k^T A x_k}{x_k^T x_k}.\n    $$\n  </li>\n  <li>\n    <b>Deflation via Householder Transformation:</b> <br>\n    Construct a Householder matrix $H$ that transforms the dominant eigenvector $v_1$ to align with the first coordinate axis:\n    $$\n    H v_1 = \\pm \\|v_1\\|\\, e_1,\n    $$\n    where $e_1 = [1,0,\\dots,0]^T$.<br>\n    Then, form the similar matrix\n    $$\n    A' = H A H^T.\n    $$\n    In $A'$, the first row and column correspond to $\\lambda_1$, while the lower-right $(n-1)\\times(n-1)$ block (call it $B$) contains the remaining eigenvalues of $A$.\n  </li>\n  <li>\n    Apply the power method (or another suitable algorithm) to the deflated matrix $B$ to approximate the next dominant eigenpair, which corresponds to $(\\lambda_2, v_2)$ for the original matrix $A$. Finally, transform the computed eigenvector back using $H^T$.\n  </li>\n</ol>",
-    "front": "<b>Power Method / Power Iteration</b> \n<ul>\n  <li><b>Define:</b> What is the power method and what does it compute?</li>\n  <li><b>Derivation:</b> What is the underlying principle behind its convergence?</li>\n  <li><b>Procedure:</b> What are the steps involved in the algorithm?</li>\n</ul>",
-    "id": 1740891867068,
+    "id": 1741078759558,
+    "front": "Deflation via Householder Transformation",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741078734861,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
     "tags": [
       "18.065"
     ],
