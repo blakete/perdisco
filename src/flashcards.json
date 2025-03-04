@@ -42,36 +42,6 @@
   },
   {
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741038503663,
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741038486234,
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741038456351,
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
-    "attempts": [],
     "back": "A set of vectors that perfectly describes the space. <br><br>\n\nTheir combinations give one and only one way to produce every vector in the space.",
     "front": "Basis",
     "id": 1740885744839,
@@ -132,9 +102,14 @@
     "understanding": 2
   },
   {
-    "attempts": [],
-    "back": "<u><b>Definition</b></u> <br>\n<p> \nFor matrix $A \\in \\mathbb{R}^{m \\times n}$, vector $x \\in \\mathbb{R}^{n} \\setminus\\{0\\}$, and scalar $\\lambda \\in \\mathbb{R}$ the eigenvalues $\\lambda$ and eigenvectors $x$ are such that $Ax = \\lambda x$ \n</p> \n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n    <li>Rearrange to \\( (A - \\lambda I)x = 0 \\)</li>\n    <li>If \\( x \\) is non-zero, the equation will only have a solution if \\( \\mid A - \\lambda I \\mid = 0 \\)</li>\n    <li>Therefore, solve for \\( \\lambda \\) values such that \\( (A - \\lambda I) = 0 \\)</li>\n    <li>Substitute \\( \\lambda \\) values into \\( (A - \\lambda I)x = 0 \\) and use the system of equations to solve for the variable elements of vector \\( x \\)</li>\n</ol>",
-    "front": "Eigenvalues and eigenvectors <br><br>\nDefine <br><br>\nProcedure",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741074654248
+      }
+    ],
+    "back": "<u><b>Definition</b></u> <br>\n<p> \nFor a matrix $A \\in \\mathbb{R}^{m \\times n}$, a vector $x \\in \\mathbb{R}^{n} \\setminus \\{0\\}$, and a scalar $\\lambda \\in \\mathbb{R}$, the eigenvalues $\\lambda$ and eigenvectors $x$ satisfy:  <br>\n$$\nAx = \\lambda x\n$$\n</p> \n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n    <li>Rearrange the equation to:\n        $$\n        (A - \\lambda I)x = 0\n        $$\n    </li>\n    <li>For a nonzero $x$, the system has a nontrivial solution only if:\n        $$\n        \\det(A - \\lambda I) = 0\n        $$\n    </li>\n    <li>Solve the characteristic equation $\\det(A - \\lambda I) = 0$ for $\\lambda$ to find the eigenvalues.</li>\n    <li>For each $\\lambda$, substitute into:\n        $$\n        (A - \\lambda I)x = 0\n        $$\n        and solve the resulting system for the eigenvector $x$.</li>\n</ol>",
+    "front": "<b>Eigenvalues and Eigenvectors</b> \n<ul>\n  <li><b>Define:</b> What are eigenvalues and eigenvectors?</li>\n  <li><b>Procedure:</b> How do we compute eigenvalues and eigenvectors?</li>\n</ul>",
     "id": 1740890671935,
     "tags": [
       "18.065",
@@ -143,29 +118,24 @@
     "understanding": 2
   },
   {
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741038374600,
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741075650753
+      }
+    ],
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nFor a square matrix $A$, the <b>characteristic polynomial</b> is defined as:\n$$\np(\\lambda) = \\det(A - \\lambda I)\n$$\n</p>\n<br>\n<u><b>Derivation</b></u> <br>\n<ol>\n  <li>Start with the eigenvalue equation:\n    $$\n    Ax = \\lambda x\n    $$\n    for a nonzero vector $x$.\n  </li>\n  <li>Rearrange the equation to:\n    $$\n    (A - \\lambda I)x = 0\n    $$\n  </li>\n  <li>Since $x \\neq 0$, a nontrivial solution exists only if the matrix $(A - \\lambda I)$ is singular, hence:\n    $$\n    \\det(A - \\lambda I) = 0\n    $$\n  </li>\n  <li>This determinant equation is the <b>characteristic polynomial</b> of $A$.\n  </li>\n</ol>",
+    "front": "<b>Characteristic Polynomial</b> \n<ul>\n  <li><b>Define:</b> What is the characteristic polynomial?</li>\n  <li><b>Derivation:</b> How is it derived from the eigenvalue equation $Ax = \\lambda x$?</li>\n</ul>",
+    "id": 1741075245856,
     "tags": [
       "18.065"
     ],
-    "understanding": 1
+    "understanding": 2
   },
   {
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741038371699,
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "Gauss elimination",
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nGauss elimination is a systematic method for solving systems of linear equations. It involves applying elementary row operations to an augmented matrix to transform it into row echelon form (or reduced row echelon form), from which the solutions can be obtained through back substitution.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Write the augmented matrix for the system of equations.</li>\n  <li>Apply elementary row operations:\n    <ul>\n      <li>Swap rows.</li>\n      <li>Multiply a row by a nonzero scalar.</li>\n      <li>Add or subtract a multiple of one row from another.</li>\n    </ul>\n  </li>\n  <li>Reduce the matrix to row echelon form (upper triangular form).</li>\n  <li>(Optional) Further reduce to reduced row echelon form for a unique solution.</li>\n  <li>Perform back substitution to solve for the variables.</li>\n</ol>",
+    "front": "<b>Gauss Elimination</b> \n<ul>\n  <li><b>Define:</b> What is Gauss elimination?</li>\n  <li><b>Procedure:</b> How is Gauss elimination performed?</li>\n</ul>",
     "id": 1740890812452,
     "tags": [
       "18.065"
@@ -205,7 +175,7 @@
   {
     "attempts": [],
     "back": "Inner product / dot product as implied by the multiplication of a transposed column vector $1 \\times n$ and a column vector $n \\times 1$.<br><br>\n\nThe dot product is given by: <br><br>\n$$\n\\mathbf{a}^\\top \\mathbf{b} =\n\\begin{bmatrix} a_1 & a_2 & \\dots & a_n \\end{bmatrix}\n\\begin{bmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_n \\end{bmatrix} =\n\\sum_{i=1}^{n} a_i b_i\n$$",
-    "front": "Let  $\\mathbf{a}$  and  $\\mathbf{b}$  be column vectors in $\\mathbb{R}^n$. <br><br>\n\nWhat is $a^\\top b$ ?\n",
+    "front": "Let  $a$  and  $b$  be column vectors in $\\mathbb{R}^n$. <br><br>\n\nWhat is $a^Tb$ ?\n",
     "id": 1740895695348,
     "tags": [
       "18.065"
@@ -214,8 +184,8 @@
   },
   {
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "Invertible matrix",
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $A$ is <b>invertible</b> (or nonsingular) if there exists a matrix $B$ such that:\n$$\nAB = BA = I\n$$\nwhere $I$ is the identity matrix.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Ensure that $A$ is square.</li>\n  <li>Check if the determinant $\\det(A)$ is nonzero. If $\\det(A) \\neq 0$, then $A$ is invertible.</li>\n  <li>If invertible, compute the inverse $A^{-1}$ using methods like Gaussian elimination or the adjugate formula.</li>\n</ol>",
+    "front": "<b>Invertible Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an invertible matrix?</li>\n  <li><b>Practical Use:</b> Why is invertibility important?</li>\n  <li><b>Procedure:</b> How do we determine if a matrix is invertible?</li>\n</ul>",
     "id": 1740887674549,
     "tags": [
       "18.065"
@@ -224,8 +194,8 @@
   },
   {
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "Singular matrix",
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $A$ is called <b>singular</b> if it is not invertible. This is equivalent to:\n$$\n\\det(A) = 0\n$$\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Ensure that $A$ is square.</li>\n  <li>Calculate the determinant $\\det(A)$. If $\\det(A) = 0$, then $A$ is singular.</li>\n  <li>Interpretation: A singular matrix has linearly dependent columns (or rows) and does not possess an inverse.</li>\n</ol>",
+    "front": "<b>Singular Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a singular matrix?</li>\n  <li><b>Practical Use:</b> What does it imply when a matrix is singular?</li>\n  <li><b>Procedure:</b> How do we determine if a matrix is singular?</li>\n</ul>",
     "id": 1740887684118,
     "tags": [
       "18.065"
@@ -234,9 +204,29 @@
   },
   {
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "Orthogonal matrix",
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $A$ is <b>nonsingular</b> if it is invertible, meaning there exists a matrix $B$ such that:\n$$\nAB = BA = I\n$$\nEquivalently, $A$ is nonsingular if:\n$$\n\\det(A) \\neq 0\n$$\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Confirm that $A$ is a square matrix.</li>\n  <li>Compute $\\det(A)$. If $\\det(A) \\neq 0$, then $A$ is nonsingular.</li>\n  <li>If nonsingular, an inverse $A^{-1}$ exists and can be computed.</li>\n</ol>",
+    "front": "<b>Nonsingular Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a nonsingular matrix?</li>\n  <li><b>Practical Use:</b> Why is nonsingularity important?</li>\n  <li><b>Procedure:</b> How do we verify if a matrix is nonsingular?</li>\n</ul>",
+    "id": 1741074715967,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $Q$ is called <b>orthogonal</b> if its columns (and rows) form an orthonormal set. This is equivalent to:\n$$\nQ^T Q = QQ^T = I\n$$\nwhere $I$ is the identity matrix.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Check that $Q$ is a square matrix.</li>\n  <li>Compute $Q^T Q$. If $Q^T Q = I$, then $Q$ is orthogonal.</li>\n  <li>Alternatively, verify that the columns of $Q$ are orthonormal (i.e., each column has unit length and is orthogonal to the others).</li>\n</ol>",
+    "front": "<b>Orthogonal Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an orthogonal matrix?</li>\n  <li><b>Practical Use:</b> Where are orthogonal matrices used?</li>\n  <li><b>Procedure:</b> How do we check if a matrix is orthogonal?</li>\n</ul>",
     "id": 1740887687921,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA <b>Householder matrix</b> $H$ is a symmetric and orthogonal matrix used to perform reflections. It is typically defined as:\n$$\nH = I - 2\\frac{vv^T}{v^T v}\n$$\nwhere $v$ is a nonzero vector in $\\mathbb{R}^n$.\n</p>\n<br>\n\n<u><b>Practical Use</b></u> <br>\n<p>\nHouseholder matrices are primarily used in numerical linear algebra, especially for QR factorization and for reducing matrices to tridiagonal or Hessenberg forms. TODO: add pset + lecture 02/11 02/13 stuff stuff\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Select a nonzero vector $v \\in \\mathbb{R}^n$.</li>\n  <li>Compute the Householder matrix using:\n      $$\n      H = I - 2\\frac{vv^T}{v^T v}\n      $$\n  </li>\n  <li>Use $H$ to reflect a given vector or to zero out subdiagonal elements during matrix factorization.</li>\n</ol>",
+    "front": "<b>Householder Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a Householder matrix?</li>\n  <li><b>Practical Use:</b> What are Householder matrices used for?</li>\n  <li><b>Procedure:</b> How is a Householder matrix constructed?</li>\n</ul>",
+    "id": 1741075039903,
     "tags": [
       "18.065"
     ],
@@ -314,8 +304,8 @@
   },
   {
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "The power method",
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nThe <b>Power Method</b> (or <b>Power Iteration</b>) is an iterative numerical algorithm used to approximate the dominant eigenvalue and its corresponding eigenvector of a matrix $A$. It works best when:\n$$\n|\\lambda_1| > |\\lambda_2| > \\dots > |\\lambda_n|\n$$\nand the eigenvectors form a basis for $\\mathbb{R}^n$.\n</p>\n<br>\n\n<u><b>Derivation</b></u> <br>\n<ul>\n  <li>\n    Any nonzero vector $v$ can be expressed as a linear combination of the eigenvectors of $A$: <br>\n    $$\n    v = c_1 v_1 + c_2 v_2 + \\dots + c_n v_n.\n    $$\n  </li>\n  <li>\n    Multiplying by $A$ gives: <br>\n    $$\n    A v = c_1 \\lambda_1 v_1 + c_2 \\lambda_2 v_2 + \\dots + c_n \\lambda_n v_n.\n    $$\n  </li>\n  <li>\n    Iterating $k$ times, we have: <br>\n    $$\n    A^k v = c_1 \\lambda_1^k v_1 + c_2 \\lambda_2^k v_2 + \\dots + c_n \\lambda_n^k v_n.\n    $$\n  </li>\n  <li>\n    If $c_1 \\neq 0$, as $k \\to \\infty$, the term $c_1 \\lambda_1^k v_1$ dominates because $|\\lambda_1|$ is strictly larger than the other eigenvalues.\n  </li>\n  <li>\n    Thus, the direction of $A^k v$ converges to $v_1$, the dominant eigenvector.\n  </li>\n</ul>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Choose an initial random vector $x_0$ (ensuring $x_0 \\neq 0$).</li>\n  <li>For $k = 0, 1, 2, \\dots$, compute:\n    $$\n    x_{k+1} = \\frac{A x_k}{\\|A x_k\\|_2}.\n    $$\n  </li>\n  <li>Continue iterating until the sequence $\\{x_k\\}$ converges. Then, approximate the dominant eigenvector and eigenvalue by setting:\n    $$\n    v_1 \\approx x_k \\quad \\text{and} \\quad \\lambda_1 \\approx \\frac{x_k^T A x_k}{x_k^T x_k}.\n    $$\n  </li>\n  <li>\n    <b>Deflation via Householder Transformation:</b> <br>\n    Construct a Householder matrix $H$ that transforms the dominant eigenvector $v_1$ to align with the first coordinate axis:\n    $$\n    H v_1 = \\pm \\|v_1\\|\\, e_1,\n    $$\n    where $e_1 = [1,0,\\dots,0]^T$.<br>\n    Then, form the similar matrix\n    $$\n    A' = H A H^T.\n    $$\n    In $A'$, the first row and column correspond to $\\lambda_1$, while the lower-right $(n-1)\\times(n-1)$ block (call it $B$) contains the remaining eigenvalues of $A$.\n  </li>\n  <li>\n    Apply the power method (or another suitable algorithm) to the deflated matrix $B$ to approximate the next dominant eigenpair, which corresponds to $(\\lambda_2, v_2)$ for the original matrix $A$. Finally, transform the computed eigenvector back using $H^T$.\n  </li>\n</ol>",
+    "front": "<b>Power Method / Power Iteration</b> \n<ul>\n  <li><b>Define:</b> What is the power method and what does it compute?</li>\n  <li><b>Derivation:</b> What is the underlying principle behind its convergence?</li>\n  <li><b>Procedure:</b> What are the steps involved in the algorithm?</li>\n</ul>",
     "id": 1740891867068,
     "tags": [
       "18.065"
@@ -323,8 +313,13 @@
     "understanding": 1
   },
   {
-    "attempts": [],
-    "back": "<b><u>Definition</u></b> <br>\n<p>\nTwo square matrices $A$ and $B$ that are related by <br>\n$$\nB = X^{-1}AX\n$$\n<br>\nwhere $X$ is a square nonsingular matrix are said to be similar.\n</p>\n\n<br><br><br>\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/IMG_3E1D74CC9C45-1.jpeg\"></div> <br><br>\n\n<b><u>Properties</u></b> <br>\n<ul>\n  <li>Identical eigenvalues (and characteristic polynomials)</li>\n  <li>Related eigenvectors (via the transformation <code>X\u207b\u00b9</code> for eigenvectors of <code>A</code> or <code>X</code> for eigenvectors of <code>B</code>)</li>\n  <li>Equal determinants, traces, and ranks</li>\n  <li>The same minimal polynomial and Jordan canonical form</li>\n  <li>Consistent diagonalizability properties</li>\n</ul>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741072483001
+      }
+    ],
+    "back": "<b><u>Definition</u></b> <br>\n<p>\nTwo square matrices $A$ and $B$ that are related by <br>\n$$\nB = X^{-1}AX\n$$\n<br>\nwhere $X$ is a square nonsingular matrix are said to be similar.\n</p>\n<br>\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/IMG_3E1D74CC9C45-1.jpeg\"></div> <br>\n\n<b><u>Properties</u></b> <br>\n<ul>\n  <li>\n    If $(\\lambda, v) \\text{ is an eigenpair of } B, \\text{ then } (\\lambda, Xv) \\text{ is an eigenpair of } A$.  \n    <ul>\n      <li><u>Proof</u> <br>\n        If \\( Bv = \\lambda v \\), then  \n        <br>\n        $$\n        A(Xv) = X B X^{-1} X v = X B v = \\lambda (Xv)\n        $$\n      </li>\n    </ul>\n  </li>\n</ul>\n\n<br><br>\n<ul>\n  <li>Identical characteristic polynomials</li>\n  <li>Equal determinants, traces, and ranks</li>\n  <li>The same minimal polynomial and Jordan canonical form</li>\n  <li>Consistent diagonalizability properties</li>\n</ul>",
     "front": "<b>Similar matrix</b> <br><br>\nDefine <br><br>\nProperties",
     "id": 1740892885417,
     "tags": [
@@ -333,9 +328,14 @@
     "understanding": 1
   },
   {
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "<b>Diagonalizability</b> <br><br>\nDefinition <br><br>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741074086548
+      }
+    ],
+    "back": "<b><u>Definition</u></b> <br>\n<p>\nDiagonalization is the process of finding a diagonal matrix $D$ such that a square matrix $A$ is similar to $D$, meaning:  <br>\n$$\nA = X D X^{-1}\n$$\n</p>\n\nwhere:\n<ul>\n  <li>$D$ is a diagonal matrix whose entries are the eigenvalues of $A$.</li>\n  <li>$X$ is the matrix whose columns are the eigenvectors of $A$.</li>\n  <li>$A$ is diagonalizable if it has $n$ linearly independent eigenvectors.</li>\n</ul>\n\n<br>\n\n<b><u>Practical Use</u></b> <br>\n<ul>\n  <li><b>Computing Matrix Powers Efficiently:</b> If we need $A^k$, we can compute it as:\n    $$\n    A^k = X D^k X^{-1}\n    $$\n    where raising $D$ to a power is simple since it is diagonal.\n  </li>\n</ul>\n\n<br>\n\n<b><u>Procedure</u></b> <br>\n<ol>\n  <li><b>Find Eigenvalues:</b> Solve the characteristic equation:\n    $$\n    \\det(A - \\lambda I) = 0\n    $$\n    to find the eigenvalues $\\lambda_1, \\lambda_2, \\dots, \\lambda_n$.\n  </li>\n  <li><b>Find Eigenvectors:</b> For each eigenvalue $\\lambda_i$, solve:\n    $$\n    (A - \\lambda_i I)v_i = 0\n    $$\n    to find the corresponding eigenvector $v_i$.\n  </li>\n  <li><b>Construct Matrices:</b>\n    <ul>\n      <li>$X$ is the matrix whose columns are the eigenvectors $v_1, v_2, \\dots, v_n$.</li>\n      <li>$D$ is the diagonal matrix with eigenvalues $\\lambda_1, \\lambda_2, \\dots, \\lambda_n$ on the diagonal.</li>\n    </ul>\n  </li>\n  <li><b>Compute $X^{-1}$:</b> Since $X$ is invertible (if $A$ is diagonalizable), compute its inverse $X^{-1}$.</li>\n  <li><b>Verify the Similarity Relation:</b> Ensure that:\n    $$\n    A = X D X^{-1}\n    $$\n  </li>\n</ol>",
+    "front": "<b>Diagonalization</b> \n<ul>\n  <li><b>Define:</b> What is diagonalization?</li>\n  <li><b>Practical Use:</b> Why is diagonalization useful?</li>\n  <li><b>Procedure:</b> How do we diagonalize a matrix?</li>\n</ul>",
     "id": 1741066673709,
     "tags": [
       "18.065"
