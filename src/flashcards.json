@@ -2,10 +2,209 @@
   {
     "attempts": [],
     "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
-    "front": "Taylor series of $f(x)$ at a point $x = a$ <br><br>\nvs. <br><br>\nTaylor series expansion of $f(x)$ at / around a point $x = a$<br>",
+    "front": "<b>Taylor Series vs. Taylor Expansion</b>  \n<ul>  \n  <li><b>Define:</b> What is the Taylor series of \\( f(x) \\) at \\( x = a \\)?</li>  \n  <li><b>Define:</b> What is the Taylor series expansion of \\( f(x) \\) at/around \\( x = a \\)?</li>  \n  <li><b>Difference:</b> How do the Taylor series and Taylor expansion differ in meaning and usage?</li>  \n</ul>  ",
     "importance": 2,
     "tags": [
       "18.065",
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741154883583,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Logarithmic Integral Identity <br>\n$$\n\\int \\frac{du}{u} = \\ln |u| + C.\n$$\n",
+    "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{u} = \\, \\text{?}\n$$",
+    "id": 1741153604364,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Power Rule for Integration <br>\n$$\n\\int u^n \\, du = \\frac{u^{n+1}}{n+1} + C, \\quad n \\neq -1.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int u^n \\, du = \\, \\text{?} \\quad (n \\neq -1)\n$$",
+    "id": 1741153795280,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Exponential Integral Identity <br>\n$$\n\\int e^u \\, du = e^u + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int e^u \\, du = \\, \\text{?}\n$$",
+    "id": 1741153863506,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Exponential Integral for Base \\( a \\) <br>\n$$\n\\int a^u \\, du = \\frac{a^u}{\\ln a} + C, \\quad a > 0, a \\neq 1.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int a^u \\, du = \\, \\text{?}\n$$",
+    "id": 1741153887555,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Sine Integral Identity <br>\n$$\n\\int \\sin u \\, du = -\\cos u + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\sin u \\, du = \\, \\text{?}\n$$",
+    "id": 1741153930393,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Cosine Integral Identity <br>\n$$\n\\int \\cos u \\, du = \\sin u + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\cos u \\, du = \\, \\text{?}\n$$",
+    "id": 1741153943600,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Tangent Integral Identity <br>\n$$\n\\int \\tan u \\, du = \\ln |\\sec u| + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\tan u \\, du = \\, \\text{?}\n$$",
+    "id": 1741153956036,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Secant Integral Identity <br>\n$$\n\\int \\sec u \\, du = \\ln |\\sec u + \\tan u| + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\sec u \\, du = \\, \\text{?}\n$$",
+    "id": 1741153992908,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Cosecant Integral Identity <br>\n$$\n\\int \\csc u \\, du = \\ln |\\csc u - \\cot u| + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\csc u \\, du = \\, \\text{?}\n$$",
+    "id": 1741154002664,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Inverse Sine Integral Identity <br>\n$$\n\\int \\frac{du}{\\sqrt{1 - u^2}} = \\sin^{-1} u + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{\\sqrt{1 - u^2}} = \\, \\text{?}\n$$",
+    "id": 1741154022762,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Inverse Tangent Integral Identity <br>\n$$\n\\int \\frac{du}{1 + u^2} = \\tan^{-1} u + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{1 + u^2} = \\, \\text{?}\n$$",
+    "id": 1741154033446,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Hyperbolic Integral Identity <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + A}} = \\ln | u + \\sqrt{u^2 + A} | + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + A}} = \\, \\text{?}\n$$",
+    "id": 1741154053536,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Integral of \\( \\frac{1}{A + u^2} \\) <br>\n$$\n\\int \\frac{du}{A + u^2} = \\frac{1}{\\sqrt{A}} \\tan^{-1} \\left(\\frac{u}{\\sqrt{A}}\\right) + C.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{A + u^2} = \\, \\text{?}\n$$",
+    "id": 1741154072452,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "Integration by Parts Formula <br>\n$$\n\\int u v' \\, du = uv - \\int u' v \\, du.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int u v' \\, du = \\, \\text{?}\n$$",
+    "id": 1741154102843,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>Definition</u></b><br>  \nCompleting the square is an algebraic technique used to transform a quadratic expression into a perfect square trinomial plus a constant. This method is useful for solving quadratic equations, analyzing parabolas, and deriving the quadratic formula.<br><br>  \n\n<b><u>Procedure</u></b><br>  \nGiven a quadratic expression of the form: $ax^2 + bx + c$\n<ol>  \n  <li>Factor out \\( a \\) if it is not 1: <br>\n      \\[\n      a(x^2 + \\frac{b}{a}x) + c\n      \\]  \n  </li>  \n  <li>Add and subtract \\( \\left(\\frac{b}{2a}\\right)^2 \\) inside the parentheses to form a perfect square: <br>\n      \\[\n      a\\left(x^2 + \\frac{b}{a}x + \\left(\\frac{b}{2a}\\right)^2 - \\left(\\frac{b}{2a}\\right)^2\\right) + c\n      \\]  \n  </li>  \n  <li>Rewrite the perfect square trinomial as a squared binomial: <br>\n      \\[\n      a\\left( \\left(x + \\frac{b}{2a} \\right)^2 - \\left(\\frac{b}{2a}\\right)^2 \\right) + c\n      \\]  \n  </li>  \n  <li>Distribute \\( a \\) and simplify: <br>\n      \\[\n      a\\left(x + \\frac{b}{2a}\\right)^2 - a\\left(\\frac{b}{2a}\\right)^2 + c\n      \\]  \n  </li>  \n  <li>Final form: <br>\n      \\[\n      a\\left(x + \\frac{b}{2a}\\right)^2 + \\left(c - \\frac{b^2}{4a}\\right)\n      \\]  \n  </li>  \n</ol>\n <br>\n\nThis method is particularly useful for solving quadratic equations, deriving the quadratic formula, and completing square-based integrals in calculus.",
+    "front": "<b>Complete the Square</b>  \n<ul>  \n  <li><b>Define:</b> What does it mean to complete the square in an algebraic expression?</li>  \n  <li><b>Procedure:</b> How do you complete the square for a quadratic expression of the form \\( ax^2 + bx + c \\)?</li>  \n</ul>  ",
+    "id": 1741151957761,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>Definition</u></b><br>  \nThe Beltrami identity is a conserved quantity that arises in the calculus of variations when the Lagrangian does not explicitly depend on the independent variable. It provides a first integral of the Euler-Lagrange equation, simplifying the problem of finding extremals.<br><br>  \n\n<b><u>Derivation & Usage</u></b><br>  \nIf a functional is given by \\( J = \\int L(y, y', x) \\,dx \\), and \\( L \\), the Lagrangian, does not explicitly depend on \\( x \\), the independent variable, then the Beltrami identity states that:<br>  \n\\[\nL - y' \\frac{\\partial L}{\\partial y'} = C\n\\]\nwhere \\( C \\) is a constant.<br><br>  \nThis identity is particularly useful in reducing the order of the Euler-Lagrange equation, making it easier to solve variational problems where the Lagrangian lacks explicit dependence on the independent variable.",
+    "front": "<b>Beltrami Identity</b>  \n<ul>  \n  <li><b>Define:</b> What is the Beltrami identity in the context of the calculus of variations?</li>  \n  <li><b>Derivation & Usage:</b> How is the Beltrami identity derived, and when is it used to simplify the Euler-Lagrange equation?</li>  \n</ul>  ",
+    "id": 1741151016852,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "<b>Hessian of a Vector Function</b> \n<ul>\n  <li><b>Define:</b> What is the Hessian of a vector function?</li>\n  <li><b>Procedure:</b> How is the Hessian matrix computed, and what does it represent in terms of curvature?</li>\n</ul>",
+    "id": 1741150839007,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "TODO <br><br>\n\nquadrature in the context of numerical optimal control <br><br>\n\nquadrature used to approximate integrals in optimal control problems",
+    "front": "<b>Quadrature</b> \n<ul>\n  <li><b>Define:</b> What is quadrature in the context of numerical optimal control?</li>\n  <li><b>Procedure:</b> How is used?</li>\n</ul>",
+    "id": 1741148713751,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Explain how to convert this optimal control problem into a standard calculus of variations problem where you seek the function $x(t)$  minimizing a cost functional $J(x)$ subject to boundary conditions.",
+    "id": 1741150252242,
+    "tags": [
       "16.32"
     ],
     "understanding": 1
@@ -303,18 +502,20 @@
     "understanding": 1
   },
   {
-    "id": 1741078759558,
-    "front": "Deflation via Householder Transformation",
+    "attempts": [],
     "back": "TODO: New back content",
+    "front": "Deflation via Householder Transformation",
+    "id": 1741078759558,
     "tags": [
       "18.065"
     ],
     "understanding": 1
   },
   {
-    "id": 1741078734861,
-    "front": "TODO: New front content",
+    "attempts": [],
     "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741078734861,
     "tags": [
       "18.065"
     ],
@@ -403,7 +604,7 @@
   {
     "attempts": [],
     "back": "If $f: \\mathbb{R}^n \\to \\mathbb{R}$ is a differentiable function, the gradient of $f(x)$ is defined as:\n<br><br>\n\n$$\n\\nabla f(x) = \n\\begin{bmatrix}\n\\frac{\\partial f}{\\partial x_1} \\\\\n\\frac{\\partial f}{\\partial x_2} \\\\\n\\vdots \\\\\n\\frac{\\partial f}{\\partial x_n}\n\\end{bmatrix}.\n$$\n\n<br><br>\nEach component $\\frac{\\partial f}{\\partial x_i}$ represents the partial derivative of $f$ with respect to $x_i$.\n<br><br>\n\nThe gradient is a vector that points in the direction of the steepest increase of $f(x)$.",
-    "front": "Define the gradient of $f(x)$.",
+    "front": "<b>Gradient of a Differentiable Vector Function</b> \n<ul>\n  <li><b>Define:</b> What is the gradient of a differentiable vector function?</li>\n  <li><b>Procedure:</b> How is the gradient of a vector function computed and interpreted geometrically?</li>\n</ul>",
     "importance": 2,
     "tags": [
       "16.32"
@@ -423,7 +624,7 @@
   {
     "attempts": [],
     "back": "The first variation of a functional is the first-order term in the Taylor expansion of the increment, providing a linear approximation of the change in the functional. <br><br>\n\nThe first variation of a functional $J[x(t)]$ with respect to a perturbation $\\delta x(t)$ is defined as:\n<br><br>\n\n$$\n\\delta J(x(t), \\delta x(t)) = \\left. \\frac{d}{d\\epsilon} J(x(t) + \\epsilon \\delta x(t)) \\right|_{\\epsilon=0}.\n$$\n<br><br>\n\n<b>TODO: fix beyond here to make more sense</b>\n<br><br>\n\nFor a functional $J[y]$, we express its perturbation as:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$ gives:\n<br><br>\n$$\nF(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br>\n\nSubstituting this into the integral:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nTaking the limit as $\\epsilon \\to 0$, we obtain the first variation:\n<br><br>\n$$\n\\delta J = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
-    "front": "What is the definition of an <b>increment</b>?",
+    "front": "<b>Increment in Calculus of Variations</b> \n<ul>\n  <li><b>Define:</b> What is the increment of a functional?</li>\n  <li><b>Procedure:</b> How is the increment of a functional expressed and used when deriving the first variation?</li>\n</ul>",
     "importance": 2,
     "tags": [
       "16.32"
@@ -433,7 +634,7 @@
   {
     "attempts": [],
     "back": "The first variation of functional is a linear approximation of the increment, i.e., first-order Taylor expansion of the increment.<br><br>\n\nThe **first variation** of a functional $J[x(t)]$ with respect to a perturbation $\\delta x(t)$ is defined as:\n<br><br>\n\n$$\n\\delta J(x(t), \\delta x(t)) = \\left. \\frac{d}{d\\epsilon} J(x(t) + \\epsilon \\delta x(t)) \\right|_{\\epsilon=0}.\n$$\n<br><br>\n\nFor a functional $J[y]$ and a small perturbation $\\delta y$, consider:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding the integrand $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$, we obtain:\n<br><br>\n$$\nF(\\cdot) = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br><br>\n\nSubstituting this expansion back into the integral gives:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b \\Bigg[ F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2) \\Bigg] dx.\n$$\n<br>\n\nThis can be rewritten as:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nThe first variation $\\delta J$ is defined as the first-order term:\n<br><br>\n$$\n\\delta J = \\lim_{\\epsilon \\to 0} \\frac{J[y + \\epsilon \\delta y] - J[y]}{\\epsilon} = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
-    "front": "What is the definition of the <b>first variation</b>?",
+    "front": "<b>First Variation</b> \n<ul>\n  <li><b>Define:</b> What is the first variation in the context of calculus of variations?</li>\n  <li><b>Procedure:</b> How is the first variation computed and used to determine extremals of functionals?</li>\n</ul>",
     "importance": 2,
     "tags": [
       "16.32"
@@ -443,7 +644,7 @@
   {
     "attempts": [],
     "back": "The Euler-Lagrange equation states that for a function $g(x, \\dot{x}, t)$:\n<br><br>\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial g}{\\partial \\dot{x}} \\right) - \\frac{\\partial g}{\\partial x} = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{x}} \\right) - \\frac{\\partial L}{\\partial x} = 0\n$$\n\n<br><br>\nRewriting this:\n\n<br><br>\n$$\n\\frac{d}{dt} (g_{\\dot{x}}) - g_x = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} (L_{\\dot{x}}) - L_x = 0\n$$\n\n<br><br>\nwhich is the fundamental condition for extremizing a functional in the calculus of variations.",
-    "front": "Define and derive the <b>Euler-Lagrange equation</b>.\n<br><br>",
+    "front": "<b>Euler-Lagrange Equation</b> \n<ul>\n  <li><b>Define:</b> What is the Euler-Lagrange equation?</li>\n  <li><b>Procedure:</b> How is the Euler-Lagrange equation derived and applied in optimization problems?</li>\n</ul>",
     "importance": 2,
     "tags": [
       "16.32"
