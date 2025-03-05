@@ -11,15 +11,6 @@
     "understanding": 1
   },
   {
-    "id": 1741154883583,
-    "front": "TODO: New front content",
-    "back": "TODO: New back content",
-    "tags": [
-      "16.32"
-    ],
-    "understanding": 1
-  },
-  {
     "attempts": [],
     "back": "Logarithmic Integral Identity <br>\n$$\n\\int \\frac{du}{u} = \\ln |u| + C.\n$$\n",
     "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{u} = \\, \\text{?}\n$$",
@@ -131,8 +122,8 @@
   },
   {
     "attempts": [],
-    "back": "Hyperbolic Integral Identity <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + A}} = \\ln | u + \\sqrt{u^2 + A} | + C.\n$$",
-    "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + A}} = \\, \\text{?}\n$$",
+    "back": "Hyperbolic Integral Identity <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + C_1}} = \\ln | u + \\sqrt{u^2 + C_1} | + C_2.\n$$",
+    "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + C}} = \\, \\text{?}\n$$",
     "id": 1741154053536,
     "tags": [
       "16.32"
@@ -158,6 +149,36 @@
       "16.32"
     ],
     "understanding": 1
+  },
+  {
+    "back": "<b><u>Definition</u></b> <br>\n$$\n\\sinh x = \\frac{e^x - e^{-x}}{2}.\n$$",
+    "front": "<b>Hyperbolic Sine</b>\n<ul>\n    <li><b>Define:</b> What is the definition of hyperbolic sine?</li>\n</ul>",
+    "id": 1741155965429,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "attempts": []
+  },
+  {
+    "back": "<b><u>Definition</u></b> <br>\n$$\n\\cosh x = \\frac{e^x + e^{-x}}{2}.\n$$",
+    "front": "<b>Hyperbolic Cosine</b>\n<ul>\n    <li><b>Define:</b> What is the definition of hyperbolic cosine?</li>\n</ul>",
+    "id": 1741155975921,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "attempts": []
+  },
+  {
+    "back": "<b><u>Separation of Variables Technique</u></b> <br>\nSeparation of variables is a method for solving first-order ordinary differential equations (ODEs) of the form: <br>  \n$$\n\\frac{dy}{dx} = f(x) g(y).\n$$  \n<br>  \nThe method involves rewriting the equation so that all terms involving \\( y \\) are on one side and all terms involving \\( x \\) are on the other: <br>  \n$$\n\\frac{dy}{g(y)} = f(x) dx.\n$$  \n<br>  \nThen, both sides are integrated separately: <br>  \n$$\n\\int \\frac{dy}{g(y)} = \\int f(x) dx.\n$$  \n<br>  \nSolving these integrals gives the general solution to the differential equation.",
+    "front": "What is the separation of variables technique in differential equations?",
+    "id": 1741156069533,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "attempts": []
   },
   {
     "attempts": [],
@@ -252,7 +273,7 @@
   {
     "attempts": [],
     "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/four_fundamental_subspaces.jpeg\"></div>\n<br>\nDimensions: <br>\n$Col(A) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{n - r}$ <br>\n$Col(A^T) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{m - r}$ <br>",
-    "front": "Four fundamental subspaces.",
+    "front": "Four Fundamental Subspaces",
     "id": 1740884070112,
     "tags": [
       "18.065"
@@ -292,13 +313,22 @@
   },
   {
     "attempts": [],
-    "back": "- contains all the solutions $x$ to $Ax = 0$, including $x = 0$.",
-    "front": "Null space of $A$",
+    "back": "<b><u>Definition</u></b> <br>  \nLet \\( A \\in \\mathbb{R}^{m \\times n} \\) be a matrix. The null space of \\( A \\) is defined as: <br>  \n\\[\n\\text{Null}(A) = \\{ x \\in \\mathbb{R}^n \\mid Ax = 0 \\}\n\\]\nwhich is a subspace of \\( \\mathbb{R}^n \\). <br><br>  \n\nSimilarly, the null space of the transpose \\( A^T \\) is: <br>  \n\\[\n\\text{Null}(A^T) = \\{ y \\in \\mathbb{R}^m \\mid A^T y = 0 \\}\n\\]\nwhich is a subspace of \\( \\mathbb{R}^m \\). <br><br>  \n\n<b><u>Dimension Relationships</u></b> <br>  \nThe dimensions of the null space and the row/column spaces are related by: <br>  \n\\[\n\\dim(\\text{Row}(A)) + \\dim(\\text{Null}(A)) = n,\n\\]\n\\[\n\\dim(\\text{Col}(A)) + \\dim(\\text{Null}(A^T)) = m.\n\\]  ",
+    "front": "<b>Null Space</b>\n<ul>\n    <li><b>Define:</b> What is the null space of a matrix?</li>\n    <li><b>Properties:</b> What are the key dimension relationships involving the null space?</li>\n</ul>",
     "id": 1740887782700,
     "tags": [
       "18.065"
     ],
-    "understanding": 2
+    "understanding": 1
+  },
+  {
+    "id": 1741167244470,
+    "front": "<b>Orthogonal Complement</b>  \n<ul>  \n    <li><b>Define:</b> What is the orthogonal complement of a subspace in \\( \\mathbb{R}^n \\)?</li>  \n    <li><b>Procedure:</b> How do you determine the orthogonal complement of a given subspace?</li>  \n    <li><b>Theorem:</b> How are the null space and row space related via the orthogonal complement?</li>  \n</ul>  ",
+    "back": "<b><u>Definition</u></b> <br>  \nThe orthogonal complement of a subspace \\( S \\) in \\( \\mathbb{R}^n \\), denoted \\( S^\\perp \\), is the set of all vectors in \\( \\mathbb{R}^n \\) that are orthogonal to every vector in \\( S \\):  \n$$  \nS^\\perp = \\{ x \\in \\mathbb{R}^n \\mid x \\perp y, \\; \\forall y \\in S \\}.  \n$$\n<br>\nA vector \\( x \\) is orthogonal to \\( y \\) if and only if their inner product is zero:<br>  \n$$  \nx \\perp y \\iff \\langle x, y \\rangle = x^T y = 0.  \n$$  \n<br><br>\n\n<b><u>Procedure</u></b> <br>  \n1. Find a basis for the subspace \\( S \\). <br>  \n2. Solve for all vectors \\( x \\) that satisfy \\( x^T y = 0 \\) for every basis vector \\( y \\) in \\( S \\). <br>  \n3. The set of all such \\( x \\) forms the orthogonal complement \\( S^\\perp \\). <br>  \n4. If \\( \\dim(S) = k \\) in \\( \\mathbb{R}^n \\), then \\( \\dim(S^\\perp) = n - k \\). <br>  \n<br>  \n\n<b><u>Theorem</u></b> <br>  \nThe null space and row space of a matrix are related through the orthogonal complement:  <br>\n$$  \n\\text{Null}(A) = (\\text{Row}(A))^\\perp.  \n$$\n<br>\nSimilarly, the null space of the transpose is the orthogonal complement of the column space: <br>\n$$  \n\\text{Null}(A^T) = (\\text{Col}(A))^\\perp.  \n$$\n<br>\nThis means that the row space and column space define the constraints that determine the null spaces of \\( A \\) and \\( A^T \\), respectively.  ",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
   },
   {
     "attempts": [
@@ -442,6 +472,15 @@
     "understanding": 1
   },
   {
+    "id": 1741168096548,
+    "front": "Orthonormality Condition",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Procedure for QR factorization",
@@ -452,14 +491,100 @@
     "understanding": 1
   },
   {
+    "id": 1741167809635,
+    "front": "<b>CR Factorization</b>  \n<ul>  \n  <li><b>Define:</b> What is CR factorization?</li>  \n  <li><b>Applications:</b> Where is CR factorization used?</li>  \n  <li><b>Procedure:</b> How is CR factorization performed?</li>  \n</ul>  ",
+    "back": "<b><u>Definition</u></b> <br>  \nCR factorization is a matrix decomposition technique where a given matrix \\( A \\) is factored into the product of two matrices:  <br>\n$$  \nA = CR\n$$  \n<br>\nwhere \\( C \\) is a matrix with orthonormal columns (often computed via Gram-Schmidt or QR-like processes), and \\( R \\) is an upper triangular matrix.\n<br><br>  \n\n<b><u>Applications</u></b> <br>  \n<ul>  \n  <li>Used in numerical linear algebra for solving least squares problems.</li>  \n  <li>Helps in reducing computational complexity in iterative methods.</li>  \n  <li>Applied in signal processing and machine learning for matrix approximations.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n  <li>Start with a given matrix \\( A \\) (typically an \\( m \\times n \\) matrix).</li>  \n  <li>Compute the matrix \\( C \\) whose columns form an orthonormal basis for the column space of \\( A \\).</li>  \n  <li>Compute the matrix \\( R \\) as the product \\( C^T A \\), which results in an upper triangular matrix.</li>  \n  <li>The decomposition satisfies \\( A = CR \\), where \\( C^T C = I \\) (orthonormality condition).</li>  \n</ol>  ",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741168186959,
+    "front": "<b>Factor matrix \\( A \\) into \\( CR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix}\n\\]",
+    "back": "<b><u>CR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nC =\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1\n\\end{bmatrix} \\quad \\text{(the identity matrix, which is orthonormal)},\n\\]\nand\n\\[\nR =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix} \\quad \\text{(an upper triangular matrix with integer elements)}.\n\\] <br><br>\nThus, \\(A = CR\\).",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741165893792,
+    "front": "<b>Permutation Matrix</b>",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
     "attempts": [],
-    "back": "Definition: factorization of $A$ into upper $U$ and lower $L$ triangular matrices.\n\n<br><br>\nExample a  $3 \\times 3$  matrix: <br><br>\n$$\nA =\n\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33}\n\\end{bmatrix}\n$$\n\n<br><br>\nLU decomposition gives: <br><br>\n$$\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\nl_{21} & 1 & 0 \\\\\nl_{31} & l_{32} & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\nu_{11} & u_{12} & u_{13} \\\\\n0 & u_{22} & u_{23} \\\\\n0 & 0 & u_{33}\n\\end{bmatrix}\n$$\n\n<br><br>\nApplication: solving linear systems.\n<br><br>\n\nProcedure:\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_1.34.36_AM.png\"></div>",
-    "front": "$LU$ decomposition <br><br>\nDefine <br><br>\nApplications <br><br>\nProcedure",
+    "back": "<b><u>Definition</u></b> <br>  \nLU decomposition is the factorization of a square matrix \\( A \\) into the product of a lower triangular matrix \\( L \\) and an upper triangular matrix \\( U \\), such that:  <br>\n\\[\nA = LU.\n\\] \n\n<br><br>  \n\n<b><u>Example</u></b> <br>  \nFor a \\( 3 \\times 3 \\) matrix:  <br>\n\\[\nA =\n\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33}\n\\end{bmatrix}\n\\]\n<br>\nLU decomposition gives:  <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\nl_{21} & 1 & 0 \\\\\nl_{31} & l_{32} & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\nu_{11} & u_{12} & u_{13} \\\\\n0 & u_{22} & u_{23} \\\\\n0 & 0 & u_{33}\n\\end{bmatrix}\n\\]  \n\n<br><br>\n\n<b><u>Applications</u></b> <br>  \n<ol>  \n  <li>Solving linear systems efficiently using forward and backward substitution.</li>  \n  <li>Computing matrix determinants as \\( \\det(A) = \\det(L) \\det(U) \\).</li>  \n  <li>Matrix inversion by solving multiple systems efficiently.</li>  \n  <li>Numerical methods, such as optimization and differential equations.</li>  \n</ol>  \n\n<br>\n\n<b><u>Procedure</u></b> <br>  \nLU decomposition is performed through Gaussian elimination:  \n<ol>  \n  <li>Convert matrix \\( A \\) into an upper triangular matrix \\( U \\) using row operations.</li>  \n  <li>Keep track of the multipliers used in each step to form the lower triangular matrix \\( L \\).</li>  \n  <li>If partial pivoting is required, an additional permutation matrix \\( P \\) may be introduced, leading to \\( PA = LU \\).</li>  \n</ol>  \n\n<br>  \n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_1.34.36_AM.png\"></div> ",
+    "front": "<b>LU Decomposition</b>  \n<ul>  \n  <li><b>Define:</b> What is LU decomposition?</li>  \n  <li><b>Applications:</b> Where is LU decomposition used?</li>  \n  <li><b>Procedure:</b> How is LU decomposition performed?</li>  \n</ul>  ",
     "id": 1740890882881,
     "tags": [
       "18.065"
     ],
     "understanding": 3
+  },
+  {
+    "id": 1741164002995,
+    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n4 & 3 \\\\\n6 & 3\n\\end{bmatrix}\n\\]\n",
+    "back": "<b><u>LU Decomposition Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n4 & 3 \\\\\n6 & 3\n\\end{bmatrix},\n\\] <br>\nthe LU decomposition (without permutation) is: <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 \\\\\n\\frac{3}{2} & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\n4 & 3 \\\\\n0 & -\\frac{3}{2}\n\\end{bmatrix}.\n\\] <br><br>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1,
+    "attempts": [
+      {
+        "timestamp": 1741165546433,
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 1741164054782,
+    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 10\n\\end{bmatrix}\n\\]",
+    "back": "<b><u>LU Decomposition Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 10\n\\end{bmatrix},\n\\] <br>\nthe LU decomposition (without permutation) is: <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n4 & 1 & 0 \\\\\n7 & 2 & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n0 & -3 & -6 \\\\\n0 & 0 & 1\n\\end{bmatrix}.\n\\] <br><br>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1,
+    "attempts": [
+      {
+        "timestamp": 1741165545220,
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 1741165926652,
+    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA = \\begin{bmatrix}\n1 & 3 & 2 \\\\\n2 & 6 & 5 \\\\\n3 & 8 & 6\n\\end{bmatrix}\n\\]",
+    "back": "<b><u>LU Decomposition Result</u></b> <br>\nFor the given matrix, a permutation is required during Gaussian elimination. We first form a permutation matrix P that swaps rows 2 and 3 to avoid a zero pivot in the second elimination step. <br>\n\nPermutation Matrix:  <br>\n\\[\nP =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{bmatrix}\n\\]\n\n<br>\nTransformed Matrix: <br>\n\\[\nPA =\n\\begin{bmatrix}\n1 & 3 & 2 \\\\\n3 & 8 & 6 \\\\\n2 & 6 & 5\n\\end{bmatrix}\n\\]\n\n<br>\nThe LU decomposition of PA (i.e., PA = LU) is: <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n3 & 1 & 0 \\\\\n2 & 0 & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\n1 & 3 & 2 \\\\\n0 & -1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n \\]",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1,
+    "attempts": [
+      {
+        "timestamp": 1741166780847,
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 1741163983569,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
+    "tags": [],
+    "understanding": 1
+  },
+  {
+    "id": 1741163982143,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
+    "tags": [],
+    "understanding": 1
   },
   {
     "attempts": [],
@@ -512,16 +637,6 @@
     "understanding": 1
   },
   {
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741078734861,
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
     "attempts": [
       {
         "correct": true,
@@ -546,6 +661,15 @@
     "back": "<b><u>Definition</u></b> <br>\n<p>\nDiagonalization is the process of finding a diagonal matrix $D$ such that a square matrix $A$ is similar to $D$, meaning:  <br>\n$$\nA = X D X^{-1}\n$$\n</p>\n\nwhere:\n<ul>\n  <li>$D$ is a diagonal matrix whose entries are the eigenvalues of $A$.</li>\n  <li>$X$ is the matrix whose columns are the eigenvectors of $A$.</li>\n  <li>$A$ is diagonalizable if it has $n$ linearly independent eigenvectors.</li>\n</ul>\n\n<br>\n\n<b><u>Practical Use</u></b> <br>\n<ul>\n  <li><b>Computing Matrix Powers Efficiently:</b> If we need $A^k$, we can compute it as:\n    $$\n    A^k = X D^k X^{-1}\n    $$\n    where raising $D$ to a power is simple since it is diagonal.\n  </li>\n</ul>\n\n<br>\n\n<b><u>Procedure</u></b> <br>\n<ol>\n  <li><b>Find Eigenvalues:</b> Solve the characteristic equation:\n    $$\n    \\det(A - \\lambda I) = 0\n    $$\n    to find the eigenvalues $\\lambda_1, \\lambda_2, \\dots, \\lambda_n$.\n  </li>\n  <li><b>Find Eigenvectors:</b> For each eigenvalue $\\lambda_i$, solve:\n    $$\n    (A - \\lambda_i I)v_i = 0\n    $$\n    to find the corresponding eigenvector $v_i$.\n  </li>\n  <li><b>Construct Matrices:</b>\n    <ul>\n      <li>$X$ is the matrix whose columns are the eigenvectors $v_1, v_2, \\dots, v_n$.</li>\n      <li>$D$ is the diagonal matrix with eigenvalues $\\lambda_1, \\lambda_2, \\dots, \\lambda_n$ on the diagonal.</li>\n    </ul>\n  </li>\n  <li><b>Compute $X^{-1}$:</b> Since $X$ is invertible (if $A$ is diagonalizable), compute its inverse $X^{-1}$.</li>\n  <li><b>Verify the Similarity Relation:</b> Ensure that:\n    $$\n    A = X D X^{-1}\n    $$\n  </li>\n</ol>",
     "front": "<b>Diagonalization</b> \n<ul>\n  <li><b>Define:</b> What is diagonalization?</li>\n  <li><b>Practical Use:</b> Why is diagonalization useful?</li>\n  <li><b>Procedure:</b> How do we diagonalize a matrix?</li>\n</ul>",
     "id": 1741066673709,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741166998328,
+    "front": "<b>The Power Method</b>\n<ul>\n    <li><b>Define:</b> What is the power method?</li>\n    <li><b>Procedure:</b> How does the power method algorithm approximate the dominant eigenvalue and its corresponding eigenvector?</li>\n</ul>",
+    "back": "<b><u>Definition</u></b> <br>\nThe power method is an iterative algorithm used to approximate the dominant eigenvalue (the eigenvalue with the greatest absolute value) and its corresponding eigenvector of a matrix. <br><br>\n\n<b><u>Procedure</u></b> <br>\n1. Choose an initial nonzero vector \\( x_0 \\). <br>\n2. For \\( k = 0, 1, 2, \\dots \\), compute \\( x_{k+1} = A x_k \\). <br>\n3. Normalize \\( x_{k+1} \\) to avoid numerical overflow. <br>\n4. Repeat until convergence; \\( x_k \\) approaches the eigenvector associated with the dominant eigenvalue. <br>\n5. Estimate the dominant eigenvalue by \\( \\lambda \\approx \\frac{x_k^T A x_k}{x_k^T x_k} \\).",
     "tags": [
       "18.065"
     ],
