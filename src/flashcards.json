@@ -11,6 +11,223 @@
     "understanding": 1
   },
   {
+    "id": 1741548676638,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\sin\\left(x+\\frac{\\pi}{2}\\right) = \\cos(x)\n$$",
+    "front": "$$\n\\sin\\left(x+\\frac{\\pi}{2}\\right) = \\, \\text{?}\n$$",
+    "id": 1741487630440,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\cos\\left(x+\\frac{\\pi}{2}\\right) = -\\sin(x)\n$$",
+    "front": "$$\n\\cos\\left(x+\\frac{\\pi}{2}\\right) = \\, \\text{?}\n$$",
+    "id": 1741487733230,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\int_{t_0}^{t_f} \\sin(at+b)\\, dt = \\left[-\\frac{1}{a}\\cos(at+b)\\right]_{t_0}^{t_f}\n$$\n<br><br>\nDo not forget about the sneaky chain rule when doing anti-derivatives!",
+    "front": "$$\n\\int_{t_0}^{t_f} \\sin(at+b)\\, dt = \\, \\text{?}\n$$",
+    "id": 1741484115943,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\int_{t_0}^{t_f} \\cos(at+b)\\, dt = \\left[\\frac{1}{a}\\sin(at+b)\\right]_{t_0}^{t_f}\n$$\n<br><br>\nDo not forget about the sneaky chain rule when doing anti-derivatives!",
+    "front": "$$\n\\int_{t_0}^{t_f} \\cos(at+b)\\, dt = \\, \\text{?}\n$$",
+    "id": 1741484741272,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$Ax$ is a linear combination of the columns of $A$.\n$$ \nAx = [a_1, a_2, \\dots, a_n] \\cdot \n\\begin{bmatrix} x_1 \\\\  x_2 \\\\ \\vdots \\\\ x_n \\end{bmatrix} \n= x_1a_1 + x_2a_2 + \\dots + x_na_n \n$$",
+    "front": "Matrix vector multiplication $Ax$",
+    "id": 1741420947202,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>Definition</u></b><br>  \nThe condition number of a matrix (or function) quantifies how sensitive the output is to small changes in the input. In numerical linear algebra, the condition number of a matrix \\( A \\) is defined as:<br>\n\n\\[\n\\kappa(A) = \\|A\\| \\cdot \\|A^{-1}\\|\n\\]\n\n<br>  \nfor a given matrix norm. It measures how much relative error in the input propagates to the output in solving linear systems.<br><br>  \n\n<b><u>Interpretation & Usage</u></b><br>  \n<ol>  \n  <li>A <b>low condition number</b> (close to 1) indicates a well-conditioned problem, meaning small input changes lead to small output changes.</li>  \n  <li>A <b>high condition number</b> (much greater than 1) suggests an ill-conditioned problem, where small input errors can cause large output errors, making numerical solutions unstable.</li>  \n  <li>In optimization and scientific computing, condition numbers help assess numerical stability and the reliability of computed solutions.</li>  \n</ol> ",
+    "front": "<b>Condition Number</b>  \n<ul>  \n  <li><b>Define:</b> What is the condition number of a matrix or function, and what does it measure?</li>  \n  <li><b>Interpretation & Usage:</b> How is the condition number used in numerical analysis, and what does a high or low value indicate about a problem\u2019s stability?</li>  \n</ul>  ",
+    "id": 1741379016329,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\frac{d}{dx}\\sin(x) = \\cos(x)\n$$",
+    "front": "$$\n\\frac{d}{dx}\\sin(x) = \\, \\text{?}\n$$",
+    "id": 1741483965611,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\frac{d}{dx}\\cos(x) = -\\sin(x)\n$$",
+    "front": "$$\n\\frac{d}{dx}\\cos(x) = \\, \\text{?}\n$$",
+    "id": 1741483979618,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\frac{d}{dx}\\tan(x) = \\sec^2(x)\n$$",
+    "front": "$$\n\\frac{d}{dx}\\tan(x) = \\, \\text{?}\n$$",
+    "id": 1741483988448,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\frac{d}{dx}\\cot(x) = -\\csc^2(x)\n$$",
+    "front": "$$\n\\frac{d}{dx}\\cot(x) = \\, \\text{?}\n$$",
+    "id": 1741484025952,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\frac{sin(x)}{cos(x)} = \\, tan(x)\n$$",
+    "front": "$$\n\\frac{sin(x)}{cos(x)} = \\, \\text{?}\n$$",
+    "id": 1741480472207,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\tan(x) = \\frac{\\sin(x)}{\\cos(x)}\n$$",
+    "front": "$$\n\\tan(x) = \\, \\text{?}\n$$",
+    "id": 1741481425263,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\cot(x) = \\frac{\\cos(x)}{\\sin(x)}\n$$",
+    "front": "$$\n\\cot(x) = \\, \\text{?}\n$$",
+    "id": 1741481442494,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\sec(x) = \\frac{1}{\\cos(x)}\n$$",
+    "front": "$$\n\\sec(x) = \\, \\text{?}\n$$",
+    "id": 1741481457664,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\csc(x) = \\frac{1}{\\sin(x)}\n$$",
+    "front": "$$\n\\csc(x) = \\, \\text{?}\n$$",
+    "id": 1741481473863,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\sin^2(x) + \\cos^2(x) = 1\n$$",
+    "front": "$$\n\\sin^2(x) + \\cos^2(x) = \\, \\text{?}\n$$",
+    "id": 1741481480924,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n1 + \\cot^2(x) = \\csc^2(x)\n$$",
+    "front": "$$\n1 + \\cot^2(x) = \\, \\text{?}\n$$",
+    "id": 1741481395486,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n1 + tan^2(x) = \\, sec^2(x)\n$$",
+    "front": "$$\n1 + tan^2(x) = \\, \\text{?}\n$$",
+    "id": 1741480992748,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "$$\n\\begin{aligned}\n\\sin(a\\pm b) &= \\sin(a)\\cos(b) \\pm \\cos(a)\\sin(b), \\\\\n\\cos(a\\pm b) &= \\cos(a)\\cos(b) \\mp \\sin(a)\\sin(b), \\\\\n\\tan(a\\pm b) &= \\frac{\\tan(a) \\pm \\tan(b)}{1 \\mp \\tan(a)\\tan(b)}.\n\\end{aligned}\n$$",
+    "front": "$$\n\\begin{aligned}\n\\sin(a\\pm b) &= \\, \\text{?} \\\\\n\\cos(a\\pm b) &= \\, \\text{?} \\\\\n\\tan(a\\pm b) &= \\, \\text{?}\n\\end{aligned}\n$$",
+    "id": 1741481623251,
+    "tags": [
+      "16.32",
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
     "attempts": [],
     "back": "Logarithmic Integral Identity <br>\n$$\n\\int \\frac{du}{u} = \\ln |u| + C.\n$$\n",
     "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{u} = \\, \\text{?}\n$$",
@@ -151,34 +368,34 @@
     "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\n$$\n\\sinh x = \\frac{e^x - e^{-x}}{2}.\n$$",
     "front": "<b>Hyperbolic Sine</b>\n<ul>\n    <li><b>Define:</b> What is the definition of hyperbolic sine?</li>\n</ul>",
     "id": 1741155965429,
     "tags": [
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\n$$\n\\cosh x = \\frac{e^x + e^{-x}}{2}.\n$$",
     "front": "<b>Hyperbolic Cosine</b>\n<ul>\n    <li><b>Define:</b> What is the definition of hyperbolic cosine?</li>\n</ul>",
     "id": 1741155975921,
     "tags": [
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<b><u>Separation of Variables Technique</u></b> <br>\nSeparation of variables is a method for solving first-order ordinary differential equations (ODEs) of the form: <br>  \n$$\n\\frac{dy}{dx} = f(x) g(y).\n$$  \n<br>  \nThe method involves rewriting the equation so that all terms involving \\( y \\) are on one side and all terms involving \\( x \\) are on the other: <br>  \n$$\n\\frac{dy}{g(y)} = f(x) dx.\n$$  \n<br>  \nThen, both sides are integrated separately: <br>  \n$$\n\\int \\frac{dy}{g(y)} = \\int f(x) dx.\n$$  \n<br>  \nSolving these integrals gives the general solution to the differential equation.",
     "front": "What is the separation of variables technique in differential equations?",
     "id": 1741156069533,
     "tags": [
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "attempts": [],
@@ -272,8 +489,18 @@
   },
   {
     "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Forward Substitution",
+    "id": 1741419253077,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
     "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/four_fundamental_subspaces.jpeg\"></div>\n<br>\nDimensions: <br>\n$Col(A) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{n - r}$ <br>\n$Col(A^T) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{m - r}$ <br>",
-    "front": "Four Fundamental Subspaces",
+    "front": "<b>Four Fundamental Subspaces</b>",
     "id": 1740884070112,
     "tags": [
       "18.065"
@@ -322,9 +549,10 @@
     "understanding": 1
   },
   {
-    "id": 1741167244470,
-    "front": "<b>Orthogonal Complement</b>  \n<ul>  \n    <li><b>Define:</b> What is the orthogonal complement of a subspace in \\( \\mathbb{R}^n \\)?</li>  \n    <li><b>Procedure:</b> How do you determine the orthogonal complement of a given subspace?</li>  \n    <li><b>Theorem:</b> How are the null space and row space related via the orthogonal complement?</li>  \n</ul>  ",
+    "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nThe orthogonal complement of a subspace \\( S \\) in \\( \\mathbb{R}^n \\), denoted \\( S^\\perp \\), is the set of all vectors in \\( \\mathbb{R}^n \\) that are orthogonal to every vector in \\( S \\):  \n$$  \nS^\\perp = \\{ x \\in \\mathbb{R}^n \\mid x \\perp y, \\; \\forall y \\in S \\}.  \n$$\n<br>\nA vector \\( x \\) is orthogonal to \\( y \\) if and only if their inner product is zero:<br>  \n$$  \nx \\perp y \\iff \\langle x, y \\rangle = x^T y = 0.  \n$$  \n<br><br>\n\n<b><u>Procedure</u></b> <br>  \n1. Find a basis for the subspace \\( S \\). <br>  \n2. Solve for all vectors \\( x \\) that satisfy \\( x^T y = 0 \\) for every basis vector \\( y \\) in \\( S \\). <br>  \n3. The set of all such \\( x \\) forms the orthogonal complement \\( S^\\perp \\). <br>  \n4. If \\( \\dim(S) = k \\) in \\( \\mathbb{R}^n \\), then \\( \\dim(S^\\perp) = n - k \\). <br>  \n<br>  \n\n<b><u>Theorem</u></b> <br>  \nThe null space and row space of a matrix are related through the orthogonal complement:  <br>\n$$  \n\\text{Null}(A) = (\\text{Row}(A))^\\perp.  \n$$\n<br>\nSimilarly, the null space of the transpose is the orthogonal complement of the column space: <br>\n$$  \n\\text{Null}(A^T) = (\\text{Col}(A))^\\perp.  \n$$\n<br>\nThis means that the row space and column space define the constraints that determine the null spaces of \\( A \\) and \\( A^T \\), respectively.  ",
+    "front": "<b>Orthogonal Complement</b>  \n<ul>  \n    <li><b>Define:</b> What is the orthogonal complement of a subspace in \\( \\mathbb{R}^n \\)?</li>  \n    <li><b>Procedure:</b> How do you determine the orthogonal complement of a given subspace?</li>  \n    <li><b>Theorem:</b> How are the null space and row space related via the orthogonal complement?</li>  \n</ul>  ",
+    "id": 1741167244470,
     "tags": [
       "18.065"
     ],
@@ -442,9 +670,33 @@
     "understanding": 1
   },
   {
-    "attempts": [],
-    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $Q$ is called <b>orthogonal</b> if its columns (and rows) form an orthonormal set. This is equivalent to:\n$$\nQ^T Q = QQ^T = I\n$$\nwhere $I$ is the identity matrix.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Check that $Q$ is a square matrix.</li>\n  <li>Compute $Q^T Q$. If $Q^T Q = I$, then $Q$ is orthogonal.</li>\n  <li>Alternatively, verify that the columns of $Q$ are orthonormal (i.e., each column has unit length and is orthogonal to the others).</li>\n</ol>",
-    "front": "<b>Orthogonal Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an orthogonal matrix?</li>\n  <li><b>Practical Use:</b> Where are orthogonal matrices used?</li>\n  <li><b>Procedure:</b> How do we check if a matrix is orthogonal?</li>\n</ul>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741514390091
+      }
+    ],
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA set of vectors $\\{v_1, v_2, \\dots, v_n\\}$ is called an <b>orthonormal set</b> if the vectors are both <b>orthogonal</b> (mutually perpendicular) and <b>normalized</b> (each has unit length). This means:\n$$\nv_i^T v_j =\n\\begin{cases}\n1, & \\text{if } i = j \\quad (\\text{each vector has unit length}) \\\\\n0, & \\text{if } i \\neq j \\quad (\\text{vectors are orthogonal})\n\\end{cases}\n$$\n</p>\n\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Compute the dot product of each pair of vectors. If all pairs are orthogonal (dot product = 0 for distinct vectors), continue.</li>\n  <li>Check that each vector has unit length: $||v_i|| = 1$ for all $i$.</li>\n  <li>If both conditions hold, the set is orthonormal.</li>\n</ol>\n\n<br>\n<u><b>Practical Use</b></u> <br>\n<p>\nOrthonormal sets are widely used in:\n<ul>\n  <li>Orthogonal transformations (e.g., rotations, reflections)</li>\n  <li>QR decomposition in linear algebra</li>\n  <li>Fourier series and signal processing</li>\n  <li>Eigenvector bases in quantum mechanics</li>\n</ul>\n</p>",
+    "front": "<b>Orthonormal Set of Vectors</b> \n<ul>\n  <li><b>Define:</b> What is an orthonormal set of vectors?</li>\n  <li><b>Procedure:</b> How do we check if a set of vectors is orthonormal?</li>\n  <li><b>Practical Use:</b> Where are orthonormal sets used?</li>\n</ul>",
+    "id": 1741513526904,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741514560158
+      },
+      {
+        "correct": false,
+        "timestamp": 1741514563697
+      }
+    ],
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $Q$ is called <b>orthogonal</b> if its column vectors (and row vectors) form an orthonormal set. This is equivalent to:\n$$\nQ^T Q = QQ^T = I\n$$\nwhere $I$ is the identity matrix.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Check that $Q$ is a square matrix.</li>\n  <li>Compute $Q^T Q$. If $Q^T Q = I$, then $Q$ is orthogonal.</li>\n  <li>Alternatively, verify that the columns of $Q$ are orthonormal (i.e., each column has unit length and is orthogonal to the others).</li>\n</ol>",
+    "front": "<b>Orthogonal Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an orthogonal matrix?</li>\n  <li><b>Procedure:</b> How do we check if a matrix is orthogonal?</li>\n</ul>",
     "id": 1740887687921,
     "tags": [
       "18.065"
@@ -462,9 +714,26 @@
     "understanding": 1
   },
   {
-    "attempts": [],
-    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/five_factorizations.jpeg\"></div>",
-    "front": "The five factorizations of a matrix.",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741514620699
+      },
+      {
+        "correct": false,
+        "timestamp": 1741515337941
+      },
+      {
+        "correct": true,
+        "timestamp": 1741515338393
+      },
+      {
+        "correct": true,
+        "timestamp": 1741515343329
+      }
+    ],
+    "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/five_factorizations.jpeg\"></div>\n\n<ol>\n  <li>Column-Row Factorization (CR): \\( A = CR \\)</li>\n  <li>Lower-Upper Factorization (LU): \\( A = LU \\) or \\( PA = LU \\)</li>\n  <li>Orthogonal-Triangular Factorization (QR): \\( A = QR \\)</li>\n  <li>Eigenvalue Decomposition (Spectral Decomposition): \n    <ul>\n      <li>General: \\( A = X \\Lambda X^{-1} \\)</li>\n      <li>Symmetric: \\( A = Q \\Lambda Q^T \\)</li>\n    </ul>\n  </li>\n  <li>Singular Value Decomposition (SVD): \\( A = U \\Sigma V^T \\)</li>\n</ol>",
+    "front": "<b>The Five Factorizations of a Matrix</b>",
     "id": 1740884244261,
     "tags": [
       "18.065"
@@ -472,9 +741,60 @@
     "understanding": 1
   },
   {
+    "attempts": [],
+    "back": "<b><u>Definition</u></b> <br>  \nA set of vectors \\( \\{ v_1, v_2, \\dots, v_n \\} \\) in \\( \\mathbb{R}^n \\) (or \\( \\mathbb{C}^n \\)) satisfies the <b>orthonormality condition</b> if:  \n<ol>  \n    <li>Each vector is <b>unit length</b> (normalized):  \n       \\[\n       \\| v_i \\| = 1, \\quad \\forall i.\n       \\]  \n    </li>  \n    <li>The vectors are <b>mutually orthogonal</b>:  \n       \\[\n       v_i^T v_j = 0, \\quad \\text{for } i \\neq j.\n       \\]  \n       This means that the dot product (or inner product) between distinct vectors is zero, and each vector has a norm of 1.  \n    </li>  \n</ol>  \n<br>  \n\n<b><u>Properties</u></b> <br>  \n<ul>  \n    <li>If a matrix \\( Q \\) has orthonormal columns, then \\( Q^T Q = I \\), making it an orthogonal (or unitary) matrix.</li>  \n    <li>Orthonormal vectors simplify computations in linear algebra, especially in QR factorization and least squares problems.</li>  \n    <li>For an orthonormal basis of \\( \\mathbb{R}^n \\), any vector \\( x \\) can be uniquely written as a linear combination of the basis vectors.</li>  \n    <li>In function spaces, orthonormal functions play a key role in Fourier analysis.</li>  \n</ul>  ",
+    "front": "<b>Orthonormality Condition</b>  \n<ul>  \n    <li><b>Define:</b> What is the orthonormality condition for a set of vectors?</li>  \n    <li><b>Properties:</b> What are the key characteristics of an orthonormal set of vectors?</li>  \n</ul>  ",
     "id": 1741168096548,
-    "front": "Orthonormality Condition",
-    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>Definition</u></b> <br>  \nQR factorization is a decomposition of a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\) into the product of an orthogonal matrix \\( Q \\) and an upper triangular matrix \\( R \\):  \n\\[\nA = QR,\n\\]\n<br>\nwhere:  <br>\n- \\( Q \\in \\mathbb{R}^{m \\times m} \\) is an orthogonal matrix (\\( Q^T Q = I \\)).\n<ul>\n    <li>\n    \\( R \\in \\mathbb{R}^{m \\times n} \\) is an upper triangular matrix.  \n     </li>\n</ul>\n<br>\n\n<b><u>Applications</u></b> <br>  \n<ul>  \n    <li>Solving linear systems efficiently.</li>  \n    <li>Computing eigenvalues and eigenvectors (QR algorithm).</li>  \n    <li>Least squares approximation in regression problems.</li>  \n    <li>Numerical stability in iterative methods.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n    <li>Start with a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\).</li>  \n    <li>Use the <b>Gram-Schmidt process</b> or <b>Householder reflections</b> to construct an orthogonal matrix \\( Q \\).</li>  \n    <li>Compute \\( R = Q^T A \\), which results in an upper triangular matrix.</li>  \n    <li>The decomposition satisfies \\( A = QR \\).</li>  \n</ol>  ",
+    "front": "<b>QR Factorization</b>  \n<ul>  \n    <li><b>Define:</b> What is QR factorization?</li>  \n    <li><b>Applications:</b> Where is QR factorization used?</li>  \n    <li><b>Procedure:</b> How is QR factorization performed?</li>  \n</ul>  ",
+    "id": 1740890854848,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>QR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n2 & 2 \\\\\n0 & 3\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nQ =\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1\n\\end{bmatrix},\n\\quad\nR =\n\\begin{bmatrix}\n2 & 2 \\\\\n0 & 3\n\\end{bmatrix}.\n\\] <br><br>\nThus, \\( A = QR \\).",
+    "front": "<b>Factor matrix \\( A \\) into \\( QR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n2 & 2 \\\\\n0 & 3\n\\end{bmatrix}\n\\]",
+    "id": 1741185849308,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>QR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n2 & 3 & 1 \\\\\n0 & 4 & 5 \\\\\n0 & 0 & 6\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nQ =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix},\n\\quad\nR =\n\\begin{bmatrix}\n2 & 3 & 1 \\\\\n0 & 4 & 5 \\\\\n0 & 0 & 6\n\\end{bmatrix}.\n\\] <br><br>\nThus, \\( A = QR \\).",
+    "front": "<b>Factor matrix \\( A \\) into \\( QR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n2 & 3 & 1 \\\\\n0 & 4 & 5 \\\\\n0 & 0 & 6\n\\end{bmatrix}\n\\]",
+    "id": 1741185873373,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>Definition</u></b> <br>  \nCR factorization is a matrix decomposition technique where a given matrix \\( A \\) is factored into the product of two matrices:  <br>\n$$  \nA = CR\n$$  \n<br>\nwhere \\( C \\) is a matrix with orthonormal columns (often computed via Gram-Schmidt or QR-like processes), and \\( R \\) is an upper triangular matrix.\n<br><br>  \n\n<b><u>Applications</u></b> <br>  \n<ul>  \n  <li>Used in numerical linear algebra for solving least squares problems.</li>  \n  <li>Helps in reducing computational complexity in iterative methods.</li>  \n  <li>Applied in signal processing and machine learning for matrix approximations.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n  <li>Start with a given matrix \\( A \\) (typically an \\( m \\times n \\) matrix).</li>  \n  <li>Compute the matrix \\( C \\) whose columns form an orthonormal basis for the column space of \\( A \\).</li>  \n  <li>Compute the matrix \\( R \\) as the product \\( C^T A \\), which results in an upper triangular matrix.</li>  \n  <li>The decomposition satisfies \\( A = CR \\), where \\( C^T C = I \\) (orthonormality condition).</li>  \n</ol>  ",
+    "front": "<b>CR Factorization</b>  \n<ul>  \n  <li><b>Define:</b> What is CR factorization?</li>  \n  <li><b>Applications:</b> Where is CR factorization used?</li>  \n  <li><b>Procedure:</b> How is CR factorization performed?</li>  \n</ul>  ",
+    "id": 1741167809635,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<b><u>CR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nC =\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1\n\\end{bmatrix} \\quad \\text{(the identity matrix, which is orthonormal)},\n\\]\nand\n\\[\nR =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix} \\quad \\text{(an upper triangular matrix with integer elements)}.\n\\] <br><br>\nThus, \\(A = CR\\).",
+    "front": "<b>Factor matrix \\( A \\) into \\( CR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix}\n\\]",
+    "id": 1741168186959,
     "tags": [
       "18.065"
     ],
@@ -483,35 +803,8 @@
   {
     "attempts": [],
     "back": "TODO: New back content",
-    "front": "Procedure for QR factorization",
-    "id": 1740890854848,
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
-    "id": 1741167809635,
-    "front": "<b>CR Factorization</b>  \n<ul>  \n  <li><b>Define:</b> What is CR factorization?</li>  \n  <li><b>Applications:</b> Where is CR factorization used?</li>  \n  <li><b>Procedure:</b> How is CR factorization performed?</li>  \n</ul>  ",
-    "back": "<b><u>Definition</u></b> <br>  \nCR factorization is a matrix decomposition technique where a given matrix \\( A \\) is factored into the product of two matrices:  <br>\n$$  \nA = CR\n$$  \n<br>\nwhere \\( C \\) is a matrix with orthonormal columns (often computed via Gram-Schmidt or QR-like processes), and \\( R \\) is an upper triangular matrix.\n<br><br>  \n\n<b><u>Applications</u></b> <br>  \n<ul>  \n  <li>Used in numerical linear algebra for solving least squares problems.</li>  \n  <li>Helps in reducing computational complexity in iterative methods.</li>  \n  <li>Applied in signal processing and machine learning for matrix approximations.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n  <li>Start with a given matrix \\( A \\) (typically an \\( m \\times n \\) matrix).</li>  \n  <li>Compute the matrix \\( C \\) whose columns form an orthonormal basis for the column space of \\( A \\).</li>  \n  <li>Compute the matrix \\( R \\) as the product \\( C^T A \\), which results in an upper triangular matrix.</li>  \n  <li>The decomposition satisfies \\( A = CR \\), where \\( C^T C = I \\) (orthonormality condition).</li>  \n</ol>  ",
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
-    "id": 1741168186959,
-    "front": "<b>Factor matrix \\( A \\) into \\( CR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix}\n\\]",
-    "back": "<b><u>CR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nC =\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1\n\\end{bmatrix} \\quad \\text{(the identity matrix, which is orthonormal)},\n\\]\nand\n\\[\nR =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix} \\quad \\text{(an upper triangular matrix with integer elements)}.\n\\] <br><br>\nThus, \\(A = CR\\).",
-    "tags": [
-      "18.065"
-    ],
-    "understanding": 1
-  },
-  {
-    "id": 1741165893792,
     "front": "<b>Permutation Matrix</b>",
-    "back": "TODO: New back content",
+    "id": 1741165893792,
     "tags": [
       "18.065"
     ],
@@ -528,61 +821,58 @@
     "understanding": 3
   },
   {
-    "id": 1741164002995,
-    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n4 & 3 \\\\\n6 & 3\n\\end{bmatrix}\n\\]\n",
+    "attempts": [],
     "back": "<b><u>LU Decomposition Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n4 & 3 \\\\\n6 & 3\n\\end{bmatrix},\n\\] <br>\nthe LU decomposition (without permutation) is: <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 \\\\\n\\frac{3}{2} & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\n4 & 3 \\\\\n0 & -\\frac{3}{2}\n\\end{bmatrix}.\n\\] <br><br>",
+    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n4 & 3 \\\\\n6 & 3\n\\end{bmatrix}\n\\]\n",
+    "id": 1741164002995,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": [
-      {
-        "timestamp": 1741165546433,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
-    "id": 1741164054782,
-    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 10\n\\end{bmatrix}\n\\]",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741165545220
+      }
+    ],
     "back": "<b><u>LU Decomposition Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 10\n\\end{bmatrix},\n\\] <br>\nthe LU decomposition (without permutation) is: <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n4 & 1 & 0 \\\\\n7 & 2 & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n0 & -3 & -6 \\\\\n0 & 0 & 1\n\\end{bmatrix}.\n\\] <br><br>",
+    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 10\n\\end{bmatrix}\n\\]",
+    "id": 1741164054782,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": [
-      {
-        "timestamp": 1741165545220,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
-    "id": 1741165926652,
-    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA = \\begin{bmatrix}\n1 & 3 & 2 \\\\\n2 & 6 & 5 \\\\\n3 & 8 & 6\n\\end{bmatrix}\n\\]",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741166780847
+      }
+    ],
     "back": "<b><u>LU Decomposition Result</u></b> <br>\nFor the given matrix, a permutation is required during Gaussian elimination. We first form a permutation matrix P that swaps rows 2 and 3 to avoid a zero pivot in the second elimination step. <br>\n\nPermutation Matrix:  <br>\n\\[\nP =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{bmatrix}\n\\]\n\n<br>\nTransformed Matrix: <br>\n\\[\nPA =\n\\begin{bmatrix}\n1 & 3 & 2 \\\\\n3 & 8 & 6 \\\\\n2 & 6 & 5\n\\end{bmatrix}\n\\]\n\n<br>\nThe LU decomposition of PA (i.e., PA = LU) is: <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n3 & 1 & 0 \\\\\n2 & 0 & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\n1 & 3 & 2 \\\\\n0 & -1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n \\]",
+    "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA = \\begin{bmatrix}\n1 & 3 & 2 \\\\\n2 & 6 & 5 \\\\\n3 & 8 & 6\n\\end{bmatrix}\n\\]",
+    "id": 1741165926652,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": [
-      {
-        "timestamp": 1741166780847,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
-    "id": 1741163983569,
-    "front": "TODO: New front content",
+    "attempts": [],
     "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741163983569,
     "tags": [],
     "understanding": 1
   },
   {
-    "id": 1741163982143,
-    "front": "TODO: New front content",
+    "attempts": [],
     "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741163982143,
     "tags": [],
     "understanding": 1
   },
@@ -608,8 +898,8 @@
   },
   {
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "Symmetric matrix",
+    "back": "<b><u>Definition</u></b> <br>  \nA matrix \\( A \\in \\mathbb{R}^{n \\times n} \\) is called a <b>symmetric matrix</b> if it satisfies: \n\\[\nA^T = A.\n\\]\nThis means that the matrix is equal to its transpose. <br><br>  \n\n<b><u>Properties</u></b> <br>  \n<ul>\n    <li>Symmetric matrices always have real eigenvalues.</li>\n    <li>The eigenvectors of a symmetric matrix corresponding to distinct eigenvalues are orthogonal.</li>\n    <li>In the real field, every symmetric matrix is diagonalizable.</li>  \n    <li>Off-diagonal elements satisfy \\( a_{ij} = a_{ji} \\), meaning the matrix is symmetric across the main diagonal.</li>\n</ul>  ",
+    "front": "<b>Symmetric Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is a symmetric matrix?</li>  \n    <li><b>Properties:</b> What are the key characteristics of a symmetric matrix?</li>  \n</ul>  ",
     "id": 1740890063445,
     "tags": [
       "18.065"
@@ -667,13 +957,54 @@
     "understanding": 1
   },
   {
-    "id": 1741166998328,
-    "front": "<b>The Power Method</b>\n<ul>\n    <li><b>Define:</b> What is the power method?</li>\n    <li><b>Procedure:</b> How does the power method algorithm approximate the dominant eigenvalue and its corresponding eigenvector?</li>\n</ul>",
+    "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\nThe power method is an iterative algorithm used to approximate the dominant eigenvalue (the eigenvalue with the greatest absolute value) and its corresponding eigenvector of a matrix. <br><br>\n\n<b><u>Procedure</u></b> <br>\n1. Choose an initial nonzero vector \\( x_0 \\). <br>\n2. For \\( k = 0, 1, 2, \\dots \\), compute \\( x_{k+1} = A x_k \\). <br>\n3. Normalize \\( x_{k+1} \\) to avoid numerical overflow. <br>\n4. Repeat until convergence; \\( x_k \\) approaches the eigenvector associated with the dominant eigenvalue. <br>\n5. Estimate the dominant eigenvalue by \\( \\lambda \\approx \\frac{x_k^T A x_k}{x_k^T x_k} \\).",
+    "front": "<b>The Power Method</b>\n<ul>\n    <li><b>Define:</b> What is the power method?</li>\n    <li><b>Procedure:</b> How does the power method algorithm approximate the dominant eigenvalue and its corresponding eigenvector?</li>\n</ul>",
+    "id": 1741166998328,
     "tags": [
       "18.065"
     ],
     "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Singular Vector",
+    "id": 1741418172612,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Steepest Descent Methods",
+    "id": 1741273002745,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Conjugate Gradient Method",
+    "id": 1741273019654,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741548301065,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1,
+    "attempts": []
   },
   {
     "attempts": [],
