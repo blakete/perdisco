@@ -11,25 +11,28 @@
     "understanding": 1
   },
   {
-    "id": 1741551371010,
-    "front": "<b>Symmetric-Antisymmetric Decomposition</b>  \n<ul>  \n    <li><b>Define:</b> What is a Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Procedure:</b> How do you perform Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Practical Use:</b> Where/when is Symmetric-Antisymmetric Decomposition used?</li>\n</ul>  ",
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nA <b>Symmetric-Antisymmetric Decomposition</b> is a unique way to express any square matrix \\( A \\) as the sum of a symmetric matrix \\( S \\) and a skew-symmetric (antisymmetric) matrix \\( N \\):  \n$$  \nA = S + N  \n$$  \nwhere  \n$$  \nS = \\frac{1}{2} (A + A^T), \\quad N = \\frac{1}{2} (A - A^T)  \n$$  \nHere, \\( S^T = S \\) and \\( N^T = -N \\).\n</p>  \n<br>  \n\n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Given a square matrix \\( A \\), compute its transpose \\( A^T \\).</li>  \n  <li>Calculate the symmetric part: \\( S = \\frac{1}{2} (A + A^T) \\).</li>  \n  <li>Calculate the antisymmetric part: \\( N = \\frac{1}{2} (A - A^T) \\).</li>  \n  <li>Verify that \\( S \\) is symmetric and \\( N \\) is antisymmetric.</li>  \n</ol>  \n<br>\n\n<u><b>Practical Use</b></u><br>  \n<ul>  \n    <li>Used in quadratic forms, where only the symmetric part matters for positive definiteness.</li>  \n    <li>Fundamental in matrix theory and Lie algebra decomposition.</li>  \n    <li>Important in physics for separating conservative (symmetric) and rotational (antisymmetric) components of tensors.</li>  \n    <li>Helps in solving eigenvalue problems and in principal component analysis (PCA).</li>  \n</ul>  \n<br>  \n",
+    "front": "<b>Symmetric-Antisymmetric Decomposition</b>  \n<ul>  \n    <li><b>Define:</b> What is a Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Procedure:</b> How do you perform Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Practical Use:</b> Where/when is Symmetric-Antisymmetric Decomposition used?</li>\n</ul>  ",
+    "id": 1741551371010,
     "tags": [
       "18.065"
     ],
-    "understanding": 1
+    "understanding": 1,
+    "attempts": []
   },
   {
-    "id": 1741551353638,
-    "front": "<b>Positive Semi-Definite</b>\n<ul>\n  <li>Definition</li>\n  <li>Notation</li>\n</ul>",
     "back": "<b><u>Definition</u></b> <br>\n$S \\in \\mathbb{R}^{n \\times n}$ is positive semi-definite (PSD) if two conditions hold:\n<ol>\n  <li>$S^T = S$, i.e. $S$ is a symmetric matrix</li>\n  <li>$v^{T} S v \\geq 0, \\; \\forall v \\in \\mathbb{R}^{n}$</li>\n</ol>\n<br>\n\n<b><u>Notation</u></b> <br>\n$S \\succeq 0$",
+    "front": "<b>Positive Semi-Definite</b>\n<ul>\n  <li>Definition</li>\n  <li>Notation</li>\n</ul>",
+    "id": 1741551353638,
     "tags": [
       "18.065",
       "16.32"
     ],
-    "understanding": 1
+    "understanding": 1,
+    "attempts": []
   },
   {
+    "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\n$S \\in \\mathbb{R}^{n \\times n}$ is positive definite (PD) if two conditions hold:\n<ol>\n  <li>$S^T = S$, i.e. $S$ is symmetric</li>\n  <li>$v^{T} S v > 0, \\; \\forall v \\in \\mathbb{R}^{n} \\setminus \\{0\\}$, i.e. quadratic form is strictly positive for nonzero vectors</li>\n</ol>\n<br>\n\n<b><u>Notation</u></b> <br>\n$S \\succ 0$",
     "front": "<b>Positive Definite</b>\n<ul>\n  <li>Definition</li>\n  <li>Notation</li>\n</ul>",
     "id": 1741549658615,
@@ -37,8 +40,16 @@
       "18.065",
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
+  },
+  {
+    "id": 1741552613318,
+    "front": "<b>Singular Value Decomposition (SVD)</b>\n<ul>  \n    <li><b>Define:</b> What is Singular Value Decomposition (SVD)?</li>\n    <li><b>Procedure:</b> How do you perform Singular Value Decomposition?</li>\n    <li><b>Practical Use:</b> Where/when is Singular Value Decomposition used?</li>\n</ul>",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Singular Value Decomposition (SVD)</b> of a matrix \\( A \\) is a factorization of the form:\n$$\nA = U \\Sigma V^T\n$$\nwhere:\n<ul>\n  <li>\\( U \\) is an \\( m \\times m \\) orthogonal matrix.</li>\n  <li>\\( \\Sigma \\) is an \\( m \\times n \\) diagonal matrix with non-negative singular values.</li>\n  <li>\\( V \\) is an \\( n \\times n \\) orthogonal matrix.</li>\n</ul>\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Compute the eigenvalues and eigenvectors of \\( A^T A \\) to obtain \\( V \\).</li>\n  <li>Compute the singular values \\( \\sigma_i \\) as the square roots of the eigenvalues.</li>\n  <li>Construct the diagonal matrix \\( \\Sigma \\) using singular values.</li>\n  <li>Compute the left singular vectors in \\( U \\) using \\( U = A V \\Sigma^{-1} \\).</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nSingular Value Decomposition is used in:\n<ul>\n  <li>Data compression and dimensionality reduction (e.g., PCA).</li>\n  <li>Image processing and noise reduction.</li>\n  <li>Solving linear inverse problems.</li>\n  <li>Recommender systems and machine learning algorithms.</li>\n</ul>\n</p>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
   },
   {
     "attempts": [],
