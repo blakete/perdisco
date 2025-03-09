@@ -11,13 +11,34 @@
     "understanding": 1
   },
   {
-    "id": 1741548676638,
-    "front": "TODO: New front content",
-    "back": "TODO: New back content",
+    "id": 1741551371010,
+    "front": "<b>Symmetric-Antisymmetric Decomposition</b>  \n<ul>  \n    <li><b>Define:</b> What is a Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Procedure:</b> How do you perform Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Practical Use:</b> Where/when is Symmetric-Antisymmetric Decomposition used?</li>\n</ul>  ",
+    "back": "<u><b>Definition</b></u><br>  \n<p>  \nA <b>Symmetric-Antisymmetric Decomposition</b> is a unique way to express any square matrix \\( A \\) as the sum of a symmetric matrix \\( S \\) and a skew-symmetric (antisymmetric) matrix \\( N \\):  \n$$  \nA = S + N  \n$$  \nwhere  \n$$  \nS = \\frac{1}{2} (A + A^T), \\quad N = \\frac{1}{2} (A - A^T)  \n$$  \nHere, \\( S^T = S \\) and \\( N^T = -N \\).\n</p>  \n<br>  \n\n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Given a square matrix \\( A \\), compute its transpose \\( A^T \\).</li>  \n  <li>Calculate the symmetric part: \\( S = \\frac{1}{2} (A + A^T) \\).</li>  \n  <li>Calculate the antisymmetric part: \\( N = \\frac{1}{2} (A - A^T) \\).</li>  \n  <li>Verify that \\( S \\) is symmetric and \\( N \\) is antisymmetric.</li>  \n</ol>  \n<br>\n\n<u><b>Practical Use</b></u><br>  \n<ul>  \n    <li>Used in quadratic forms, where only the symmetric part matters for positive definiteness.</li>  \n    <li>Fundamental in matrix theory and Lie algebra decomposition.</li>  \n    <li>Important in physics for separating conservative (symmetric) and rotational (antisymmetric) components of tensors.</li>  \n    <li>Helps in solving eigenvalue problems and in principal component analysis (PCA).</li>  \n</ul>  \n<br>  \n",
     "tags": [
       "18.065"
     ],
     "understanding": 1
+  },
+  {
+    "id": 1741551353638,
+    "front": "<b>Positive Semi-Definite</b>\n<ul>\n  <li>Definition</li>\n  <li>Notation</li>\n</ul>",
+    "back": "<b><u>Definition</u></b> <br>\n$S \\in \\mathbb{R}^{n \\times n}$ is positive semi-definite (PSD) if two conditions hold:\n<ol>\n  <li>$S^T = S$, i.e. $S$ is a symmetric matrix</li>\n  <li>$v^{T} S v \\geq 0, \\; \\forall v \\in \\mathbb{R}^{n}$</li>\n</ol>\n<br>\n\n<b><u>Notation</u></b> <br>\n$S \\succeq 0$",
+    "tags": [
+      "18.065",
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "back": "<b><u>Definition</u></b> <br>\n$S \\in \\mathbb{R}^{n \\times n}$ is positive definite (PD) if two conditions hold:\n<ol>\n  <li>$S^T = S$, i.e. $S$ is symmetric</li>\n  <li>$v^{T} S v > 0, \\; \\forall v \\in \\mathbb{R}^{n} \\setminus \\{0\\}$, i.e. quadratic form is strictly positive for nonzero vectors</li>\n</ol>\n<br>\n\n<b><u>Notation</u></b> <br>\n$S \\succ 0$",
+    "front": "<b>Positive Definite</b>\n<ul>\n  <li>Definition</li>\n  <li>Notation</li>\n</ul>",
+    "id": 1741549658615,
+    "tags": [
+      "18.065",
+      "16.32"
+    ],
+    "understanding": 1,
+    "attempts": []
   },
   {
     "attempts": [],
@@ -997,14 +1018,14 @@
     "understanding": 1
   },
   {
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: New front content",
     "id": 1741548301065,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "attempts": [],
