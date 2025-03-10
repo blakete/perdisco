@@ -11,6 +11,123 @@
     "understanding": 1
   },
   {
+    "id": 1741583127018,
+    "front": "<b>What is the standard norm for scalars? Why is it a norm?</b> ",
+    "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe <b>absolute value</b> is the standard norm for scalars in \\( \\mathbb{R} \\), and the modulus is the norm in \\( \\mathbb{C} \\). It qualifies as a norm because it satisfies three key properties:  \n</p>  \n<ol>  \n  <li><b>Non-negativity and Definiteness:</b>  <br>\n  $$ |x| \\geq 0, \\quad |x| = 0 \\text{ if and only if } x = 0. $$  \n  </li>  \n  <li><b>Homogeneity (Absolute Scalability):</b>  <br>\n  $$ |\\alpha x| = |\\alpha| \\cdot |x|, \\quad \\text{for any scalar } \\alpha. $$  \n  </li>  \n  <li><b>Triangle Inequality:</b>  <br>\n  $$ |x + y| \\leq |x| + |y|, \\quad \\text{for any scalars } x, y. $$  \n  </li>  \n</ol>  ",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741558058579
+      },
+      {
+        "correct": false,
+        "timestamp": 1741558059229
+      },
+      {
+        "correct": true,
+        "timestamp": 1741558059637
+      },
+      {
+        "correct": true,
+        "timestamp": 1741558062588
+      }
+    ],
+    "back": "<u><b>Definition</b></u><br>\n<p>\nA vector norm is a function \\( \\|\\cdot\\|: \\mathbb{R}^{n} \\to \\mathbb{R} \\) that assigns a non-negative length to a vector and satisfies the following three properties for all \\( \\mathbf{v}, \\mathbf{w} \\in \\mathbb{R}^{n} \\) and any scalar \\( \\alpha \\in \\mathbb{R} \\):\n</p>\n<ol>\n  <li><b>Non-negativity and Definiteness:</b> \\( \\|\\mathbf{v}\\| \\geq 0 \\) and \\( \\|\\mathbf{v}\\| = 0 \\) if and only if \\( \\mathbf{v} = 0 \\).</li>\n  <li><b>Homogeneity (Scaling Property):</b> \\( \\|\\alpha \\mathbf{v}\\| = |\\alpha| \\|\\mathbf{v}\\| \\).</li>\n  <li><b>Triangle Inequality:</b> \\( \\|\\mathbf{v} + \\mathbf{w}\\| \\leq \\|\\mathbf{v}\\| + \\|\\mathbf{w}\\| \\).</li>\n</ol>",
+    "front": "<b>Vector Norm</b>\n<ul>\n  <li><b>Definition:</b> What is a vector norm, and what properties must it satisfy?</li>\n</ul>",
+    "id": 1741557565682,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741578939662,
+    "front": "<b>Summation Notation of \\( A \\cdot A^T \\)</b>\n<ul>  \n    <li>Write the expression for \\( (A \\cdot A^T)_{ij} \\) using summation notation.</li>\n</ul>",
+    "back": "<u><b>Answer</b></u><br>\n<p>\nThe expression for \\( (A \\cdot A^T)_{ij} \\) in summation notation is:\n$$\n(A \\cdot A^T)_{ij} = \\sum_{k=1}^{n} A_{ik} A_{jk}\n$$\n<br>\nSince \\( A^T_{kj} = A_{jk} \\), this is equivalent to: <br>\n$$\n(A \\cdot A^T)_{ij} = \\sum_{k=1}^{n} A_{ik} A^T_{kj}\n$$\n</p>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741576267043,
+    "front": "<b>Frobenius Norm</b>\n<ul>  \n    <li><b>Define:</b> What is the Frobenius norm?</li>\n    <li><b>Procedure:</b> How do you compute the Frobenius norm of a matrix?</li>\n    <li><b>Practical Use:</b> Where/when is the Frobenius norm used?</li>\n</ul>",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Frobenius norm</b> of an \\( m \\times n \\) real matrix \\( A \\) is defined as the square root of the sum of the squares of its elements:\n$$\n\\|A\\|_F = \\sqrt{\\sum_{i=1}^{m} \\sum_{j=1}^{n} a_{ij}^2}\n$$\n<br><br>\nIt is also equivalent to the square root of the trace of \\( A^T A \\):\n$$\n\\|A\\|_F = \\sqrt{\\operatorname{Tr} (A^T A)}\n$$\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Square each element of the matrix \\( A \\).</li>\n  <li>Sum all squared values.</li>\n  <li>Take the square root of the result.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nThe Frobenius norm is widely used in numerical analysis, machine learning, and optimization to measure matrix magnitude and quantify errors in approximations.\n</p>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741580520869,
+    "front": "<b>Vector L1 Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector L1 Norm?</li>\n    <li><b>Procedure:</b> How do you compute the L1 norm of a vector?</li>\n    <li><b>Practical Use:</b> Where/when is the L1 norm used?</li>\n</ul>",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L1 Norm</b> (also called the Manhattan norm or taxicab norm) is the sum of the absolute values of the vector components: <br>\n$$\n\\| \\mathbf{x} \\|_1 = \\sum_{i=1}^{n} |x_i|\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Take the absolute value of each component of the vector.</li>\n  <li>Sum all the absolute values together.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nThe L1 norm is commonly used in:\n<ul>\n  <li>Sparse machine learning models (e.g., Lasso regression) for feature selection.</li>\n  <li>Optimization problems involving constraints on the sum of absolute values.</li>\n  <li>Measuring distances in grid-based pathfinding (e.g., city block distances).</li>\n</ul>\n</p>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741580621810,
+    "front": "<b>Vector L2 Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector L2 Norm?</li>\n    <li><b>Procedure:</b> How do you compute the L2 norm of a vector?</li>\n    <li><b>Practical Use:</b> Where/when is the L2 norm used?</li>\n</ul>",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L2 Norm</b> (also called the Euclidean norm) is the square root of the sum of the squared components of the vector: <br>\n$$\n\\| \\mathbf{x} \\|_2 = \\sqrt{\\sum_{i=1}^{n} x_i^2}\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Square each component of the vector.</li>\n  <li>Sum all the squared values.</li>\n  <li>Take the square root of the sum.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nThe L2 norm is widely used in:\n<ul>\n  <li>Measuring Euclidean distance in machine learning and data science.</li>\n  <li>Regularization techniques (e.g., Ridge regression) to prevent overfitting.</li>\n  <li>Physics and engineering for computing magnitudes of vectors.</li>\n</ul>\n</p>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741582036446,
+    "front": "<b>Induced Matrix Norm</b>\n<ul>  \n    <li><b>Define:</b> What is an induced matrix norm?</li>\n    <li><b>Procedure:</b> How do you compute the induced matrix norm from a given vector norm?</li>\n</ul>",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nAn <b>induced matrix norm</b> (or operator norm) is a norm for matrices that is derived from a given vector norm. It is defined as: <br>\n$$\n\\|A\\| = \\max_{x \\neq 0} \\frac{\\|Ax\\|}{\\|x\\|} = \\max_{\\|x\\|=1} \\|Ax\\|\n$$\n<br>\nwhere \\( A \\) is an \\( m \\times n \\) matrix, and \\( \\|\\cdot\\| \\) is a norm on \\( \\mathbb{R}^n \\).\n</p>\n<br>\n\n<u><b>Key Properties</b></u><br>\n<ol>\n  <li><b>Non-Negativity and Definiteness:</b>\n    <ul>\n      <li>\\(\\|A\\| \\geq 0\\) for any matrix \\( A \\).</li>\n      <li>\\(\\|A\\| = 0\\) if and only if \\( A \\) is the zero matrix.</li>\n    </ul>\n  </li>\n  <li><b>Homogeneity (Absolute Scalability):</b>\n    <ul>\n      <li>For any scalar \\( \\alpha \\) and matrix \\( A \\),</li>\n      <li>$$ \\|\\alpha A\\| = |\\alpha| \\|A\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Triangle Inequality (Subadditivity):</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) of the same size,</li>\n      <li>$$ \\|A + B\\| \\leq \\|A\\| + \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Submultiplicativity:</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) such that the product \\( AB \\) is defined,</li>\n      <li>$$ \\|AB\\| \\leq \\|A\\| \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Consistency with the Vector Norm:</b>\n    <ul>\n      <li>For any vector \\( x \\),</li>\n      <li>$$ \\|Ax\\| \\leq \\|A\\| \\|x\\|. $$</li>\n    </ul>\n  </li>\n</ol>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Select a vector norm \\( \\|\\cdot\\| \\) (e.g., \\( \\ell_1 \\), \\( \\ell_2 \\), or \\( \\ell_{\\infty} \\) norm).</li>\n  <li>Compute \\( \\|Ax\\| \\) for all unit vectors \\( x \\) (\\(\\|x\\| = 1\\)).</li>\n  <li>Find the maximum value of \\( \\|Ax\\| \\), which gives the induced matrix norm.</li>\n</ol>\n<br>",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741577714816,
+    "front": "<b>Trace of a Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is the trace of a matrix?</li>  \n    <li><b>Procedure:</b> How do you compute the trace of a matrix?</li>  \n    <li><b>Practical Use:</b> Where/when is the trace of a matrix used?</li>  \n</ul>  ",
+    "back": "<u><b>Definition</b></u><br>  \n<p>  \nThe <b>trace</b> of a square matrix \\( A \\), denoted as \\( \\text{tr}(A) \\), is the sum of its diagonal elements:  <br>\n$$  \n\\text{tr}(A) = \\sum_{i=1}^{n} A_{ii}  \n$$  \n<br>\nwhere \\( A_{ii} \\) represents the diagonal entries of the \\( n \\times n \\) matrix \\( A \\).\n</p>  \n<br>  \n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Identify the main diagonal elements of the square matrix.</li>  \n  <li>Sum all the diagonal elements.</li>  \n</ol>  \n<br>  \n<u><b>Practical Use</b></u><br>  \n<p>  \nThe trace of a matrix is used in various mathematical and applied fields, including:  \n<ul>  \n  <li>Linear algebra (e.g., determining similarity transformations).</li>  \n  <li>Quantum mechanics (e.g., density matrices in quantum states).</li>  \n  <li>Machine learning (e.g., computing matrix derivatives).</li>  \n  <li>Control theory (e.g., analyzing system stability).</li>  \n</ul>  \n</p>  ",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741577238385,
+    "front": "$$\n\\|A\\|_F = \\left( \\sum_{i=1}^{n} \\sum_{j=1}^{n} a_{i,j}^2 \\right)^{\\frac{1}{2}} = \\left( \\text{trace} \\left( A^T A \\right) \\right)^{\\frac{1}{2}}\n$$",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741576658519,
+    "front": "Conjugate Transpose",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1741576441089,
+    "front": "TODO: New front content",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nA <b>Symmetric-Antisymmetric Decomposition</b> is a unique way to express any square matrix \\( A \\) as the sum of a symmetric matrix \\( S \\) and a skew-symmetric (antisymmetric) matrix \\( N \\):  <br>\n$$  \nA = S + N  \n$$  \n<br>\nwhere  <br>\n$$  \nS = \\frac{1}{2} (A + A^T), \\quad N = \\frac{1}{2} (A - A^T)  \n$$ \n<br> \nHere, \\( S^T = S \\) and \\( N^T = -N \\).\n</p>  \n<br>  \n\n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Given a square matrix \\( A \\), compute its transpose \\( A^T \\).</li>  \n  <li>Calculate the symmetric part: \\( S = \\frac{1}{2} (A + A^T) \\).</li>  \n  <li>Calculate the antisymmetric part: \\( N = \\frac{1}{2} (A - A^T) \\).</li>  \n  <li>Verify that \\( S \\) is symmetric and \\( N \\) is antisymmetric.</li>  \n</ol>  \n<br>\n\n<u><b>Practical Use</b></u><br>  \n<ul>  \n    <li>Used in quadratic forms, where only the symmetric part matters for positive definiteness.</li>  \n    <li>Fundamental in matrix theory and Lie algebra decomposition.</li>  \n    <li>Important in physics for separating conservative (symmetric) and rotational (antisymmetric) components of tensors.</li>  \n    <li>Helps in solving eigenvalue problems and in principal component analysis (PCA).</li>  \n</ul>  \n<br>  \n",
     "front": "<b>Symmetric-Antisymmetric Decomposition</b>  \n<ul>  \n    <li><b>Define:</b> What is a Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Procedure:</b> How do you perform Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Practical Use:</b> Where/when is Symmetric-Antisymmetric Decomposition used?</li>\n</ul>  ",
@@ -23,16 +140,16 @@
   {
     "attempts": [
       {
-        "timestamp": 1741555932662,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741555932662
       },
       {
-        "timestamp": 1741555934785,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741555934785
       },
       {
-        "timestamp": 1741555935529,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741555935529
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA matrix \\( S \\in \\mathbb{R}^{n \\times n} \\) is positive definite (PD) if two conditions hold:\n</p>\n<ol>\n  <li>\\( S^T = S \\), i.e., \\( S \\) is symmetric.</li>\n  <li>\\( v^{T} S v > 0 \\) for all \\( v \\in \\mathbb{R}^{n} \\setminus \\{0\\} \\), meaning the quadratic form is strictly positive for all nonzero vectors.</li>\n</ol>\n<br>\n\n<u><b>Notation</b></u><br>\n<p>\nA positive definite matrix is denoted as \\( S \\succ 0 \\).\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nTo check if a matrix \\( S \\) is positive definite:\n</p>\n<ol>\n  <li>Verify that \\( S \\) is symmetric (\\( S^T = S \\)).</li>\n  <li>Use the <b>Eigenvalue Test</b>: Compute the eigenvalues \\( \\lambda_i \\) of \\( S \\). If all eigenvalues satisfy \\( \\lambda_i > 0 \\), then \\( S \\) is positive definite.</li>\n</ol>",
@@ -47,16 +164,16 @@
   {
     "attempts": [
       {
-        "timestamp": 1741555931639,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741555931639
       },
       {
-        "timestamp": 1741555936869,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741555936869
       },
       {
-        "timestamp": 1741555937053,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741555937053
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA matrix \\( S \\in \\mathbb{R}^{n \\times n} \\) is positive semi-definite (PSD) if two conditions hold:\n</p>\n<ol>\n  <li>\\( S^T = S \\), i.e., \\( S \\) is symmetric.</li>\n  <li>\\( v^{T} S v \\geq 0 \\) for all \\( v \\in \\mathbb{R}^{n} \\), meaning the quadratic form is non-negative for all vectors.</li>\n</ol>\n<br>\n\n<u><b>Notation</b></u><br>\n<p>\nA positive semi-definite matrix is denoted as \\( S \\succeq 0 \\).\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nTo check if a matrix \\( S \\) is positive semi-definite:\n</p>\n<ol>\n  <li>Verify that \\( S \\) is symmetric (\\( S^T = S \\)).</li>\n  <li>Use the <b>Eigenvalue Test</b>: Compute the eigenvalues \\( \\lambda_i \\) of \\( S \\). If all eigenvalues satisfy \\( \\lambda_i \\geq 0 \\), then \\( S \\) is positive semi-definite.</li>\n</ol>",
@@ -69,13 +186,14 @@
     "understanding": 1
   },
   {
-    "id": 1741556276234,
-    "front": "<b>Hessian Test for Local Minima</b>\n<ul>\n  <li><b>Concept:</b> What does the Hessian test determine at a critical point?</li>\n  <li><b>Positive Definite (PD) Case:</b> What does a PD Hessian indicate?</li>\n  <li><b>Positive Semi-Definite (PSD) Case:</b> What does a PSD Hessian indicate?</li>\n</ul>",
     "back": "<u><b>Concept</b></u><br>\n<p>\nThe Hessian test is used at a critical point (where the gradient is zero) to determine the type of extremum.\n</p>\n<br>\n\n<u><b>Positive Definite (PD) Case</b></u><br>\n<p>\nIf all eigenvalues of the Hessian matrix are strictly positive, then the function has a <b>strict local minimum</b> at that point. This means the function value increases in every direction away from the point.\n</p>\n<br>\n\n<u><b>Positive Semi-Definite (PSD) Case</b></u><br>\n<p>\nIf all eigenvalues of the Hessian are nonnegative (some may be zero), then the Hessian suggests a local minimum, but the test is <b>inconclusive regarding strictness </b>. The function might be flat in some directions, meaning it is not necessarily a strict minimum.\n</p>\n<br>\n\n<u><b>Summary</b></u><br>\n<p>\nA PD Hessian guarantees a strong local minimum, while a PSD Hessian only suggests a local minimum without guaranteeing strictness.\n</p>",
+    "front": "<b>Hessian Test for Local Minima</b>\n<ul>\n  <li><b>Concept:</b> What does the Hessian test determine at a critical point?</li>\n  <li><b>Positive Definite (PD) Case:</b> What does a PD Hessian indicate?</li>\n  <li><b>Positive Semi-Definite (PSD) Case:</b> What does a PSD Hessian indicate?</li>\n</ul>",
+    "id": 1741556276234,
     "tags": [
       "18.065"
     ],
-    "understanding": 1
+    "understanding": 1,
+    "attempts": []
   },
   {
     "attempts": [],
@@ -476,6 +594,7 @@
     "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nClairaut\u2019s theorem states that if a function \\( f(x,y) \\) is twice continuously differentiable (\\( C^2 \\)), then the mixed partial derivatives are equal: <br>\n$$  \nf_{xy} = f_{yx}.  \n$$  \n</p>  \n<br>  \n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Compute \\( f_x \\) and \\( f_y \\) (first-order partial derivatives).</li>  \n  <li>Find \\( f_{xy} \\) by differentiating \\( f_x \\) with respect to \\( y \\).</li>  \n  <li>Find \\( f_{yx} \\) by differentiating \\( f_y \\) with respect to \\( x \\).</li>  \n  <li>If \\( f_{xy} = f_{yx} \\) and \\( f \\) is \\( C^2 \\), Clairaut\u2019s theorem holds.</li>  \n</ol>  \n<br>  \n<u><b>Practical Use</b></u><br>  \n<p>  \nFor smooth functions (\\( C^2 \\)), the order of partial differentiation does not matter. However, for non-smooth functions, discontinuities in second derivatives can lead to \\( f_{xy} \\neq f_{yx} \\), requiring careful computation.  \n</p>",
     "front": "<b>Clairaut\u2019s Theorem</b>  \n<ul>  \n    <li><b>Define:</b> What is Clairaut\u2019s theorem?</li>  \n    <li><b>Procedure:</b> How do you verify Clairaut\u2019s theorem for a function?</li>  \n    <li><b>Practical Use:</b> When does the order of partial differentiation matter?</li>  \n</ul>",
     "id": 1741554967453,
@@ -483,8 +602,7 @@
       "18.065",
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "attempts": [],
