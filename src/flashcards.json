@@ -903,7 +903,7 @@
         "timestamp": 1741514563697
       }
     ],
-    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $Q$ is called <b>orthogonal</b> if its column vectors (and row vectors) form an orthonormal set. This is equivalent to:\n$$\nQ^T Q = QQ^T = I\n$$\nwhere $I$ is the identity matrix.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Check that $Q$ is a square matrix.</li>\n  <li>Compute $Q^T Q$. If $Q^T Q = I$, then $Q$ is orthogonal.</li>\n  <li>Alternatively, verify that the columns of $Q$ are orthonormal (i.e., each column has unit length and is orthogonal to the others).</li>\n</ol>",
+    "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $Q$ is called <b>orthogonal</b> if its column vectors (and row vectors) form an orthonormal set. This is equivalent to: <br>\n$$\nQ^T Q = QQ^T = I\n$$\n<br>\nwhere $I$ is the identity matrix. <br><br>\n\nThis directly implies that the inverse of $Q$ is its transpose, i.e., <br>\n$$\nQ^{-1} = Q^T.\n$$\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Check that $Q$ is a square matrix.</li>\n  <li>Compute $Q^T Q$. If $Q^T Q = I$, then $Q$ is orthogonal.</li>\n  <li>Alternatively, verify that the columns of $Q$ are orthonormal (i.e., each column has unit length and is orthogonal to the others).</li>\n</ol>",
     "front": "<b>Orthogonal Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an orthogonal matrix?</li>\n  <li><b>Procedure:</b> How do we check if a matrix is orthogonal?</li>\n</ul>",
     "id": 1740887687921,
     "tags": [
@@ -956,13 +956,6 @@
     "tags": [
       "18.065"
     ],
-    "understanding": 1
-  },
-  {
-    "id": 1741653274697,
-    "front": "TODO: New front content",
-    "back": "TODO: New back content",
-    "tags": [],
     "understanding": 1
   },
   {
@@ -1076,19 +1069,12 @@
     "understanding": 1
   },
   {
-    "attempts": [],
+    "id": 1741659280390,
+    "front": "TODO: card for this concept <br><br>\n\nThe standard property of singular values states that for any invertible matrix A, the singular values of its inverse satisfy:\n\n\\sigma_i(A^{-1}) = \\frac{1}{\\sigma_{n-i+1}(A)}",
     "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741163983569,
-    "tags": [],
-    "understanding": 1
-  },
-  {
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741163982143,
-    "tags": [],
+    "tags": [
+      "18.065"
+    ],
     "understanding": 1
   },
   {
@@ -1114,7 +1100,7 @@
   {
     "id": 1741653306737,
     "front": "<b>Similarity Transformation</b>\n<ul>  \n    <li><b>Define:</b> What is a Similarity Transformation? What key properties does it preserve?</li>\n    <li><b>Procedure:</b> How do you determine if two matrices are similar?</li>\n    <li><b>Practical Use:</b> Where/when is Similarity Transformation used?</li>\n</ul>",
-    "back": "<u><b>Definition</b></u><br>\n<p>\nTwo square matrices $\\mathbf{A}$ and $\\mathbf{B}$ are similar if there exists a nonsingular matrix $\\mathbf{X}$ such that:\n$$\n\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}\n$$\nwhere $\\mathbf{X}$ is an invertible matrix. This transformation preserves many key properties of the matrix, including:\n<ul>\n  <li>Eigenvalues</li>\n  <li>Characteristic polynomial</li>\n  <li>Determinant</li>\n  <li>Trace</li>\n  <li>Rank</li>\n  <li>Minimal polynomial</li>\n  <li>Jordan canonical form</li>\n</ul>\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Find a candidate nonsingular matrix $\\mathbf{X}$.</li>\n  <li>Verify that the transformation $\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}$ holds.</li>\n  <li>Check for key properties such as identical characteristic polynomials.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nSimilarity transformations are used in various areas of linear algebra, including:\n<ul>\n  <li>Computing canonical forms (e.g., Jordan form).</li>\n  <li>Reducing matrices to simpler forms for eigenvalue analysis.</li>\n  <li>Determining if matrices represent the same linear transformation in different bases.</li>\n</ul>\n</p>",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nTwo square matrices $\\mathbf{A}$ and $\\mathbf{B}$ are similar if there exists a nonsingular matrix $\\mathbf{X}$ such that:\n$$\n\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}\n$$\nwhere $\\mathbf{X}$ is an invertible matrix. \n<br><br>\nThis transformation preserves many key properties of the matrix, including:\n<ul>\n  <li>Eigenvalues</li>\n  <li>Characteristic polynomial</li>\n  <li>Determinant</li>\n  <li>Trace</li>\n  <li>Rank</li>\n  <li>Minimal polynomial</li>\n  <li>Jordan canonical form</li>\n</ul>\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Find a candidate nonsingular matrix $\\mathbf{X}$.</li>\n  <li>Verify that the transformation $\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}$ holds.</li>\n  <li>Check for key properties such as identical characteristic polynomials.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nSimilarity transformations are used in various areas of linear algebra, including:\n<ul>\n  <li>Computing canonical forms (e.g., Jordan form).</li>\n  <li>Reducing matrices to simpler forms for eigenvalue analysis.</li>\n  <li>Determining if matrices represent the same linear transformation in different bases.</li>\n</ul>\n</p>",
     "tags": [
       "18.065",
       "16.32"
