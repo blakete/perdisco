@@ -11,14 +11,14 @@
     "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe <b>absolute value</b> is the standard norm for scalars in \\( \\mathbb{R} \\), and the modulus is the norm in \\( \\mathbb{C} \\). It qualifies as a norm because it satisfies three key properties:  \n</p>  \n<ol>  \n  <li><b>Non-negativity and Definiteness:</b>  <br>\n  $$ |x| \\geq 0, \\quad |x| = 0 \\text{ if and only if } x = 0. $$  \n  </li>  \n  <li><b>Homogeneity (Absolute Scalability):</b>  <br>\n  $$ |\\alpha x| = |\\alpha| \\cdot |x|, \\quad \\text{for any scalar } \\alpha. $$  \n  </li>  \n  <li><b>Triangle Inequality:</b>  <br>\n  $$ |x + y| \\leq |x| + |y|, \\quad \\text{for any scalars } x, y. $$  \n  </li>  \n</ol>  ",
     "front": "<b>What is the standard norm for scalars? Why is it a norm?</b> ",
     "id": 1741583127018,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "attempts": [
@@ -48,104 +48,104 @@
     "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nThe expression for \\( (A \\cdot A^T)_{ij} \\) in summation notation is:\n$$\n(A \\cdot A^T)_{ij} = \\sum_{k=1}^{n} A_{ik} A_{jk}\n$$\n<br>\nSince \\( A^T_{kj} = A_{jk} \\), this is equivalent to: <br>\n$$\n(A \\cdot A^T)_{ij} = \\sum_{k=1}^{n} A_{ik} A^T_{kj}\n$$\n</p>",
     "front": "<b>Summation Notation of \\( A \\cdot A^T \\)</b>\n<ul>  \n    <li>Write the expression for \\( (A \\cdot A^T)_{ij} \\) using summation notation.</li>\n</ul>",
     "id": 1741578939662,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Frobenius norm</b> of an \\( m \\times n \\) real matrix \\( A \\) is defined as the square root of the sum of the squares of its elements:\n$$\n\\|A\\|_F = \\sqrt{\\sum_{i=1}^{m} \\sum_{j=1}^{n} a_{ij}^2}\n$$\n<br><br>\nIt is also equivalent to the square root of the trace of \\( A^T A \\):\n$$\n\\|A\\|_F = \\sqrt{\\operatorname{Tr} (A^T A)}\n$$\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Square each element of the matrix \\( A \\).</li>\n  <li>Sum all squared values.</li>\n  <li>Take the square root of the result.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nThe Frobenius norm is widely used in numerical analysis, machine learning, and optimization to measure matrix magnitude and quantify errors in approximations.\n</p>",
     "front": "<b>Frobenius Norm</b>\n<ul>  \n    <li><b>Define:</b> What is the Frobenius norm?</li>\n    <li><b>Procedure:</b> How do you compute the Frobenius norm of a matrix?</li>\n    <li><b>Practical Use:</b> Where/when is the Frobenius norm used?</li>\n</ul>",
     "id": 1741576267043,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L1 Norm</b> (also called the Manhattan norm or taxicab norm) is the sum of the absolute values of the vector components: <br>\n$$\n\\| \\mathbf{x} \\|_1 = \\sum_{i=1}^{n} |x_i|\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
     "front": "<b>Vector L1 Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector L1 Norm?</li>\n    <li><b>Procedure:</b> How do you compute the L1 norm of a vector?</li>\n    <li><b>Practical Use:</b> Where/when is the L1 norm used?</li>\n</ul>",
     "id": 1741580520869,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L2 Norm</b> (also called the Euclidean norm) is the square root of the sum of the squared components of the vector: <br>\n$$\n\\| \\mathbf{x} \\|_2 = \\sqrt{\\sum_{i=1}^{n} x_i^2}\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
     "front": "<b>Vector L2 Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector L2 Norm?</li>\n</ul>",
     "id": 1741580621810,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector $\\mathbf{L_{\\infty}}$ Norm</b> (also called the maximum norm or supremum norm) is defined as the maximum absolute value of the components of the vector: <br>\n$$\n\\| \\mathbf{x} \\|_\\infty = \\max_{1 \\leq i \\leq n} |x_i|\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
     "front": "<b>Vector $l_{\\infty}$ Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector $l_{\\infty}$ Norm?</li>\n</ul>",
     "id": 1741586047180,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nAn <b>induced matrix norm</b> (or operator norm) is a norm for matrices that is derived from a given vector norm. It is defined as: <br>\n$$\n\\|A\\| = \\max_{x \\neq 0} \\frac{\\|Ax\\|}{\\|x\\|} = \\max_{\\|x\\|=1} \\|Ax\\|\n$$\n<br>\nwhere \\( A \\) is an \\( m \\times n \\) matrix, and \\( \\|\\cdot\\| \\) is a norm on \\( \\mathbb{R}^n \\).\n</p>\n<br>\n\n<u><b>Key Properties</b></u><br>\n<ol>\n  <li><b>Non-Negativity and Definiteness:</b>\n    <ul>\n      <li>\\(\\|A\\| \\geq 0\\) for any matrix \\( A \\).</li>\n      <li>\\(\\|A\\| = 0\\) if and only if \\( A \\) is the zero matrix.</li>\n    </ul>\n  </li>\n  <li><b>Homogeneity (Absolute Scalability):</b>\n    <ul>\n      <li>For any scalar \\( \\alpha \\) and matrix \\( A \\),</li>\n      <li>$$ \\|\\alpha A\\| = |\\alpha| \\|A\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Triangle Inequality (Subadditivity):</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) of the same size,</li>\n      <li>$$ \\|A + B\\| \\leq \\|A\\| + \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Submultiplicativity:</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) such that the product \\( AB \\) is defined,</li>\n      <li>$$ \\|AB\\| \\leq \\|A\\| \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Consistency with the Vector Norm:</b>\n    <ul>\n      <li>For any vector \\( x \\),</li>\n      <li>$$ \\|Ax\\| \\leq \\|A\\| \\|x\\|. $$</li>\n    </ul>\n  </li>\n</ol>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Select a vector norm \\( \\|\\cdot\\| \\) (e.g., \\( \\ell_1 \\), \\( \\ell_2 \\), or \\( \\ell_{\\infty} \\) norm).</li>\n  <li>Compute \\( \\|Ax\\| \\) for all unit vectors \\( x \\) (\\(\\|x\\| = 1\\)).</li>\n  <li>Find the maximum value of \\( \\|Ax\\| \\), which gives the induced matrix norm.</li>\n</ol>\n<br>",
     "front": "<b>Induced Matrix Norm</b>\n<ul>  \n    <li><b>Define:</b> What is an induced matrix norm?</li>\n    <li><b>Procedure:</b> How do you compute the induced matrix norm from a given vector norm?</li>\n</ul>",
     "id": 1741582036446,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nThe <b>trace</b> of a square matrix \\( A \\), denoted as \\( \\text{tr}(A) \\), is the sum of its diagonal elements:  <br>\n$$  \n\\text{tr}(A) = \\sum_{i=1}^{n} A_{ii}  \n$$  \n<br>\nwhere \\( A_{ii} \\) represents the diagonal entries of the \\( n \\times n \\) matrix \\( A \\).\n</p>  \n<br>  \n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Identify the main diagonal elements of the square matrix.</li>  \n  <li>Sum all the diagonal elements.</li>  \n</ol>  \n<br>  \n<u><b>Practical Use</b></u><br>  \n<p>  \nThe trace of a matrix is used in various mathematical and applied fields, including:  \n<ul>  \n  <li>Linear algebra (e.g., determining similarity transformations).</li>  \n  <li>Quantum mechanics (e.g., density matrices in quantum states).</li>  \n  <li>Machine learning (e.g., computing matrix derivatives).</li>  \n  <li>Control theory (e.g., analyzing system stability).</li>  \n</ul>  \n</p>  ",
     "front": "<b>Trace of a Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is the trace of a matrix?</li>  \n    <li><b>Procedure:</b> How do you compute the trace of a matrix?</li>  \n    <li><b>Practical Use:</b> Where/when is the trace of a matrix used?</li>  \n</ul>  ",
     "id": 1741577714816,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "$$\n\\|A\\|_F = \\left( \\sum_{i=1}^{n} \\sum_{j=1}^{n} a_{i,j}^2 \\right)^{\\frac{1}{2}} = \\left( \\text{trace} \\left( A^T A \\right) \\right)^{\\frac{1}{2}}\n$$",
     "id": 1741577238385,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "Conjugate Transpose",
     "id": 1741576658519,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: New front content",
     "id": 1741576441089,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "attempts": [],
@@ -912,14 +912,57 @@
     "understanding": 1
   },
   {
-    "attempts": [],
-    "back": "<u><b>Definition</b></u> <br>\n<p>\nA <b>Householder matrix</b> $H$ is a symmetric and orthogonal matrix used to perform reflections. It is typically defined as:\n$$\nH = I - 2\\frac{vv^T}{v^T v}\n$$\nwhere $v$ is a nonzero vector in $\\mathbb{R}^n$.\n</p>\n<br>\n\n<u><b>Practical Use</b></u> <br>\n<p>\nHouseholder matrices are primarily used in numerical linear algebra, especially for QR factorization and for reducing matrices to tridiagonal or Hessenberg forms. TODO: add pset + lecture 02/11 02/13 stuff stuff\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Select a nonzero vector $v \\in \\mathbb{R}^n$.</li>\n  <li>Compute the Householder matrix using:\n      $$\n      H = I - 2\\frac{vv^T}{v^T v}\n      $$\n  </li>\n  <li>Use $H$ to reflect a given vector or to zero out subdiagonal elements during matrix factorization.</li>\n</ol>",
-    "front": "<b>Householder Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a Householder matrix?</li>\n  <li><b>Practical Use:</b> What are Householder matrices used for?</li>\n  <li><b>Procedure:</b> How is a Householder matrix constructed?</li>\n</ul>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741715659224
+      },
+      {
+        "correct": false,
+        "timestamp": 1741715659675
+      },
+      {
+        "correct": true,
+        "timestamp": 1741716127048
+      },
+      {
+        "correct": true,
+        "timestamp": 1741716128195
+      },
+      {
+        "correct": true,
+        "timestamp": 1741716960260
+      },
+      {
+        "correct": false,
+        "timestamp": 1741716961661
+      },
+      {
+        "correct": true,
+        "timestamp": 1741716963005
+      },
+      {
+        "timestamp": 1741718040304,
+        "correct": false
+      }
+    ],
+    "back": "<u><b>Definition</b></u><br>\n<p>\nA <b>Householder matrix</b> is a symmetric, orthogonal matrix used for transforming vectors and matrices in numerical linear algebra. It is defined as: <br>\n$$\nH = I - 2vv^T, \\quad H \\in \\mathbb{R}^{n \\times n}, \\quad  v \\in \\mathbb{R}^n \\setminus\\{0\\}\n$$\n<br>\nwhere:\n<ul>\n    <li><b>$I$</b> is the $n \\times n$ identity matrix.</li>\n    <li><b>$v$</b> is often chosen as a unit vector (i.e., \\( ||v|| = 1 \\)).</li>\n    <li><b>$vv^T$</b> forms an $n \\times n$ rank-one projection matrix.</li>\n</ul>\n</p>\n<br>\n<p>\nMore generally, if \\( v \\) is not necessarily a unit vector, the Householder matrix is given by: <br>\n$$\nH = I - 2\\frac{vv^T}{v^T v}, \\quad v^T v \\neq 0\n$$\n<br>\nwhich ensures the transformation remains valid for any nonzero vector \\( v \\).\n</p>\n<br>\n\n<u><b>Properties</b></u><br>\n<ul>\n    <li><b>Orthogonal:</b> \\( H^T H = I \\), meaning \\( H^{-1} = H \\) (it is its own inverse).</li>\n    <li><b>Symmetric:</b> \\( H^T = H \\).</li>\n    <li><b>Reflection Transformation:</b> It reflects a vector about a hyperplane perpendicular to \\( v \\).</li>\n</ul>\n<br>\n\n<u><b>Practical Use</b></u> <br>\n<p>\nWe use Householder matrices for numerical linear algebra, especially for QR factorization and for reducing matrices to tridiagonal or Hessenberg forms.\n</p>\n<br>\n<p>\n<b>TODO: add pset + lecture 02/11 02/13 stuff stuff</b>\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Select a nonzero vector $v \\in \\mathbb{R}^n$.</li>\n  <li>Compute the Householder matrix using:\n      $$\n      H = I - 2\\frac{vv^T}{v^T v}\n      $$\n  </li>\n  <li>Use $H$ to reflect a given vector or to zero out subdiagonal elements during matrix factorization.</li>\n</ol>",
+    "front": "<b>Householder Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a Householder matrix?</li>\n  <li><b>Properties:</b> What are its key properties?</li>\n  <li><b>Practical Use:</b> What are Householder matrices used for?</li>\n  <li><b>Procedure:</b> How is a Householder matrix constructed?</li>\n</ul>",
     "id": 1741075039903,
     "tags": [
       "18.065"
     ],
     "understanding": 1
+  },
+  {
+    "back": "TODO: New back content",
+    "front": "Let $H = I - 2uu^T \\in \\mathbb{R}^{n \\times n}$ be a Householder matrix and let $X \\in \\mathbb{R}^{n \\times n}$. Given the special structure of $H$, can you propose a method for computing $HX$ whose computational complexity is $O(n^2)$?",
+    "id": 1741714530534,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1,
+    "attempts": []
   },
   {
     "attempts": [
@@ -1069,9 +1112,10 @@
     "understanding": 1
   },
   {
-    "id": 1741659280390,
-    "front": "TODO: card for this concept <br><br>\n\nThe standard property of singular values states that for any invertible matrix A, the singular values of its inverse satisfy:\n\n\\sigma_i(A^{-1}) = \\frac{1}{\\sigma_{n-i+1}(A)}",
+    "attempts": [],
     "back": "TODO: New back content",
+    "front": "TODO: card for this concept <br><br>\n\nThe standard property of singular values states that for any invertible matrix A, the singular values of its inverse satisfy:\n\n\\sigma_i(A^{-1}) = \\frac{1}{\\sigma_{n-i+1}(A)}",
+    "id": 1741659280390,
     "tags": [
       "18.065"
     ],
@@ -1098,9 +1142,10 @@
     "understanding": 1
   },
   {
-    "id": 1741653306737,
-    "front": "<b>Similarity Transformation</b>\n<ul>  \n    <li><b>Define:</b> What is a Similarity Transformation? What key properties does it preserve?</li>\n    <li><b>Procedure:</b> How do you determine if two matrices are similar?</li>\n    <li><b>Practical Use:</b> Where/when is Similarity Transformation used?</li>\n</ul>",
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nTwo square matrices $\\mathbf{A}$ and $\\mathbf{B}$ are similar if there exists a nonsingular matrix $\\mathbf{X}$ such that:\n$$\n\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}\n$$\nwhere $\\mathbf{X}$ is an invertible matrix. \n<br><br>\nThis transformation preserves many key properties of the matrix, including:\n<ul>\n  <li>Eigenvalues</li>\n  <li>Characteristic polynomial</li>\n  <li>Determinant</li>\n  <li>Trace</li>\n  <li>Rank</li>\n  <li>Minimal polynomial</li>\n  <li>Jordan canonical form</li>\n</ul>\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Find a candidate nonsingular matrix $\\mathbf{X}$.</li>\n  <li>Verify that the transformation $\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}$ holds.</li>\n  <li>Check for key properties such as identical characteristic polynomials.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nSimilarity transformations are used in various areas of linear algebra, including:\n<ul>\n  <li>Computing canonical forms (e.g., Jordan form).</li>\n  <li>Reducing matrices to simpler forms for eigenvalue analysis.</li>\n  <li>Determining if matrices represent the same linear transformation in different bases.</li>\n</ul>\n</p>",
+    "front": "<b>Similarity Transformation</b>\n<ul>  \n    <li><b>Define:</b> What is a Similarity Transformation? What key properties does it preserve?</li>\n    <li><b>Procedure:</b> How do you determine if two matrices are similar?</li>\n    <li><b>Practical Use:</b> Where/when is Similarity Transformation used?</li>\n</ul>",
+    "id": 1741653306737,
     "tags": [
       "18.065",
       "16.32"
@@ -1170,7 +1215,7 @@
   {
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\nThe power method is an iterative algorithm used to approximate the dominant eigenvalue (the eigenvalue with the greatest absolute value) and its corresponding eigenvector of a matrix. <br><br>\n\n<b><u>Procedure</u></b> <br>\n1. Choose an initial nonzero vector \\( x_0 \\). <br>\n2. For \\( k = 0, 1, 2, \\dots \\), compute \\( x_{k+1} = A x_k \\). <br>\n3. Normalize \\( x_{k+1} \\) to avoid numerical overflow. <br>\n4. Repeat until convergence; \\( x_k \\) approaches the eigenvector associated with the dominant eigenvalue. <br>\n5. Estimate the dominant eigenvalue by \\( \\lambda \\approx \\frac{x_k^T A x_k}{x_k^T x_k} \\).",
-    "front": "<b>The Power Method</b>\n<ul>\n    <li><b>Define:</b> What is the power method?</li>\n    <li><b>Procedure:</b> How does the power method algorithm approximate the dominant eigenvalue and its corresponding eigenvector?</li>\n</ul>",
+    "front": "<b>Power Method</b>\n<ul>\n    <li><b>Define:</b> What is the power method?</li>\n    <li><b>Procedure:</b> How does the power method algorithm approximate the dominant eigenvalue and its corresponding eigenvector?</li>\n    <li>When does the power method NOT converge?</li>\n</ul>",
     "id": 1741166998328,
     "tags": [
       "18.065"
@@ -1204,6 +1249,27 @@
     "id": 1741273019654,
     "tags": [
       "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Markov Chain",
+    "id": 1741701883945,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<u><b>Definition</b></u><br>  \n<p>  \nA <b>Probability Transition Matrix</b> is a square matrix that represents the probabilities of transitioning from one state to another in a Markov process. Each entry in the matrix describes the probability of moving from state \\(i\\) to state \\(j\\). <br>\n$$  \nP =  \n\\begin{bmatrix}  \np_{11} & p_{12} & \\cdots & p_{1n} \\\\  \np_{21} & p_{22} & \\cdots & p_{2n} \\\\  \n\\vdots & \\vdots & \\ddots & \\vdots \\\\  \np_{n1} & p_{n2} & \\cdots & p_{nn}  \n\\end{bmatrix}  \n$$  \nwhere \\( p_{ij} \\) is the probability of transitioning from state \\( i \\) to state \\( j \\).  \n</p>  \n<br>\n\n<u><b>Key Properties</b></u><br>  \n<ul>  \n  <li>Each row sums to 1: <br>\n  $$  \n  \\sum_{j=1}^{n} p_{ij} = 1, \\quad \\forall i  \n  $$  \n  </li>  \n  <li>All elements are non-negative: \\( 0 \\leq p_{ij} \\leq 1 \\).</li>  \n  <li>For an absorbing Markov chain, at least one row has a 1 on the diagonal and 0 elsewhere.</li>  \n</ul>  \n<br>\n\n<u><b>Practical Use</b></u><br>  \n<p>  \nProbability Transition Matrices are widely used in stochastic processes, particularly in:  \n<ul>  \n  <li>Modeling weather patterns</li>  \n  <li>Predicting customer behavior in marketing</li>  \n  <li>Analyzing stock market trends</li>  \n  <li>Genetics (Markov chains in population dynamics)</li>  \n</ul>  \n</p>  ",
+    "front": "<b>Probability Transition Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is a Probability Transition Matrix?</li>  \n    <li><b>Procedure:</b> How do you construct and use a Probability Transition Matrix?</li>  \n    <li><b>Practical Use:</b> Where/when is a Probability Transition Matrix used?</li>  \n</ul>  ",
+    "id": 1741703975173,
+    "tags": [
+      "18.065",
+      "midterm 2"
     ],
     "understanding": 1
   },
