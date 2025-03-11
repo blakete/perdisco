@@ -37,6 +37,14 @@
       {
         "correct": true,
         "timestamp": 1741558062588
+      },
+      {
+        "correct": true,
+        "timestamp": 1741728823707
+      },
+      {
+        "correct": false,
+        "timestamp": 1741728827196
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA vector norm is a function \\( \\|\\cdot\\|: \\mathbb{R}^{n} \\to \\mathbb{R} \\) that assigns a non-negative length to a vector and satisfies the following three properties for all \\( \\mathbf{v}, \\mathbf{w} \\in \\mathbb{R}^{n} \\) and any scalar \\( \\alpha \\in \\mathbb{R} \\):\n</p>\n<ol>\n  <li><b>Non-negativity and Definiteness:</b> \\( \\|\\mathbf{v}\\| \\geq 0 \\) and \\( \\|\\mathbf{v}\\| = 0 \\) if and only if \\( \\mathbf{v} = 0 \\).</li>\n  <li><b>Homogeneity (Scaling Property):</b> \\( \\|\\alpha \\mathbf{v}\\| = |\\alpha| \\|\\mathbf{v}\\| \\).</li>\n  <li><b>Triangle Inequality:</b> \\( \\|\\mathbf{v} + \\mathbf{w}\\| \\leq \\|\\mathbf{v}\\| + \\|\\mathbf{w}\\| \\).</li>\n</ol>",
@@ -783,12 +791,7 @@
     "understanding": 2
   },
   {
-    "attempts": [
-      {
-        "correct": true,
-        "timestamp": 1741075650753
-      }
-    ],
+    "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nFor a square matrix $A$, the <b>characteristic polynomial</b> is defined as:\n$$\np(\\lambda) = \\det(A - \\lambda I)\n$$\n</p>\n<br>\n<u><b>Derivation</b></u> <br>\n<ol>\n  <li>Start with the eigenvalue equation:\n    $$\n    Ax = \\lambda x\n    $$\n    for a nonzero vector $x$.\n  </li>\n  <li>Rearrange the equation to:\n    $$\n    (A - \\lambda I)x = 0\n    $$\n  </li>\n  <li>Since $x \\neq 0$, a nontrivial solution exists only if the matrix $(A - \\lambda I)$ is singular, hence:\n    $$\n    \\det(A - \\lambda I) = 0\n    $$\n  </li>\n  <li>This determinant equation is the <b>characteristic polynomial</b> of $A$.\n  </li>\n</ol>",
     "front": "<b>Characteristic Polynomial</b> \n<ul>\n  <li><b>Define:</b> What is the characteristic polynomial?</li>\n  <li><b>Derivation:</b> How is it derived from the eigenvalue equation $Ax = \\lambda x$?</li>\n</ul>",
     "id": 1741075245856,
@@ -848,106 +851,112 @@
     "understanding": 1
   },
   {
-    "id": 1741721369131,
-    "front": "<b>Determinant of a $2 \\times 2$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{2 \\times 2} \\), then \\( \\det(A) = ? \\)</p>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741721940878
+      }
+    ],
     "back": "<u><b>Answer</b></u><br>\n<p>\nIf \\( A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} \\),  \nthen its determinant is given by: <br>\n$$\n\\det(A) = a d - b c\n$$\n<br>\n<br>\n<ul>\n    <li>\\( A \\) is invertible iff \\( \\det(A) \\neq 0 \\); if \\( \\det(A) = 0 \\), then \\( A \\) has NO inverse.</li>\n    <li>Represents the area scaling factor of the transformation described by \\( A \\).</li>\n</ul>\n</p>",
+    "front": "<b>Determinant of a $2 \\times 2$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{2 \\times 2} \\), then \\( \\det(A) = ? \\)</p>",
+    "id": 1741721369131,
     "tags": [
       "18.065",
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": [
-      {
-        "timestamp": 1741721940878,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
-    "id": 1741721412394,
-    "front": "<b>Determinant of a $3 \\times 3$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{3 \\times 3} \\), then \\( \\det(A) = ? \\)</p>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741722270852
+      }
+    ],
     "back": "<u><b>Answer</b></u><br>\n<p>\nIf \\( A = \\begin{bmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{bmatrix} \\), \nthen its determinant is given by: <br>\n$$\n\\det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)\n$$\n<br>\n<br>\n<ul>\n    <li>\\( A \\) is invertible iff \\( \\det(A) \\neq 0 \\); if \\( \\det(A) = 0 \\), then \\( A \\) has no inverse.</li>\n    <li>Measures the volume scaling factor of the transformation described by \\( A \\); if \\( \\det(A) = 0 \\), the transformation collapses 3D space into a lower-dimensional subspace.</li>\n</ul>\n</p>",
+    "front": "<b>Determinant of a $3 \\times 3$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{3 \\times 3} \\), then \\( \\det(A) = ? \\)</p>",
+    "id": 1741721412394,
     "tags": [
       "18.065",
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": [
-      {
-        "timestamp": 1741722270852,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
-    "id": 1741722586077,
-    "front": "<b>Minor of a Matrix</b>\n<p>Suppose \\( A \\) is an \\( n \\times n \\) matrix. What is the \\( ij \\)th minor of \\(A\\), denoted by \\( M_{ij} \\)?</p>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741722887911
+      },
+      {
+        "correct": true,
+        "timestamp": 1741723683058
+      }
+    ],
     "back": "<u><b>Answer</b></u><br>\n<p>\nThe \\( ij \\)th minor of \\( A \\), denoted as \\( M_{ij} \\), is defined as: <br>\n$$\nM_{ij} = \\det(A_{ij})\n$$\n<br>\nwhere \\( A_{ij} \\) is the \\((n-1) \\times (n-1)\\) submatrix obtained by removing the \\( i \\)th row and \\( j \\)th column from \\( A \\). <br>\n<br>\n<ul>\n    <li>Minors are used to compute determinants of larger matrices through cofactor expansion.</li>\n    <li>They are essential in defining cofactors, which are used in matrix inverses and adjugates.</li>\n</ul>\n</p>",
+    "front": "<b>Minor of a Matrix</b>\n<p>Suppose \\( A \\) is an \\( n \\times n \\) matrix. What is the \\( ij \\)th minor of \\(A\\), denoted by \\( M_{ij} \\)?</p>",
+    "id": 1741722586077,
     "tags": [
       "18.065",
       "16.32"
     ],
-    "understanding": 1,
-    "attempts": [
-      {
-        "timestamp": 1741722887911,
-        "correct": true
-      },
-      {
-        "timestamp": 1741723683058,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
-    "id": 1741722346863,
-    "front": "<b>Cofactor of a Matrix</b>\n<p>Suppose \\( A \\) is an \\( n \\times n \\) matrix. What is the \\( ij \\)th cofactor of \\(A\\), denoted by \\( C_{ij} \\)?</p>",
-    "back": "<u><b>Answer</b></u><br>\n<p>\nThe \\( ij \\)th cofactor of \\( A \\), denoted as \\( C_{ij} \\), is defined as: <br>\n$$\nC_{ij} = (-1)^{i+j} \\det(M_{ij})\n$$\n<br>\nwhere \\( M_{ij} \\) is the \\((n-1) \\times (n-1)\\) minor of \\( A \\), obtained by removing the \\( i \\)th row and \\( j \\)th column from \\( A \\). <br>\n<br>\n<ul>\n    <li>Cofactors are used in the computation of determinants via cofactor expansion.</li>\n    <li>They are also used to compute the adjugate of a matrix, which helps in finding matrix inverses.</li>\n</ul>\n</p>",
-    "tags": [
-      "18.065",
-      "16.32"
-    ],
-    "understanding": 1,
     "attempts": [
       {
-        "timestamp": 1741722492320,
         "correct": false,
-        "reason": "missed det(M_ij)"
+        "reason": "missed det(M_ij)",
+        "timestamp": 1741722492320
       },
       {
-        "timestamp": 1741723678165,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741723678165
       }
-    ]
+    ],
+    "back": "<u><b>Answer</b></u><br>\n<p>\nThe \\( ij \\)th cofactor of \\( A \\), denoted as \\( C_{ij} \\), is defined as: <br>\n$$\nC_{ij} = (-1)^{i+j} \\det(M_{ij})\n$$\n<br>\nwhere \\( M_{ij} \\) is the \\((n-1) \\times (n-1)\\) minor of \\( A \\), obtained by removing the \\( i \\)th row and \\( j \\)th column from \\( A \\). <br>\n<br>\n<ul>\n    <li>Cofactors are used in the computation of determinants via cofactor expansion.</li>\n    <li>They are also used to compute the adjugate of a matrix, which helps in finding matrix inverses.</li>\n</ul>\n</p>",
+    "front": "<b>Cofactor of a Matrix</b>\n<p>Suppose \\( A \\) is an \\( n \\times n \\) matrix. What is the \\( ij \\)th cofactor of \\(A\\), denoted by \\( C_{ij} \\)?</p>",
+    "id": 1741722346863,
+    "tags": [
+      "18.065",
+      "16.32"
+    ],
+    "understanding": 1
   },
   {
-    "id": 1741723147170,
-    "front": "<b>Cofactor Expansion Theorem</b>\n<p>Let \\( A \\) be an \\( n \\times n \\) matrix. How can we compute \\( \\det(A) \\) using cofactor expansion along the \\( i \\)th row?</p>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741723494708
+      },
+      {
+        "correct": false,
+        "reason": "fixed row i where i = 1, ..., n",
+        "timestamp": 1741723622137
+      },
+      {
+        "correct": true,
+        "timestamp": 1741723626966
+      }
+    ],
     "back": "<u><b>Answer</b></u><br>\n<p>\nThe determinant of \\( A \\) can be computed using <b>cofactor expansion along the \\( i \\)th row</b>, where \\( i \\) is a <b>fixed</b> row chosen from \\( \\{1,2, \\dots, n\\} \\): <br>\n$$\n\\det(A) = \\sum_{j=1}^{n} a_{ij} C_{ij} = a_{i1} C_{i1} + a_{i2} C_{i2} + \\cdots + a_{in} C_{in}.\n$$\n<br>\n<ul>\n    <li>To compute \\( \\det(A) \\), you choose a single row \\( i \\) and apply the expansion formula to that row.</li>\n    <li>Cofactor expansion can be done on columns too.</li>\n</ul>\n</p>",
+    "front": "<b>Cofactor Expansion Theorem</b>\n<p>Let \\( A \\) be an \\( n \\times n \\) matrix. How can we compute \\( \\det(A) \\) using cofactor expansion along the \\( i \\)th row?</p>",
+    "id": 1741723147170,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
+    "understanding": 1
+  },
+  {
     "attempts": [
       {
-        "timestamp": 1741723494708,
-        "correct": true
-      },
-      {
-        "timestamp": 1741723622137,
-        "correct": false,
-        "reason": "fixed row i where i = 1, ..., n"
-      },
-      {
-        "timestamp": 1741723626966,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741724090802
       }
-    ]
-  },
-  {
-    "id": 1741721757550,
+    ],
+    "back": "<u><b>Answer</b></u><br>\n<p>\nFor an \\( n \\times n \\) matrix \\( A = [a_{ij}] \\), the determinant is computed using <b>cofactor expansion along the \\( i \\)th row</b>, where \\( i \\) is a fixed row chosen from \\( \\{1,2, \\dots, n\\} \\): <br>\n$$\n\\det(A) = \\sum_{j=1}^{n} (-1)^{i+j} a_{ij} \\det(M_{ij})\n$$\n<br>\nwhere \\( \\det(M_{ij}) \\) is the determinant of the \\((n-1) \\times (n-1)\\) minor obtained by removing row \\( i \\) and column \\( j \\). <br>\n<ul>\n    <li>\\( A \\) is invertible if and only if \\( \\det(A) \\neq 0 \\); if \\( \\det(A) = 0 \\), then \\( A \\) has no inverse.</li>\n    <li>The determinant helps determine volume scaling in higher-dimensional spaces; if \\( \\det(A) = 0 \\), the transformation collapses space into a lower-dimensional subspace.</li>\n</ul>\n</p>",
     "front": "<b>Determinant of an \\( n \\times n \\) Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{n \\times n} \\) for \\( n > 3 \\), then \\( \\det(A) = ? \\).</p>",
-    "back": "<u><b>Answer</b></u><br>\n<p>\nFor an \\( n \\times n \\) matrix \\( A = [a_{ij}] \\), the determinant is computed using <b>cofactor expansion along the \\( i \\)th row</b>, where \\( i \\) is a fixed row chosen from \\( \\{1,2, \\dots, n\\} \\): <br>\n$$\n\\det(A) = \\sum_{j=1}^{n} (-1)^{i+j} a_{ij} \\det(M_{ij})\n$$\n<br>\nwhere \\( M_{ij} \\) is the determinant of the \\((n-1) \\times (n-1)\\) minor obtained by removing row \\( i \\) and column \\( j \\). <br>\n<br>\n<ul>\n    <li>\\( A \\) is invertible if and only if \\( \\det(A) \\neq 0 \\); if \\( \\det(A) = 0 \\), then \\( A \\) has no inverse.</li>\n    <li>The determinant helps determine volume scaling in higher-dimensional spaces; if \\( \\det(A) = 0 \\), the transformation collapses space into a lower-dimensional subspace.</li>\n</ul>\n</p>",
+    "id": 1741721757550,
     "tags": [
       "18.065",
       "16.32"
@@ -955,9 +964,26 @@
     "understanding": 1
   },
   {
-    "id": 1741721080206,
-    "front": "<b>Inverse of a 2\u00d72 Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{2 \\times 2} \\), then \\( A^{-1} = ? \\)</p>",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741724700376
+      }
+    ],
+    "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe <b>adjugate matrix</b> of an \\( n \\times n \\) matrix \\( A \\), denoted as \\( \\text{adj}(A) \\), is the transpose of the cofactor matrix of \\( A \\): <br>  \n$$  \n\\text{adj}(A) = C^T  \n$$  \n<br>  \nwhere \\( C \\) is the <b>cofactor matrix</b> of \\( A \\), whose entries are the cofactors \\( C_{ij} \\). <br>  \n<br>  \n<ul>  \n    <li>The adjugate is used to compute the inverse of \\( A \\) when \\( A \\) is invertible:  <br>\n    $$  \n    A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A), \\quad \\text{if } \\det(A) \\neq 0.  \n    $$  \n    </li>  \n    <li>The adjugate appears in applications such as solving linear systems using Cramer's Rule.</li>  \n</ul>  \n</p>  ",
+    "front": "<b>Adjugate Matrix</b>  \n<p>Let \\( A \\) be an \\( n \\times n \\) matrix. What is the adjugate of \\( A \\), denoted as \\( \\text{adj}(A) \\)?</p>  ",
+    "id": 1741724144493,
+    "tags": [
+      "18.065",
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nIf \\( A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} \\), then its inverse is given by: <br>\n$$\nA^{-1} = \\frac{1}{a d - b c} \\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}\n$$\n<br>\nprovided that \\( \\det(A) = a d - b c \\neq 0 \\).\n</p>",
+    "front": "<b>Inverse of a $2 \\times 2$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{2 \\times 2} \\), then \\( A^{-1} = ? \\)</p>",
+    "id": 1741721080206,
     "tags": [
       "18.065",
       "16.32"
@@ -965,9 +991,21 @@
     "understanding": 1
   },
   {
-    "id": 1741721296491,
-    "front": "<b>Inverse of a 3\u00d73 Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{3 \\times 3} \\), then \\( A^{-1} = ? \\)</p>",
+    "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nIf \\( A = \\begin{bmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{bmatrix} \\), <br>\nthen its inverse is given by: <br>\n$$\nA^{-1} = \\frac{1}{\\det(A)} \\text{Adj}(A)\n$$\n<br>\nwhere \\( \\det(A) \\) is the determinant of \\( A \\), and \\( \\text{Adj}(A) \\) is the adjugate (transpose of the cofactor matrix). <br>\n\\( A^{-1} \\) exists if and only if \\( \\det(A) \\neq 0 \\).\n</p>",
+    "front": "<b>Inverse of a $3 \\times 3$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{3 \\times 3} \\), then \\( A^{-1} = ? \\)</p>",
+    "id": 1741721296491,
+    "tags": [
+      "18.065",
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [],
+    "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe inverse of an \\( n \\times n \\) matrix \\( A \\), denoted as \\( A^{-1} \\), exists iff \\( \\det(A) \\neq 0 \\). It is given by: <br>  \n$$  \nA^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A)  \n$$  \n<br>  \nwhere \\( \\text{adj}(A) \\) is the <b>adjugate matrix</b> of \\( A \\) (the transpose of the cofactor matrix). <br>  \n<br>  \n<ul>  \n    <li>\\( A \\) is invertible iff \\( \\det(A) \\neq 0 \\); otherwise, \\( A^{-1} \\) does not exist.</li>\n</ul>  \n</p>  ",
+    "front": "<b>Inverse of an \\( n \\times n \\) Matrix</b>  \n<p>Let \\( A \\) be an \\( n \\times n \\) matrix. How do we compute \\( A^{-1} \\) when it exists?</p>  ",
+    "id": 1741724759280,
     "tags": [
       "18.065",
       "16.32"
@@ -1032,20 +1070,20 @@
   {
     "attempts": [
       {
-        "timestamp": 1741720149217,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741720149217
       },
       {
-        "timestamp": 1741720153010,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741720153010
       },
       {
-        "timestamp": 1741720155394,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741720155394
       },
       {
-        "timestamp": 1741720156552,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741720156552
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA <b>Householder matrix</b> is a symmetric, orthogonal matrix used for transforming vectors and matrices in numerical linear algebra. It is defined as: <br>\n$$\nH = I - 2vv^T, \\quad H \\in \\mathbb{R}^{n \\times n}, \\quad  v \\in \\mathbb{R}^n \\setminus\\{0\\}\n$$\n<br>\nwhere:\n<ul>\n    <li><b>$I$</b> is the $n \\times n$ identity matrix.</li>\n    <li><b>$v$</b> is often chosen as a unit vector (i.e., \\( ||v|| = 1 \\)).</li>\n    <li><b>$vv^T$</b> forms an $n \\times n$ rank-one projection matrix.</li>\n</ul>\n</p>\n<br>\n<p>\nMore generally, if \\( v \\) is not necessarily a unit vector, the Householder matrix is given by: <br>\n$$\nH = I - 2\\frac{vv^T}{v^T v}, \\quad v^T v \\neq 0\n$$\n<br>\nwhich ensures the transformation remains valid for any nonzero vector \\( v \\).\n</p>\n<br>\n\n<u><b>Properties</b></u><br>\n<ul>\n    <li><b>Orthogonal:</b> \\( H^T H = I \\), meaning \\( H^{-1} = H \\) (it is its own inverse).</li>\n    <li><b>Symmetric:</b> \\( H^T = H \\).</li>\n    <li><b>Reflection Transformation:</b> It reflects a vector about a hyperplane perpendicular to \\( v \\).</li>\n</ul>\n<br>\n\n<u><b>Practical Use</b></u> <br>\n<p>\nWe use Householder matrices for numerical linear algebra, especially for QR factorization and for reducing matrices to tridiagonal or Hessenberg forms.\n</p>\n<br>\n<p>\n<b>TODO: add pset + lecture 02/11 02/13 stuff stuff</b>\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Select a nonzero vector $v \\in \\mathbb{R}^n$.</li>\n  <li>Compute the Householder matrix using:\n      $$\n      H = I - 2\\frac{vv^T}{v^T v}\n      $$\n  </li>\n  <li>Use $H$ to reflect a given vector or to zero out subdiagonal elements during matrix factorization.</li>\n</ol>",
