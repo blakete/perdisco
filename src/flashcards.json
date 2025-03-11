@@ -893,16 +893,7 @@
     "understanding": 1
   },
   {
-    "attempts": [
-      {
-        "correct": true,
-        "timestamp": 1741514560158
-      },
-      {
-        "correct": false,
-        "timestamp": 1741514563697
-      }
-    ],
+    "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $Q$ is called <b>orthogonal</b> if its column vectors (and row vectors) form an orthonormal set. This is equivalent to: <br>\n$$\nQ^T Q = QQ^T = I\n$$\n<br>\nwhere $I$ is the identity matrix. <br><br>\n\nThis directly implies that the inverse of $Q$ is its transpose, i.e., <br>\n$$\nQ^{-1} = Q^T.\n$$\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Check that $Q$ is a square matrix.</li>\n  <li>Compute $Q^T Q$. If $Q^T Q = I$, then $Q$ is orthogonal.</li>\n  <li>Alternatively, verify that the columns of $Q$ are orthonormal (i.e., each column has unit length and is orthogonal to the others).</li>\n</ol>",
     "front": "<b>Orthogonal Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an orthogonal matrix?</li>\n  <li><b>Procedure:</b> How do we check if a matrix is orthogonal?</li>\n</ul>",
     "id": 1740887687921,
@@ -912,12 +903,7 @@
     "understanding": 1
   },
   {
-    "attempts": [
-      {
-        "timestamp": 1741718997254,
-        "correct": false
-      }
-    ],
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA <b>Householder matrix</b> is a symmetric, orthogonal matrix used for transforming vectors and matrices in numerical linear algebra. It is defined as: <br>\n$$\nH = I - 2vv^T, \\quad H \\in \\mathbb{R}^{n \\times n}, \\quad  v \\in \\mathbb{R}^n \\setminus\\{0\\}\n$$\n<br>\nwhere:\n<ul>\n    <li><b>$I$</b> is the $n \\times n$ identity matrix.</li>\n    <li><b>$v$</b> is often chosen as a unit vector (i.e., \\( ||v|| = 1 \\)).</li>\n    <li><b>$vv^T$</b> forms an $n \\times n$ rank-one projection matrix.</li>\n</ul>\n</p>\n<br>\n<p>\nMore generally, if \\( v \\) is not necessarily a unit vector, the Householder matrix is given by: <br>\n$$\nH = I - 2\\frac{vv^T}{v^T v}, \\quad v^T v \\neq 0\n$$\n<br>\nwhich ensures the transformation remains valid for any nonzero vector \\( v \\).\n</p>\n<br>\n\n<u><b>Properties</b></u><br>\n<ul>\n    <li><b>Orthogonal:</b> \\( H^T H = I \\), meaning \\( H^{-1} = H \\) (it is its own inverse).</li>\n    <li><b>Symmetric:</b> \\( H^T = H \\).</li>\n    <li><b>Reflection Transformation:</b> It reflects a vector about a hyperplane perpendicular to \\( v \\).</li>\n</ul>\n<br>\n\n<u><b>Practical Use</b></u> <br>\n<p>\nWe use Householder matrices for numerical linear algebra, especially for QR factorization and for reducing matrices to tridiagonal or Hessenberg forms.\n</p>\n<br>\n<p>\n<b>TODO: add pset + lecture 02/11 02/13 stuff stuff</b>\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Select a nonzero vector $v \\in \\mathbb{R}^n$.</li>\n  <li>Compute the Householder matrix using:\n      $$\n      H = I - 2\\frac{vv^T}{v^T v}\n      $$\n  </li>\n  <li>Use $H$ to reflect a given vector or to zero out subdiagonal elements during matrix factorization.</li>\n</ol>",
     "front": "<b>Householder Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a Householder matrix?</li>\n  <li><b>Properties:</b> What are its key properties?</li>\n  <li><b>Practical Use:</b> What are Householder matrices used for?</li>\n  <li><b>Procedure:</b> How is a Householder matrix constructed?</li>\n</ul>",
     "id": 1741075039903,
