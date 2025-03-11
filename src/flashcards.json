@@ -912,40 +912,7 @@
     "understanding": 1
   },
   {
-    "attempts": [
-      {
-        "correct": true,
-        "timestamp": 1741715659224
-      },
-      {
-        "correct": false,
-        "timestamp": 1741715659675
-      },
-      {
-        "correct": true,
-        "timestamp": 1741716127048
-      },
-      {
-        "correct": true,
-        "timestamp": 1741716128195
-      },
-      {
-        "correct": true,
-        "timestamp": 1741716960260
-      },
-      {
-        "correct": false,
-        "timestamp": 1741716961661
-      },
-      {
-        "correct": true,
-        "timestamp": 1741716963005
-      },
-      {
-        "timestamp": 1741718040304,
-        "correct": false
-      }
-    ],
+    "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA <b>Householder matrix</b> is a symmetric, orthogonal matrix used for transforming vectors and matrices in numerical linear algebra. It is defined as: <br>\n$$\nH = I - 2vv^T, \\quad H \\in \\mathbb{R}^{n \\times n}, \\quad  v \\in \\mathbb{R}^n \\setminus\\{0\\}\n$$\n<br>\nwhere:\n<ul>\n    <li><b>$I$</b> is the $n \\times n$ identity matrix.</li>\n    <li><b>$v$</b> is often chosen as a unit vector (i.e., \\( ||v|| = 1 \\)).</li>\n    <li><b>$vv^T$</b> forms an $n \\times n$ rank-one projection matrix.</li>\n</ul>\n</p>\n<br>\n<p>\nMore generally, if \\( v \\) is not necessarily a unit vector, the Householder matrix is given by: <br>\n$$\nH = I - 2\\frac{vv^T}{v^T v}, \\quad v^T v \\neq 0\n$$\n<br>\nwhich ensures the transformation remains valid for any nonzero vector \\( v \\).\n</p>\n<br>\n\n<u><b>Properties</b></u><br>\n<ul>\n    <li><b>Orthogonal:</b> \\( H^T H = I \\), meaning \\( H^{-1} = H \\) (it is its own inverse).</li>\n    <li><b>Symmetric:</b> \\( H^T = H \\).</li>\n    <li><b>Reflection Transformation:</b> It reflects a vector about a hyperplane perpendicular to \\( v \\).</li>\n</ul>\n<br>\n\n<u><b>Practical Use</b></u> <br>\n<p>\nWe use Householder matrices for numerical linear algebra, especially for QR factorization and for reducing matrices to tridiagonal or Hessenberg forms.\n</p>\n<br>\n<p>\n<b>TODO: add pset + lecture 02/11 02/13 stuff stuff</b>\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Select a nonzero vector $v \\in \\mathbb{R}^n$.</li>\n  <li>Compute the Householder matrix using:\n      $$\n      H = I - 2\\frac{vv^T}{v^T v}\n      $$\n  </li>\n  <li>Use $H$ to reflect a given vector or to zero out subdiagonal elements during matrix factorization.</li>\n</ol>",
     "front": "<b>Householder Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a Householder matrix?</li>\n  <li><b>Properties:</b> What are its key properties?</li>\n  <li><b>Practical Use:</b> What are Householder matrices used for?</li>\n  <li><b>Procedure:</b> How is a Householder matrix constructed?</li>\n</ul>",
     "id": 1741075039903,
@@ -955,14 +922,14 @@
     "understanding": 1
   },
   {
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "Let $H = I - 2uu^T \\in \\mathbb{R}^{n \\times n}$ be a Householder matrix and let $X \\in \\mathbb{R}^{n \\times n}$. Given the special structure of $H$, can you propose a method for computing $HX$ whose computational complexity is $O(n^2)$?",
     "id": 1741714530534,
     "tags": [
       "18.065"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "attempts": [
