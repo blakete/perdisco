@@ -1,66 +1,76 @@
 [
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
     "front": "<b>Taylor Series vs. Taylor Expansion</b>  \n<ul>  \n  <li><b>Define:</b> What is the Taylor series of \\( f(x) \\) at \\( x = a \\)?</li>  \n  <li><b>Define:</b> What is the Taylor series expansion of \\( f(x) \\) at/around \\( x = a \\)?</li>  \n  <li><b>Difference:</b> How do the Taylor series and Taylor expansion differ in meaning and usage?</li>  \n</ul>  ",
     "importance": 2,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe <b>absolute value</b> is the standard norm for scalars in \\( \\mathbb{R} \\), and the modulus is the norm in \\( \\mathbb{C} \\). It qualifies as a norm because it satisfies three key properties:  \n</p>  \n<ol>  \n  <li><b>Non-negativity and Definiteness:</b>  <br>\n  $$ |x| \\geq 0, \\quad |x| = 0 \\text{ if and only if } x = 0. $$  \n  </li>  \n  <li><b>Homogeneity (Absolute Scalability):</b>  <br>\n  $$ |\\alpha x| = |\\alpha| \\cdot |x|, \\quad \\text{for any scalar } \\alpha. $$  \n  </li>  \n  <li><b>Triangle Inequality:</b>  <br>\n  $$ |x + y| \\leq |x| + |y|, \\quad \\text{for any scalars } x, y. $$  \n  </li>  \n</ol>  ",
     "front": "<b>What is the standard norm for scalars? Why is it a norm?</b> ",
     "id": 1741583127018,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741814336690
+      },
+      {
+        "correct": false,
+        "timestamp": 1741814338023
+      },
+      {
+        "correct": true,
+        "timestamp": 1741814338816
+      },
+      {
+        "correct": true,
+        "timestamp": 1741814340140
+      },
+      {
+        "correct": true,
+        "timestamp": 1741814343510
+      }
+    ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe projection of \\( v_k \\) onto \\( q_i \\) is given by: <br>\n$$\n\\text{proj}_{q_i}(v_k) = \\frac{\\langle v_k, q_i \\rangle}{\\langle q_i, q_i \\rangle} q_i = \\left( \\frac{\\| v_k^T q_i \\|}{\\| q_i \\|} \\right) \\frac{q_i}{\\| q_i \\|} = \\frac{\\| v_k^T q_i \\|}{\\| q_i \\|^2} q_i\n$$\n<br>\nwhere \\( \\langle v_k, q_i \\rangle \\) represents the inner product of \\( v_k \\) and \\( q_i \\).\n</p>\n",
     "front": "<b>Projection of \\( v_k \\) onto \\( q_i \\)?</b>",
     "id": 1741812268747,
     "tags": [
-      "18.065"
-    ],
-    "understanding": 1,
-    "attempts": [
-      {
-        "timestamp": 1741814336690,
-        "correct": true
-      },
-      {
-        "timestamp": 1741814338023,
-        "correct": false
-      },
-      {
-        "timestamp": 1741814338816,
-        "correct": true
-      },
-      {
-        "timestamp": 1741814340140,
-        "correct": true
-      },
-      {
-        "timestamp": 1741814343510,
-        "correct": true
-      }
-    ]
-  },
-  {
-    "id": 1741819054246,
-    "front": "<b>Distributive Property of Vector Multiplication</b>  \n<ul>  \n    <li><b>Expression:</b> \\( u_i^\\top (a + b) = \\) ?</li>  \n</ul>",
-    "back": "<u><b>Answer</b></u><br>  \n<p>  \nBy the distributive property of vector multiplication, we expand as follows:  <br>\n$$  \nu_i^\\top (a + b) = u_i^\\top a + u_i^\\top b  \n$$  \n<br>\nwhere \\( u_i^\\top \\) represents the transpose of the \\( i \\)-th unit vector.  \n</p>  ",
-    "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
+    "attempts": [],
+    "back": "<u><b>Answer</b></u><br>  \n<p>  \nBy the distributive property of vector multiplication, we expand as follows:  <br>\n$$  \nu_i^\\top (a + b) = u_i^\\top a + u_i^\\top b  \n$$  \n<br>\nwhere \\( u_i^\\top \\) represents the transpose of the \\( i \\)-th unit vector.  \n</p>  ",
+    "front": "<b>Distributive Property of Vector Multiplication</b>  \n<ul>  \n    <li><b>Expression:</b> \\( u_i^\\top (a + b) = \\) ?</li>  \n</ul>",
+    "id": 1741819054246,
+    "tags": [
+      "18.065",
+      "midterm1"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -91,121 +101,145 @@
     "front": "<b>Vector Norm</b>\n<ul>\n  <li><b>Definition:</b> What is a vector norm, and what properties must it satisfy?</li>\n</ul>",
     "id": 1741557565682,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nThe expression for \\( (A \\cdot A^T)_{ij} \\) in summation notation is:\n$$\n(A \\cdot A^T)_{ij} = \\sum_{k=1}^{n} A_{ik} A_{jk}\n$$\n<br>\nSince \\( A^T_{kj} = A_{jk} \\), this is equivalent to: <br>\n$$\n(A \\cdot A^T)_{ij} = \\sum_{k=1}^{n} A_{ik} A^T_{kj}\n$$\n</p>",
     "front": "<b>Summation Notation of \\( A \\cdot A^T \\)</b>\n<ul>  \n    <li>Write the expression for \\( (A \\cdot A^T)_{ij} \\) using summation notation.</li>\n</ul>",
     "id": 1741578939662,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Frobenius norm</b> of an \\( m \\times n \\) real matrix \\( A \\) is defined as the square root of the sum of the squares of its elements:\n$$\n\\|A\\|_F = \\sqrt{\\sum_{i=1}^{m} \\sum_{j=1}^{n} a_{ij}^2}\n$$\n<br><br>\nIt is also equivalent to the square root of the trace of \\( A^T A \\):\n$$\n\\|A\\|_F = \\sqrt{\\operatorname{Tr} (A^T A)}\n$$\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Square each element of the matrix \\( A \\).</li>\n  <li>Sum all squared values.</li>\n  <li>Take the square root of the result.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nThe Frobenius norm is widely used in numerical analysis, machine learning, and optimization to measure matrix magnitude and quantify errors in approximations.\n</p>",
     "front": "<b>Frobenius Norm</b>\n<ul>  \n    <li><b>Define:</b> What is the Frobenius norm?</li>\n    <li><b>Procedure:</b> How do you compute the Frobenius norm of a matrix?</li>\n    <li><b>Practical Use:</b> Where/when is the Frobenius norm used?</li>\n</ul>",
     "id": 1741576267043,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L1 Norm</b> (also called the Manhattan norm or taxicab norm) is the sum of the absolute values of the vector components: <br>\n$$\n\\| \\mathbf{x} \\|_1 = \\sum_{i=1}^{n} |x_i|\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
     "front": "<b>Vector L1 Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector L1 Norm?</li>\n    <li><b>Procedure:</b> How do you compute the L1 norm of a vector?</li>\n    <li><b>Practical Use:</b> Where/when is the L1 norm used?</li>\n</ul>",
     "id": 1741580520869,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L2 Norm</b> (also called the Euclidean norm) is the square root of the sum of the squared components of the vector: <br>\n$$\n\\| \\mathbf{x} \\|_2 = \\sqrt{\\sum_{i=1}^{n} x_i^2}\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
     "front": "<b>Vector L2 Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector L2 Norm?</li>\n</ul>",
     "id": 1741580621810,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector $\\mathbf{L_{\\infty}}$ Norm</b> (also called the maximum norm or supremum norm) is defined as the maximum absolute value of the components of the vector: <br>\n$$\n\\| \\mathbf{x} \\|_\\infty = \\max_{1 \\leq i \\leq n} |x_i|\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
     "front": "<b>Vector $l_{\\infty}$ Norm</b>\n<ul>  \n    <li><b>Define:</b> What is a Vector $l_{\\infty}$ Norm?</li>\n</ul>",
     "id": 1741586047180,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nAn <b>induced matrix norm</b> (or operator norm) is a norm for matrices that is derived from a given vector norm. It is defined as: <br>\n$$\n\\|A\\| = \\max_{x \\neq 0} \\frac{\\|Ax\\|}{\\|x\\|} = \\max_{\\|x\\|=1} \\|Ax\\|\n$$\n<br>\nwhere \\( A \\) is an \\( m \\times n \\) matrix, and \\( \\|\\cdot\\| \\) is a norm on \\( \\mathbb{R}^n \\).\n</p>\n<br>\n\n<u><b>Key Properties</b></u><br>\n<ol>\n  <li><b>Non-Negativity and Definiteness:</b>\n    <ul>\n      <li>\\(\\|A\\| \\geq 0\\) for any matrix \\( A \\).</li>\n      <li>\\(\\|A\\| = 0\\) if and only if \\( A \\) is the zero matrix.</li>\n    </ul>\n  </li>\n  <li><b>Homogeneity (Absolute Scalability):</b>\n    <ul>\n      <li>For any scalar \\( \\alpha \\) and matrix \\( A \\),</li>\n      <li>$$ \\|\\alpha A\\| = |\\alpha| \\|A\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Triangle Inequality (Subadditivity):</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) of the same size,</li>\n      <li>$$ \\|A + B\\| \\leq \\|A\\| + \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Submultiplicativity:</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) such that the product \\( AB \\) is defined,</li>\n      <li>$$ \\|AB\\| \\leq \\|A\\| \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Consistency with the Vector Norm:</b>\n    <ul>\n      <li>For any vector \\( x \\),</li>\n      <li>$$ \\|Ax\\| \\leq \\|A\\| \\|x\\|. $$</li>\n    </ul>\n  </li>\n</ol>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Select a vector norm \\( \\|\\cdot\\| \\) (e.g., \\( \\ell_1 \\), \\( \\ell_2 \\), or \\( \\ell_{\\infty} \\) norm).</li>\n  <li>Compute \\( \\|Ax\\| \\) for all unit vectors \\( x \\) (\\(\\|x\\| = 1\\)).</li>\n  <li>Find the maximum value of \\( \\|Ax\\| \\), which gives the induced matrix norm.</li>\n</ol>\n<br>",
     "front": "<b>Induced Matrix Norm</b>\n<ul>  \n    <li><b>Define:</b> What is an induced matrix norm?</li>\n    <li><b>Procedure:</b> How do you compute the induced matrix norm from a given vector norm?</li>\n</ul>",
     "id": 1741582036446,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nThe <b>trace</b> of a square matrix \\( A \\), denoted as \\( \\text{tr}(A) \\), is the sum of its diagonal elements:  <br>\n$$  \n\\text{tr}(A) = \\sum_{i=1}^{n} A_{ii}  \n$$  \n<br>\nwhere \\( A_{ii} \\) represents the diagonal entries of the \\( n \\times n \\) matrix \\( A \\).\n</p>  \n<br>  \n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Identify the main diagonal elements of the square matrix.</li>  \n  <li>Sum all the diagonal elements.</li>  \n</ol>  \n<br>  \n<u><b>Practical Use</b></u><br>  \n<p>  \nThe trace of a matrix is used in various mathematical and applied fields, including:  \n<ul>  \n  <li>Linear algebra (e.g., determining similarity transformations).</li>  \n  <li>Quantum mechanics (e.g., density matrices in quantum states).</li>  \n  <li>Machine learning (e.g., computing matrix derivatives).</li>  \n  <li>Control theory (e.g., analyzing system stability).</li>  \n</ul>  \n</p>  ",
     "front": "<b>Trace of a Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is the trace of a matrix?</li>  \n    <li><b>Procedure:</b> How do you compute the trace of a matrix?</li>  \n    <li><b>Practical Use:</b> Where/when is the trace of a matrix used?</li>  \n</ul>  ",
     "id": 1741577714816,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "$$\n\\|A\\|_F = \\left( \\sum_{i=1}^{n} \\sum_{j=1}^{n} a_{i,j}^2 \\right)^{\\frac{1}{2}} = \\left( \\text{trace} \\left( A^T A \\right) \\right)^{\\frac{1}{2}}\n$$",
     "id": 1741577238385,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Conjugate Transpose",
     "id": 1741576658519,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: New front content",
     "id": 1741576441089,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nA <b>Symmetric-Antisymmetric Decomposition</b> is a unique way to express any square matrix \\( A \\) as the sum of a symmetric matrix \\( S \\) and a skew-symmetric (antisymmetric) matrix \\( N \\):  <br>\n$$  \nA = S + N  \n$$  \n<br>\nwhere  <br>\n$$  \nS = \\frac{1}{2} (A + A^T), \\quad N = \\frac{1}{2} (A - A^T)  \n$$ \n<br> \nHere, \\( S^T = S \\) and \\( N^T = -N \\).\n</p>  \n<br>  \n\n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Given a square matrix \\( A \\), compute its transpose \\( A^T \\).</li>  \n  <li>Calculate the symmetric part: \\( S = \\frac{1}{2} (A + A^T) \\).</li>  \n  <li>Calculate the antisymmetric part: \\( N = \\frac{1}{2} (A - A^T) \\).</li>  \n  <li>Verify that \\( S \\) is symmetric and \\( N \\) is antisymmetric.</li>  \n</ol>  \n<br>\n\n<u><b>Practical Use</b></u><br>  \n<ul>  \n    <li>Used in quadratic forms, where only the symmetric part matters for positive definiteness.</li>  \n    <li>Fundamental in matrix theory and Lie algebra decomposition.</li>  \n    <li>Important in physics for separating conservative (symmetric) and rotational (antisymmetric) components of tensors.</li>  \n    <li>Helps in solving eigenvalue problems and in principal component analysis (PCA).</li>  \n</ul>  \n<br>  \n",
     "front": "<b>Symmetric-Antisymmetric Decomposition</b>  \n<ul>  \n    <li><b>Define:</b> What is a Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Procedure:</b> How do you perform Symmetric-Antisymmetric Decomposition?</li>\n    <li><b>Practical Use:</b> Where/when is Symmetric-Antisymmetric Decomposition used?</li>\n</ul>  ",
     "id": 1741551371010,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -225,11 +259,13 @@
     "id": 1741553622438,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -249,229 +285,271 @@
     "id": 1741551353638,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Concept</b></u><br>\n<p>\nThe Hessian test is used at a critical point (where the gradient is zero) to determine the type of extremum.\n</p>\n<br>\n\n<u><b>Positive Definite (PD) Case</b></u><br>\n<p>\nIf all eigenvalues of the Hessian matrix are strictly positive, then the function has a <b>strict local minimum</b> at that point. This means the function value increases in every direction away from the point.\n</p>\n<br>\n\n<u><b>Positive Semi-Definite (PSD) Case</b></u><br>\n<p>\nIf all eigenvalues of the Hessian are nonnegative (some may be zero), then the Hessian suggests a local minimum, but the test is <b>inconclusive regarding strictness </b>. The function might be flat in some directions, meaning it is not necessarily a strict minimum.\n</p>\n<br>\n\n<u><b>Summary</b></u><br>\n<p>\nA PD Hessian guarantees a strong local minimum, while a PSD Hessian only suggests a local minimum without guaranteeing strictness.\n</p>",
     "front": "<b>Hessian Test for Local Minima</b>\n<ul>\n  <li><b>Concept:</b> What does the Hessian test determine at a critical point?</li>\n  <li><b>Positive Definite (PD) Case:</b> What does a PD Hessian indicate?</li>\n  <li><b>Positive Semi-Definite (PSD) Case:</b> What does a PSD Hessian indicate?</li>\n</ul>",
     "id": 1741556276234,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\sin\\left(x+\\frac{\\pi}{2}\\right) = \\cos(x)\n$$",
     "front": "$$\n\\sin\\left(x+\\frac{\\pi}{2}\\right) = \\, \\text{?}\n$$",
     "id": 1741487630440,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\cos\\left(x+\\frac{\\pi}{2}\\right) = -\\sin(x)\n$$",
     "front": "$$\n\\cos\\left(x+\\frac{\\pi}{2}\\right) = \\, \\text{?}\n$$",
     "id": 1741487733230,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\int_{t_0}^{t_f} \\sin(at+b)\\, dt = \\left[-\\frac{1}{a}\\cos(at+b)\\right]_{t_0}^{t_f}\n$$\n<br><br>\nDo not forget about the sneaky chain rule when doing anti-derivatives!",
     "front": "$$\n\\int_{t_0}^{t_f} \\sin(at+b)\\, dt = \\, \\text{?}\n$$",
     "id": 1741484115943,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\int_{t_0}^{t_f} \\cos(at+b)\\, dt = \\left[\\frac{1}{a}\\sin(at+b)\\right]_{t_0}^{t_f}\n$$\n<br><br>\nDo not forget about the sneaky chain rule when doing anti-derivatives!",
     "front": "$$\n\\int_{t_0}^{t_f} \\cos(at+b)\\, dt = \\, \\text{?}\n$$",
     "id": 1741484741272,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "$Ax$ is a linear combination of the columns of $A$.\n$$ \nAx = [a_1, a_2, \\dots, a_n] \\cdot \n\\begin{bmatrix} x_1 \\\\  x_2 \\\\ \\vdots \\\\ x_n \\end{bmatrix} \n= x_1a_1 + x_2a_2 + \\dots + x_na_n \n$$",
     "front": "Matrix vector multiplication $Ax$",
     "id": 1741420947202,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b><br>  \nThe condition number of a matrix (or function) quantifies how sensitive the output is to small changes in the input. In numerical linear algebra, the condition number of a matrix \\( A \\) is defined as:<br>\n\n\\[\n\\kappa(A) = \\|A\\| \\cdot \\|A^{-1}\\|\n\\]\n\n<br>  \nfor a given matrix norm. It measures how much relative error in the input propagates to the output in solving linear systems.<br><br>  \n\n<b><u>Interpretation & Usage</u></b><br>  \n<ol>  \n  <li>A <b>low condition number</b> (close to 1) indicates a well-conditioned problem, meaning small input changes lead to small output changes.</li>  \n  <li>A <b>high condition number</b> (much greater than 1) suggests an ill-conditioned problem, where small input errors can cause large output errors, making numerical solutions unstable.</li>  \n  <li>In optimization and scientific computing, condition numbers help assess numerical stability and the reliability of computed solutions.</li>  \n</ol> ",
     "front": "<b>Condition Number</b>  \n<ul>  \n  <li><b>Define:</b> What is the condition number of a matrix or function, and what does it measure?</li>  \n  <li><b>Interpretation & Usage:</b> How is the condition number used in numerical analysis, and what does a high or low value indicate about a problem\u2019s stability?</li>  \n</ul>  ",
     "id": 1741379016329,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\frac{d}{dx}\\sin(x) = \\cos(x)\n$$",
     "front": "$$\n\\frac{d}{dx}\\sin(x) = \\, \\text{?}\n$$",
     "id": 1741483965611,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\frac{d}{dx}\\cos(x) = -\\sin(x)\n$$",
     "front": "$$\n\\frac{d}{dx}\\cos(x) = \\, \\text{?}\n$$",
     "id": 1741483979618,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\frac{d}{dx}\\tan(x) = \\sec^2(x)\n$$",
     "front": "$$\n\\frac{d}{dx}\\tan(x) = \\, \\text{?}\n$$",
     "id": 1741483988448,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\frac{d}{dx}\\cot(x) = -\\csc^2(x)\n$$",
     "front": "$$\n\\frac{d}{dx}\\cot(x) = \\, \\text{?}\n$$",
     "id": 1741484025952,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\frac{sin(x)}{cos(x)} = \\, tan(x)\n$$",
     "front": "$$\n\\frac{sin(x)}{cos(x)} = \\, \\text{?}\n$$",
     "id": 1741480472207,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\tan(x) = \\frac{\\sin(x)}{\\cos(x)}\n$$",
     "front": "$$\n\\tan(x) = \\, \\text{?}\n$$",
     "id": 1741481425263,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\cot(x) = \\frac{\\cos(x)}{\\sin(x)}\n$$",
     "front": "$$\n\\cot(x) = \\, \\text{?}\n$$",
     "id": 1741481442494,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\sec(x) = \\frac{1}{\\cos(x)}\n$$",
     "front": "$$\n\\sec(x) = \\, \\text{?}\n$$",
     "id": 1741481457664,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\csc(x) = \\frac{1}{\\sin(x)}\n$$",
     "front": "$$\n\\csc(x) = \\, \\text{?}\n$$",
     "id": 1741481473863,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\sin^2(x) + \\cos^2(x) = 1\n$$",
     "front": "$$\n\\sin^2(x) + \\cos^2(x) = \\, \\text{?}\n$$",
     "id": 1741481480924,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n1 + \\cot^2(x) = \\csc^2(x)\n$$",
     "front": "$$\n1 + \\cot^2(x) = \\, \\text{?}\n$$",
     "id": 1741481395486,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n1 + tan^2(x) = \\, sec^2(x)\n$$",
     "front": "$$\n1 + tan^2(x) = \\, \\text{?}\n$$",
     "id": 1741480992748,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\begin{aligned}\n\\sin(a\\pm b) &= \\sin(a)\\cos(b) \\pm \\cos(a)\\sin(b), \\\\\n\\cos(a\\pm b) &= \\cos(a)\\cos(b) \\mp \\sin(a)\\sin(b), \\\\\n\\tan(a\\pm b) &= \\frac{\\tan(a) \\pm \\tan(b)}{1 \\mp \\tan(a)\\tan(b)}.\n\\end{aligned}\n$$",
     "front": "$$\n\\begin{aligned}\n\\sin(a\\pm b) &= \\, \\text{?} \\\\\n\\cos(a\\pm b) &= \\, \\text{?} \\\\\n\\tan(a\\pm b) &= \\, \\text{?}\n\\end{aligned}\n$$",
     "id": 1741481623251,
     "tags": [
       "16.32",
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Logarithmic Integral Identity <br>\n$$\n\\int \\frac{du}{u} = \\ln |u| + C.\n$$\n",
     "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{u} = \\, \\text{?}\n$$",
@@ -482,6 +560,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Power Rule for Integration <br>\n$$\n\\int u^n \\, du = \\frac{u^{n+1}}{n+1} + C, \\quad n \\neq -1.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int u^n \\, du = \\, \\text{?} \\quad (n \\neq -1)\n$$",
@@ -492,6 +571,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Exponential Integral Identity <br>\n$$\n\\int e^u \\, du = e^u + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int e^u \\, du = \\, \\text{?}\n$$",
@@ -502,6 +582,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Exponential Integral for Base \\( a \\) <br>\n$$\n\\int a^u \\, du = \\frac{a^u}{\\ln a} + C, \\quad a > 0, a \\neq 1.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int a^u \\, du = \\, \\text{?}\n$$",
@@ -512,6 +593,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Sine Integral Identity <br>\n$$\n\\int \\sin u \\, du = -\\cos u + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\sin u \\, du = \\, \\text{?}\n$$",
@@ -522,6 +604,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Cosine Integral Identity <br>\n$$\n\\int \\cos u \\, du = \\sin u + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\cos u \\, du = \\, \\text{?}\n$$",
@@ -532,6 +615,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Tangent Integral Identity <br>\n$$\n\\int \\tan u \\, du = \\ln |\\sec u| + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\tan u \\, du = \\, \\text{?}\n$$",
@@ -542,6 +626,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Secant Integral Identity <br>\n$$\n\\int \\sec u \\, du = \\ln |\\sec u + \\tan u| + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\sec u \\, du = \\, \\text{?}\n$$",
@@ -552,6 +637,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Cosecant Integral Identity <br>\n$$\n\\int \\csc u \\, du = \\ln |\\csc u - \\cot u| + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\csc u \\, du = \\, \\text{?}\n$$",
@@ -562,6 +648,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Inverse Sine Integral Identity <br>\n$$\n\\int \\frac{du}{\\sqrt{1 - u^2}} = \\sin^{-1} u + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{\\sqrt{1 - u^2}} = \\, \\text{?}\n$$",
@@ -572,6 +659,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Inverse Tangent Integral Identity <br>\n$$\n\\int \\frac{du}{1 + u^2} = \\tan^{-1} u + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{1 + u^2} = \\, \\text{?}\n$$",
@@ -582,6 +670,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Hyperbolic Integral Identity <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + C_1}} = \\ln | u + \\sqrt{u^2 + C_1} | + C_2.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{\\sqrt{u^2 + C}} = \\, \\text{?}\n$$",
@@ -592,6 +681,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Integral of \\( \\frac{1}{A + u^2} \\) <br>\n$$\n\\int \\frac{du}{A + u^2} = \\frac{1}{\\sqrt{A}} \\tan^{-1} \\left(\\frac{u}{\\sqrt{A}}\\right) + C.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int \\frac{du}{A + u^2} = \\, \\text{?}\n$$",
@@ -602,6 +692,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Integration by Parts Formula <br>\n$$\n\\int u v' \\, du = uv - \\int u' v \\, du.\n$$",
     "front": "What identity is this? <br>\n$$\n\\int u v' \\, du = \\, \\text{?}\n$$",
@@ -612,6 +703,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\n$$\n\\sinh x = \\frac{e^x - e^{-x}}{2}.\n$$",
     "front": "<b>Hyperbolic Sine</b>\n<ul>\n    <li><b>Define:</b> What is the definition of hyperbolic sine?</li>\n</ul>",
@@ -622,6 +714,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\n$$\n\\cosh x = \\frac{e^x + e^{-x}}{2}.\n$$",
     "front": "<b>Hyperbolic Cosine</b>\n<ul>\n    <li><b>Define:</b> What is the definition of hyperbolic cosine?</li>\n</ul>",
@@ -632,6 +725,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<b><u>Separation of Variables Technique</u></b> <br>\nSeparation of variables is a method for solving first-order ordinary differential equations (ODEs) of the form: <br>  \n$$\n\\frac{dy}{dx} = f(x) g(y).\n$$  \n<br>  \nThe method involves rewriting the equation so that all terms involving \\( y \\) are on one side and all terms involving \\( x \\) are on the other: <br>  \n$$\n\\frac{dy}{g(y)} = f(x) dx.\n$$  \n<br>  \nThen, both sides are integrated separately: <br>  \n$$\n\\int \\frac{dy}{g(y)} = \\int f(x) dx.\n$$  \n<br>  \nSolving these integrals gives the general solution to the differential equation.",
     "front": "What is the separation of variables technique in differential equations?",
@@ -642,6 +736,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<b><u>Definition</u></b><br>  \nCompleting the square is an algebraic technique used to transform a quadratic expression into a perfect square trinomial plus a constant. This method is useful for solving quadratic equations, analyzing parabolas, and deriving the quadratic formula.<br><br>  \n\n<b><u>Procedure</u></b><br>  \nGiven a quadratic expression of the form: $ax^2 + bx + c$\n<ol>  \n  <li>Factor out \\( a \\) if it is not 1: <br>\n      \\[\n      a(x^2 + \\frac{b}{a}x) + c\n      \\]  \n  </li>  \n  <li>Add and subtract \\( \\left(\\frac{b}{2a}\\right)^2 \\) inside the parentheses to form a perfect square: <br>\n      \\[\n      a\\left(x^2 + \\frac{b}{a}x + \\left(\\frac{b}{2a}\\right)^2 - \\left(\\frac{b}{2a}\\right)^2\\right) + c\n      \\]  \n  </li>  \n  <li>Rewrite the perfect square trinomial as a squared binomial: <br>\n      \\[\n      a\\left( \\left(x + \\frac{b}{2a} \\right)^2 - \\left(\\frac{b}{2a}\\right)^2 \\right) + c\n      \\]  \n  </li>  \n  <li>Distribute \\( a \\) and simplify: <br>\n      \\[\n      a\\left(x + \\frac{b}{2a}\\right)^2 - a\\left(\\frac{b}{2a}\\right)^2 + c\n      \\]  \n  </li>  \n  <li>Final form: <br>\n      \\[\n      a\\left(x + \\frac{b}{2a}\\right)^2 + \\left(c - \\frac{b^2}{4a}\\right)\n      \\]  \n  </li>  \n</ol>\n <br>\n\nThis method is particularly useful for solving quadratic equations, deriving the quadratic formula, and completing square-based integrals in calculus.",
     "front": "<b>Complete the Square</b>  \n<ul>  \n  <li><b>Define:</b> What does it mean to complete the square in an algebraic expression?</li>  \n  <li><b>Procedure:</b> How do you complete the square for a quadratic expression of the form \\( ax^2 + bx + c \\)?</li>  \n</ul>  ",
@@ -652,6 +747,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<b><u>Definition</u></b><br>  \nThe Beltrami identity is a conserved quantity that arises in the calculus of variations when the Lagrangian does not explicitly depend on the independent variable. It provides a first integral of the Euler-Lagrange equation, simplifying the problem of finding extremals.<br><br>  \n\n<b><u>Derivation & Usage</u></b><br>  \nIf a functional is given by \\( J = \\int L(y, y', x) \\,dx \\), and \\( L \\), the Lagrangian, does not explicitly depend on \\( x \\), the independent variable, then the Beltrami identity states that:<br>  \n\\[\nL - y' \\frac{\\partial L}{\\partial y'} = C\n\\]\nwhere \\( C \\) is a constant.<br><br>  \nThis identity is particularly useful in reducing the order of the Euler-Lagrange equation, making it easier to solve variational problems where the Lagrangian lacks explicit dependence on the independent variable.",
     "front": "<b>Beltrami Identity</b>  \n<ul>  \n  <li><b>Define:</b> What is the Beltrami identity in the context of the calculus of variations?</li>  \n  <li><b>Derivation & Usage:</b> How is the Beltrami identity derived, and when is it used to simplify the Euler-Lagrange equation?</li>  \n</ul>  ",
@@ -662,28 +758,33 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nClairaut\u2019s theorem states that if a function \\( f(x,y) \\) is twice continuously differentiable (\\( C^2 \\)), then the mixed partial derivatives are equal: <br>\n$$  \nf_{xy} = f_{yx}.  \n$$  \n</p>  \n<br>  \n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Compute \\( f_x \\) and \\( f_y \\) (first-order partial derivatives).</li>  \n  <li>Find \\( f_{xy} \\) by differentiating \\( f_x \\) with respect to \\( y \\).</li>  \n  <li>Find \\( f_{yx} \\) by differentiating \\( f_y \\) with respect to \\( x \\).</li>  \n  <li>If \\( f_{xy} = f_{yx} \\) and \\( f \\) is \\( C^2 \\), Clairaut\u2019s theorem holds.</li>  \n</ol>  \n<br>  \n<u><b>Practical Use</b></u><br>  \n<p>  \nFor smooth functions (\\( C^2 \\)), the order of partial differentiation does not matter. However, for non-smooth functions, discontinuities in second derivatives can lead to \\( f_{xy} \\neq f_{yx} \\), requiring careful computation.  \n</p>",
     "front": "<b>Clairaut\u2019s Theorem</b>  \n<ul>  \n    <li><b>Define:</b> What is Clairaut\u2019s theorem?</li>  \n    <li><b>Procedure:</b> How do you verify Clairaut\u2019s theorem for a function?</li>  \n    <li><b>Practical Use:</b> When does the order of partial differentiation matter?</li>  \n</ul>",
     "id": 1741554967453,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nThe <b>Hessian matrix</b> of a twice differentiable function \\( f(x, y) \\) is the square matrix of second-order partial derivatives:  <br>\n$$  \n\\nabla^2 f(x, y) =  \n\\begin{pmatrix}  \nf_{xx} & f_{xy} \\\\  \nf_{yx} & f_{yy}  \n\\end{pmatrix}.  \n$$\n<br>\nIf \\( f \\) is \\( C^2 \\), Clairaut\u2019s theorem ensures \\( f_{xy} = f_{yx} \\).  \n</p>  \n<br>  \n<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Compute the first-order partial derivatives \\( f_x \\) and \\( f_y \\).</li>  \n  <li>Find the second-order partial derivatives: \\( f_{xx} \\), \\( f_{yy} \\), and mixed derivatives \\( f_{xy} \\), \\( f_{yx} \\).</li>  \n  <li>Construct the Hessian matrix using these derivatives.</li>  \n</ol>  \n<br>  \n<u><b>Practical Use</b></u><br>  \n<p>  \nThe Hessian matrix is used in:  \n<ul>  \n  <li>Determining the concavity and curvature of functions.</li>  \n  <li>Classifying critical points (local minima, maxima, or saddle points).</li>  \n  <li>Optimization problems in machine learning and economics.</li>  \n  <li>Solving differential equations and stability analysis.</li>  \n</ul>  \n</p>  ",
     "front": "<b>Hessian Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is the Hessian matrix?</li>  \n    <li><b>Procedure:</b> How do you compute the Hessian matrix?</li>  \n    <li><b>Practical Use:</b> Where is the Hessian matrix used?</li>  \n</ul>  ",
     "id": 1741150839007,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO <br><br>\n\nquadrature in the context of numerical optimal control <br><br>\n\nquadrature used to approximate integrals in optimal control problems",
     "front": "<b>Quadrature</b> \n<ul>\n  <li><b>Define:</b> What is quadrature in the context of numerical optimal control?</li>\n  <li><b>Procedure:</b> How is used?</li>\n</ul>",
@@ -694,6 +795,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Explain how to convert this optimal control problem into a standard calculus of variations problem where you seek the function $x(t)$  minimizing a cost functional $J(x)$ subject to boundary conditions.",
@@ -704,6 +806,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\nThe Euler method is a first-order explicit numerical method that uses the current point to estimate the next point in a step wise fashion.\n<br><br>\n\n<b><u>Practical Purpose</u></b> <br>\nIt is used to approximate solutions to ODEs.\n",
     "front": "Euler method <br><br>\nDefine <br><br>\nPractical purpose",
@@ -714,6 +817,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/trapezoid_rule.webp\"></div>",
     "front": "Trapezoidal Rule <br><br>\n\nPractical use <br><br>\n\nDefinition",
@@ -724,6 +828,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Approach to discretely approximating integrals.\n\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/midpoint_rule.jpg\"></div>",
     "front": "Midpoint Rule <br><br>\n\nPractical use <br><br>\n\nDefinition",
@@ -734,36 +839,55 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "A set of vectors that perfectly describes the space. <br><br>\n\nTheir combinations give one and only one way to produce every vector in the space.",
     "front": "Basis",
     "id": 1740885744839,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "Forward Substitution",
+    "back": "<u><b>Procedure</b></u><br>  \n<ol>  \n  <li>Start with the first equation and solve for the first variable.</li>  \n  <li>Substitute the obtained value into the next equation.</li>  \n  <li>Repeat this process down the system until all variables are solved.</li>  \n</ol>  \n<br>  \n<u><b>Pseudocode</b></u>\n<pre>  \nfor i = 1 to n:\n    for j = 1 to i-1:\n        x[i] = (b[i] - sum(L[i, j] * x[j])) / L[i, i]  \n</pre>  \n",
+    "front": "<b>Forward Substitution</b>  \n<ul>  \n    <li><b>Procedure:</b> How do you perform Forward Substitution?</li>  \n</ul>  \n",
     "id": 1741419253077,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
+    "back": "TODO: New back content",
+    "front": "Backward Substitution",
+    "id": 1741821659612,
+    "tags": [
+      "18.065",
+      "midterm1"
+    ],
+    "understanding": 1,
+    "attempts": []
+  },
+  {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/four_fundamental_subspaces.jpeg\"></div>\n<br>\nDimensions: <br>\n$Col(A) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{n - r}$ <br>\n$Col(A^T) \\in \\mathbb{R}^{r}$ <br>\n$Null(A) \\in \\mathbb{R}^{m - r}$ <br>",
     "front": "<b>Four Fundamental Subspaces</b>",
     "id": 1740884070112,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 2
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Card for mom",
@@ -774,47 +898,56 @@
     "understanding": 3
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "- denoted $Col(A) = C(A)$ <br>\n- the column space is a subspace of $\\mathbb{R}^m$ ($A \\in \\mathbb{R}^{n \\times m}$)<br>\n- consists of all linear combinations of $A$'s columns <br>\n- this is captured by the space spanned by $b$ in $Ax = b, \\, \\forall x$",
     "front": "Column space of $A$",
     "id": 1740886684323,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 2
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "- denoted $Col(A^T) = C(A)$, <br>\n- the column space is a subspace of $\\mathbb{R}^n$ (recall $A \\in \\mathbb{R}^{n \\times m}$)<br>\n- consists of all linear combinations of the columns of $A^T$'s <br>\n- this is captured by the space spanned by $b$ in $A^Ty = b, \\, \\forall y$",
     "front": "Row space of $A$ <br><br>",
     "id": 1740887337718,
     "tags": [
       "18.065",
+      "midterm1",
       "hello"
     ],
     "understanding": 2
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nLet \\( A \\in \\mathbb{R}^{m \\times n} \\) be a matrix. The null space of \\( A \\) is defined as: <br>  \n\\[\n\\text{Null}(A) = \\{ x \\in \\mathbb{R}^n \\mid Ax = 0 \\}\n\\]\nwhich is a subspace of \\( \\mathbb{R}^n \\). <br><br>  \n\nSimilarly, the null space of the transpose \\( A^T \\) is: <br>  \n\\[\n\\text{Null}(A^T) = \\{ y \\in \\mathbb{R}^m \\mid A^T y = 0 \\}\n\\]\nwhich is a subspace of \\( \\mathbb{R}^m \\). <br><br>  \n\n<b><u>Dimension Relationships</u></b> <br>  \nThe dimensions of the null space and the row/column spaces are related by: <br>  \n\\[\n\\dim(\\text{Row}(A)) + \\dim(\\text{Null}(A)) = n,\n\\]\n\\[\n\\dim(\\text{Col}(A)) + \\dim(\\text{Null}(A^T)) = m.\n\\]  ",
     "front": "<b>Null Space</b>\n<ul>\n    <li><b>Define:</b> What is the null space of a matrix?</li>\n    <li><b>Properties:</b> What are the key dimension relationships involving the null space?</li>\n</ul>",
     "id": 1740887782700,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nThe orthogonal complement of a subspace \\( S \\) in \\( \\mathbb{R}^n \\), denoted \\( S^\\perp \\), is the set of all vectors in \\( \\mathbb{R}^n \\) that are orthogonal to every vector in \\( S \\):  \n$$  \nS^\\perp = \\{ x \\in \\mathbb{R}^n \\mid x \\perp y, \\; \\forall y \\in S \\}.  \n$$\n<br>\nA vector \\( x \\) is orthogonal to \\( y \\) if and only if their inner product is zero:<br>  \n$$  \nx \\perp y \\iff \\langle x, y \\rangle = x^T y = 0.  \n$$  \n<br><br>\n\n<b><u>Procedure</u></b> <br>  \n1. Find a basis for the subspace \\( S \\). <br>  \n2. Solve for all vectors \\( x \\) that satisfy \\( x^T y = 0 \\) for every basis vector \\( y \\) in \\( S \\). <br>  \n3. The set of all such \\( x \\) forms the orthogonal complement \\( S^\\perp \\). <br>  \n4. If \\( \\dim(S) = k \\) in \\( \\mathbb{R}^n \\), then \\( \\dim(S^\\perp) = n - k \\). <br>  \n<br>  \n\n<b><u>Theorem</u></b> <br>  \nThe null space and row space of a matrix are related through the orthogonal complement:  <br>\n$$  \n\\text{Null}(A) = (\\text{Row}(A))^\\perp.  \n$$\n<br>\nSimilarly, the null space of the transpose is the orthogonal complement of the column space: <br>\n$$  \n\\text{Null}(A^T) = (\\text{Col}(A))^\\perp.  \n$$\n<br>\nThis means that the row space and column space define the constraints that determine the null spaces of \\( A \\) and \\( A^T \\), respectively.  ",
     "front": "<b>Orthogonal Complement</b>  \n<ul>  \n    <li><b>Define:</b> What is the orthogonal complement of a subspace in \\( \\mathbb{R}^n \\)?</li>  \n    <li><b>Procedure:</b> How do you determine the orthogonal complement of a given subspace?</li>  \n    <li><b>Theorem:</b> How are the null space and row space related via the orthogonal complement?</li>  \n</ul>  ",
     "id": 1741167244470,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -826,81 +959,97 @@
     "id": 1740890671935,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 2
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nFor a square matrix $A$, the <b>characteristic polynomial</b> is defined as:\n$$\np(\\lambda) = \\det(A - \\lambda I)\n$$\n</p>\n<br>\n<u><b>Derivation</b></u> <br>\n<ol>\n  <li>Start with the eigenvalue equation:\n    $$\n    Ax = \\lambda x\n    $$\n    for a nonzero vector $x$.\n  </li>\n  <li>Rearrange the equation to:\n    $$\n    (A - \\lambda I)x = 0\n    $$\n  </li>\n  <li>Since $x \\neq 0$, a nontrivial solution exists only if the matrix $(A - \\lambda I)$ is singular, hence:\n    $$\n    \\det(A - \\lambda I) = 0\n    $$\n  </li>\n  <li>This determinant equation is the <b>characteristic polynomial</b> of $A$.\n  </li>\n</ol>",
     "front": "<b>Characteristic Polynomial</b> \n<ul>\n  <li><b>Define:</b> What is the characteristic polynomial?</li>\n  <li><b>Derivation:</b> How is it derived from the eigenvalue equation $Ax = \\lambda x$?</li>\n</ul>",
     "id": 1741075245856,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 2
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nGauss elimination is a systematic method for solving systems of linear equations. It involves applying elementary row operations to an augmented matrix to transform it into row echelon form (or reduced row echelon form), from which the solutions can be obtained through back substitution.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Write the augmented matrix for the system of equations.</li>\n  <li>Apply elementary row operations:\n    <ul>\n      <li>Swap rows.</li>\n      <li>Multiply a row by a nonzero scalar.</li>\n      <li>Add or subtract a multiple of one row from another.</li>\n    </ul>\n  </li>\n  <li>Reduce the matrix to row echelon form (upper triangular form).</li>\n  <li>(Optional) Further reduce to reduced row echelon form for a unique solution.</li>\n  <li>Perform back substitution to solve for the variables.</li>\n</ol>",
     "front": "<b>Gauss Elimination</b> \n<ul>\n  <li><b>Define:</b> What is Gauss elimination?</li>\n  <li><b>Procedure:</b> How is Gauss elimination performed?</li>\n</ul>",
     "id": 1740890812452,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<ul>\n  <li>Denoted $rref(A)$</li>\n  <li>Rules:\n    <ol>\n      <li>Each leading 1 (pivot) is the only nonzero entry in its column.</li>\n      <li>The leading 1 in each row appears to the right of the leading 1 in the row above.</li>\n      <li>Any rows of all zeros appear in the bottom rows of the matrix.</li>\n    </ol>\n  </li>\n  <li>The first $r$ pivot columns form an identity-like structure.</li>\n  <li>The remaining $n - r$ columns, denoted as $F$, contain the free variables.</li>\n</ul>",
     "front": "Reduced row echelon form",
     "id": 1740887871355,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "To solve $Ax = b$ is to <u>express b as a linear combination of the columns of $A$.</u>",
     "front": "To solve $Ax = b$ is to ____.",
     "id": 1740886790619,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "The equations $Ax = b$ are solvable iff <u>${b}$ is in the column space of $A$</u>",
     "front": "The equations $Ax = b$ are solvable iff ____.",
     "id": 1740887017912,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 2
   },
   {
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nThe inner product (dot product) of two vectors \\( v \\) and \\( q \\) is:\n$$\n\\langle v, q \\rangle = v^T q\n$$\n<br>\nwhere \\( v^T \\) is the transpose of \\( v \\), making it a row vector.\n</p>\n<p>\n<br>\nIf \\( v \\) and \\( q \\) are column vectors: <br>\n$$\nv =\n\\begin{bmatrix}\nv_1 \\\\\nv_2 \\\\\n\\vdots \\\\\nv_n\n\\end{bmatrix}\n, \\quad\nq =\n\\begin{bmatrix}\nq_1 \\\\\nq_2 \\\\\n\\vdots \\\\\nq_n\n\\end{bmatrix}\n$$\n<br><br>\nThen their inner product is computed as: <br>\n$$\n\\langle v, q \\rangle =\n\\begin{bmatrix}\nv_1 & v_2 & \\dots & v_n\n\\end{bmatrix}\n\\begin{bmatrix}\nq_1 \\\\\nq_2 \\\\\n\\vdots \\\\\nq_n\n\\end{bmatrix}\n=\nv_1 q_1 + v_2 q_2 + \\dots + v_n q_n\n$$\n</p>",
     "front": "<b>Inner / Dot Product: </b> \\( \\langle v, q \\rangle = \\; ? \\)",
     "id": 1741812943588,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Inner product / dot product as implied by the multiplication of a transposed column vector $1 \\times n$ and a column vector $n \\times 1$.<br><br>\n\nThe dot product is given by: <br><br>\n$$\n\\mathbf{a}^\\top \\mathbf{b} =\n\\begin{bmatrix} a_1 & a_2 & \\dots & a_n \\end{bmatrix}\n\\begin{bmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_n \\end{bmatrix} =\n\\sum_{i=1}^{n} a_i b_i\n$$",
     "front": "Let  $a$  and  $b$  be column vectors in $\\mathbb{R}^n$. <br><br>\n\nWhat is $a^Tb$ ?\n",
     "id": 1740895695348,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -912,11 +1061,13 @@
     "id": 1741721369131,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -928,11 +1079,13 @@
     "id": 1741721412394,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [
       {
         "correct": true,
@@ -948,11 +1101,13 @@
     "id": 1741722586077,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [
       {
         "correct": false,
@@ -969,11 +1124,13 @@
     "id": 1741722346863,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [
       {
         "correct": true,
@@ -993,11 +1150,13 @@
     "front": "<b>Cofactor Expansion Theorem</b>\n<p>Let \\( A \\) be an \\( n \\times n \\) matrix. How can we compute \\( \\det(A) \\) using cofactor expansion along the \\( i \\)th row?</p>",
     "id": 1741723147170,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1009,11 +1168,13 @@
     "id": 1741721757550,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1025,74 +1186,88 @@
     "id": 1741724144493,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nIf \\( A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} \\), then its inverse is given by: <br>\n$$\nA^{-1} = \\frac{1}{a d - b c} \\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}\n$$\n<br>\nprovided that \\( \\det(A) = a d - b c \\neq 0 \\).\n</p>",
     "front": "<b>Inverse of a $2 \\times 2$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{2 \\times 2} \\), then \\( A^{-1} = ? \\)</p>",
     "id": 1741721080206,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nIf \\( A = \\begin{bmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{bmatrix} \\), <br>\nthen its inverse is given by: <br>\n$$\nA^{-1} = \\frac{1}{\\det(A)} \\text{Adj}(A)\n$$\n<br>\nwhere \\( \\det(A) \\) is the determinant of \\( A \\), and \\( \\text{Adj}(A) \\) is the adjugate (transpose of the cofactor matrix). <br>\n\\( A^{-1} \\) exists if and only if \\( \\det(A) \\neq 0 \\).\n</p>",
     "front": "<b>Inverse of a $3 \\times 3$ Matrix</b>\n<p>Let \\( A \\in \\mathbb{R}^{3 \\times 3} \\), then \\( A^{-1} = ? \\)</p>",
     "id": 1741721296491,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe inverse of an \\( n \\times n \\) matrix \\( A \\), denoted as \\( A^{-1} \\), exists iff \\( \\det(A) \\neq 0 \\). It is given by: <br>  \n$$  \nA^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A)  \n$$  \n<br>  \nwhere \\( \\text{adj}(A) \\) is the <b>adjugate matrix</b> of \\( A \\) (the transpose of the cofactor matrix). <br>  \n<br>  \n<ul>  \n    <li>\\( A \\) is invertible iff \\( \\det(A) \\neq 0 \\); otherwise, \\( A^{-1} \\) does not exist.</li>\n</ul>  \n</p>  ",
     "front": "<b>Inverse of an \\( n \\times n \\) Matrix</b>  \n<p>Let \\( A \\) be an \\( n \\times n \\) matrix. How do we compute \\( A^{-1} \\) when it exists?</p>  ",
     "id": 1741724759280,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $A$ is <b>invertible</b> (or nonsingular) if there exists a matrix $B$ such that:\n$$\nAB = BA = I\n$$\nwhere $I$ is the identity matrix.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Ensure that $A$ is square.</li>\n  <li>Check if the determinant $\\det(A)$ is nonzero. If $\\det(A) \\neq 0$, then $A$ is invertible.</li>\n  <li>If invertible, compute the inverse $A^{-1}$ using methods like Gaussian elimination or the adjugate formula.</li>\n</ol>",
     "front": "<b>Invertible Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an invertible matrix?</li>\n  <li><b>Practical Use:</b> Why is invertibility important?</li>\n  <li><b>Procedure:</b> How do we determine if a matrix is invertible?</li>\n</ul>",
     "id": 1740887674549,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 2
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $A$ is called <b>singular</b> if it is not invertible. This is equivalent to:\n$$\n\\det(A) = 0\n$$\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Ensure that $A$ is square.</li>\n  <li>Calculate the determinant $\\det(A)$. If $\\det(A) = 0$, then $A$ is singular.</li>\n  <li>Interpretation: A singular matrix has linearly dependent columns (or rows) and does not possess an inverse.</li>\n</ol>",
     "front": "<b>Singular Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a singular matrix?</li>\n  <li><b>Practical Use:</b> What does it imply when a matrix is singular?</li>\n  <li><b>Procedure:</b> How do we determine if a matrix is singular?</li>\n</ul>",
     "id": 1740887684118,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $A$ is <b>nonsingular</b> if it is invertible, meaning there exists a matrix $B$ such that:\n$$\nAB = BA = I\n$$\nEquivalently, $A$ is nonsingular if:\n$$\n\\det(A) \\neq 0\n$$\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Confirm that $A$ is a square matrix.</li>\n  <li>Compute $\\det(A)$. If $\\det(A) \\neq 0$, then $A$ is nonsingular.</li>\n  <li>If nonsingular, an inverse $A^{-1}$ exists and can be computed.</li>\n</ol>",
     "front": "<b>Nonsingular Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a nonsingular matrix?</li>\n  <li><b>Practical Use:</b> Why is nonsingularity important?</li>\n  <li><b>Procedure:</b> How do we verify if a matrix is nonsingular?</li>\n</ul>",
     "id": 1741074715967,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1103,21 +1278,25 @@
     "front": "<b>Orthonormal Set of Vectors</b> \n<ul>\n  <li><b>Define:</b> What is an orthonormal set of vectors?</li>\n  <li><b>Procedure:</b> How do we check if a set of vectors is orthonormal?</li>\n  <li><b>Practical Use:</b> Where are orthonormal sets used?</li>\n</ul>",
     "id": 1741513526904,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u> <br>\n<p>\nA square matrix $Q$ is called <b>orthogonal</b> if its column vectors (and row vectors) form an orthonormal set. This is equivalent to: <br>\n$$\nQ^T Q = QQ^T = I\n$$\n<br>\nwhere $I$ is the identity matrix. <br><br>\n\nThis directly implies that the inverse of $Q$ is its transpose, i.e., <br>\n$$\nQ^{-1} = Q^T.\n$$\n</p>\n<br>\n\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Check that $Q$ is a square matrix.</li>\n  <li>Compute $Q^T Q$. If $Q^T Q = I$, then $Q$ is orthogonal.</li>\n  <li>Alternatively, verify that the columns of $Q$ are orthonormal (i.e., each column has unit length and is orthogonal to the others).</li>\n</ol>",
     "front": "<b>Orthogonal Matrix</b> \n<ul>\n  <li><b>Define:</b> What is an orthogonal matrix?</li>\n  <li><b>Procedure:</b> How do we check if a matrix is orthogonal?</li>\n</ul>",
     "id": 1740887687921,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": false,
@@ -1140,60 +1319,66 @@
     "front": "<b>Householder Matrix</b> \n<ul>\n  <li><b>Define:</b> What is a Householder matrix?</li>\n  <li><b>Properties:</b> What are its key properties?</li>\n  <li><b>Practical Use:</b> What are Householder matrices used for?</li>\n  <li><b>Procedure:</b> How is a Householder matrix constructed?</li>\n</ul>",
     "id": 1741075039903,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Let $H = I - 2uu^T \\in \\mathbb{R}^{n \\times n}$ be a Householder matrix and let $X \\in \\mathbb{R}^{n \\times n}$. Given the special structure of $H$, can you propose a method for computing $HX$ whose computational complexity is $O(n^2)$?",
     "id": 1741714530534,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741819743765,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741819743765
       },
       {
-        "timestamp": 1741819745453,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741819745453
       },
       {
-        "timestamp": 1741819746154,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741819746154
       },
       {
-        "timestamp": 1741819747708,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741819747708
       },
       {
-        "timestamp": 1741819748882,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741819748882
       },
       {
-        "timestamp": 1741819751657,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741819751657
       },
       {
-        "timestamp": 1741819753055,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741819753055
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Gram-Schmidt Orthogonalization</b> process is a method for converting a set of linearly independent vectors into an orthonormal basis for a subspace. Given a set of vectors \n$$\n\\{v_1, v_2, \\dots, v_n\\}\n$$ \nin an inner product space, the process constructs an orthonormal set \n$$\n\\{u_1, u_2, \\dots, u_n\\}\n$$ \nsuch that each new vector is orthogonal to the previous ones.\n</p>\n<br>\n\n<u><b>Algorithm Pseudocode</b></u><br>\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/gram-schmidt_pseudocode.png\"></div>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Start with a set of linearly independent vectors \\( \\{ v_1, v_2, ..., v_n \\} \\).</li>\n  <li>Define the first orthonormal vector as: <br>\n  $$ \n  q_1 = \\frac{v_1}{\\|v_1\\|}\n  $$</li>\n  <li>For each subsequent vector \\( v_k \\), subtract its projection onto all previous orthonormal vectors: <br>\n  $$\n  u_k = v_k - \\sum_{j=1}^{k-1} \\text{proj}_{u_j}(v_k)\n  $$</li>\n  <li>Normalize \\( u_k' \\) to get an orthonormal vector: <br>\n  $$ \n  q_k = \\frac{u_k'}{\\|u_k'\\|}\n  $$</li>\n  <li>Repeat until all vectors are processed.</li>\n</ol>\n<br>\n\n<u><b>Practical Use</b></u><br>\n<p>\nGram-Schmidt Orthogonalization is widely used in:\n<ul>\n    <li>Generating orthonormal bases in linear algebra.</li>\n    <li>QR factorization in numerical linear algebra.</li>\n    <li>Signal processing and machine learning applications.</li>\n</ul>\n</p>",
     "front": "<b>Gram-Schmidt Orthogonalization</b>\n<ul>  \n    <li><b>Define:</b> What is Gram-Schmidt Orthogonalization?</li>\n    <li><b>Procedure:</b> How do you perform Gram-Schmidt Orthogonalization?</li>\n    <li><b>Practical Use:</b> Where/when is Gram-Schmidt Orthogonalization used?</li>\n</ul>",
     "id": 1741733840654,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1216,101 +1401,121 @@
     "front": "<b>The Five Factorizations of a Matrix</b>",
     "id": 1740884244261,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nA set of vectors \\( \\{ v_1, v_2, \\dots, v_n \\} \\) in \\( \\mathbb{R}^n \\) (or \\( \\mathbb{C}^n \\)) satisfies the <b>orthonormality condition</b> if:  \n<ol>  \n    <li>Each vector is <b>unit length</b> (normalized):  \n       \\[\n       \\| v_i \\| = 1, \\quad \\forall i.\n       \\]  \n    </li>  \n    <li>The vectors are <b>mutually orthogonal</b>:  \n       \\[\n       v_i^T v_j = 0, \\quad \\text{for } i \\neq j.\n       \\]  \n       This means that the dot product (or inner product) between distinct vectors is zero, and each vector has a norm of 1.  \n    </li>  \n</ol>  \n<br>  \n\n<b><u>Properties</u></b> <br>  \n<ul>  \n    <li>If a matrix \\( Q \\) has orthonormal columns, then \\( Q^T Q = I \\), making it an orthogonal (or unitary) matrix.</li>  \n    <li>Orthonormal vectors simplify computations in linear algebra, especially in QR factorization and least squares problems.</li>  \n    <li>For an orthonormal basis of \\( \\mathbb{R}^n \\), any vector \\( x \\) can be uniquely written as a linear combination of the basis vectors.</li>  \n    <li>In function spaces, orthonormal functions play a key role in Fourier analysis.</li>  \n</ul>  ",
     "front": "<b>Orthonormality Condition</b>  \n<ul>  \n    <li><b>Define:</b> What is the orthonormality condition for a set of vectors?</li>  \n    <li><b>Properties:</b> What are the key characteristics of an orthonormal set of vectors?</li>  \n</ul>  ",
     "id": 1741168096548,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nQR factorization is a decomposition of a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\) into the product of an orthogonal matrix \\( Q \\) and an upper triangular matrix \\( R \\):  \n\\[\nA = QR,\n\\]\n<br>\nwhere:  <br>\n- \\( Q \\in \\mathbb{R}^{m \\times m} \\) is an orthogonal matrix (\\( Q^T Q = I \\)).\n<ul>\n    <li>\n    \\( R \\in \\mathbb{R}^{m \\times n} \\) is an upper triangular matrix.  \n     </li>\n</ul>\n<br>\n\n<b><u>Applications</u></b> <br>  \n<ul>  \n    <li>Solving linear systems efficiently.</li>  \n    <li>Computing eigenvalues and eigenvectors (QR algorithm).</li>  \n    <li>Least squares approximation in regression problems.</li>  \n    <li>Numerical stability in iterative methods.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n    <li>Start with a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\).</li>  \n    <li>Use the <b>Gram-Schmidt process</b> or <b>Householder reflections</b> to construct an orthogonal matrix \\( Q \\).</li>  \n    <li>Compute \\( R = Q^T A \\), which results in an upper triangular matrix.</li>  \n    <li>The decomposition satisfies \\( A = QR \\).</li>  \n</ol>",
     "front": "<b>QR Factorization</b>  \n<ul>  \n    <li><b>Define:</b> What is QR factorization?</li>  \n    <li><b>Applications:</b> Where is QR factorization used?</li>  \n    <li><b>Procedure:</b> How to compute QR factorization?</li>  \n</ul>  ",
     "id": 1740890854848,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>QR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n2 & 2 \\\\\n0 & 3\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nQ =\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1\n\\end{bmatrix},\n\\quad\nR =\n\\begin{bmatrix}\n2 & 2 \\\\\n0 & 3\n\\end{bmatrix}.\n\\] <br><br>\nThus, \\( A = QR \\).",
     "front": "<b>Factor matrix \\( A \\) into \\( QR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n2 & 2 \\\\\n0 & 3\n\\end{bmatrix}\n\\]",
     "id": 1741185849308,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>QR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n2 & 3 & 1 \\\\\n0 & 4 & 5 \\\\\n0 & 0 & 6\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nQ =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix},\n\\quad\nR =\n\\begin{bmatrix}\n2 & 3 & 1 \\\\\n0 & 4 & 5 \\\\\n0 & 0 & 6\n\\end{bmatrix}.\n\\] <br><br>\nThus, \\( A = QR \\).",
     "front": "<b>Factor matrix \\( A \\) into \\( QR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n2 & 3 & 1 \\\\\n0 & 4 & 5 \\\\\n0 & 0 & 6\n\\end{bmatrix}\n\\]",
     "id": 1741185873373,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nCR factorization is a matrix decomposition technique where a given matrix \\( A \\) is factored into the product of two matrices:  <br>\n$$  \nA = CR\n$$  \n<br>\nwhere \\( C \\) is a matrix with orthonormal columns (often computed via Gram-Schmidt or QR-like processes), and \\( R \\) is an upper triangular matrix.\n<br><br>  \n\n<b><u>Applications</u></b> <br>  \n<ul>  \n  <li>Used in numerical linear algebra for solving least squares problems.</li>  \n  <li>Helps in reducing computational complexity in iterative methods.</li>  \n  <li>Applied in signal processing and machine learning for matrix approximations.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n  <li>Start with a given matrix \\( A \\) (typically an \\( m \\times n \\) matrix).</li>  \n  <li>Compute the matrix \\( C \\) whose columns form an orthonormal basis for the column space of \\( A \\).</li>  \n  <li>Compute the matrix \\( R \\) as the product \\( C^T A \\), which results in an upper triangular matrix.</li>  \n  <li>The decomposition satisfies \\( A = CR \\), where \\( C^T C = I \\) (orthonormality condition).</li>  \n</ol>  ",
     "front": "<b>CR Factorization</b>  \n<ul>  \n  <li><b>Define:</b> What is CR factorization?</li>  \n  <li><b>Applications:</b> Where is CR factorization used?</li>  \n  <li><b>Procedure:</b> How is CR factorization performed?</li>  \n</ul>  ",
     "id": 1741167809635,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<b><u>CR Factorization Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix},\n\\] <br>\nwe can choose: <br>\n\\[\nC =\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1\n\\end{bmatrix} \\quad \\text{(the identity matrix, which is orthonormal)},\n\\]\nand\n\\[\nR =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix} \\quad \\text{(an upper triangular matrix with integer elements)}.\n\\] <br><br>\nThus, \\(A = CR\\).",
     "front": "<b>Factor matrix \\( A \\) into \\( CR \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 \\\\\n0 & 3\n\\end{bmatrix}\n\\]",
     "id": 1741168186959,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "<b>Permutation Matrix</b>",
     "id": 1741165893792,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nLU decomposition is the factorization of a square matrix \\( A \\) into the product of a lower triangular matrix \\( L \\) and an upper triangular matrix \\( U \\), such that:  <br>\n\\[\nA = LU.\n\\] \n\n<br><br>  \n\n<b><u>Example</u></b> <br>  \nFor a \\( 3 \\times 3 \\) matrix:  <br>\n\\[\nA =\n\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33}\n\\end{bmatrix}\n\\]\n<br>\nLU decomposition gives:  <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\nl_{21} & 1 & 0 \\\\\nl_{31} & l_{32} & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\nu_{11} & u_{12} & u_{13} \\\\\n0 & u_{22} & u_{23} \\\\\n0 & 0 & u_{33}\n\\end{bmatrix}\n\\]  \n\n<br><br>\n\n<b><u>Applications</u></b> <br>  \n<ol>  \n  <li>Solving linear systems efficiently using forward and backward substitution.</li>  \n  <li>Computing matrix determinants as \\( \\det(A) = \\det(L) \\det(U) \\).</li>  \n  <li>Matrix inversion by solving multiple systems efficiently.</li>  \n  <li>Numerical methods, such as optimization and differential equations.</li>  \n</ol>  \n\n<br>\n\n<b><u>Procedure</u></b> <br>  \nLU decomposition is performed through Gaussian elimination:  \n<ol>  \n  <li>Convert matrix \\( A \\) into an upper triangular matrix \\( U \\) using row operations.</li>  \n  <li>Keep track of the multipliers used in each step to form the lower triangular matrix \\( L \\).</li>  \n  <li>If partial pivoting is required, an additional permutation matrix \\( P \\) may be introduced, leading to \\( PA = LU \\).</li>  \n</ol>  \n\n<br>  \n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-03-02_at_1.34.36_AM.png\"></div> ",
     "front": "<b>LU Decomposition</b>  \n<ul>  \n  <li><b>Define:</b> What is LU decomposition?</li>  \n  <li><b>Applications:</b> Where is LU decomposition used?</li>  \n  <li><b>Procedure:</b> How is LU decomposition performed?</li>  \n</ul>  ",
     "id": 1740890882881,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 3
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>LU Decomposition Result</u></b> <br>\nFor the matrix: <br>\n\\[\nA =\n\\begin{bmatrix}\n4 & 3 \\\\\n6 & 3\n\\end{bmatrix},\n\\] <br>\nthe LU decomposition (without permutation) is: <br>\n\\[\nL =\n\\begin{bmatrix}\n1 & 0 \\\\\n\\frac{3}{2} & 1\n\\end{bmatrix},\n\\quad\nU =\n\\begin{bmatrix}\n4 & 3 \\\\\n0 & -\\frac{3}{2}\n\\end{bmatrix}.\n\\] <br><br>",
     "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n4 & 3 \\\\\n6 & 3\n\\end{bmatrix}\n\\]\n",
     "id": 1741164002995,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1321,11 +1526,13 @@
     "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA =\n\\begin{bmatrix}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 10\n\\end{bmatrix}\n\\]",
     "id": 1741164054782,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1336,82 +1543,98 @@
     "front": "<b>Factor matrix \\( A \\) into \\( LU \\)</b> <br>  \n\\[\nA = \\begin{bmatrix}\n1 & 3 & 2 \\\\\n2 & 6 & 5 \\\\\n3 & 8 & 6\n\\end{bmatrix}\n\\]",
     "id": 1741165926652,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: card for this concept <br><br>\n\nThe standard property of singular values states that for any invertible matrix A, the singular values of its inverse satisfy:\n\n\\sigma_i(A^{-1}) = \\frac{1}{\\sigma_{n-i+1}(A)}",
     "id": 1741659280390,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Procedure for singular value decomposition",
     "id": 1740890913235,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Prove that for any matrix $A \\in R^{m\u00d7n}$, that $A^{T}A$ and $A$ have\nthe same null space.",
     "id": 1740890964079,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nTwo square matrices $\\mathbf{A}$ and $\\mathbf{B}$ are similar if there exists a nonsingular matrix $\\mathbf{X}$ such that:\n$$\n\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}\n$$\nwhere $\\mathbf{X}$ is an invertible matrix. \n<br><br>\nThis transformation preserves many key properties of the matrix, including:\n<ul>\n  <li>Eigenvalues</li>\n  <li>Characteristic polynomial</li>\n  <li>Determinant</li>\n  <li>Trace</li>\n  <li>Rank</li>\n  <li>Minimal polynomial</li>\n  <li>Jordan canonical form</li>\n</ul>\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Find a candidate nonsingular matrix $\\mathbf{X}$.</li>\n  <li>Verify that the transformation $\\mathbf{B} = \\mathbf{X}^{-1} \\mathbf{A} \\mathbf{X}$ holds.</li>\n  <li>Check for key properties such as identical characteristic polynomials.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nSimilarity transformations are used in various areas of linear algebra, including:\n<ul>\n  <li>Computing canonical forms (e.g., Jordan form).</li>\n  <li>Reducing matrices to simpler forms for eigenvalue analysis.</li>\n  <li>Determining if matrices represent the same linear transformation in different bases.</li>\n</ul>\n</p>",
     "front": "<b>Similarity Transformation</b>\n<ul>  \n    <li><b>Define:</b> What is a Similarity Transformation? What key properties does it preserve?</li>\n    <li><b>Procedure:</b> How do you determine if two matrices are similar?</li>\n    <li><b>Practical Use:</b> Where/when is Similarity Transformation used?</li>\n</ul>",
     "id": 1741653306737,
     "tags": [
       "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>  \nA matrix \\( A \\in \\mathbb{R}^{n \\times n} \\) is called a <b>symmetric matrix</b> if it satisfies: \n\\[\nA^T = A.\n\\]\nThis means that the matrix is equal to its transpose. <br><br>  \n\n<b><u>Properties</u></b> <br>  \n<ul>\n    <li>Symmetric matrices always have real eigenvalues.</li>\n    <li>The eigenvectors of a symmetric matrix corresponding to distinct eigenvalues are orthogonal.</li>\n    <li>In the real field, every symmetric matrix is diagonalizable.</li>  \n    <li>Off-diagonal elements satisfy \\( a_{ij} = a_{ji} \\), meaning the matrix is symmetric across the main diagonal.</li>\n</ul>  ",
     "front": "<b>Symmetric Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is a symmetric matrix?</li>  \n    <li><b>Properties:</b> What are the key characteristics of a symmetric matrix?</li>  \n</ul>  ",
     "id": 1740890063445,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Propose a function $x = linear\\_solver(U, b)$, where $U \\in R^{n \\times n}$ is an upper triangular matrix, $b \\in R^n$ is a vector, and $x \\in R^n$ is the solution to $Ux = b$. <br><br>\n\nThen apply your procedure to",
     "id": 1740891657888,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Deflation via Householder Transformation",
     "id": 1741078759558,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1422,11 +1645,13 @@
     "front": "<b>Similar matrix</b> <br><br>\nDefine <br><br>\nProperties",
     "id": 1740892885417,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -1437,47 +1662,56 @@
     "front": "<b>Diagonalization</b> \n<ul>\n  <li><b>Define:</b> What is diagonalization?</li>\n  <li><b>Practical Use:</b> Why is diagonalization useful?</li>\n  <li><b>Procedure:</b> How do we diagonalize a matrix?</li>\n</ul>",
     "id": 1741066673709,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<b><u>Definition</u></b> <br>\nThe power method is an iterative algorithm used to approximate the dominant eigenvalue (the eigenvalue with the greatest absolute value) and its corresponding eigenvector of a matrix. <br><br>\n\n<b><u>Procedure</u></b> <br>\n1. Choose an initial nonzero vector \\( x_0 \\). <br>\n2. For \\( k = 0, 1, 2, \\dots \\), compute \\( x_{k+1} = A x_k \\). <br>\n3. Normalize \\( x_{k+1} \\) to avoid numerical overflow. <br>\n4. Repeat until convergence; \\( x_k \\) approaches the eigenvector associated with the dominant eigenvalue. <br>\n5. Estimate the dominant eigenvalue by \\( \\lambda \\approx \\frac{x_k^T A x_k}{x_k^T x_k} \\).",
     "front": "<b>Power Method</b>\n<ul>\n    <li><b>Define:</b> What is the power method?</li>\n    <li><b>Procedure:</b> How does the power method algorithm approximate the dominant eigenvalue and its corresponding eigenvector?</li>\n    <li>When does the power method NOT converge?</li>\n</ul>",
     "id": 1741166998328,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Singular Vector",
     "id": 1741418172612,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Steepest Descent Methods",
     "id": 1741273002745,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Conjugate Gradient Method",
     "id": 1741273019654,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm1"
     ],
     "understanding": 1
   },
@@ -1487,22 +1721,25 @@
     "front": "Markov Chain",
     "id": 1741701883945,
     "tags": [
-      "18.065"
+      "18.065",
+      "midterm2"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nA <b>Probability Transition Matrix</b> is a square matrix that represents the probabilities of transitioning from one state to another in a Markov process. Each entry in the matrix describes the probability of moving from state \\(i\\) to state \\(j\\). <br>\n$$  \nP =  \n\\begin{bmatrix}  \np_{11} & p_{12} & \\cdots & p_{1n} \\\\  \np_{21} & p_{22} & \\cdots & p_{2n} \\\\  \n\\vdots & \\vdots & \\ddots & \\vdots \\\\  \np_{n1} & p_{n2} & \\cdots & p_{nn}  \n\\end{bmatrix}  \n$$  \nwhere \\( p_{ij} \\) is the probability of transitioning from state \\( i \\) to state \\( j \\).  \n</p>  \n<br>\n\n<u><b>Key Properties</b></u><br>  \n<ul>  \n  <li>Each row sums to 1: <br>\n  $$  \n  \\sum_{j=1}^{n} p_{ij} = 1, \\quad \\forall i  \n  $$  \n  </li>  \n  <li>All elements are non-negative: \\( 0 \\leq p_{ij} \\leq 1 \\).</li>  \n  <li>For an absorbing Markov chain, at least one row has a 1 on the diagonal and 0 elsewhere.</li>  \n</ul>  \n<br>\n\n<u><b>Practical Use</b></u><br>  \n<p>  \nProbability Transition Matrices are widely used in stochastic processes, particularly in:  \n<ul>  \n  <li>Modeling weather patterns</li>  \n  <li>Predicting customer behavior in marketing</li>  \n  <li>Analyzing stock market trends</li>  \n  <li>Genetics (Markov chains in population dynamics)</li>  \n</ul>  \n</p>  ",
     "front": "<b>Probability Transition Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is a Probability Transition Matrix?</li>  \n    <li><b>Procedure:</b> How do you construct and use a Probability Transition Matrix?</li>  \n    <li><b>Practical Use:</b> Where/when is a Probability Transition Matrix used?</li>  \n</ul>  ",
     "id": 1741703975173,
     "tags": [
       "18.065",
-      "midterm 2"
+      "midterm2"
     ],
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "The Taylor series for a vector-valued function \\( F(x) \\) expands it around \\( x \\): <br><br>\n$$\nF(x + \\Delta x) \\approx F(x) + g(x)^T \\Delta x + \\frac{1}{2} \\Delta x^T H(x) \\Delta x + \\dots\n$$\n<br><br>\n\nwhere: <br>\n\n- \\( g(x) \\) is the gradient of \\( F \\): <br><br>\n$$\ng = \\begin{bmatrix} \\frac{\\partial F}{\\partial x_1} \\\\ \\vdots \\\\ \\frac{\\partial F}{\\partial x_n} \\end{bmatrix}.\n$$\n\n<br><br>\n- \\( H(x) \\) is the Hessian matrix of second derivatives: <br><br>\n$$\nH =\n\\begin{bmatrix}\n\\frac{\\partial^2 F}{\\partial x_1^2} & \\cdots & \\frac{\\partial^2 F}{\\partial x_1 \\partial x_n} \\\\\n\\vdots & \\ddots & \\vdots \\\\\n\\frac{\\partial^2 F}{\\partial x_n \\partial x_1} & \\cdots & \\frac{\\partial^2 F}{\\partial x_n^2}\n\\end{bmatrix}.\n$$\n<br><br>\nTruncating the series gives a quadratic approximation of \\( F(x) \\) around \\( x \\).",
     "front": "Taylor series for a vector-valued function \\( F(x) \\)",
@@ -1513,6 +1750,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "Positive definiteness of a real $n \\times n$ symmetric matrix $A$ is defined as <br><br>\n$$\nx^T A x > 0, \\quad \\forall x \\neq 0, \\; x \\in \\mathbb{R}^n\n$$",
     "front": "Positive definite (PD) <br><br>\nDefine<br><br>\nHow to test for it",
@@ -1523,6 +1761,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "meeting some necessary conditions does not mean the thing is true but its required that the condition be true when the thing is true. <br><br>\n\nsufficient condition when meant means the thing of interest is true.",
     "front": "Necessary vs. sufficient conditions",
@@ -1533,6 +1772,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "A positive definite (PD) Hessian guarantees a local minimum, while a positive semi-definite (PSD) Hessian is only necessary\u2014it does not confirm a minimum on its own.<br><br>\n\n\\[\n\\begin{array}{|c|c|c|c|}\n\\hline\n\\textbf{Condition} & \\textbf{Hessian Type} & \\textbf{What It Means} & \\textbf{Conclusion} \\\\\n\\hline\n\\text{Necessary} & \\text{Positive Semi-Definite (PSD)} & \\text{No negative curvature, but could be flat in some directions} & \\text{Local min possible, but not guaranteed} \\\\\n\\hline\n\\text{Sufficient} & \\text{Positive Definite (PD)} & \\text{Strictly upward curvature in all directions} & \\text{Guarantees a local min} \\\\\n\\hline\n\\end{array}\n\\]",
     "front": "Hessian necessary and sufficient conditions for a local minimum.",
@@ -1543,6 +1783,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\ng(x^*) = 0\n$$\n<br><br>\ngradient is zero.",
     "front": "Stationary point necessary condition.",
@@ -1553,6 +1794,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "If $f: \\mathbb{R}^n \\to \\mathbb{R}$ is a differentiable function, the gradient of $f(x)$ is defined as:\n<br><br>\n\n$$\n\\nabla f(x) = \n\\begin{bmatrix}\n\\frac{\\partial f}{\\partial x_1} \\\\\n\\frac{\\partial f}{\\partial x_2} \\\\\n\\vdots \\\\\n\\frac{\\partial f}{\\partial x_n}\n\\end{bmatrix}.\n$$\n\n<br><br>\nEach component $\\frac{\\partial f}{\\partial x_i}$ represents the partial derivative of $f$ with respect to $x_i$.\n<br><br>\n\nThe gradient is a vector that points in the direction of the steepest increase of $f(x)$.",
     "front": "<b>Gradient of a Differentiable Vector Function</b> \n<ul>\n  <li><b>Define:</b> What is the gradient of a differentiable vector function?</li>\n  <li><b>Procedure:</b> How is the gradient of a vector function computed and interpreted geometrically?</li>\n</ul>",
@@ -1563,6 +1805,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "A functional is a mapping from a space of functions to the real numbers. <br><br>\n\nMathematically, a functional $J$ takes a function $y(x)$ as input and returns a real number:\n<br><br>\n\n$$\nJ[y] = \\int_{a}^{b} F(x, y, y') \\, dx.\n$$\n\n<br><br>\nFunctionals are commonly used in calculus of variations and physics to express quantities such as energy or action.",
     "front": "What is a <b>functional</b>?",
@@ -1573,6 +1816,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "The first variation of a functional is the first-order term in the Taylor expansion of the increment, providing a linear approximation of the change in the functional. <br><br>\n\nThe first variation of a functional $J[x(t)]$ with respect to a perturbation $\\delta x(t)$ is defined as:\n<br><br>\n\n$$\n\\delta J(x(t), \\delta x(t)) = \\left. \\frac{d}{d\\epsilon} J(x(t) + \\epsilon \\delta x(t)) \\right|_{\\epsilon=0}.\n$$\n<br><br>\n\n<b>TODO: fix beyond here to make more sense</b>\n<br><br>\n\nFor a functional $J[y]$, we express its perturbation as:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$ gives:\n<br><br>\n$$\nF(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br>\n\nSubstituting this into the integral:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nTaking the limit as $\\epsilon \\to 0$, we obtain the first variation:\n<br><br>\n$$\n\\delta J = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
     "front": "<b>Increment in Calculus of Variations</b> \n<ul>\n  <li><b>Define:</b> What is the increment of a functional?</li>\n  <li><b>Procedure:</b> How is the increment of a functional expressed and used when deriving the first variation?</li>\n</ul>",
@@ -1583,6 +1827,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "The first variation of functional is a linear approximation of the increment, i.e., first-order Taylor expansion of the increment.<br><br>\n\nThe **first variation** of a functional $J[x(t)]$ with respect to a perturbation $\\delta x(t)$ is defined as:\n<br><br>\n\n$$\n\\delta J(x(t), \\delta x(t)) = \\left. \\frac{d}{d\\epsilon} J(x(t) + \\epsilon \\delta x(t)) \\right|_{\\epsilon=0}.\n$$\n<br><br>\n\nFor a functional $J[y]$ and a small perturbation $\\delta y$, consider:\n<br><br>\n\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b F(x, y + \\epsilon \\delta y, y' + \\epsilon \\delta y') \\, dx.\n$$\n<br><br>\n\nExpanding the integrand $F( \\cdot )$ in a Taylor series around $\\epsilon = 0$, we obtain:\n<br><br>\n$$\nF(\\cdot) = F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2).\n$$\n<br><br>\n\nSubstituting this expansion back into the integral gives:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = \\int_a^b \\Bigg[ F(x, y, y') + \\epsilon \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) + O(\\epsilon^2) \\Bigg] dx.\n$$\n<br>\n\nThis can be rewritten as:\n<br><br>\n$$\nJ[y + \\epsilon \\delta y] = J[y] + \\epsilon \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx + O(\\epsilon^2).\n$$\n<br><br>\n\nThe first variation $\\delta J$ is defined as the first-order term:\n<br><br>\n$$\n\\delta J = \\lim_{\\epsilon \\to 0} \\frac{J[y + \\epsilon \\delta y] - J[y]}{\\epsilon} = \\int_a^b \\left( \\frac{\\partial F}{\\partial y} \\delta y + \\frac{\\partial F}{\\partial y'} \\delta y' \\right) dx.\n$$\n<br>",
     "front": "<b>First Variation</b> \n<ul>\n  <li><b>Define:</b> What is the first variation in the context of calculus of variations?</li>\n  <li><b>Procedure:</b> How is the first variation computed and used to determine extremals of functionals?</li>\n</ul>",
@@ -1593,6 +1838,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "The Euler-Lagrange equation states that for a function $g(x, \\dot{x}, t)$:\n<br><br>\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial g}{\\partial \\dot{x}} \\right) - \\frac{\\partial g}{\\partial x} = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{x}} \\right) - \\frac{\\partial L}{\\partial x} = 0\n$$\n\n<br><br>\nRewriting this:\n\n<br><br>\n$$\n\\frac{d}{dt} (g_{\\dot{x}}) - g_x = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} (L_{\\dot{x}}) - L_x = 0\n$$\n\n<br><br>\nwhich is the fundamental condition for extremizing a functional in the calculus of variations.",
     "front": "<b>Euler-Lagrange Equation</b> \n<ul>\n  <li><b>Define:</b> What is the Euler-Lagrange equation?</li>\n  <li><b>Procedure:</b> How is the Euler-Lagrange equation derived and applied in optimization problems?</li>\n</ul>",
@@ -1603,6 +1849,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\nH(x, u, \\lambda, t) = f(x, u, t) \\cdot \\lambda + L(x, u, t).\n$$\n<br><br>\nwhere: <br>\n- x  is the state variable. <br>\n- u  is the control variable. <br>\n- \\lambda  is the costate (adjoint) variable (analogous to momentum in classical mechanics). <br>\n- L(x, u, t)  is the running cost.<br>\n- f(x, u, t)  describes the system dynamics.\n\n<br><br><br><br>\n$$\nH = \\dot{x} \\frac{\\partial L}{\\partial \\dot{x}} - L \n  \\quad \\text{or} \\quad \nH = \\dot{x} \\frac{\\partial g}{\\partial \\dot{x}} - g\n$$\n<br><br>\nRewriting as:<br><br>\n$$\nH = \\dot{x} L_{\\dot{x}} - L \n  \\quad \\text{or} \\quad \nH = \\dot{x} g_{\\dot{x}} - g\n$$\n\n<br><br>\n\nNote that:<br><br>\n$$\ng_t + \\frac{dH}{dt} = 0.\n$$\n\n<br><br>\nThe crucial property of the Hamiltonian is that:<br>\n- If  $L$  does not explicitly depend on time (i.e.,  $L_t = 0$ ), then  $H$  is conserved.<br>\n- This leads directly to the Beltrami identity, which states that:\n$$\n\\dot{x} g_{\\dot{x}} - g = \\text{constant}.\n$$",
     "front": "Hamiltonian",
@@ -1613,6 +1860,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "$$\n\\min_{x \\in \\mathbb{R}^{n}}{f(x)}\n$$\n<br><br>\nsubject to: <br>\n$$\ng_{i}(x) \\leq 0, \\quad i \\in \\mathcal{I}, \\quad \\mathcal{I} = 1, \\dots, m \\quad \\text{(inequality constraints)}\n$$\n<br>\n$$\nh_{i}(x) = 0, \\quad j \\in \\mathcal{E}, \\quad \\mathcal{E} = 1, \\dots, p \\quad \\; \\text{(equality constraints)}\n$$\n<br><br>\nwhere:\n<ul>\n  <li>$$f(x)$$ is the objective function to be minimized.</li>\n  <li>$$g_i(x) \\leq 0$$ represents inequality constraints that must be satisfied.</li>\n  <li>$$h_j(x) = 0$$ represents equality constraints that must be exactly satisfied.</li>\n  <li>$$x \\in \\mathbb{R}^n$$ is the decision variable (a vector in \\( n \\)-dimensional space).</li>\n</ul>",
     "front": "Standard form of a constrained optimization problem.",
@@ -1623,6 +1871,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<ol>\n\n  <li>Stationarity <br>\n    $$\n    \\nabla f(x^*) + \\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*) + \\sum_{j=1}^{p} \\mu_j \\nabla h_j(x^*) = 0\n    $$\n  </li>\n  <br>\n\n  <li>Primal feasibility <br>\n    $$\n    g_i(x^*) \\leq 0, \\quad \\forall i \\in \\{1, \\dots, m\\}\n    $$\n    <br>\n    $$\n    h_j(x^*) = 0, \\quad \\forall j \\in \\{1, \\dots, p\\}\n    $$\n  </li>\n  <br>\n\n  <li>Dual feasibility <br>\n    $$\n    \\lambda_i \\geq 0, \\quad \\forall i \\in \\{1, \\dots, m\\}\n    $$\n  </li>\n  <br>\n\n  <li>Complementary slackness <br>\n    $$\n    \\lambda_i g_i(x^*) = 0, \\quad \\forall i \\in \\{1, \\dots, m\\}\n    $$\n  </li>\n  <br>\n\n</ol>",
     "front": "KKT Conditions.",
@@ -1633,6 +1882,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "When the gradients of the active constraints are linearly dependent\u2014that is, when the Linear Independence Constraint Qualification (LICQ) fails. In this case, the constraint gradients do not span enough directions to cancel out the gradient of the objective, meaning the stationarity condition cannot be met.",
     "front": "Under what circumstances can we fail to choose Lagrange multipliers that satisfy the KKT conditions without contradiction?",
@@ -1643,6 +1893,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "At an optimal point $x^*$, the idea is that no small, feasible perturbation $d$ should be able to decrease the objective function. In other words, for every feasible direction $d$, we must have <br><br>\n\n$$\n\\nabla f(x^{*})^T d \\geq 0.\n$$\n\n<br><br>\nNow, when a constraint $g_i(x) \\leq 0$ is active (i.e. $g_i(x^*) = 0)$, any small movement d that keeps us feasible must satisfy <br><br>\n$$\n\\nabla g_i(x^{*})^T d \\leq 0.\n$$\n<br><br>\nThis means the feasible directions are limited by the gradients of the active constraints. For there to be no feasible descent direction\u2014that is, for the objective not to decrease along any $d$\u2014the entire gradient $\\nabla f(x^*)$ must be \u201cneutralized\u201d by the constraint forces. This requirement is captured by the stationarity condition: <br><br>\n$$\n\\nabla f(x^*) + \\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*) = 0.\n$$\n<br><br>\nHere, the multipliers $\\lambda_i$ adjust the contribution of each constraint\u2019s gradient so that they together cancel out $\\nabla f(x^*)$. This ensures that any movement allowed by the constraints does not provide a descent direction, preserving the optimality of $x^*$.\n<br>",
     "front": "Why must the stationarity condition hold at an optimal solution in constrained optimization?",
@@ -1653,6 +1904,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "At an optimal point $x^*$, the gradients of the active constraints, $\\nabla g_i(x^*)$ for all $i$ such that $g_i(x^*) = 0$, define the normal (or \u201cblocking\u201d) directions at $x^*$. They essentially tell us which directions are forbidden for movement if we want to remain feasible. <br><br>\n\nFor $x^*$ to be optimal, the gradient $\\nabla f(x^*)$ must not point in any direction that would allow us to decrease $f(x)$ while staying within the feasible region. This is only possible if $\\nabla f(x^*)$ lies entirely in the span of the constraint gradients. In mathematical terms, this means that there exist multipliers $\\lambda_i$ such that <br><br>\n\n$$\n\\nabla f(x^*) = -\\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*).\n$$\n\n<br><br>\nIf any component of $\\nabla f(x^*)$ were to lie outside of the span of the $\\nabla g_i(x^*)$, then there would be a feasible direction in which $f(x)$ could decrease, contradicting the optimality of $x^*$. <br><br>\n\nThus, the condition guarantees that all possible descent directions are \u201cblocked\u201d by the active constraints, ensuring that $x^*$ is indeed optimal.",
     "front": "What is the geometric intuition behind the KKT stationarity condition?",
@@ -1663,6 +1915,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "The LICQ condition states that at a feasible point $x^*$, the gradients of all active constraints must be linearly independent. <br><br>\n\nMathematically, if the set of active constraints at $x^*$ is given by:\n<br><br>\n$$\n\\mathcal{A} = \\{ i \\mid g_i(x^*) = 0 \\},\n$$\n<br><br>\nthen the gradients of these constraints,\n<br><br>\n$$\n\\{ \\nabla g_i(x^*) \\}_{i \\in \\mathcal{A}},\n$$\n<br><br>\nmust be linearly independent. This means that if there exists a set of scalars $\\lambda_i$ such that:\n<br><br>\n$$\n\\sum_{i \\in \\mathcal{A}} \\lambda_i \\nabla g_i(x^*) = 0,\n$$\n<br><br>\nthen it must follow that $\\lambda_i = 0$ for all $i \\in \\mathcal{A}$. <br><br>\n\nIf LICQ holds, then the active constraint gradients span a well-defined space, ensuring that the KKT conditions hold without contradiction. <br><br>\n\nIf LICQ fails, the stationarity condition may not be satisfied, meaning no valid Lagrange multipliers exist.",
     "front": "Linear Independence Constraint Qualification (LICQ) condition.",
@@ -1673,6 +1926,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO",
     "front": "Collocation points",
@@ -1683,6 +1937,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content",
     "front": "Interpolation points.",
@@ -1693,6 +1948,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "General way to express most optimal control problems: <br><br>\n\n\\[\n\\begin{array}{ll}\n\\textbf{Minimize} & J = \\phi\\Bigl(x(t_0),\\, x(t_f),\\, t_0,\\, t_f,\\, q,\\, s\\Bigr) \\\\\n\\\\\n\\textbf{with respect to} & x(t),\\; u(t),\\; t_0,\\; t_f,\\; s,\\; q \\\\\n\\\\\n\\textbf{subject to} & \\dot{x}(t) = f\\Bigl(x(t),\\, u(t),\\, t,\\, s\\Bigr), \\quad t \\in [t_0, t_f], \\\\\n\\\\\n& q = \\int_{t_0}^{t_f} g\\Bigl(x(t),\\, u(t),\\, t,\\, s\\Bigr) dt, \\\\\n\\\\\n& c\\Bigl(x(t),\\, u(t),\\, t,\\, s\\Bigr) \\le 0, \\quad t \\in [t_0, t_f], \\\\\n\\\\\n& \\psi\\Bigl(x(t_0),\\, x(t_f),\\, t_0,\\, t_f,\\, s\\Bigr) = 0, \\\\\n\\\\\n& \\text{and appropriate bounds on } x(t),\\, u(t),\\, s,\\, t_0,\\, t_f.\n\\end{array}\n\\]",
     "front": "Bolza optimization problem formulation.",
@@ -1703,6 +1959,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content\n\n<br><br>\nThe following functions are transcendental:<br>\n<img src=\"/assets/Screenshot_2025-02-28_at_1.31.02_AM.png\">",
     "front": "Transcendental equation",
@@ -1713,6 +1970,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content <br><br>\n\nWhat is it and what is the equation for it?",
     "front": "Catenary curve.",
@@ -1723,6 +1981,7 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "TODO: New back content <br><br>\n\nWhat is it and what is the equation for it?",
     "front": "Catenoid.",
