@@ -21,6 +21,46 @@
     "understanding": 1
   },
   {
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe projection of \\( v_k \\) onto \\( q_i \\) is given by: <br>\n$$\n\\text{proj}_{q_i}(v_k) = \\frac{\\langle v_k, q_i \\rangle}{\\langle q_i, q_i \\rangle} q_i = \\left( \\frac{\\| v_k^T q_i \\|}{\\| q_i \\|} \\right) \\frac{q_i}{\\| q_i \\|} = \\frac{\\| v_k^T q_i \\|}{\\| q_i \\|^2} q_i\n$$\n<br>\nwhere \\( \\langle v_k, q_i \\rangle \\) represents the inner product of \\( v_k \\) and \\( q_i \\).\n</p>\n",
+    "front": "<b>Projection of \\( v_k \\) onto \\( q_i \\)?</b>",
+    "id": 1741812268747,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1,
+    "attempts": [
+      {
+        "timestamp": 1741814336690,
+        "correct": true
+      },
+      {
+        "timestamp": 1741814338023,
+        "correct": false
+      },
+      {
+        "timestamp": 1741814338816,
+        "correct": true
+      },
+      {
+        "timestamp": 1741814340140,
+        "correct": true
+      },
+      {
+        "timestamp": 1741814343510,
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 1741819054246,
+    "front": "<b>Distributive Property of Vector Multiplication</b>  \n<ul>  \n    <li><b>Expression:</b> \\( u_i^\\top (a + b) = \\) ?</li>  \n</ul>",
+    "back": "<u><b>Answer</b></u><br>  \n<p>  \nBy the distributive property of vector multiplication, we expand as follows:  <br>\n$$  \nu_i^\\top (a + b) = u_i^\\top a + u_i^\\top b  \n$$  \n<br>\nwhere \\( u_i^\\top \\) represents the transpose of the \\( i \\)-th unit vector.  \n</p>  ",
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
     "attempts": [
       {
         "correct": true,
@@ -841,6 +881,16 @@
     "understanding": 2
   },
   {
+    "back": "<u><b>Answer</b></u><br>\n<p>\nThe inner product (dot product) of two vectors \\( v \\) and \\( q \\) is:\n$$\n\\langle v, q \\rangle = v^T q\n$$\n<br>\nwhere \\( v^T \\) is the transpose of \\( v \\), making it a row vector.\n</p>\n<p>\n<br>\nIf \\( v \\) and \\( q \\) are column vectors: <br>\n$$\nv =\n\\begin{bmatrix}\nv_1 \\\\\nv_2 \\\\\n\\vdots \\\\\nv_n\n\\end{bmatrix}\n, \\quad\nq =\n\\begin{bmatrix}\nq_1 \\\\\nq_2 \\\\\n\\vdots \\\\\nq_n\n\\end{bmatrix}\n$$\n<br><br>\nThen their inner product is computed as: <br>\n$$\n\\langle v, q \\rangle =\n\\begin{bmatrix}\nv_1 & v_2 & \\dots & v_n\n\\end{bmatrix}\n\\begin{bmatrix}\nq_1 \\\\\nq_2 \\\\\n\\vdots \\\\\nq_n\n\\end{bmatrix}\n=\nv_1 q_1 + v_2 q_2 + \\dots + v_n q_n\n$$\n</p>",
+    "front": "<b>Inner / Dot Product: </b> \\( \\langle v, q \\rangle = \\; ? \\)",
+    "id": 1741812943588,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1,
+    "attempts": []
+  },
+  {
     "attempts": [],
     "back": "Inner product / dot product as implied by the multiplication of a transposed column vector $1 \\times n$ and a column vector $n \\times 1$.<br><br>\n\nThe dot product is given by: <br><br>\n$$\n\\mathbf{a}^\\top \\mathbf{b} =\n\\begin{bmatrix} a_1 & a_2 & \\dots & a_n \\end{bmatrix}\n\\begin{bmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_n \\end{bmatrix} =\n\\sum_{i=1}^{n} a_i b_i\n$$",
     "front": "Let  $a$  and  $b$  be column vectors in $\\mathbb{R}^n$. <br><br>\n\nWhat is $a^Tb$ ?\n",
@@ -1107,6 +1157,45 @@
   {
     "attempts": [
       {
+        "timestamp": 1741819743765,
+        "correct": true
+      },
+      {
+        "timestamp": 1741819745453,
+        "correct": false
+      },
+      {
+        "timestamp": 1741819746154,
+        "correct": true
+      },
+      {
+        "timestamp": 1741819747708,
+        "correct": true
+      },
+      {
+        "timestamp": 1741819748882,
+        "correct": true
+      },
+      {
+        "timestamp": 1741819751657,
+        "correct": false
+      },
+      {
+        "timestamp": 1741819753055,
+        "correct": true
+      }
+    ],
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Gram-Schmidt Orthogonalization</b> process is a method for converting a set of linearly independent vectors into an orthonormal basis for a subspace. Given a set of vectors \n$$\n\\{v_1, v_2, \\dots, v_n\\}\n$$ \nin an inner product space, the process constructs an orthonormal set \n$$\n\\{u_1, u_2, \\dots, u_n\\}\n$$ \nsuch that each new vector is orthogonal to the previous ones.\n</p>\n<br>\n\n<u><b>Algorithm Pseudocode</b></u><br>\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/gram-schmidt_pseudocode.png\"></div>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Start with a set of linearly independent vectors \\( \\{ v_1, v_2, ..., v_n \\} \\).</li>\n  <li>Define the first orthonormal vector as: <br>\n  $$ \n  q_1 = \\frac{v_1}{\\|v_1\\|}\n  $$</li>\n  <li>For each subsequent vector \\( v_k \\), subtract its projection onto all previous orthonormal vectors: <br>\n  $$\n  u_k = v_k - \\sum_{j=1}^{k-1} \\text{proj}_{u_j}(v_k)\n  $$</li>\n  <li>Normalize \\( u_k' \\) to get an orthonormal vector: <br>\n  $$ \n  q_k = \\frac{u_k'}{\\|u_k'\\|}\n  $$</li>\n  <li>Repeat until all vectors are processed.</li>\n</ol>\n<br>\n\n<u><b>Practical Use</b></u><br>\n<p>\nGram-Schmidt Orthogonalization is widely used in:\n<ul>\n    <li>Generating orthonormal bases in linear algebra.</li>\n    <li>QR factorization in numerical linear algebra.</li>\n    <li>Signal processing and machine learning applications.</li>\n</ul>\n</p>",
+    "front": "<b>Gram-Schmidt Orthogonalization</b>\n<ul>  \n    <li><b>Define:</b> What is Gram-Schmidt Orthogonalization?</li>\n    <li><b>Procedure:</b> How do you perform Gram-Schmidt Orthogonalization?</li>\n    <li><b>Practical Use:</b> Where/when is Gram-Schmidt Orthogonalization used?</li>\n</ul>",
+    "id": 1741733840654,
+    "tags": [
+      "18.065"
+    ],
+    "understanding": 1
+  },
+  {
+    "attempts": [
+      {
         "correct": true,
         "timestamp": 1741514620699
       },
@@ -1143,8 +1232,8 @@
   },
   {
     "attempts": [],
-    "back": "<b><u>Definition</u></b> <br>  \nQR factorization is a decomposition of a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\) into the product of an orthogonal matrix \\( Q \\) and an upper triangular matrix \\( R \\):  \n\\[\nA = QR,\n\\]\n<br>\nwhere:  <br>\n- \\( Q \\in \\mathbb{R}^{m \\times m} \\) is an orthogonal matrix (\\( Q^T Q = I \\)).\n<ul>\n    <li>\n    \\( R \\in \\mathbb{R}^{m \\times n} \\) is an upper triangular matrix.  \n     </li>\n</ul>\n<br>\n\n<b><u>Applications</u></b> <br>  \n<ul>  \n    <li>Solving linear systems efficiently.</li>  \n    <li>Computing eigenvalues and eigenvectors (QR algorithm).</li>  \n    <li>Least squares approximation in regression problems.</li>  \n    <li>Numerical stability in iterative methods.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n    <li>Start with a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\).</li>  \n    <li>Use the <b>Gram-Schmidt process</b> or <b>Householder reflections</b> to construct an orthogonal matrix \\( Q \\).</li>  \n    <li>Compute \\( R = Q^T A \\), which results in an upper triangular matrix.</li>  \n    <li>The decomposition satisfies \\( A = QR \\).</li>  \n</ol>  ",
-    "front": "<b>QR Factorization</b>  \n<ul>  \n    <li><b>Define:</b> What is QR factorization?</li>  \n    <li><b>Applications:</b> Where is QR factorization used?</li>  \n    <li><b>Procedure:</b> How is QR factorization performed?</li>  \n</ul>  ",
+    "back": "<b><u>Definition</u></b> <br>  \nQR factorization is a decomposition of a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\) into the product of an orthogonal matrix \\( Q \\) and an upper triangular matrix \\( R \\):  \n\\[\nA = QR,\n\\]\n<br>\nwhere:  <br>\n- \\( Q \\in \\mathbb{R}^{m \\times m} \\) is an orthogonal matrix (\\( Q^T Q = I \\)).\n<ul>\n    <li>\n    \\( R \\in \\mathbb{R}^{m \\times n} \\) is an upper triangular matrix.  \n     </li>\n</ul>\n<br>\n\n<b><u>Applications</u></b> <br>  \n<ul>  \n    <li>Solving linear systems efficiently.</li>  \n    <li>Computing eigenvalues and eigenvectors (QR algorithm).</li>  \n    <li>Least squares approximation in regression problems.</li>  \n    <li>Numerical stability in iterative methods.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n    <li>Start with a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\).</li>  \n    <li>Use the <b>Gram-Schmidt process</b> or <b>Householder reflections</b> to construct an orthogonal matrix \\( Q \\).</li>  \n    <li>Compute \\( R = Q^T A \\), which results in an upper triangular matrix.</li>  \n    <li>The decomposition satisfies \\( A = QR \\).</li>  \n</ol>",
+    "front": "<b>QR Factorization</b>  \n<ul>  \n    <li><b>Define:</b> What is QR factorization?</li>  \n    <li><b>Applications:</b> Where is QR factorization used?</li>  \n    <li><b>Procedure:</b> How to compute QR factorization?</li>  \n</ul>  ",
     "id": 1740890854848,
     "tags": [
       "18.065"
