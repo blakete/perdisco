@@ -1,6 +1,6 @@
 [
   {
-    "absolutelyRequired": false,
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
     "front": "<b>Taylor Series vs. Taylor Expansion</b>  \n<ul>  \n  <li><b>Define:</b> What is the Taylor series of \\( f(x) \\) at \\( x = a \\)?</li>  \n  <li><b>Define:</b> What is the Taylor series expansion of \\( f(x) \\) at/around \\( x = a \\)?</li>  \n  <li><b>Difference:</b> How do the Taylor series and Taylor expansion differ in meaning and usage?</li>  \n</ul>  ",
@@ -13,14 +13,15 @@
     "understanding": 1
   },
   {
-    "id": 1742418468318,
-    "front": "Hamilton\u2013Jacobi\u2013Bellman (HJB) equation",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "The HJB equation is a PDE that characterizes the value function, which is the minimum \"cost-to-go\" in optimal control problems.",
+    "front": "Hamilton\u2013Jacobi\u2013Bellman (HJB) equation",
+    "id": 1742418468318,
     "tags": [
       "16.32"
     ],
-    "understanding": 1,
-    "absolutelyRequired": false
+    "understanding": 1
   },
   {
     "absolutelyRequired": false,
@@ -331,7 +332,7 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": true,
+    "absolutelyRequired": false,
     "attempts": [
       {
         "correct": true,
@@ -1093,6 +1094,7 @@
   },
   {
     "absolutelyRequired": false,
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: New front content",
     "id": 1741841373569,
@@ -1100,8 +1102,7 @@
       "18.065",
       "midterm1"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "absolutelyRequired": false,
