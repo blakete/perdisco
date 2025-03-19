@@ -13,6 +13,16 @@
     "understanding": 1
   },
   {
+    "id": 1742418468318,
+    "front": "Hamilton\u2013Jacobi\u2013Bellman (HJB) equation",
+    "back": "The HJB equation is a PDE that characterizes the value function, which is the minimum \"cost-to-go\" in optimal control problems.",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false
+  },
+  {
     "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe <b>absolute value</b> is the standard norm for scalars in \\( \\mathbb{R} \\), and the modulus is the norm in \\( \\mathbb{C} \\). It qualifies as a norm because it satisfies three key properties:  \n</p>  \n<ol>  \n  <li><b>Non-negativity and Definiteness:</b>  <br>\n  $$ |x| \\geq 0, \\quad |x| = 0 \\text{ if and only if } x = 0. $$  \n  </li>  \n  <li><b>Homogeneity (Absolute Scalability):</b>  <br>\n  $$ |\\alpha x| = |\\alpha| \\cdot |x|, \\quad \\text{for any scalar } \\alpha. $$  \n  </li>  \n  <li><b>Triangle Inequality:</b>  <br>\n  $$ |x + y| \\leq |x| + |y|, \\quad \\text{for any scalars } x, y. $$  \n  </li>  \n</ol>  ",
@@ -73,24 +83,24 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741840151126,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741840151126
       },
       {
-        "timestamp": 1741840151440,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840151440
       },
       {
-        "timestamp": 1741840152393,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840152393
       },
       {
-        "timestamp": 1741840152777,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840152777
       },
       {
-        "timestamp": 1741840153337,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840153337
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA vector norm is a function \\( \\|\\cdot\\|: \\mathbb{R}^{n} \\to \\mathbb{R} \\) that assigns a non-negative length to a vector and satisfies the following three properties for all \\( \\mathbf{v}, \\mathbf{w} \\in \\mathbb{R}^{n} \\) and any scalar \\( \\alpha \\in \\mathbb{R} \\):\n</p>\n<ol>\n  <li><b>Non-negativity and Definiteness:</b> \\( \\|\\mathbf{v}\\| \\geq 0 \\) and \\( \\|\\mathbf{v}\\| = 0 \\) if and only if \\( \\mathbf{v} = 0 \\).</li>\n  <li><b>Homogeneity (Scaling Property):</b> \\( \\|\\alpha \\mathbf{v}\\| = |\\alpha| \\|\\mathbf{v}\\| \\).</li>\n  <li><b>Triangle Inequality:</b> \\( \\|\\mathbf{v} + \\mathbf{w}\\| \\leq \\|\\mathbf{v}\\| + \\|\\mathbf{w}\\| \\).</li>\n</ol>",
@@ -104,6 +114,7 @@
   },
   {
     "absolutelyRequired": false,
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: New front content",
     "id": 1741835588624,
@@ -111,8 +122,7 @@
       "18.065",
       "midterm1"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "absolutelyRequired": false,
@@ -142,16 +152,16 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741840673326,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741840673326
       },
       {
-        "timestamp": 1741840674263,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840674263
       },
       {
-        "timestamp": 1741840689419,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840689419
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L1 Norm</b> (also called the Manhattan norm or taxicab norm) is the sum of the absolute values of the vector components: <br>\n$$\n\\| \\mathbf{x} \\|_1 = \\sum_{i=1}^{n} |x_i|\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
@@ -167,12 +177,12 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741840657936,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840657936
       },
       {
-        "timestamp": 1741840708711,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840708711
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector L2 Norm</b> (also called the Euclidean norm) is the square root of the sum of the squared components of the vector: <br>\n$$\n\\| \\mathbf{x} \\|_2 = \\sqrt{\\sum_{i=1}^{n} x_i^2}\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
@@ -185,28 +195,28 @@
     "understanding": 1
   },
   {
-    "id": 1741841305902,
-    "front": "Spectral vector norm",
+    "absolutelyRequired": true,
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741849808936
+      }
+    ],
     "back": "Just another name for the L2 vector norm! :)",
+    "front": "Spectral vector norm",
+    "id": 1741841305902,
     "tags": [
       "18.065",
       "midterm1"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": [
-      {
-        "timestamp": 1741849808936,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741849821874,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741849821874
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Vector $\\mathbf{L_{\\infty}}$ Norm</b> (also called the maximum norm or supremum norm) is defined as the maximum absolute value of the components of the vector: <br>\n$$\n\\| \\mathbf{x} \\|_\\infty = \\max_{1 \\leq i \\leq n} |x_i|\n$$\n<br>\nwhere \\( x_i \\) represents the components of the vector \\( \\mathbf{x} \\).\n</p>",
@@ -219,48 +229,48 @@
     "understanding": 1
   },
   {
-    "id": 1741840883509,
-    "front": "<b>Frobenius Vector Norm</b>\n<ul>  \n    <li><b>Define:</b> What is the Frobenius Vector Norm?</li>\n</ul>",
+    "absolutelyRequired": true,
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741840979900
+      },
+      {
+        "correct": true,
+        "timestamp": 1741849829482
+      }
+    ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Frobenius Vector Norm</b> is a measure of a vector's magnitude, defined as the square root of the sum of the absolute squares of its components: <br>\n$$\n\\| \\mathbf{x} \\|_F = \\sqrt{\\sum_{i=1}^{n} |x_i|^2}\n$$\n<br>\nwhere \\( x_i \\) are the components of the vector \\( \\mathbf{x} \\).\n</p>",
+    "front": "<b>Frobenius Vector Norm</b>\n<ul>  \n    <li><b>Define:</b> What is the Frobenius Vector Norm?</li>\n</ul>",
+    "id": 1741840883509,
     "tags": [
       "18.065",
       "midterm1"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": [
-      {
-        "timestamp": 1741840979900,
-        "correct": true
-      },
-      {
-        "timestamp": 1741849829482,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
     "absolutelyRequired": false,
     "attempts": [
       {
-        "timestamp": 1741840285550,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840285550
       },
       {
-        "timestamp": 1741840287739,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741840287739
       },
       {
-        "timestamp": 1741840288617,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840288617
       },
       {
-        "timestamp": 1741840599393,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840599393
       },
       {
-        "timestamp": 1741840602640,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741840602640
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nAn <b>induced matrix norm</b> (or operator norm) is a norm for matrices that is derived from a given vector norm. It is defined as: <br>\n$$\n\\|A\\| = \\max_{x \\neq 0} \\frac{\\|Ax\\|}{\\|x\\|} = \\max_{\\|x\\|=1} \\|Ax\\|\n$$\n<br>\nwhere \\( A \\) is an \\( m \\times n \\) matrix, and \\( \\|\\cdot\\| \\) is a vector norm on \\( \\mathbb{R}^n \\).\n</p>\n<br>\n\n<u><b>Key Properties</b></u><br>\n<ol>\n  <li><b>Non-Negativity and Definiteness:</b>\n    <ul>\n      <li>\\(\\|A\\| \\geq 0\\) for any matrix \\( A \\).</li>\n      <li>\\(\\|A\\| = 0\\) if and only if \\( A \\) is the zero matrix.</li>\n    </ul>\n  </li>\n  <li><b>Homogeneity (Absolute Scalability):</b>\n    <ul>\n      <li>For any scalar \\( \\alpha \\) and matrix \\( A \\),</li>\n      <li>$$ \\|\\alpha A\\| = |\\alpha| \\|A\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Triangle Inequality (Subadditivity):</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) of the same size,</li>\n      <li>$$ \\|A + B\\| \\leq \\|A\\| + \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Submultiplicativity:</b>\n    <ul>\n      <li>For any two matrices \\( A \\) and \\( B \\) such that the product \\( AB \\) is defined,</li>\n      <li>$$ \\|AB\\| \\leq \\|A\\| \\|B\\|. $$</li>\n    </ul>\n  </li>\n  <li><b>Consistency with the Vector Norm:</b>\n    <ul>\n      <li>For any vector \\( x \\),</li>\n      <li>$$ \\|Ax\\| \\leq \\|A\\| \\|x\\|. $$</li>\n    </ul>\n  </li>\n</ol>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Select a vector norm \\( \\|\\cdot\\| \\) (e.g., \\( \\ell_1 \\), \\( \\ell_2 \\), or \\( \\ell_{\\infty} \\) norm).</li>\n  <li>Compute \\( \\|Ax\\| \\) for all unit vectors \\( x \\) (\\(\\|x\\| = 1\\)).</li>\n  <li>Find the maximum value of \\( \\|Ax\\| \\), which gives the induced matrix norm.</li>\n</ol>\n<br>",
@@ -336,8 +346,8 @@
         "timestamp": 1741555935529
       },
       {
-        "timestamp": 1741841169914,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741841169914
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA matrix \\( S \\in \\mathbb{R}^{n \\times n} \\) is positive definite (PD) if two conditions hold:\n</p>\n<ol>\n  <li>\\( S^T = S \\), i.e., \\( S \\) is symmetric.</li>\n  <li>\\( v^{T} S v > 0 \\) for all \\( v \\in \\mathbb{R}^{n} \\setminus \\{0\\} \\), meaning the quadratic form is strictly positive for all nonzero vectors.</li>\n</ol>\n<br>\n\n<u><b>Notation</b></u><br>\n<p>\nA positive definite matrix is denoted as \\( S \\succ 0 \\).\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nTo check if a matrix \\( S \\) is positive definite:\n</p>\n<ol>\n  <li>Verify that \\( S \\) is symmetric (\\( S^T = S \\)).</li>\n  <li>Use the <b>Eigenvalue Test</b>: Compute the eigenvalues \\( \\lambda_i \\) of \\( S \\). If all eigenvalues satisfy \\( \\lambda_i > 0 \\), then \\( S \\) is positive definite.</li>\n</ol>",
@@ -366,8 +376,8 @@
         "timestamp": 1741555937053
       },
       {
-        "timestamp": 1741841167646,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741841167646
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA matrix \\( S \\in \\mathbb{R}^{n \\times n} \\) is positive semi-definite (PSD) if two conditions hold:\n</p>\n<ol>\n  <li>\\( S^T = S \\), i.e., \\( S \\) is symmetric.</li>\n  <li>\\( v^{T} S v \\geq 0 \\) for all \\( v \\in \\mathbb{R}^{n} \\), meaning the quadratic form is non-negative for all vectors.</li>\n</ol>\n<br>\n\n<u><b>Notation</b></u><br>\n<p>\nA positive semi-definite matrix is denoted as \\( S \\succeq 0 \\).\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nTo check if a matrix \\( S \\) is positive semi-definite:\n</p>\n<ol>\n  <li>Verify that \\( S \\) is symmetric (\\( S^T = S \\)).</li>\n  <li>Use the <b>Eigenvalue Test</b>: Compute the eigenvalues \\( \\lambda_i \\) of \\( S \\). If all eigenvalues satisfy \\( \\lambda_i \\geq 0 \\), then \\( S \\) is positive semi-definite.</li>\n</ol>",
@@ -384,8 +394,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741843023841,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741843023841
       }
     ],
     "back": "<u><b>Concept</b></u><br>\n<p>\nThe Hessian test is used at a critical point (where the gradient is zero) to determine the type of extremum.\n</p>\n<br>\n\n<u><b>Positive Definite (PD) Case</b></u><br>\n<p>\nIf all eigenvalues of the Hessian matrix are strictly positive, then the function has a <b>strict local minimum</b> at that point. This means the function value increases in every direction away from the point.\n</p>\n<br>\n\n<u><b>Positive Semi-Definite (PSD) Case</b></u><br>\n<p>\nIf all eigenvalues of the Hessian are nonnegative (some may be zero), then the Hessian suggests a local minimum, but the test is <b>inconclusive regarding strictness </b>. The function might be flat in some directions, meaning it is not necessarily a strict minimum.\n</p>\n<br>\n\n<u><b>Summary</b></u><br>\n<p>\nA PD Hessian guarantees a strong local minimum, while a PSD Hessian only suggests a local minimum without guaranteeing strictness.\n</p>",
@@ -465,8 +475,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741843116415,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741843116415
       }
     ],
     "back": "<b><u>Definition</u></b><br>  \nThe condition number of a matrix (or function) quantifies how sensitive the output is to small changes in the input. In numerical linear algebra, the condition number of a matrix \\( A \\) is defined as:<br>\n\n\\[\n\\kappa(A) = \\|A\\| \\cdot \\|A^{-1}\\|\n\\]\n\n<br>  \nfor a given matrix norm. It measures how much relative error in the input propagates to the output in solving linear systems.<br><br>  \n\n<b><u>Interpretation & Usage</u></b><br>  \n<ol>  \n  <li>A <b>low condition number</b> (close to 1) indicates a well-conditioned problem, meaning small input changes lead to small output changes.</li>  \n  <li>A <b>high condition number</b> (much greater than 1) suggests an ill-conditioned problem, where small input errors can cause large output errors, making numerical solutions unstable.</li>  \n  <li>In optimization and scientific computing, condition numbers help assess numerical stability and the reliability of computed solutions.</li>  \n</ol> ",
@@ -1065,32 +1075,33 @@
     "understanding": 2
   },
   {
-    "id": 1741841391277,
-    "front": "<b>Spectral Theorem</b>\n<ul>  \n    <li><b>Define:</b> What is the Spectral Theorem?</li>\n</ul>",
-    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Spectral Theorem</b> states that every real symmetric matrix can be diagonalized by an orthogonal matrix. More precisely, for a real symmetric matrix \\( A \\), there exists an orthogonal matrix \\( Q \\) and a diagonal matrix \\( \\Lambda \\) such that:\n$$\nA = Q \\Lambda Q^T\n$$\nwhere:\n<ul>\n    <li>The columns of \\( Q \\) are the eigenvectors of \\( A \\) and form an orthonormal basis.</li>\n    <li>The diagonal entries of \\( \\Lambda \\) are the eigenvalues of \\( A \\), which are all real.</li>\n</ul>\n</p>",
-    "tags": [
-      "18.065",
-      "midterm1"
-    ],
-    "understanding": 1,
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741843127771,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741843127771
       }
-    ]
+    ],
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Spectral Theorem</b> states that every real symmetric matrix can be diagonalized by an orthogonal matrix. More precisely, for a real symmetric matrix \\( A \\), there exists an orthogonal matrix \\( Q \\) and a diagonal matrix \\( \\Lambda \\) such that:\n$$\nA = Q \\Lambda Q^T\n$$\nwhere:\n<ul>\n    <li>The columns of \\( Q \\) are the eigenvectors of \\( A \\) and form an orthonormal basis.</li>\n    <li>The diagonal entries of \\( \\Lambda \\) are the eigenvalues of \\( A \\), which are all real.</li>\n</ul>\n</p>",
+    "front": "<b>Spectral Theorem</b>\n<ul>  \n    <li><b>Define:</b> What is the Spectral Theorem?</li>\n</ul>",
+    "id": 1741841391277,
+    "tags": [
+      "18.065",
+      "midterm1"
+    ],
+    "understanding": 1
   },
   {
-    "id": 1741841373569,
-    "front": "TODO: New front content",
+    "absolutelyRequired": false,
     "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1741841373569,
     "tags": [
       "18.065",
       "midterm1"
     ],
     "understanding": 1,
-    "absolutelyRequired": false
+    "attempts": []
   },
   {
     "absolutelyRequired": false,
@@ -1132,6 +1143,7 @@
   },
   {
     "absolutelyRequired": false,
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: New front content",
     "id": 1741835593393,
@@ -1139,11 +1151,11 @@
       "18.065",
       "midterm1"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "absolutelyRequired": false,
+    "attempts": [],
     "back": "TODO: New back content",
     "front": "TODO: New front content",
     "id": 1741835584074,
@@ -1151,8 +1163,7 @@
       "18.065",
       "midterm1"
     ],
-    "understanding": 1,
-    "attempts": []
+    "understanding": 1
   },
   {
     "absolutelyRequired": false,
@@ -1647,8 +1658,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741847755782,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741847755782
       }
     ],
     "back": "<b><u>Definition</u></b> <br>  \nQR factorization is a decomposition of a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\) into the product of an orthogonal matrix \\( Q \\) and an upper triangular matrix \\( R \\):  \n\\[\nA = QR,\n\\]\n<br>\nwhere:  <br>\n- \\( Q \\in \\mathbb{R}^{m \\times m} \\) is an orthogonal matrix (\\( Q^T Q = I \\)).\n<ul>\n    <li>\n    \\( R \\in \\mathbb{R}^{m \\times n} \\) is an upper triangular matrix.  \n     </li>\n</ul>\n<br>\n\n<b><u>Applications</u></b> <br>  \n<ul>  \n    <li>Solving linear systems efficiently.</li>  \n    <li>Computing eigenvalues and eigenvectors (QR algorithm).</li>  \n    <li>Least squares approximation in regression problems.</li>  \n    <li>Numerical stability in iterative methods.</li>  \n</ul>  \n<br>  \n\n<b><u>Procedure</u></b> <br>  \n<ol>  \n    <li>Start with a matrix \\( A \\in \\mathbb{R}^{m \\times n} \\).</li>  \n    <li>Use the <b>Gram-Schmidt process</b> or <b>Householder reflections</b> to construct an orthogonal matrix \\( Q \\).</li>  \n    <li>Compute \\( R = Q^T A \\), which results in an upper triangular matrix.</li>  \n    <li>The decomposition satisfies \\( A = QR \\).</li>  \n</ol>",
@@ -1884,24 +1895,24 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741839901789,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741839901789
       },
       {
-        "timestamp": 1741839904752,
-        "correct": false
+        "correct": false,
+        "timestamp": 1741839904752
       },
       {
-        "timestamp": 1741839905542,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741839905542
       },
       {
-        "timestamp": 1741839910783,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741839910783
       },
       {
-        "timestamp": 1741839911669,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741839911669
       }
     ],
     "back": "<u><b>Steps to Compute Least Squares Solution</b></u><br>  \n<ol>  \n  <li>Given an overdetermined system \\( A x = b \\), the goal is to minimize the error:  \n      $$ \\| A x - b \\|^2. $$  \n  </li>  \n  <li>Compute the SVD of \\( A \\):  \n      $$ A = U \\Sigma V^T. $$  \n  </li>  \n  <li>Compute the pseudoinverse:  \n      $$ A^+ = V \\Sigma^+ U^T, $$  \n      where \\( \\Sigma^+ \\) is formed by taking the reciprocal of each nonzero singular value in \\( \\Sigma \\) while keeping zeros as zeros.</li>  \n  <li>Obtain the least squares solution:  \n      $$ x = A^+ b = V \\Sigma^+ U^T b. $$  \n  </li>  \n</ol>  \n<p>  \nThis \\( x \\) minimizes \\( \\| A x - b \\|^2 \\), providing the best approximate solution even when \\( A \\) is not invertible.  \n</p>  ",
@@ -2024,8 +2035,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1741842867076,
-        "correct": true
+        "correct": true,
+        "timestamp": 1741842867076
       }
     ],
     "back": "<b><u>Definition</u></b> <br>\nThe power method is an iterative algorithm used to approximate the dominant eigenvalue (the eigenvalue with the greatest absolute value) and its corresponding eigenvector of a matrix. <br><br>\n\n<b><u>Procedure</u></b> <br>\n1. Choose an initial vector \\( x_0 \\) in which every element is nonzero. A good choice is a vector of all 1s normalized to unit length (to ensure it is in the span of the dominant eigenvector). <br>\n2. For \\( k = 0, 1, 2, \\dots \\), compute \\( x_{k+1} = A x_k \\). <br>\n3. Normalize \\( x_{k+1} \\) to avoid numerical overflow. <br>\n4. Repeat until convergence; \\( x_k \\) approaches the eigenvector associated with the dominant eigenvalue. <br>\n5. Estimate the dominant eigenvalue by \\( \\lambda \\approx \\frac{x_k^T A x_k}{x_k^T x_k} \\).\n<br><br>\n\n<b><u>When does it NOT converge?</u></b> <br>\n1. Non-unique dominant eigenvalue. <br>\n2. Zero project. <br>",
@@ -2038,21 +2049,21 @@
     "understanding": 1
   },
   {
-    "id": 1741842491794,
-    "front": "<b>Deflation in Recursive Power Method</b>\n<ul>  \n    <li>What is deflation in the recursive power method, and how is it used?</li>\n</ul>",
+    "absolutelyRequired": true,
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1741842887064
+      }
+    ],
     "back": "<p>\nDeflation in the recursive power method is a technique used to remove the influence of the dominant eigenpair after computing the largest eigenvalue \\( \\lambda_1 \\) and its corresponding eigenvector \\( x_1 \\). The matrix is updated as:\n$$\nA_1 = A - \\lambda_1 x_1 x_1^T\n$$\nThis subtraction eliminates the rank-one component associated with \\( (\\lambda_1, x_1) \\), allowing the power method to extract the next dominant eigenpair from the modified matrix \\( A_1 \\).  \nDeflation is commonly used in numerical linear algebra to compute multiple eigenvalues iteratively.\n</p>",
+    "front": "<b>Deflation in Recursive Power Method</b>\n<ul>  \n    <li>What is deflation in the recursive power method, and how is it used?</li>\n</ul>",
+    "id": 1741842491794,
     "tags": [
       "18.065",
       "midterm1"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": [
-      {
-        "timestamp": 1741842887064,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
     "absolutelyRequired": true,
