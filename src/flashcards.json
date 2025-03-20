@@ -2,13 +2,10 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
-    "front": "<b>Taylor Series vs. Taylor Expansion</b>  \n<ul>  \n  <li><b>Define:</b> What is the Taylor series of \\( f(x) \\) at \\( x = a \\)?</li>  \n  <li><b>Define:</b> What is the Taylor series expansion of \\( f(x) \\) at/around \\( x = a \\)?</li>  \n  <li><b>Difference:</b> How do the Taylor series and Taylor expansion differ in meaning and usage?</li>  \n</ul>  ",
-    "id": 1742426830175,
-    "importance": 2,
+    "back": "TODO: New back content",
+    "front": "How to factor a cube polynomial e.g. characteristic polynomial for 3x3 matrix for eigenvalues.",
+    "id": 1742438698251,
     "tags": [
-      "18.065",
-      "midterm1",
       "16.32"
     ],
     "understanding": 1
@@ -16,10 +13,13 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "How to factor a cube polynomial e.g. characteristic polynomial for 3x3 matrix for eigenvalues.",
-    "id": 1742438698251,
+    "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
+    "front": "<b>Taylor Series vs. Taylor Expansion</b>  \n<ul>  \n  <li><b>Define:</b> What is the Taylor series of \\( f(x) \\) at \\( x = a \\)?</li>  \n  <li><b>Define:</b> What is the Taylor series expansion of \\( f(x) \\) at/around \\( x = a \\)?</li>  \n  <li><b>Difference:</b> How do the Taylor series and Taylor expansion differ in meaning and usage?</li>  \n</ul>  ",
+    "id": 1742426830175,
+    "importance": 2,
     "tags": [
+      "18.065",
+      "midterm1",
       "16.32"
     ],
     "understanding": 1
@@ -692,19 +692,6 @@
     "back": "<b><u>Definition</u></b><br>  \nThe condition number of a matrix (or function) quantifies how sensitive the output is to small changes in the input. In numerical linear algebra, the condition number of a matrix \\( A \\) is defined as:<br>\n\n\\[\n\\kappa(A) = \\|A\\| \\cdot \\|A^{-1}\\|\n\\]\n\n<br>  \nfor a given matrix norm. It measures how much relative error in the input propagates to the output in solving linear systems.<br><br>  \n\n<b><u>Interpretation & Usage</u></b><br>  \n<ol>  \n  <li>A <b>low condition number</b> (close to 1) indicates a well-conditioned problem, meaning small input changes lead to small output changes.</li>  \n  <li>A <b>high condition number</b> (much greater than 1) suggests an ill-conditioned problem, where small input errors can cause large output errors, making numerical solutions unstable.</li>  \n  <li>In optimization and scientific computing, condition numbers help assess numerical stability and the reliability of computed solutions.</li>  \n</ol> ",
     "front": "<b>Condition Number</b>  \n<ul>  \n  <li><b>Define:</b> What is the condition number of a matrix or function, and what does it measure?</li>  \n  <li><b>Interpretation & Usage:</b> How is the condition number used in numerical analysis, and what does a high or low value indicate about a problem\u2019s stability?</li>  \n</ul>  ",
     "id": 1741379016329,
-    "tags": [
-      "16.32",
-      "18.065",
-      "midterm1"
-    ],
-    "understanding": 1
-  },
-  {
-    "absolutelyRequired": false,
-    "attempts": [],
-    "back": "$$\n\\frac{d}{dx}\\sin(x) = \\cos(x)\n$$",
-    "front": "$$\n\\frac{d}{dx}\\sin(x) = \\, \\text{?}\n$$",
-    "id": 1741483965611,
     "tags": [
       "16.32",
       "18.065",
@@ -2497,7 +2484,18 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe Hamiltonian is a key component of the Hamilton-Jacobi-Bellman (HJB) equation. It is defined as:  \n$$  \nH(x,u,\\nabla_x V(x,t),t) = L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t).  \n$$  \nThe HJB equation then expresses the optimality condition as:  \n$$  \n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} H(x,u,\\nabla_x V(x,t),t).  \n$$  \nThus, the Hamiltonian appears inside the minimization of the HJB equation but is not the equation itself.  \n</p>",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe Hamilton\u2013Jacobi\u2013Bellman (HJB) equation is given by:\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\},\n$$\nwhere: <br>\n<ul>\n    <li><b>\\( V(x,t) \\)</b>: The value function, representing the minimum cost-to-go from state \\( x \\) at time \\( t \\).</li>\n    <li><b>\\( \\frac{\\partial V}{\\partial t}(x,t) \\)</b>: The partial derivative of the value function with respect to time, indicating how the optimal cost-to-go changes over time.</li>\n    <li><b>\\( L(x,u,t) \\)</b>: The running (instantaneous) cost function, which penalizes tracking error and control effort at each time step.</li>\n    <li><b>\\( f(x,u,t) \\)</b>: The system dynamics, describing how the state \\( x \\) evolves over time under the control input \\( u \\).</li>\n    <li><b>\\( \\nabla_x V(x,t) \\)</b>: The gradient of the value function with respect to the state, measuring the sensitivity of the cost-to-go with respect to changes in \\( x \\).</li>\n    <li><b>\\( \\nabla_x V(x,t)^T f(x,u,t) \\)</b>: The rate of change of the optimal cost-to-go due to the system dynamics.</li>\n    <li><b>\\( \\min_{u} \\)</b>: The control \\( u \\) is chosen to minimize the right-hand side, ensuring the best possible control action at every instant.</li>\n</ul>\n<br>\nThe <b>HJB equation</b> gives a necessary condition for optimality by characterizing the value function \\( V(x,t) \\), which represents the minimum cost-to-go starting from state \\( x \\) at time \\( t \\). <br><br>\n\nIt is derived from Bellman\u2019s Principle of Optimality, which states that any optimal strategy must remain optimal at all future times.\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nFor a general continuous-time control problem with state dynamics:\n</p>\n$$\n\\dot{x}(t) = f(x(t), u(t), t)\n$$\n<p>\nand cost functional:\n</p>\n$$\nJ = \\int_{t}^{t_f} L(x(s), u(s), s) \\, ds + \\phi(x(t_f)),\n$$\n<p>\nthe value function \\( V(x,t) \\) satisfies the HJB equation:\n</p>\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\},\n$$\n<p>\nwith the terminal condition:\n</p>\n$$\nV(x,t_f) = \\phi(x(t_f)).\n$$\n<p>\nTo solve the HJB equation:\n</p>\n<ol>\n  <li>Define the state dynamics and cost functional.</li>\n  <li>Formulate the HJB equation using the value function.</li>\n  <li>Find the control \\( u^*(t) \\) that minimizes the right-hand side.</li>\n  <li>Integrate to obtain the optimal cost-to-go function.</li>\n</ol>\n<br>",
+    "front": "<b>Hamilton\u2013Jacobi\u2013Bellman (HJB) Equation</b>\n<ul>  \n    <li><b>Define:</b> What is the Hamilton\u2013Jacobi\u2013Bellman (HJB) equation? What are each of its components? What does it provide us?</li>\n    <li><b>Procedure:</b> How is the HJB equation derived and solved?</li>\n</ul>",
+    "id": 1742451704356,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe Hamilton-Jacobi-Bellman (HJB) equation is given by:  <br>\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\}.\n$$  \n<br><br>\nThe Hamiltonian is defined as:  <br>\n$$  \nH(x, u, p, t) = L(x, u, t) + p^T f(x, u, t),  \n$$  \n<br>\nwhere \\( p = \\nabla_x V(x,t) \\) is the costate variable.  \n<br><br>\nSubstituting the Hamiltonian into the HJB equation, we get:  \n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} H(x, u, \\nabla_x V(x,t), t).\n$$  \n<br><br>\nThus, the Hamiltonian provides a compact way to express the terms inside the minimization in the HJB equation, but the HJB equation itself explicitly enforces optimality by minimizing over \\( u \\).\n</p>",
     "front": "<b>What is the relationship between the Hamiltonian and the HJB equation?</b>",
     "id": 1742448635240,
     "tags": [
@@ -2592,9 +2590,9 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "TODO",
-    "front": "Collocation points",
-    "id": 1742426830689,
+    "back": "TODO: New back content",
+    "front": "Interpolation points.",
+    "id": 1742426830514,
     "importance": 2,
     "tags": [
       "16.32"
@@ -2604,9 +2602,9 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "TODO: New back content",
-    "front": "Interpolation points.",
-    "id": 1742426830514,
+    "back": "TODO",
+    "front": "Collocation points",
+    "id": 1742426830689,
     "importance": 2,
     "tags": [
       "16.32"
@@ -2684,7 +2682,7 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": true,
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA <b>Value Function</b> represents the minimum \"cost-to-go\" from a given state \\( x \\) at time \\( t \\), defining the optimal cost for reaching a goal while following an optimal control policy.\n</p>\n<br>\n\n<u><b>Usage</b></u><br>\n<p>\nIn Optimal Control Theory, the Value Function is used to determine the optimal control policy by solving the HJB equation. It quantifies the best possible performance given any initial state, helping in applications such as trajectory optimization, robotics, and economic decision-making.\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Define the cost functional for the optimal control problem.</li>\n  <li>Set up the system dynamics using differential or difference equations.</li>\n  <li>Apply the Hamilton-Jacobi-Bellman (HJB) equation to characterize the optimal value function.</li>\n  <li>Use numerical methods or analytical solutions to compute the value function iteratively.</li>\n</ol>\n<br>\n",
     "front": "<b>Value Function</b>\n<ul>  \n    <li><b>Define:</b> What is a Value Function?</li>\n    <li><b>Usage:</b> How is a Value Function used in Optimal Control Theory?</li>\n    <li><b>Procedure:</b> How do you compute or use a Value Function?</li>\n</ul>",
@@ -2695,7 +2693,7 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": true,
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>\n<p>\nWe assume that the value function takes a <b>quadratic form</b>:\n$$\nV(x,t) = x^T P(t) x + 2\\eta(t)^T x + \\rho(t),\n$$\n<br>\nwhere:\n<ul>\n    <li>\\( P(t) \\) is a symmetric matrix evolving over time.</li>\n    <li>\\( \\eta(t) \\) is a time-dependent vector.</li>\n    <li>\\( \\rho(t) \\) is a scalar function of time.</li>\n</ul>\n</p>\n<br>\n\n<u><b>Reasoning</b></u><br>\n<ol>\n    <li><b>LQ Problems Have Quadratic Costs:</b> The cost function in LQ problems is quadratic in state \\( x \\) and control \\( u \\), making a quadratic value function natural.</li>\n    <li><b>HJB Equation Confirms the Quadratic Structure:</b> Substituting a quadratic form into the Hamilton-Jacobi-Bellman (HJB) equation leads to a Riccati equation for \\( P(t) \\), confirming this assumption.</li>\n    <li><b>Simplifies the Optimal Control Law:</b> The optimal control law follows the form:\n    $$ u^*(t) = u_0(t) - F(t)x(t), $$\n    which naturally results from a quadratic value function.</li>\n</ol>\n<br>\n\n<u><b>Implications</b></u><br>\n<p>\nThis quadratic assumption greatly simplifies solving LQ problems and provides a closed-form solution for the optimal control law.\n</p>",
     "front": "<b>For LQ problems, what do we assume?</b>\n<ul>  \n    <li><b>Reasoning:</b> Why do we assume this form?</li>\n    <li><b>Implications:</b> How does this assumption simplify solving LQ problems?</li>\n</ul>",
@@ -2706,22 +2704,11 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": true,
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "States that the optimal strategy from any state and time must also be optimal for the remaining time.",
     "front": "Principle of Optimality",
     "id": 1742427806534,
-    "tags": [
-      "16.32"
-    ],
-    "understanding": 1
-  },
-  {
-    "absolutelyRequired": true,
-    "attempts": [],
-    "back": "<u><b>Definition</b></u><br>\n<p>\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\},\n$$\n<br>\nwhere: <br>\n<ul>\n    <li><b>\\( V(x,t) \\)</b>: The value function, representing the minimum cost-to-go from state \\( x \\) at time \\( t \\).</li>\n    <li><b>\\( \\frac{\\partial V}{\\partial t}(x,t) \\)</b>: The partial derivative of the value function with respect to time, indicating how the optimal cost-to-go changes over time.</li>\n    <li><b>\\( L(x,u,t) \\)</b>: The running (instantaneous) cost function, which penalizes tracking error and control effort at each time step.</li>\n    <li><b>\\( f(x,u,t) \\)</b>: The system dynamics, describing how the state \\( x \\) evolves over time under the control input \\( u \\).</li>\n    <li><b>\\( \\nabla_x V(x,t) \\)</b>: The gradient of the value function with respect to the state, measuring the sensitivity of the cost-to-go with respect to changes in \\( x \\).</li>\n    <li><b>\\( \\nabla_x V(x,t)^T f(x,u,t) \\)</b>: The rate of change of the optimal cost-to-go due to the system dynamics.</li>\n    <li><b>\\( \\min_{u} \\)</b>: The control \\( u \\) is chosen to minimize the right-hand side, ensuring the best possible control action at every instant.</li>\n</ul>\n<br>\n\nThe <b>HJB equation</b> gives a necessary condition for optimality by characterizing the value function $V(x,t)$, which represents the minimum cost-to-go starting from state $x$ at time $t$. <br><br>\n\nIt is derived from Bellman\u2019s Principle of Optimality, which states that any optimal strategy must remain optimal at all future times.\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nFor a general continuous-time control problem with state dynamics:\n</p>\n$$\n\\dot{x}(t) = f(x(t), u(t), t)\n$$\n<p>\nand cost functional:\n</p>\n$$\nJ = \\int_{t}^{t_f} L(x(s), u(s), s) \\, ds + \\phi(x(t_f)),\n$$\n<p>\nthe value function \\( V(x,t) \\) satisfies the HJB equation:\n</p>\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\},\n$$\n<p>\nwith the terminal condition:\n</p>\n$$\nV(x,t_f) = \\phi(x(t_f)).\n$$\n<p>\nTo solve the HJB equation:\n</p>\n<ol>\n  <li>Define the state dynamics and cost functional.</li>\n  <li>Formulate the HJB equation using the value function.</li>\n  <li>Find the control \\( u^*(t) \\) that minimizes the right-hand side.</li>\n  <li>Integrate to obtain the optimal cost-to-go function.</li>\n</ol>\n<br>",
-    "front": "<b>Hamilton\u2013Jacobi\u2013Bellman (HJB) Equation</b>\n<ul>  \n    <li><b>Define:</b> What is the Hamilton\u2013Jacobi\u2013Bellman (HJB) equation? What are each of its components? What does it provide us?</li>\n    <li><b>Procedure:</b> How is the HJB equation derived and solved?</li>\n</ul>",
-    "id": 1742427224465,
     "tags": [
       "16.32"
     ],
