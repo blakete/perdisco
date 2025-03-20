@@ -25,17 +25,6 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": true,
-    "attempts": [],
-    "back": "The HJB equation is a PDE that characterizes the value function, which is the minimum \"cost-to-go\" in optimal control problems.",
-    "front": "Hamilton\u2013Jacobi\u2013Bellman (HJB) equation",
-    "id": 1742418468318,
-    "tags": [
-      "16.32"
-    ],
-    "understanding": 1
-  },
-  {
     "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Answer</b></u><br>  \n<p>  \nThe <b>absolute value</b> is the standard norm for scalars in \\( \\mathbb{R} \\), and the modulus is the norm in \\( \\mathbb{C} \\). It qualifies as a norm because it satisfies three key properties:  \n</p>  \n<ol>  \n  <li><b>Non-negativity and Definiteness:</b>  <br>\n  $$ |x| \\geq 0, \\quad |x| = 0 \\text{ if and only if } x = 0. $$  \n  </li>  \n  <li><b>Homogeneity (Absolute Scalability):</b>  <br>\n  $$ |\\alpha x| = |\\alpha| \\cdot |x|, \\quad \\text{for any scalar } \\alpha. $$  \n  </li>  \n  <li><b>Triangle Inequality:</b>  <br>\n  $$ |x + y| \\leq |x| + |y|, \\quad \\text{for any scalars } x, y. $$  \n  </li>  \n</ol>  ",
@@ -2432,12 +2421,25 @@
     "understanding": 1
   },
   {
-    "id": 1742427131349,
-    "front": "TODO: New front content",
-    "back": "TODO: New back content",
-    "tags": [],
-    "understanding": 1,
-    "absolutelyRequired": false,
-    "attempts": []
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "States that the optimal strategy from any state and time must also be optimal for the remaining time.",
+    "front": "Principle of Optimality",
+    "id": 1742427806534,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>Hamilton\u2013Jacobi\u2013Bellman (HJB) equation</b> is a partial differential equation (PDE) that characterizes the optimal cost-to-go function in dynamic optimization and control problems. It is derived from Bellman\u2019s Principle of Optimality, which states that any optimal strategy must remain optimal at all future times.\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nFor a general continuous-time control problem with state dynamics:\n</p>\n$$\n\\dot{x}(t) = f(x(t), u(t), t)\n$$\n<p>\nand cost functional:\n</p>\n$$\nJ = \\int_{t}^{t_f} L(x(s), u(s), s) \\, ds + \\phi(x(t_f)),\n$$\n<p>\nthe value function \\( V(x,t) \\) satisfies the HJB equation:\n</p>\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\},\n$$\n<p>\nwith the terminal condition:\n</p>\n$$\nV(x,t_f) = \\phi(x(t_f)).\n$$\n<p>\nTo solve the HJB equation:\n</p>\n<ol>\n  <li>Define the state dynamics and cost functional.</li>\n  <li>Formulate the HJB equation using the value function.</li>\n  <li>Find the control \\( u^*(t) \\) that minimizes the right-hand side.</li>\n  <li>Integrate to obtain the optimal cost-to-go function.</li>\n</ol>\n<br>",
+    "front": "<b>Hamilton\u2013Jacobi\u2013Bellman (HJB) Equation</b>\n<ul>  \n    <li><b>Define:</b> What is the Hamilton\u2013Jacobi\u2013Bellman (HJB) equation?</li>\n    <li><b>Procedure:</b> How is the HJB equation derived and solved?</li>\n</ul>",
+    "id": 1742427224465,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
   }
 ]
