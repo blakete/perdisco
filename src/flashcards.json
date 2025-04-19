@@ -566,7 +566,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -596,7 +597,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -613,7 +615,8 @@
     "id": 1741556276234,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1086,7 +1089,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1267,7 +1271,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 2
   },
@@ -1284,7 +1289,8 @@
     "id": 1741841391277,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1436,7 +1442,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1454,7 +1461,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1543,7 +1551,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1574,7 +1583,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1587,7 +1597,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1600,7 +1611,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1679,7 +1691,8 @@
     "id": 1740887687921,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -2323,7 +2336,7 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": false,
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>  \n<p>  \nA <b>Probability Transition Matrix</b> is a square matrix that represents the probabilities of transitioning from one state to another in a Markov process. Each entry in the matrix describes the probability of moving from state \\(i\\) to state \\(j\\). <br>\n$$  \nP =  \n\\begin{bmatrix}  \np_{11} & p_{12} & \\cdots & p_{1n} \\\\  \np_{21} & p_{22} & \\cdots & p_{2n} \\\\  \n\\vdots & \\vdots & \\ddots & \\vdots \\\\  \np_{n1} & p_{n2} & \\cdots & p_{nn}  \n\\end{bmatrix}  \n$$  \nwhere \\( p_{ij} \\) is the probability of transitioning from state \\( i \\) to state \\( j \\).  \n</p>  \n<br>\n\n<u><b>Key Properties</b></u><br>  \n<ul>  \n  <li>Each row sums to 1: <br>\n  $$  \n  \\sum_{j=1}^{n} p_{ij} = 1, \\quad \\forall i  \n  $$  \n  </li>  \n  <li>All elements are non-negative: \\( 0 \\leq p_{ij} \\leq 1 \\).</li>  \n  <li>For an absorbing Markov chain, at least one row has a 1 on the diagonal and 0 elsewhere.</li>  \n</ul>  \n<br>\n\n<u><b>Practical Use</b></u><br>  \n<p>  \nProbability Transition Matrices are widely used in stochastic processes, particularly in:  \n<ul>  \n  <li>Modeling weather patterns</li>  \n  <li>Predicting customer behavior in marketing</li>  \n  <li>Analyzing stock market trends</li>  \n  <li>Genetics (Markov chains in population dynamics)</li>  \n</ul>  \n</p>  ",
     "front": "<b>Probability Transition Matrix</b>  \n<ul>  \n    <li><b>Define:</b> What is a Probability Transition Matrix?</li>  \n    <li><b>Procedure:</b> How do you construct and use a Probability Transition Matrix?</li>  \n    <li><b>Practical Use:</b> Where/when is a Probability Transition Matrix used?</li>  \n</ul>  ",
@@ -2333,6 +2346,344 @@
       "midterm2"
     ],
     "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Markov chain",
+    "id": 1745041063819,
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1745041155289,
+    "front": "Perron-Frobenius theorem",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041172385,
+    "front": "Randomized matrix multiplication",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041202468,
+    "front": "Basic concepts and definitions in optimization",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041501959,
+    "front": "Defnitions of sublinear convergence, linear convergence,\nsuperlinear convergence, and quadratic convergence.",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041208446,
+    "front": "Convex Set",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745043617260,
+    "front": "A function $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ is continuously differentiable if: ___",
+    "back": "<ul>\n<li>\nits gradient $\\nabla f(x)$ exists at every point in its domain (i.e. $f$ is differentiable everywhere), and\n</li>\n<li>\nthe gradient $\\nabla f(x)$ is a continuous function of $x$\n</li>\n</ul>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041216104,
+    "front": "Convex function",
+    "back": "If $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ is continuously differentiable",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745043909349,
+    "front": "if $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ is twice continuously differentiable then $f$ is convex iff ___",
+    "back": " $\\nabla^2 f(x) \\succeq 0, \\; \\forall x \\in \\mathbb{R}^n$",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745044132983,
+    "front": "$f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ is $\\mu$-strongly convex iff ___",
+    "back": "$\\nabla^2 f(x) \\succeq \\mu I, \\; \\forall x \\in \\mathbb{R}^n$",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745043137606,
+    "front": "For convex optimization problem, ___ must be a global min.",
+    "back": "every stationary point",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745043255796,
+    "front": "if $f$ is strongly convex & global min exists, ___.",
+    "back": "then the global min is unique",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041568820,
+    "front": "For the following functions, answer whether they are convex or not. How to solve?\n",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2",
+      "pp",
+      "pexam"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041229425,
+    "front": "strongly convex function",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041247445,
+    "front": "line search",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041253946,
+    "front": "gradient descent",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041258547,
+    "front": "Newton's method",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041267926,
+    "front": "Quasi-Newton method",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041287293,
+    "front": "KKT Condition",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041296085,
+    "front": "Duality",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041301812,
+    "front": "Linear Programming",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745042669230,
+    "front": "primal and dual of LP problem",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041308232,
+    "front": "The quadratic penalty method",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041334322,
+    "front": "Augmented Lagrangian method",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041344662,
+    "front": "Subgradient and subdifferential",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041360510,
+    "front": "Subgradient method",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041370927,
+    "front": "Proximal operator",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745041379483,
+    "front": "Proximal gradient descent",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
   },
   {
     "absolutelyRequired": true,
@@ -2450,6 +2801,39 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
+    "back": "<u><b>Answer</b></u><br>\n<p>\nThe general form of the cost functional in optimal control is:\n</p>\n$$\nJ = \\int_{t_0}^{t_f} L(x(t), u(t), t)\\, dt + \\phi(x(t_f), t_f)\n$$\n<p>\nwhere:\n<ul>\n  <li>\\( L(x(t), u(t), t) \\) is the <b>running cost</b> (or integrand cost)</li>\n  <li>\\( \\phi(x(t_f), t_f) \\) is the <b>terminal cost</b></li>\n</ul>\nThis expression represents the total cost accumulated over time plus any final cost at the terminal time \\( t_f \\).\n</p>\n",
+    "front": "<b>In optimal control problems, what is the general form of the cost functional that you want to minimize (or maximize)?</b>\n",
+    "id": 1742524906298,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "Pontryagin Maximum Principle (PMP) is one of the foundational results in optimal control theory, and it provides <u>necessary conditions that any optimal control and corresponding state trajectory must satisfy.</u>",
+    "front": "Pontryagin Maximum Principle (PMP) is one of the foundational results in optimal control theory, and it provides ____.",
+    "id": 1743041091626,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": false,
+    "attempts": [],
+    "back": "<u><b>Definition</b></u><br>\n<p>\n<b>Pontryagin's Maximum (or Minimum) Principle (PMP)</b> is a fundamental result in optimal control theory. \nIt provides necessary conditions that an optimal control \\(u^*(t)\\) and its corresponding state trajectory \\(x^*(t)\\) \nmust satisfy. It introduces a costate (or adjoint) variable \\(p(t)\\) and defines a Hamiltonian function \nto express these conditions compactly. The system dynamics are assumed to be known and must be satisfied by any candidate solution.\n</p>\n<br>\n\n<u><b>Framework Components Used in PMP</b></u><br>\n<ol>\n  <li><b>Hamiltonian Function:</b><br>\n  \\[\n    H(x, u, p, t) = L(x, u, t) + p(t)^T f(x, u, t)\n  \\]\n  <br>This function combines the instantaneous cost and the inner product of the costate with system dynamics.\n  </li>\n  <li><b>State Dynamics:</b><br>\n  \\[\n    \\dot{x}(t) = f(x(t), u(t), t)\n  \\]\n  <br>These must always be satisfied as part of the optimal control problem's definition.\n  </li>\n</ol>\n<br>\n\n<u><b>Necessary Conditions (Provided by PMP)</b></u><br>\n<ol>\n  <li><b>State Dynamics:</b><br>\n  \\[\n    \\dot{x}(t) = \\frac{\\partial H}{\\partial p}\n  \\]\n  <br>State dynamics should pop back out.\n  </li>\n  <li><b>Costate (Adjoint) Dynamics:</b><br>\n  \\[\n    \\dot{p}(t) = -\\,\\frac{\\partial H}{\\partial x}\\bigl(x(t), u(t), p(t), t\\bigr)\n  \\]\n  <br>PMP requires the evolution of the costate variable \\(p(t)\\) to follow this backward differential equation.\n  </li>\n  <li><b>Optimality Condition:</b><br>\n  \\[\n    u^*(t) = \\arg\\min_{u \\in U} \\; H\\bigl(x(t), u, p(t), t\\bigr)\n  \\]\n  <br>The control must minimize the Hamiltonian at each time \\(t\\) (for minimization problems).\n  </li>\n  <li><b>Boundary (Transversality) Conditions:</b><br>\n  Apply appropriate terminal and initial boundary conditions, depending on whether the state variables are fixed or free at those endpoints.\n  </li>\n</ol>\n<br>\n\n<u><b>Practical Use</b></u><br>\n<p>\nPontryagin's Principle is particularly useful in solving analytically complex or high-dimensional optimal control problems where dynamic programming methods like the Hamilton-Jacobi-Bellman (HJB) equation are computationally infeasible.\n</p>",
+    "front": "<b>Pontryagin's Maximum Principle (PMP)</b>\n<ul>  \n    <li><b>Define:</b> What is Pontryagin's Maximum Principle and what framework does it introduce?</li>\n    <li><b>Framework Components:</b> What mathematical tools are used in the PMP formulation?</li>\n    <li><b>Necessary Conditions:</b> What conditions must an optimal control and trajectory satisfy?</li>\n    <li><b>Practical Use:</b> When is Pontryagin's Principle especially useful?</li>\n</ul>",
+    "id": 1742526816505,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "The Euler-Lagrange equation states that for a function $g(x, \\dot{x}, t)$:\n<br><br>\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial g}{\\partial \\dot{x}} \\right) - \\frac{\\partial g}{\\partial x} = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{x}} \\right) - \\frac{\\partial L}{\\partial x} = 0\n$$\n\n<br><br>\nRewriting this:\n\n<br><br>\n$$\n\\frac{d}{dt} (g_{\\dot{x}}) - g_x = 0\n\n\\quad \\quad \\quad \\quad \\text{or} \\quad \\quad \\quad \\quad\n\n\\frac{d}{dt} (L_{\\dot{x}}) - L_x = 0\n$$\n\n<br><br>\nwhich is the fundamental condition for extremizing a functional in the calculus of variations.",
     "front": "<b>Euler-Lagrange Equation</b> \n<ul>\n  <li><b>Define:</b> What is the Euler-Lagrange equation?</li>\n  <li><b>Procedure:</b> How is the Euler-Lagrange equation derived and applied in optimization problems?</li>\n</ul>",
     "id": 1742426830577,
@@ -2460,7 +2844,7 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": true,
+    "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>costate</b> in optimal control theory, often denoted as \\( p(t) \\), represents the gradient of the optimal cost (value function) with respect to the state \\( x \\). The costate \\( p(t) \\) is essentially the gradient of the value function with respect to the state:\n$$\np(t) = \\nabla_x V(x,t).\n$$\nThis means \\( p(t) \\) tells you how much an incremental change in the state at time \\( t \\) will impact the total future cost. It\u2019s like a \"price tag\" on having an extra unit of the state.\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Define the Hamiltonian function:\n  $$ H = L(x, u, t) + p^T f(x, u, t) $$ \n  where \\( L \\) is the running cost and \\( f \\) describes system dynamics.</li>\n  <li>Derive the costate equation using the adjoint system:\n  $$ \\dot{p}(t) = -\\frac{\\partial H}{\\partial x} $$\n  with final condition \\( p(T) = \\frac{\\partial \\Phi}{\\partial x} \\big|_{t=T} \\).</li>\n  <li>Solve the costate equation alongside the state dynamics for optimal control.</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nThe costate is crucial in solving optimal control problems, such as in aerospace trajectory optimization, economics (dynamic programming), and robotics. It helps determine optimal feedback laws and assess the sensitivity of cost functions to state variations.\n</p>",
     "front": "<b>Costate</b>\n<ul>  \n    <li><b>Define:</b> What is the costate in optimal control theory?</li>\n    <li><b>Procedure:</b> How do you compute the costate variable?</li>\n    <li><b>Practical Use:</b> Where/when is the costate used?</li>\n</ul>",
@@ -2472,8 +2856,18 @@
   },
   {
     "absolutelyRequired": true,
-    "attempts": [],
-    "back": "<u><b>Definition</b></u><br>  \n<p>  \nThe <b>Hamiltonian</b> is a function used in optimal control theory to describe the total cost, combining the running cost and the effect of system dynamics.  \n</p>  \n<br>\n\n<p><b>Continuous-Time Setting:</b></p> \n$$  \nH(x, u, p, t) = L(x, u, t) + p^T f(x, u, t),  \n$$  \n<br>\n<p>  \nFor a system with dynamics  \n$$  \n\\dot{x}(t) = f(x(t), u(t), t)  \n$$  \nand a running cost \\( L(x(t), u(t), t) \\), the Hamiltonian consists of the immediate cost \\( L(x, u, t) \\) and the term \\( p^T f(x, u, t) \\), which captures how the current control \\( u \\) influences future costs through system dynamics. The vector \\( p(t) \\) is known as the costate (or adjoint) vector.  \n</p>  \n<br>\n\n<p><b>Discrete-Time Setting:</b></p> \n$$  \nH(x_k, u_k, p_{k+1}, k) = g(x_k, u_k, k) + p_{k+1}^T f(x_k, u_k, k),  \n$$  \n<br>\n<p>  \nFor a discrete-time system  \n$$  \nx_{k+1} = f(x_k, u_k, k)  \n$$  \nwith cost function \\( g(x_k, u_k, k) \\), the Hamiltonian similarly consists of the immediate cost \\( g(x_k, u_k, k) \\) and the term \\( p_{k+1}^T f(x_k, u_k, k) \\), which links the effect of the control decision to future costs. The vector \\( p_{k+1} \\) plays the role of the costate in the discrete-time setting.  \n</p>  ",
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1742523923491
+      },
+      {
+        "correct": false,
+        "reason": "do not know discrete yet",
+        "timestamp": 1742523931885
+      }
+    ],
+    "back": "<u><b>Definition</b></u><br>  \n<p>  \nThe <b>Hamiltonian</b> is a function used in optimal control theory to describe the total cost, combining the running cost and the effect of system dynamics.  \n</p>  \n<br>\n\n<p><b>Continuous-Time Setting:</b></p> \n$$  \nH(x, u, p, t) = L(x, u, t) + p(t)^T f(x, u, t),  \n$$ \n<br>or<br>\n$$  \nH(x, u, \\lambda, t) = L(x, u, t) + \\lambda(t)^T f(x, u, t)  \n$$  \n<br>\n<br>\n<p>  \nFor a system with dynamics  \n$$  \n\\dot{x}(t) = f(x(t), u(t), t)  \n$$  \nand a running cost \\( L(x(t), u(t), t) \\), the Hamiltonian consists of the immediate cost \\( L(x, u, t) \\) and the term \\( p^T f(x, u, t) \\), which captures how the current control \\( u \\) influences future costs through system dynamics. The vector \\( p(t) \\) is known as the costate (or adjoint) vector.  \n</p>  \n<br>\n\n<p><b>Discrete-Time Setting:</b></p> \n$$  \nH(x_k, u_k, p_{k+1}, k) = g(x_k, u_k, k) + p_{k+1}^T f(x_k, u_k, k),  \n$$  \n<br>\n<br>\n<p>  \nFor a discrete-time system  \n$$  \nx_{k+1} = f(x_k, u_k, k)  \n$$  \nwith cost function \\( g(x_k, u_k, k) \\), the Hamiltonian similarly consists of the immediate cost \\( g(x_k, u_k, k) \\) and the term \\( p_{k+1}^T f(x_k, u_k, k) \\), which links the effect of the control decision to future costs. The vector \\( p_{k+1} \\) plays the role of the costate in the discrete-time setting.  \n</p>  ",
     "front": "<b>Hamiltonian</b>  \n<ul>  \n    <li><b>Define:</b> What is the Hamiltonian in continuous and discrete systems?</li>  \n</ul>",
     "id": 1742446224283,
     "tags": [
@@ -2483,7 +2877,12 @@
   },
   {
     "absolutelyRequired": true,
-    "attempts": [],
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1742523502304
+      }
+    ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe Hamilton\u2013Jacobi\u2013Bellman (HJB) equation is given by:\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\},\n$$\nwhere: <br>\n<ul>\n    <li><b>\\( V(x,t) \\)</b>: The value function, representing the minimum cost-to-go from state \\( x \\) at time \\( t \\).</li>\n    <li><b>\\( \\frac{\\partial V}{\\partial t}(x,t) \\)</b>: The partial derivative of the value function with respect to time, indicating how the optimal cost-to-go changes over time.</li>\n    <li><b>\\( L(x,u,t) \\)</b>: The running (instantaneous) cost function, which penalizes tracking error and control effort at each time step.</li>\n    <li><b>\\( f(x,u,t) \\)</b>: The system dynamics, describing how the state \\( x \\) evolves over time under the control input \\( u \\).</li>\n    <li><b>\\( \\nabla_x V(x,t) \\)</b>: The gradient of the value function with respect to the state, measuring the sensitivity of the cost-to-go with respect to changes in \\( x \\).</li>\n    <li><b>\\( \\nabla_x V(x,t)^T f(x,u,t) \\)</b>: The rate of change of the optimal cost-to-go due to the system dynamics.</li>\n    <li><b>\\( \\min_{u} \\)</b>: The control \\( u \\) is chosen to minimize the right-hand side, ensuring the best possible control action at every instant.</li>\n</ul>\n<br>\nThe <b>HJB equation</b> gives a necessary condition for optimality by characterizing the value function \\( V(x,t) \\), which represents the minimum cost-to-go starting from state \\( x \\) at time \\( t \\). <br><br>\n\nIt is derived from Bellman\u2019s Principle of Optimality, which states that any optimal strategy must remain optimal at all future times.\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<p>\nFor a general continuous-time control problem with state dynamics:\n</p>\n$$\n\\dot{x}(t) = f(x(t), u(t), t)\n$$\n<p>\nand cost functional:\n</p>\n$$\nJ = \\int_{t}^{t_f} L(x(s), u(s), s) \\, ds + \\phi(x(t_f)),\n$$\n<p>\nthe value function \\( V(x,t) \\) satisfies the HJB equation:\n</p>\n$$\n-\\frac{\\partial V}{\\partial t}(x,t) = \\min_{u} \\left\\{ L(x,u,t) + \\nabla_x V(x,t)^T f(x,u,t) \\right\\},\n$$\n<p>\nwith the terminal condition:\n</p>\n$$\nV(x,t_f) = \\phi(x(t_f)).\n$$\n<p>\nTo solve the HJB equation:\n</p>\n<ol>\n  <li>Define the state dynamics and cost functional.</li>\n  <li>Formulate the HJB equation using the value function.</li>\n  <li>Find the control \\( u^*(t) \\) that minimizes the right-hand side.</li>\n  <li>Integrate to obtain the optimal cost-to-go function.</li>\n</ol>\n<br>",
     "front": "<b>Hamilton\u2013Jacobi\u2013Bellman (HJB) Equation</b>\n<ul>  \n    <li><b>Define:</b> What is the Hamilton\u2013Jacobi\u2013Bellman (HJB) equation? What are each of its components? What does it provide us?</li>\n    <li><b>Procedure:</b> How is the HJB equation derived and solved?</li>\n</ul>",
     "id": 1742451704356,
@@ -2678,6 +3077,62 @@
     "id": 1742432289977,
     "tags": [
       "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content\n\nJ = \\int 1 dt",
+    "front": "Cost functional for minimum time problems.",
+    "id": 1742525011129,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "A singular case happens when the Hamiltonian $\\mathcal{H}$ is linear in control $u$ so its derivative $\\mathcal{H}_u$ is constant or zero which is not enough to solve for $u$.",
+    "front": "A singular case happens when ___.",
+    "id": 1743044121935,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<u><b>Definition</b></u><br>\n<p>\nWhen a condition <b>holds identically</b>, it means the condition is true for <b>every point</b> in a given interval or domain, not just at isolated points. It is continuously and universally satisfied over that range.\n</p>",
+    "front": "<b>Holds Identically</b>\n<ul>  \n    <li><b>Define:</b> What does it mean when a condition \"holds identically\" over a time interval or domain?</li>\n</ul>",
+    "id": 1743044755779,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<u><b>Definition</b></u><br>\n<p>\nA <b>Singular Arc</b> is a portion of an optimal control trajectory where the condition\n$$\n\\frac{\\partial H}{\\partial u} = 0\n$$\nholds identically over a time interval, making the Hamiltonian insensitive to changes in control and requiring higher-order conditions to determine the optimal control.\n</p>",
+    "front": "<b>Singular Arc</b>\n<ul>  \n    <li><b>Define:</b> What is a Singular Arc?</li>\n</ul>",
+    "id": 1743044313145,
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1743045432344,
+    "tags": [
+      "16.32",
+      "pp"
     ],
     "understanding": 1
   },
