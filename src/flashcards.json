@@ -3168,5 +3168,71 @@
       "16.32"
     ],
     "understanding": 1
+  },
+  {
+    "id": 1745018630552,
+    "front": "Change of variables",
+    "back": "TODO: New back content\npset 7, p1.1\n",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745019455415,
+    "front": "Box-Muller Transform (of random variables)",
+    "back": "TODO: New back content",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745021457016,
+    "front": "exp(log(y)) = y <br>\nexp(a\u22c5log(y)) = y^a <br>\nexp(a\u22c5log(y))=(e^{log(y)})^a = y^a",
+    "back": "TODO: New back content",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745023123149,
+    "front": "multivariate change\u2011of\u2011variables formula",
+    "back": "pset 7, p1.1 good example",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745025157354,
+    "front": "<b>Standard Normal Density Function</b>\n<ul>  \n    <li><b>Define:</b> What is the standard normal density function for a single real-valued variable \\( x \\in \\mathbb{R} \\)?</li>\n</ul>\n",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>standard normal density function</b> for a single real-valued variable \\( x \\in \\mathbb{R} \\) is defined as:\n$$\n\\phi(x) = \\frac{1}{\\sqrt{2\\pi}} \\exp\\left(-\\frac{x^2}{2}\\right)\n$$\nwhere \\( \\exp(\\cdot) \\) denotes the exponential function.\n</p>\n",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745025222523,
+    "front": "<b>Independence of Random Variables</b>\n<ul>  \n    <li><b>Define:</b> What does it mean for two random variables \\( X_1 \\) and \\( X_2 \\) to be independent?</li>\n</ul>\n",
+    "back": "<u><b>Definition</b></u><br>\n<p>\nTwo random variables <b>\\( X_1 \\)</b> and <b>\\( X_2 \\)</b> are said to be <b>independent</b> if and only if their joint density function factors as:\n$$\nf_{X_1, X_2}(x_1, x_2) = f_{X_1}(x_1) \\cdot f_{X_2}(x_2)\n$$\nfor all \\( x_1, x_2 \\in \\mathbb{R} \\).\n</p>\n",
+    "tags": [
+      "16.32"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
   }
 ]
