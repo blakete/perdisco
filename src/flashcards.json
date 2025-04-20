@@ -568,7 +568,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -598,7 +599,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -615,7 +617,8 @@
     "id": 1741556276234,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -2058,16 +2061,16 @@
     "understanding": 1
   },
   {
-    "id": 1745096977473,
-    "front": "For matrix $A \\in \\mathbb{R}^{m \\times n}$, write the matrix and vector sum notation of its SVD and provide the matrix dimensions.",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "$$\nA = U \\Sigma V^T\n$$\n<br>\nwhere $U \\in \\mathbb{R}^{m \\times r}$ is orthogonal, $\\Sigma \\in \\mathbb{R}^{r \\times r}$ is diagonal with non-negative entries, and $V \\in \\mathbb{R}^{n \\times r}$ is orthogonal.\n<br><br>\n\n$$\nA = \\sum_{i=1}^{r} {u_i \\, \\sigma_i \\, v_{i}^T}\n$$\n<br>\nwhere each product is a rank-one matrix with their sum equaling the original matrix $A$. REMEMBER: an outer-product is performed between the left and right singular vectors!",
+    "front": "For matrix $A \\in \\mathbb{R}^{m \\times n}$, write the matrix and vector sum notation of its SVD and provide the matrix dimensions.",
+    "id": 1745096977473,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
     "absolutelyRequired": true,
@@ -2339,97 +2342,97 @@
     "understanding": 1
   },
   {
-    "id": 1745099495226,
-    "front": "TODO: New front content",
+    "absolutelyRequired": false,
+    "attempts": [],
     "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1745099495226,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": false,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745094991542,
-    "front": "For $A \\in \\mathbb{R}^{m \\times n}$, write $A^T A$ and $A A^T$ in summation notation.",
+    "absolutelyRequired": true,
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1745096247951
+      }
+    ],
     "back": "$$\n(A^T A)_{i j} = \\sum_{k=1}^{m}{A_{k i} A_{k j}}\n$$\n<br>\nwhich can be interpreted as the product of rows.\n<br><br>\n$$\n(A A^T)_{i j} = \\sum_{k=1}^{n}{A_{i k} A_{j k}}\n$$\n<br> \nwhich can be interpreted as the product of columns.",
+    "front": "For $A \\in \\mathbb{R}^{m \\times n}$, write $A^T A$ and $A A^T$ in summation notation.",
+    "id": 1745094991542,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": [
-      {
-        "timestamp": 1745096247951,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
-    "id": 1745093988203,
-    "front": "Perron-Frobenius theorem",
-    "back": "If $A$ is a (strictly) <b>positive matrix</b>, i.e, $A_{i j} > 0, \\; \\forall i, j$\n<ol>\n<li>\n$\\rho(A)$ is an eigenvalue of $A$ with multiplicity 1.\n</li>\n\n<li>\nAll other eigenvalues of A satisfies $| \\lambda | < \\rho(A)$\n</li>\n\n<li>\nThere is an eigenvector $x$ corresponding to $\\rho(A)$ s.t. $x_i\n >0, \\; \\forall i$</li>\n</ol>",
-    "tags": [
-      "18.065",
-      "midterm2"
-    ],
-    "understanding": 1,
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745096490076,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745096490076
       },
       {
-        "timestamp": 1745096522228,
         "correct": false,
-        "reason": "1) eigen of A mult 1, 2) abs of lambda"
+        "reason": "1) eigen of A mult 1, 2) abs of lambda",
+        "timestamp": 1745096522228
       },
       {
-        "timestamp": 1745096557463,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745096557463
       }
-    ]
-  },
-  {
-    "id": 1745099607146,
-    "front": "spectral radius",
-    "back": "denoted $\\rho(A)$, from Perron-Frobenius.",
+    ],
+    "back": "If $A$ is a (strictly) <b>positive matrix</b>, i.e, $A_{i j} > 0, \\; \\forall i, j$\n<ol>\n<li>\n$\\rho(A)$ is an eigenvalue of $A$ with multiplicity 1.\n</li>\n\n<li>\nAll other eigenvalues of A satisfies $| \\lambda | < \\rho(A)$\n</li>\n\n<li>\nThere is an eigenvector $x$ corresponding to $\\rho(A)$ s.t. $x_i\n >0, \\; \\forall i$</li>\n</ol>",
+    "front": "Perron-Frobenius theorem",
+    "id": 1745093988203,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": false,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745096599588,
-    "front": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_from_2025-04-19_17-03-45.png\"></div>",
-    "back": "pset 3 using matrix vector summation notation to show both sum of positive products.",
+    "absolutelyRequired": false,
+    "attempts": [],
+    "back": "denoted $\\rho(A)$, from Perron-Frobenius.",
+    "front": "spectral radius",
+    "id": 1745099607146,
     "tags": [
       "18.065",
-      "midterm2",
-      "pp"
+      "midterm2"
     ],
-    "understanding": 1,
+    "understanding": 1
+  },
+  {
     "absolutelyRequired": true,
-    "attempts": []
-  },
-  {
-    "id": 1745096706505,
-    "front": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_from_2025-04-19_17-05-36.png\"></div>",
-    "back": "pset 3\n<ul>\n\n<li>\nBest rank-1 approximation is truncated SVD <br>\n$$\nA_1 = u_1 \\, \\sigma_1 \\, v_1^T\n$$\n</li>\n\n<li>\nThe first singular vector $u_1$ of $A$ is an eigenvector of $A A^T$ --> the right singular vector $v_1$ of $A$ is an eigenvector of $A^T A$\n    <ul>\n    <li>\n    TODO: interesting thing to prove, check if on previous exam b/c might need it?\n    </li>\n    </ul>\n</li>\n\n<li>\n$A A^T$ and $A^T A$ produce PD matrices.\n</li>\n\n<li>\nTherefore, $u_1$ and $v_1$ can be chosen to be strictly positive\n</li>\n\n<li>\n $u_1$ and $v_1$ outer-product is strictly positive matrix b/c product of positive vectors.\n</li>\n\n<li>\n$\\sigma_1$ positive so the combined $A_1 = \\sigma_1 \\, u_1 \\, v_1^T$ is also a strictly positive matrix.\n</li>\n\n</ul>",
+    "attempts": [],
+    "back": "pset 3 using matrix vector summation notation to show both sum of positive products.",
+    "front": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_from_2025-04-19_17-03-45.png\"></div>",
+    "id": 1745096599588,
     "tags": [
       "18.065",
       "midterm2",
       "pp"
     ],
-    "understanding": 1,
+    "understanding": 1
+  },
+  {
     "absolutelyRequired": false,
-    "attempts": []
+    "attempts": [],
+    "back": "pset 3\n<ul>\n\n<li>\nBest rank-1 approximation is truncated SVD <br>\n$$\nA_1 = u_1 \\, \\sigma_1 \\, v_1^T\n$$\n</li>\n\n<li>\nThe first singular vector $u_1$ of $A$ is an eigenvector of $A A^T$ --> the right singular vector $v_1$ of $A$ is an eigenvector of $A^T A$\n    <ul>\n    <li>\n    TODO: interesting thing to prove, check if on previous exam b/c might need it?\n    </li>\n    </ul>\n</li>\n\n<li>\n$A A^T$ and $A^T A$ produce PD matrices.\n</li>\n\n<li>\nTherefore, $u_1$ and $v_1$ can be chosen to be strictly positive\n</li>\n\n<li>\n $u_1$ and $v_1$ outer-product is strictly positive matrix b/c product of positive vectors.\n</li>\n\n<li>\n$\\sigma_1$ positive so the combined $A_1 = \\sigma_1 \\, u_1 \\, v_1^T$ is also a strictly positive matrix.\n</li>\n\n</ul>",
+    "front": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_from_2025-04-19_17-05-36.png\"></div>",
+    "id": 1745096706505,
+    "tags": [
+      "18.065",
+      "midterm2",
+      "pp"
+    ],
+    "understanding": 1
   },
   {
     "absolutelyRequired": true,
@@ -2444,52 +2447,76 @@
     "understanding": 1
   },
   {
-    "id": 1745100606306,
-    "front": "come back to this: <br>\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_from_2025-04-19_18-10-15.png\"></div>",
+    "absolutelyRequired": false,
+    "attempts": [],
     "back": "<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_from_2025-04-19_18-10-34.png\"></div>",
+    "front": "come back to this: <br>\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_from_2025-04-19_18-10-15.png\"></div>",
+    "id": 1745100606306,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": false,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745102551331,
-    "front": "Given matrices $A \\in \\mathbb{R}^{m \\times n}$ and $B \\in \\mathbb{R}^{n \\times p}$, explain the matrix row-dot-column vs. column-outer-product-row view of the product $A B$.",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "$$\n(AB)_{i j} = \\sum_{k=1}^{n}{A_{i k} B_{k j}}\n$$\n<br><br>\n\nEquivalently you can instead build the entire matrix AB as a sum of rank-1 matrices: \n<br>\n<ul>\n  <li>\n  $A_{: k} \\in \\mathbb{R}^{m}$ is the $k$th column of $A$\n  </li>\n  <li>\n  $B_{k :} \\in \\mathbb{R}^{p}$ is the $k$th row of $B$\n  </li>\n</ul> \n$$\n(AB) = \\sum_{k=1}^{n}{A_{: k} B_{k :}}\n$$\n",
+    "front": "Given matrices $A \\in \\mathbb{R}^{m \\times n}$ and $B \\in \\mathbb{R}^{n \\times p}$, explain the matrix row-dot-column vs. column-outer-product-row view of the product $A B$.",
+    "id": 1745102551331,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745100662703,
-    "front": "For $A \\in \\mathbb{R}^{m \\times n}$ and $B \\in \\mathbb{R}^{n \\times p}, explain the <b>randomized matrix multiplication</b> approach to approximating $A B$<br>",
-    "back": "Key Idea: approximate the sum of these rank-1 matrices by sampling $c << n$ terms.\n<br><br>\n\nKey Formula: <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }\n$$\n<br><br>\n\nAlgorithm:\n<ol>\n\n<li>\nStart with \"column outer-product row view\" of the matrix product $A B$ <br>\n$$\nAB = \\sum_{k=1}^{n}{A_{: k} B^T_{: k}}\n$$\n<br>\nTherefore, each outer-product is an $m \\times p$ rank-1 matrix.\n</li>\n\n<li>\nChoose a sampling distribution for $p = (p_1, \\dots, p_n)$, i.e., distribution across column indices of $A$ and row indices of $B$.\n</li>\n\n<li>\nBuild a Monte-Carlo estimator, i.e., randomly sample and average over $c$, $j_s$ indices <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }\n$$\n<br>\nEach sample $j_s$ is a random index in ${1, \\dots, n}$ with $Pr(j_t = i) = p_i$\n\n<ul>\n    <li>\n    This is an <b>unbiased</b> estimate of $AB$ b/c when you take the expectation of a random\u2010sampling estimator, you always weight each possible outcome by its probability of occurring. <br>\n    $$\n    \\mathbb{E}[\\text{Approx}(A B)] = \\mathbb{E}[\\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }]\n    $$\n<br>\n    $$\n    = \\frac{1}{c} \\sum_{s=1}^{c}{ \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ] } = \\frac{1}{c} \\, c \\; \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ]\n    $$\n<br>\n    $$\n    \\mathbb{E}\\!\\Bigl[\\frac{1}{p_{j_s}}\\,A_{:j_s}\\,B_{j_s:}^{T}\\Bigr]\n    = \\sum_{i=1}^{n}p_i\\;\\frac{1}{p_i}\\,A_{:i}\\,B_{i:}^{T}\n    = \\sum_{i=1}^{n}A_{:i}\\,B_{i:}^{T}\n    = AB.\n    $$\n\n    </li>\n</ul>\n</li>\n\n<li>\nAverage to get an unbiased estimator. --> TODO: show that it is unbiased\n</li>\n\n<li>\nCompute the variance and show its con\n</li>\n\n</ol>",
-    "tags": [
-      "18.065",
-      "midterm2"
-    ],
-    "understanding": 1,
     "absolutelyRequired": false,
-    "attempts": []
-  },
-  {
-    "id": 1745099022620,
-    "front": "Convex function",
-    "back": "TODO: New back content",
+    "attempts": [],
+    "back": "Key Idea: approximate the sum of these rank-1 matrices by sampling $c << n$ terms.\n<br><br>\n\nKey Formula: <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }\n$$\n<br><br>\n\nAlgorithm:\n<ol>\n\n<li>\nStart with \"column outer-product row view\" of the matrix product $A B$ <br>\n$$\nAB = \\sum_{k=1}^{n}{A_{: k} B^T_{: k}}\n$$\n<br>\nTherefore, each outer-product is an $m \\times p$ rank-1 matrix.\n</li>\n\n<li>\nChoose a sampling distribution for $p = (p_1, \\dots, p_n)$, i.e., distribution across column indices of $A$ and row indices of $B$.\n</li>\n\n<li>\nBuild a Monte-Carlo estimator, i.e., randomly sample and average over $c$, $j_s$ indices <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }\n$$\n<br>\nEach sample $j_s$ is a random index in ${1, \\dots, n}$ with $Pr(j_t = i) = p_i$\n\n<ul>\n    <li>\n    This is an <b>unbiased</b> estimate of $AB$ b/c when you take the expectation of a random\u2010sampling estimator, you always weight each possible outcome by its probability of occurring. <br>\n    $$\n    \\mathbb{E}[\\text{Approx}(A B)] = \\mathbb{E}[\\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }]\n    $$\n<br>\n    $$\n    = \\frac{1}{c} \\sum_{s=1}^{c}{ \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ] } = \\frac{1}{c} \\, c \\; \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ]\n    $$\n<br>\n    $$\n    \\mathbb{E}\\!\\Bigl[\\frac{1}{p_{j_s}}\\,A_{:j_s}\\,B_{j_s:}^{T}\\Bigr]\n    = \\sum_{i=1}^{n}p_i\\;\\frac{1}{p_i}\\,A_{:i}\\,B_{i:}^{T}\n    = \\sum_{i=1}^{n}A_{:i}\\,B_{i:}^{T}\n    = AB.\n    $$\n\n    </li>\n</ul>\n</li>\n\n<li>\nAverage to get an unbiased estimator. --> TODO: show that it is unbiased\n</li>\n\n<li>\nCompute the variance and show its con\n</li>\n\n</ol>",
+    "front": "For $A \\in \\mathbb{R}^{m \\times n}$ and $B \\in \\mathbb{R}^{n \\times p}, explain the <b>randomized matrix multiplication</b> approach to approximating $A B$<br>",
+    "id": 1745100662703,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
+    "understanding": 1
+  },
+  {
     "absolutelyRequired": true,
-    "attempts": []
+    "attempts": [],
+    "back": "$x \\theta + (1 -\\theta) y \\in C, \\; \\forall x, y \\in C, \\; \\forall \\theta \\in [0, 1]$",
+    "front": "convex set definition and how to prove",
+    "id": 1745168149209,
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<u><b>Definition</b></u><br>\n<p>\n\\( f: \\mathcal{X} \\to \\mathbb{R} \\) is convex if \\( \\mathcal{X} \\) is convex and\n$$\nf(\\theta x + (1 - \\theta)y) \\leq \\theta f(x) + (1 - \\theta)f(y)\n$$\nfor all \\( x, y \\in \\mathcal{X},\\ \\theta \\in [0,1] \\).\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Check \\( \\mathcal{X} \\) is convex.</li>\n  <li>Verify inequality holds for all \\( x, y, \\theta \\in [0,1] \\).</li>\n  <li>Alt: show \\( f''(x) \\geq 0 \\) (1D) or Hessian \\( \\nabla^2 f(x) \\succeq 0 \\) (multi-D).</li>\n</ol>",
+    "front": "<b>Convex Function</b>\n<ul>  \n    <li><b>Define:</b> What is a Convex Function?</li>\n    <li><b>Procedure:</b> How do you check if a function is convex?</li>\n</ul>",
+    "id": 1745175790362,
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<u><b>Definition</b></u><br>\n<p>\n<b>\u03bc convexity</b> refers to <b>strong convexity</b> of a twice-differentiable function, where the strong convexity constant \\( \\mu \\) is the infimum of the smallest eigenvalues of the function\u2019s Hessian:\n$$\n\\mu = \\inf_{x \\in \\mathbb{R}^n} \\lambda_1(x)\n$$\nwhere \\( \\lambda_1(x) \\) is the smallest eigenvalue of the Hessian \\( \\nabla^2 f(x) \\).\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Compute the Hessian matrix: \\( H(x) = \\nabla^2 f(x) \\).</li>\n  <li>Find its smallest eigenvalue \\( \\lambda_1(x) \\) at each point.</li>\n  <li>Take the infimum over all \\( x \\in \\mathbb{R}^n \\): \n  $$ \\mu = \\inf_{x \\in \\mathbb{R}^n} \\lambda_1(x) $$</li>\n</ol>\n<br>\n<u><b>Practical Use</b></u><br>\n<p>\nUsed in optimization to determine convergence guarantees; for fixed Hessians (e.g., quadratic functions), \u03bc is just the smallest eigenvalue.\n</p>",
+    "front": "<b>\u03bc Convexity and How to Find the \u03bc Value</b>",
+    "id": 1745184076812,
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1
   },
   {
     "absolutelyRequired": true,
