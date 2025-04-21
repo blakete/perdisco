@@ -13,7 +13,7 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "Taylor series is the infinite series:<br><br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n<br><br>\nTaylor series \"expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br><br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n<br><br>",
+    "back": "<p>\nTaylor series is the infinite series:<br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n</p>\n<br>\n\n<p>\nTaylor series \"expansion\" or \"Taylor expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n</p>\n<br>",
     "front": "<b>Taylor Series vs. Taylor Expansion</b>  \n<ul>  \n  <li><b>Define:</b> What is the Taylor series of \\( f(x) \\) at \\( x = a \\)?</li>  \n  <li><b>Define:</b> What is the Taylor series expansion of \\( f(x) \\) at/around \\( x = a \\)?</li>  \n  <li><b>Difference:</b> How do the Taylor series and Taylor expansion differ in meaning and usage?</li>  \n</ul>  ",
     "id": 1742426830175,
     "importance": 2,
@@ -355,7 +355,8 @@
     "id": 1741576267043,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -380,7 +381,8 @@
     "id": 1741580520869,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -401,7 +403,8 @@
     "id": 1741580621810,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -456,7 +459,8 @@
     "id": 1741840883509,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -502,7 +506,8 @@
     "id": 1741577714816,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -700,7 +705,8 @@
     "tags": [
       "16.32",
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1091,7 +1097,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1272,7 +1279,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 2
   },
@@ -1289,19 +1297,8 @@
     "id": 1741841391277,
     "tags": [
       "18.065",
-      "midterm1"
-    ],
-    "understanding": 1
-  },
-  {
-    "absolutelyRequired": false,
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741841373569,
-    "tags": [
-      "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1337,30 +1334,6 @@
     "back": "<u><b>Definition</b></u> <br>\n<p>\nGauss elimination is a systematic method for solving systems of linear equations. It involves applying elementary row operations to an augmented matrix to transform it into row echelon form (or reduced row echelon form), from which the solutions can be obtained through back substitution.\n</p>\n<br>\n<u><b>Procedure</b></u> <br>\n<ol>\n  <li>Write the augmented matrix for the system of equations.</li>\n  <li>Apply elementary row operations:\n    <ul>\n      <li>Swap rows.</li>\n      <li>Multiply a row by a nonzero scalar.</li>\n      <li>Add or subtract a multiple of one row from another.</li>\n    </ul>\n  </li>\n  <li>Reduce the matrix to row echelon form (upper triangular form).</li>\n  <li>(Optional) Further reduce to reduced row echelon form for a unique solution.</li>\n  <li>Perform back substitution to solve for the variables.</li>\n</ol>",
     "front": "<b>Gauss Elimination</b> \n<ul>\n  <li><b>Define:</b> What is Gauss elimination?</li>\n  <li><b>Procedure:</b> How is Gauss elimination performed?</li>\n</ul>",
     "id": 1740890812452,
-    "tags": [
-      "18.065",
-      "midterm1"
-    ],
-    "understanding": 1
-  },
-  {
-    "absolutelyRequired": false,
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741835593393,
-    "tags": [
-      "18.065",
-      "midterm1"
-    ],
-    "understanding": 1
-  },
-  {
-    "absolutelyRequired": false,
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1741835584074,
     "tags": [
       "18.065",
       "midterm1"
@@ -1459,7 +1432,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1579,7 +1553,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1592,7 +1567,8 @@
     "tags": [
       "18.065",
       "midterm1",
-      "16.32"
+      "16.32",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1658,7 +1634,8 @@
     "id": 1741513526904,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1684,7 +1661,8 @@
     "id": 1740887687921,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -1852,7 +1830,8 @@
     "id": 1741168096548,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -2102,7 +2081,8 @@
     "id": 1741831520702,
     "tags": [
       "18.065",
-      "midterm1"
+      "midterm1",
+      "midterm2"
     ],
     "understanding": 1
   },
@@ -2342,18 +2322,6 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": false,
-    "attempts": [],
-    "back": "TODO: New back content",
-    "front": "TODO: New front content",
-    "id": 1745099495226,
-    "tags": [
-      "18.065",
-      "midterm2"
-    ],
-    "understanding": 1
-  },
-  {
     "absolutelyRequired": true,
     "attempts": [
       {
@@ -2471,10 +2439,10 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": false,
+    "absolutelyRequired": true,
     "attempts": [],
     "back": "Key Idea: approximate the sum of these rank-1 matrices by sampling $c << n$ terms.\n<br><br>\n\nKey Formula: <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }\n$$\n<br><br>\n\nAlgorithm:\n<ol>\n\n<li>\nStart with \"column outer-product row view\" of the matrix product $A B$ <br>\n$$\nAB = \\sum_{k=1}^{n}{A_{: k} B^T_{: k}}\n$$\n<br>\nTherefore, each outer-product is an $m \\times p$ rank-1 matrix.\n</li>\n\n<li>\nChoose a sampling distribution for $p = (p_1, \\dots, p_n)$, i.e., distribution across column indices of $A$ and row indices of $B$.\n</li>\n\n<li>\nBuild a Monte-Carlo estimator, i.e., randomly sample and average over $c$, $j_s$ indices <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }\n$$\n<br>\nEach sample $j_s$ is a random index in ${1, \\dots, n}$ with $Pr(j_t = i) = p_i$\n\n<ul>\n    <li>\n    This is an <b>unbiased</b> estimate of $AB$ b/c when you take the expectation of a random\u2010sampling estimator, you always weight each possible outcome by its probability of occurring. <br>\n    $$\n    \\mathbb{E}[\\text{Approx}(A B)] = \\mathbb{E}[\\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }]\n    $$\n<br>\n    $$\n    = \\frac{1}{c} \\sum_{s=1}^{c}{ \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ] } = \\frac{1}{c} \\, c \\; \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ]\n    $$\n<br>\n    $$\n    \\mathbb{E}\\!\\Bigl[\\frac{1}{p_{j_s}}\\,A_{:j_s}\\,B_{j_s:}^{T}\\Bigr]\n    = \\sum_{i=1}^{n}p_i\\;\\frac{1}{p_i}\\,A_{:i}\\,B_{i:}^{T}\n    = \\sum_{i=1}^{n}A_{:i}\\,B_{i:}^{T}\n    = AB.\n    $$\n\n    </li>\n</ul>\n</li>\n\n<li>\nAverage to get an unbiased estimator. --> TODO: show that it is unbiased\n</li>\n\n<li>\nCompute the variance and show its con\n</li>\n\n</ol>",
-    "front": "For $A \\in \\mathbb{R}^{m \\times n}$ and $B \\in \\mathbb{R}^{n \\times p}, explain the <b>randomized matrix multiplication</b> approach to approximating $A B$<br>",
+    "front": "For $A \\in \\mathbb{R}^{m \\times n}$ and $B \\in \\mathbb{R}^{n \\times p}$, explain the <b>randomized matrix multiplication</b> approach to approximating $A B$<br>",
     "id": 1745100662703,
     "tags": [
       "18.065",
@@ -2483,10 +2451,22 @@
     "understanding": 1
   },
   {
+    "id": 1745202853509,
+    "front": "Steepest descent method and least squares",
+    "back": "pset 3 p7 <br>\nTODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "$x \\theta + (1 -\\theta) y \\in C, \\; \\forall x, y \\in C, \\; \\forall \\theta \\in [0, 1]$",
-    "front": "convex set definition and how to prove",
+    "back": "$\\forall x, y \\in C, \\; x \\theta + (1 -\\theta) y \\in C, \\; \\forall \\theta \\in [0, 1]$ \n<p>\nwhich can be interpreted as a line between any two points in a convex set is also in the convex set. Or that the weighted average between the two points is also in the set.\n</p>",
+    "front": "convex set (definition)",
     "id": 1745168149209,
     "tags": [
       "18.065",
@@ -2497,14 +2477,26 @@
   {
     "absolutelyRequired": true,
     "attempts": [],
-    "back": "<u><b>Definition</b></u><br>\n<p>\n\\( f: \\mathcal{X} \\to \\mathbb{R} \\) is convex if \\( \\mathcal{X} \\) is convex and\n$$\nf(\\theta x + (1 - \\theta)y) \\leq \\theta f(x) + (1 - \\theta)f(y)\n$$\nfor all \\( x, y \\in \\mathcal{X},\\ \\theta \\in [0,1] \\).\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Check \\( \\mathcal{X} \\) is convex.</li>\n  <li>Verify inequality holds for all \\( x, y, \\theta \\in [0,1] \\).</li>\n  <li>Alt: show \\( f''(x) \\geq 0 \\) (1D) or Hessian \\( \\nabla^2 f(x) \\succeq 0 \\) (multi-D).</li>\n</ol>",
-    "front": "<b>Convex Function</b>\n<ul>  \n    <li><b>Define:</b> What is a Convex Function?</li>\n    <li><b>Procedure:</b> How do you check if a function is convex?</li>\n</ul>",
+    "back": "<u><b>Definition</b></u><br>\n<ul>\n  <li>\n  A function \\( f: \\mathcal{X} \\to \\mathbb{R} \\) is convex if 1) its domain \\( \\mathcal{X} \\) is convex and 2) \n  $$\n  f(\\theta x + (1 - \\theta)y) \\leq \\theta f(x) + (1 - \\theta)f(y), \\; \\forall x, y \\in \\mathcal{X},\\ \\theta \\in [0,1]\n  $$\n  </li>\n  <li>\n  If $f$ is twice continuously differentiable then $f$ is convex iff its $H \\succeq 0, \\; \\forall x \\in \\mathcal{X}$ and $\\equiv$ for a single variable function $f$ is convex iff $f''(x) \\geq 0, \\; \\forall x \\in \\mathcal{X}$\n  </li>\n  <li>\n  If $f$ is continuously differentiable, then <br>\n$f$ is convex $\\iff$ $f(y) \\geq f(x) + \\nabla f(x)^{T} (y - x), \\; \\forall x, y $\n  <ul>\n    <li>\n    Interpretation: tangent line is always below the graph.\n    </li>\n  </ul>\n  </li>\n</ul>\n\n<br>\n<u><b>Procedure</b></u><br>\n<p>\nCheck if $f$ is convex by checking it meets any of the above criteria.\n</p>",
+    "front": "convex function (define, procedure to check)",
     "id": 1745175790362,
     "tags": [
       "18.065",
       "midterm2"
     ],
     "understanding": 1
+  },
+  {
+    "id": 1745195439041,
+    "front": "strong convexity",
+    "back": "<b><u>Define</u></b>\n<ul>\n  <li>\n  $f$ is $\\mu$-strongly convex if $f - \\frac{\\mu}{2} \\| x \\|_{2}^{2}$ is convex with $\\mu > 0$.\n  <ul>\n    <li>\n    Interpretation: If the function is convex after removing some convex part and its still convex, this gives us a notion of how strongly convex the function is.\n    </li>\n  </ul>\n  </li>\n  <li>\n  $f$ is $\\mu$-strongly convex $\\iff$ $\\nabla^2 f(x) \\geq \\mu I$\n  <ul>\n    <li>\n    Interpretation: $H - \\mu I \\succeq 0$ (still PSD), then $f$ is $\\mu$-strongly convex.\n    </li>\n  </ul>\n  </li>\n  <li>\n  $$\n  f(y) \\geq f(x) + \\nabla f(x)^T(y - x) + \\frac{\\mu}{2} \\| y - x \\|^2\n  $$\n  </li>\n</ul>\n<br><br>\n\n",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
   },
   {
     "absolutelyRequired": true,
@@ -2517,6 +2509,318 @@
       "midterm2"
     ],
     "understanding": 1
+  },
+  {
+    "id": 1745195802473,
+    "front": "why do we like convexity in optimization problems?",
+    "back": "<p>\nbecause for convex optimization problems, every stationary / critical point must be a global minimum.\n</p>\n<p>\nFurthermore, if $f$ is strongly convex and global min exists, then the global min must be unique.\n</p>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745198251493,
+    "front": "line search (what is the problem definition?)",
+    "back": "$$\nx_{k+1} = x_k + \\alpha_k d_k\n$$\n<br>\nwhere $\\alpha_k$ is the step size and $d_k$ is the descent direction.\n<p>\nGoal: given $x_k$ and $d_k$, find $\\alpha_k$ (cheaply) s.t. there is a \"large\" decay in $f$, i.e., we want $f(x_{k+1}) << f(x_k)$\n</p>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745203649066,
+    "front": "Taylor expansion",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745203042262,
+    "front": "gradient descent (algo, rough derivation / intuition)",
+    "back": "<u><b>Algorithm</b></u>\n<p>\n$$\nx_{k+1} = x_{k} - \\alpha_k \\nabla f(x_k)\n$$\n<br>\nsteepest descent direction is $d_k = - \\nabla f(x_k)$\n</p>\n<br>\n\n<u><b>Rough Derivation</b></u> <br>\nGoal: given a function $f$ and a current point $x_k$, we want to choose a direction $d_k$ and step size $a_k$ such that $x_{k+1} = x_k + \\alpha d_k$ minimizes the function $f(x_{k+1}) = f(x_k + \\alpha_k d_k)$\n<br>\n<ol>\n  <li>\n  First order Taylor expansion of $f$ around $x_k$ is $f(x_k) = f(x_k) + \\alpha_k \\nabla f(x_k)^T d_k + \\mathcal{O}(\\alpha_k^2)$ <br>\nThe truncated linearly approximation is $f(x_k + \\alpha_k d_k) \\approx f(x_k) + \\alpha \\nabla f(x_k)^T d_k$\n  </li>\n  <li>\n  To minimize $f(x_k + \\alpha_k d_k)$ we choose the direction $d_k$ that makes $\\nabla f(x_k)^T d_k$ most negative. <br>\nThis is achieved by choosing $d_k = - \\nabla f(x_k)$\n  </li>\n  <li>\n  Then we have to choose $\\alpha_k$ step size (small fixed small constant or via line search to minimize $f(x_k + \\alpha_k d_k)$ along our chosen $d_k$ steepest direction)\n  </li>\n</ol>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745205384592,
+    "front": "compute gradient $\\nabla f(x)$ analytically by hand <br>\nTODO: pp",
+    "back": "pset 4.7 <br>\nTODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745205659383,
+    "front": "L-smooth (definition)",
+    "back": "<b>L-smooth</b> means that a function $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ is <b>Lipschitz continuous</b> with Lipschitz constant $\\mathbf{L}$: <br>\n$$\n\\| \\nabla f(x) - \\nabla f(y) \\| \\leq L \\| x - y \\|, \\quad \\forall x, y \\in \\mathbb{R}^n\n$$\n<br><br>\nInterpretation:\n<ul>\n  <li>\n  Quantifies the maximum rate at which the gradient of $f$ can change.\n  </li>\n  <li>\n  In geometric terms, it bounds the curvature of the function or \"steepness\" of the function.\n  </li>\n</ul> ",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745207460307,
+    "front": "sublinear convergence",
+    "back": "$$\n\\underset{k \\rightarrow \\infty}{\\text{lim}} \\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|} = 1\n$$",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745207703164,
+    "front": "linear convergence",
+    "back": "$$\n\\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|} \\leq a, \\quad a \\in (0, 1)\n$$\n<br>\nfor sufficiently large $k$ (we use this language b/c might not strictly hold in the beginning of algorithm)",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745207997148,
+    "front": "superlinear convergence",
+    "back": "$$\n\\underset{k \\rightarrow \\infty}{\\text{lim}} \\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|} = 0\n$$",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745208110509,
+    "front": "quadratic convergence",
+    "back": "$$\n\\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|^2} \\leq a, \\quad a > 0\n$$\n<br>\nfor sufficiently large $k$ \n(we use this language b/c might now hold early in algorithm)",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745208228179,
+    "front": "Newton's method (algo, advantage, disadvantage, rough derivation)",
+    "back": "<p>\n<u><b>Algorithm</b></u> <br>\n$$\nx_{k+1} = x_k - \\alpha_k \\nabla^2 f(x_k)^{-1} \\nabla f(x_k)\n$$\n</p>\n<br>\n\n<p>\n<u><b>Advantages</b></u> <br>\n<ul>\n  <li>\n  Locally quadratic convergence when $x_k$ sufficiently close to $x^*$\n  </li>\n</ul>\n</p>\n<br>\n\n<p>\n<u><b>Disadvantages</b></u> <br>\n<ul>\n  <li>\n  Expensive to compute and invert Hessian at each step.\n  </li>\n</ul>\n</p>\n<br>\n\n<p>\n<u><b>Rough Derivation</b></u> <br>\nGoal: given $f$ and $x_k$, choose $d$ to min $f(x_k + d)$\n<ol>\n  <li>\n  2nd order Taylor expansion of $f$ around $x_k$ is $f(x_k + d) \\approx f(x_k) + \\nabla f(x_k)^T d + \\frac{1}{2} d^T \\nabla^2 f(x_k) d$\n  </li>\n  <li>\n  Extract components involving $d$ to <br>\n$$\nQ(d) = \\nabla f(x_k)^T d + \\frac{1}{2} d^T \\nabla^2 f(x_k) d\n$$\n  </li>\n  <li>\n  Minimize $Q(d)$ w.r.t. $d$ by setting $\\nabla Q(d) = 0$ and solving for $d$ <br>\n$$\n\\nabla Q(d) = \\nabla f(x_k) + \\nabla^2 f(x_k) d = 0 \\quad \\rightarrow \\quad d =  \\nabla^2 f(x_k)^{-1} \\nabla f(x_k)\n$$\n  </li>\n</ol>\n</p>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745208234997,
+    "front": "Quasi-Newton method (algo, key idea)",
+    "back": "$$\nx_{k+1} = x_k - \\alpha_k H_k \\nabla f(x_k)\n$$\n<br><br>\n<b>Key Idea</b>: efficiently approximate Newton's method without computing or inverting the full Hessian $\\nabla^2 f(x)$.\n<br><br>\nTODO: come back to details of how to calculate $H_k$",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745208251183,
+    "front": "constrained optimization (canonical formulation)",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": false,
+    "attempts": []
+  },
+  {
+    "id": 1745208387617,
+    "front": "KKT conditions",
+    "back": "If $x^*$ is a local min, then:\n<ol>\n  <li>\n  <b>stationarity</b> <br>\n  $$\n  \\nabla f(x^*) + \\sum_{i \\in E} \\lambda_i^* \\nabla c_i(x^*) + \\sum_{i \\in I} \\nu_i^* \\nabla c_i(x^*) = 0\n  $$\n  </li>\n  <li>\n  <b>primal feasibility</b> <br>\n  $$\n  c_i(x^*) = 0, \\quad \\forall i \\in E\n  $$\n  <br>\n  $$\n  c_i(x^*) \\leq 0, \\quad \\forall i \\in I\n  $$\n  </li>\n  <li>\n  <b>dual feasibility</b> <br>\n  $$\n  \\nu_i^* \\geq 0, \\quad \\forall i \\in I\n  $$\n  </li>\n  <li>\n  <b>complementary slackness</b> <br>\n  $$\n  \\nu_i^* c_i(x^*) = 0, \\quad \\forall i \\in I\n  $$\n  </li>\n</ol>\n",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745213019013,
+    "front": "Lagrangian function",
+    "back": "<p>\n  Encodes both the objective and constraints in the form <br>\n  $$\n  \\mathcal{L}(x, \\lambda, \\nu) = f(x) + \\sum_i \\lambda_i c_i(x) + \\sum_j \\nu_j c_j(x)\n  $$\n  <br>\n  where $\\lambda$ and $\\nu$ are Lagrange multipliers (dual variables) for the equality and inequality constraints, respectively<br>\n</p>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745211769278,
+    "front": "primal and dual problems",
+    "back": "<p><strong>Primal:</strong></p>\n<p>\n  $$\n  \\min_{x} f(x) \\quad \\text{subject to} \\quad c_i(x) = 0, \\, c_j(x) \\leq 0\n  $$\n</p>\n<p><strong>Dual:</strong></p>\n<p>\n  $$\n  \\max_{\\lambda, \\nu \\geq 0} g(\\lambda, \\nu) \\quad \\text{where} \\quad g(\\lambda, \\nu) = \\inf_x \\mathcal{L}(x, \\lambda, \\nu)\n  $$\n</p>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745208404901,
+    "front": "weak duality",
+    "back": "<p><strong>Weak Duality:</strong></p>\n<p>\n  $$\n  g(\\lambda, \\nu) \\leq f(x)\n  $$\n</p>\n<p>for any dual feasible $(\\lambda, \\nu \\geq 0)$ and primal feasible $x$.</p>\n<p>This implies:</p>\n<p>\n  $$\n  \\max_{\\lambda, \\nu \\geq 0} g(\\lambda, \\nu) \\leq \\min_{x} f(x)\n  $$\n</p>\n<p>i.e., <b>the optimal value of the dual problem is always less than or equal to the optimal value of the primal problem.</b></p>\n",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745213343509,
+    "front": "strong duality",
+    "back": "<p><strong>Strong Duality:</strong></p>\n<p>\n  $$\n  \\max_{\\lambda, \\nu \\geq 0} g(\\lambda, \\nu) = \\min_{x} f(x)\n  $$\n</p>\n<p>i.e., the optimal value of the dual problem equals the optimal value of the primal problem.</p>\n<p>This holds under certain conditions, such as convexity of the primal problem and constraint qualifications (e.g., Slater's condition).</p>\n",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745195327463,
+    "front": "linear programming (define)",
+    "back": "linear objective function and linear constraints. <br>\nif LP is finite then its dual problem is also finite with $q^* = p^*$ <br>\nTODO: add more from lecture slides",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745210873101,
+    "front": "quadratic penalty method",
+    "back": "The quadratic penalty method is an approach for solving constrained optimization problems of the form:\n$$\n\\underset{x}{\\text{min}} f(x) \\quad \\text{subject to} \\quad c_i (x) = 0, \\quad \\forall i \\in E\n$$\n<br>\nwhere instead of solving the constrained problem directly, the method transforms into a sequence of unconstrained problems by adding a penalty term to the objective function:\n$$\n\\mathcal{P}(x, \\sigma) = f(x) + \\frac{\\sigma}{2} \\sum_{i \\in E} c_i^2(x)\n$$\n<br>\nwhere $\\sigma > 0$ is a penalty parameter that penalizes violations of the constraints. \n\n<br><br>\nhelps solve constrained optimization by converting it to a sequence of easier unconstrained problems. The penalty parameter $\\sigma$ ensures that constraint violations are penalized heavily, and under certain conditions, convergence to the true solution is guaranteed. However, large penalty values make the numerical problem harder, which is a key trade-off to understand.\n\n",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745210795486,
+    "front": "augmented Lagrangian method",
+    "back": "<p>\n<b><u>Key Idea</u></b> <br>\nMarry KKT classical Lagrangian with the quadratic penalty method.\n</p>\n\n<p>\n<b><u>Algorithm</u></b> <br>\n<ol>\n  <li>\n    Initialize \\(x^0,\\;\\lambda^0,\\;\\sigma_0>0,\\;\\rho>1,\\;\\alpha>0,\\;k_{\\max},\\;k_{\\max,\\mathrm{inner}},\\;\\varepsilon,\\;\\eta\\).\n  </li>\n  <li>\n    For \\(k=0,1,2,\\dots\\) until \\(k=k_{\\max}\\) or \\(\\|c(x^k)\\|<\\varepsilon\\):\n    <ol>\n      <li>\n        <strong>Primal update:</strong><br/>\n        \\[\n          x^{k+1}\n          \\;=\\;\n          \\arg\\min_{x}\\;L_{\\sigma_k}(x,\\lambda^k)\n          \\;=\\;\n          f(x)\\;+\\;(\\lambda^k)^{T}c(x)\\;+\\;\\tfrac{\\sigma_k}{2}\\,\\|c(x)\\|^2.\n        \\]\n        Solve via gradient descent:\n        <ol>\n          <li>Set \\(x^{k+1,0}=x^k\\).</li>\n          <li>\n            For \\(j=0,1,\\dots\\) until \\(j=k_{\\max,\\mathrm{inner}}\\) or \n            \\(\\|\\nabla_x L_{\\sigma_k}(x^{k+1,j},\\lambda^k)\\|<\\eta\\), update\n            \\[\n              x^{k+1,j+1}\n              =\n              x^{k+1,j}\n              \\;-\\;\\alpha\\,\\nabla_x L_{\\sigma_k}(x^{k+1,j},\\lambda^k).\n            \\]\n          </li>\n          <li>Set \\(x^{k+1}=x^{k+1,j}\\).</li>\n        </ol>\n      </li>\n      <li>\n        <strong>Dual update:</strong><br/>\n        \\[\n          \\lambda^{k+1}\n          =\n          \\lambda^k\n          \\;+\\;\n          \\sigma_k\\,c\\bigl(x^{k+1}\\bigr).\n        \\]\n      </li>\n      <li>\n        <strong>Penalty update:</strong><br/>\n        \\[\n          \\sigma_{k+1}\n          =\n          \\rho\\,\\sigma_k.\n        \\]\n      </li>\n      <li>\n      Stop when $\\|c(x^{k+1})\\|<\\varepsilon$ or $k+1=k_{\\max}$\n      </li>\n    </ol>\n  </li>\n  <li>\n    Return \\(\\bigl(x^{k+1},\\lambda^{k+1}\\bigr)\\).\n  </li>\n</ol>\n</p>",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745210807704,
+    "front": "subgradient",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745210814953,
+    "front": "subdifferential",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745210830281,
+    "front": "subgradient method",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745210840369,
+    "front": "proximal operator",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745205454631,
+    "front": "proximal gradient descent",
+    "back": "TODO: New back content",
+    "tags": [
+      "18.065",
+      "midterm2"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
   },
   {
     "absolutelyRequired": true,
