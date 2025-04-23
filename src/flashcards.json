@@ -2367,17 +2367,17 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745281510103,
         "correct": false,
-        "reason": "part 3"
+        "reason": "part 3",
+        "timestamp": 1745281510103
       },
       {
-        "timestamp": 1745281590310,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745281590310
       },
       {
-        "timestamp": 1745282084656,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745282084656
       }
     ],
     "back": "If $A$ is a (strictly) <b>positive matrix</b>, i.e, $A_{i j} > 0, \\; \\forall i, j$\n<ol>\n<li>\n$\\rho(A)$ is an eigenvalue of $A$ with multiplicity 1.\n</li>\n\n<li>\nAll other eigenvalues of A satisfies $| \\lambda | < \\rho(A)$\n</li>\n\n<li>\nThere is a (strictly) positive eigenvector $x$ corresponding to $\\rho(A)$ s.t. $x_i\n >0, \\; \\forall i$</li>\n</ol>",
@@ -2393,12 +2393,12 @@
     "absolutelyRequired": false,
     "attempts": [
       {
-        "timestamp": 1745281595247,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745281595247
       },
       {
-        "timestamp": 1745282086786,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745282086786
       }
     ],
     "back": "denoted $\\rho(A)$, from Perron-Frobenius.",
@@ -2464,13 +2464,13 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745281976521,
         "correct": false,
-        "reason": "col-outer-row sum notation"
+        "reason": "col-outer-row sum notation",
+        "timestamp": 1745281976521
       },
       {
-        "timestamp": 1745282211315,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745282211315
       }
     ],
     "back": "$$\n(AB)_{i j} = \\sum_{k=1}^{n}{A_{i k} B_{k j}}\n$$\n<br><br>\n\nEquivalently you can instead build the entire matrix AB as a sum of rank-1 matrices: \n<br>\n<ul>\n  <li>\n  $A_{: k} \\in \\mathbb{R}^{m}$ is the $k$th column of $A$\n  </li>\n  <li>\n  $B_{k :} \\in \\mathbb{R}^{p}$ is the $k$th row of $B$\n  </li>\n</ul> \n$$\n(AB) = \\sum_{k=1}^{n}{A_{: k} B_{k :}}\n$$\n",
@@ -2483,42 +2483,42 @@
     "understanding": 1
   },
   {
-    "id": 1745284366519,
-    "front": "expected value and variance formulas for a random variable $X$\n<ul>  \n    <li><b>Define:</b> What are the formulas for the expected value and variance of a random variable X?</li>\n    <li><b>Procedure:</b> How do you calculate expected value and variance from a probability distribution?</li>\n</ul>",
+    "absolutelyRequired": false,
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1745284569182
+      }
+    ],
     "back": "<u><b>Definition</b></u><br>\n<p>\nThe <b>expected value</b> of a random variable \\( X \\) is:\n$$\n\\mathbb{E}[X] = \\sum_i P_i \\cdot X_i\n$$\nThe <b>variance</b> of \\( X \\) is:\n$$\n\\text{Var}(X) = \\mathbb{E}[X^2] - \\left(\\mathbb{E}[X]\\right)^2\n$$\n</p>\n<br>\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>List all possible values \\( X_i \\) and their probabilities \\( P_i \\).</li>\n  <li>Compute \\( \\mathbb{E}[X] = \\sum_i P_i \\cdot X_i \\).</li>\n  <li>Compute \\( \\mathbb{E}[X^2] = \\sum_i P_i \\cdot X_i^2 \\).</li>\n  <li>Calculate variance: \\( \\text{Var}(X) = \\mathbb{E}[X^2] - (\\mathbb{E}[X])^2 \\).</li>\n</ol>",
+    "front": "expected value and variance formulas for a random variable $X$\n<ul>  \n    <li><b>Define:</b> What are the formulas for the expected value and variance of a random variable X?</li>\n    <li><b>Procedure:</b> How do you calculate expected value and variance from a probability distribution?</li>\n</ul>",
+    "id": 1745284366519,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": false,
-    "attempts": [
-      {
-        "timestamp": 1745284569182,
-        "correct": true
-      }
-    ]
+    "understanding": 1
   },
   {
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745283198279,
         "correct": false,
-        "reason": "variance computation"
+        "reason": "variance computation",
+        "timestamp": 1745283198279
       },
       {
-        "timestamp": 1745283640504,
         "correct": false,
-        "reason": "expected val of inside sum = sum of all outcomes * their probability"
+        "reason": "expected val of inside sum = sum of all outcomes * their probability",
+        "timestamp": 1745283640504
       },
       {
-        "timestamp": 1745283646854,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745283646854
       },
       {
-        "timestamp": 1745284574189,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745284574189
       }
     ],
     "back": "Key Idea: approximate the sum of these rank-1 matrices by sampling $c << n$ terms.\n<br><br>\n\nKey Formula: <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{: j_s}^T }\n$$\n<br><br>\n\nAlgorithm:\n<ol>\n\n<li>\nStart with \"column outer-product row view\" of the matrix product $A B$ <br>\n$$\nAB = \\sum_{k=1}^{n}{A_{: k} B^T_{: k}}\n$$\n<br>\nTherefore, each outer-product is an $m \\times p$ rank-1 matrix.\n</li>\n\n<li>\nChoose a sampling distribution for $p = (p_1, \\dots, p_n)$, i.e., distribution across column indices of $A$ and row indices of $B$.\n</li>\n\n<li>\nBuild a Monte-Carlo estimator, i.e., randomly sample and average over $c$, $j_s$ indices <br>\n$$\n\\text{Approx}(A B) = \\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{: j_s}^T }\n$$\n<br>\nEach sample $j_s$ is a random index in ${1, \\dots, n}$ with $Pr(j_t = i) = p_i$\n\n<ul>\n    <li>\n    This is an <b>unbiased</b> estimate of $AB$ b/c when you take the expectation of a random\u2010sampling estimator, you always weight each possible outcome by its probability of occurring. <br>\n    $$\n    \\mathbb{E}[\\text{Approx}(A B)] = \\mathbb{E}[\\frac{1}{c} \\sum_{s=1}^{c}{ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T }]\n    $$\n<br>\n    $$\n    = \\frac{1}{c} \\sum_{s=1}^{c}{ \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ] } = \\frac{1}{c} \\, c \\; \\mathbb{E}[ \\frac{1}{p_{j_s}} A_{: j_s} B_{j_s :}^T ]\n    $$\n<br>\n    $$\n    \\mathbb{E}\\!\\Bigl[\\frac{1}{p_{j_s}}\\,A_{:j_s}\\,B_{j_s:}^{T}\\Bigr]\n    = \\sum_{i=1}^{n}p_i\\;\\frac{1}{p_i}\\,A_{:i}\\,B_{i:}^{T}\n    = \\sum_{i=1}^{n}A_{:i}\\,B_{i:}^{T}\n    = AB.\n    $$\n\n    </li>\n</ul>\n</li>\n\n<li>\nAverage to get an unbiased estimator. --> TODO: show that it is unbiased\n</li>\n\n<li>\nCompute the variance <br>\n$$\nP_i = \\frac{ \\| A_{: i} \\|_2 \\| B_{i :} \\|_2 }{ \\sum_{j=1}^n \\| A_{: j} \\|_2 \\| B_{j :} \\|_2 }\n$$\n</li>\n\n</ol>",
@@ -2558,8 +2558,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745285492590,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745285492590
       }
     ],
     "back": "<u><b>Definition</b></u><br>\n<ul>\n  <li>\n  A function \\( f: \\mathcal{X} \\to \\mathbb{R} \\) is convex if 1) its domain \\( \\mathcal{X} \\) is convex and 2) \n  $$\n  f(\\theta x + (1 - \\theta)y) \\leq \\theta f(x) + (1 - \\theta)f(y), \\; \\forall x, y \\in \\mathcal{X},\\ \\theta \\in [0,1]\n  $$\n  </li>\n  <li>\n  If $f$ is twice continuously differentiable then $f$ is convex iff its $H \\succeq 0, \\; \\forall x \\in \\mathcal{X}$ and $\\equiv$ for a single variable function $f$ is convex iff $f''(x) \\geq 0, \\; \\forall x \\in \\mathcal{X}$\n  </li>\n  <li>\n  If $f$ is continuously differentiable, then <br>\n$f$ is convex $\\iff$ $f(y) \\geq f(x) + \\nabla f(x)^{T} (y - x), \\; \\forall x, y $\n  <ul>\n    <li>\n    Interpretation: tangent line is always below the graph.\n    </li>\n  </ul>\n  </li>\n</ul>\n\n<br>\n<u><b>Procedure</b></u><br>\n<p>\nCheck if $f$ is convex by checking it meets any of the above criteria.\n</p>",
@@ -2575,8 +2575,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745285891907,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745285891907
       }
     ],
     "back": "<b><u>Define</u></b>\n<ul>\n  <li>\n  $f$ is $\\mu$-strongly convex if $f - \\frac{\\mu}{2} \\| x \\|_{2}^{2}$ is convex with $\\mu > 0$.\n  <ul>\n    <li>\n    Interpretation: If the function is convex after removing some convex part and its still convex, this gives us a notion of how strongly convex the function is.\n    </li>\n  </ul>\n  </li>\n  <li>\n  $f$ is $\\mu$-strongly convex $\\iff$ $\\nabla^2 f(x) \\geq \\mu I$\n  <ul>\n    <li>\n    Interpretation: $H - \\mu I \\succeq 0$ (still PSD), then $f$ is $\\mu$-strongly convex.\n    </li>\n  </ul>\n  </li>\n  <li>\n  $$\n  f(y) \\geq f(x) + \\nabla f(x)^T(y - x) + \\frac{\\mu}{2} \\| y - x \\|^2\n  $$\n  </li>\n</ul>\n<br><br>\n\n",
@@ -2616,12 +2616,12 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745286096158,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745286096158
       },
       {
-        "timestamp": 1745286368021,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745286368021
       }
     ],
     "back": "<p>\nGoal: given $x_k$ and $d_k$, find $\\alpha_k$ (cheaply) s.t. there is a \"large\" decay in $f$, i.e., we want $f(x_{k+1}) << f(x_k)$\n</p>\n$$\nx_{k+1} = x_k + \\alpha_k d_k\n$$\n<br>\nwhere $\\alpha_k$ is the step size and $d_k$ is the descent direction.\n<br><br>\n<b>Exact Line Search</b><br>\n$$\n\\alpha_k = \\arg\\min_{\\alpha > 0} f(x_k + \\alpha d_k)\n$$",
@@ -2661,8 +2661,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745289260565,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745289260565
       }
     ],
     "back": "pset 4.7 <br>\nTODO: New back content",
@@ -2675,16 +2675,16 @@
     "understanding": 1
   },
   {
-    "id": 1745289333581,
-    "front": "how to check that $x^k$ converges to the global minimizer?",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "check that $\\underset{k \\rightarrow \\infty}{\\text{lim}} x_k = \\text{global min}$",
+    "front": "how to check that $x^k$ converges to the global minimizer?",
+    "id": 1745289333581,
     "tags": [
       "18.065",
       "midterm2"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
     "absolutelyRequired": false,
@@ -2702,8 +2702,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745290280291,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745290280291
       }
     ],
     "back": "$$\n\\underset{k \\rightarrow \\infty}{\\text{lim}} \\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|} = 1\n$$",
@@ -2719,8 +2719,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745290280892,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745290280892
       }
     ],
     "back": "$$\n\\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|} < a, \\quad a \\in (0, 1)\n$$\n<br>\nfor sufficiently large $k$ (we use this language b/c might not strictly hold in the beginning of algorithm)",
@@ -2736,8 +2736,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745290281344,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745290281344
       }
     ],
     "back": "$$\n\\underset{k \\rightarrow \\infty}{\\text{lim}} \\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|} = 0\n$$",
@@ -2753,8 +2753,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745290281743,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745290281743
       }
     ],
     "back": "$$\n\\frac{\\| x_{k+1} - x^* \\|}{\\| x_k - x^* \\|^2} \\leq a, \\quad a > 0\n$$\n<br>\nfor sufficiently large $k$ \n(we use this language b/c might now hold early in algorithm)",
@@ -2806,8 +2806,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745291837670,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745291837670
       }
     ],
     "back": "<b>KKT Conditions</b><br>\n<p>\nIf \\( x^* \\) is a local minimum and certain regularity conditions (e.g., constraint qualifications like LICQ) hold, then there exist multipliers \\( \\lambda^* \\in \\mathbb{R}^m \\), \\( \\nu^* \\in \\mathbb{R}^p \\) such that:\n</p>\n\n<ol>\n  <li><b>Stationarity:</b><br>\n  $$\n  \\nabla f(x^*) + \\sum_{i=1}^{m} \\lambda_i^* \\nabla g_i(x^*) + \\sum_{j=1}^{p} \\nu_j^* \\nabla h_j(x^*) = 0\n  $$\n  </li>\n\n  <li><b>Primal Feasibility:</b><br>\n  $$\n  g_i(x^*) \\leq 0, \\quad i = 1, \\dots, m \\\\\n  h_j(x^*) = 0, \\quad j = 1, \\dots, p\n  $$\n  </li>\n\n  <li><b>Dual Feasibility:</b><br>\n  $$\n  \\lambda_i^* \\geq 0, \\quad i = 1, \\dots, m\n  $$\n  </li>\n\n  <li><b>Complementary Slackness:</b><br>\n  $$\n  \\lambda_i^* g_i(x^*) = 0, \\quad i = 1, \\dots, m\n  $$\n  </li>\n</ol>\n",
@@ -2943,8 +2943,8 @@
     "absolutelyRequired": true,
     "attempts": [
       {
-        "timestamp": 1745291095853,
-        "correct": true
+        "correct": true,
+        "timestamp": 1745291095853
       }
     ],
     "back": "<b>Proximal Operator</b><br>\n<p>\nThe proximal operator of a function \\( h \\) at a point \\( x \\in \\mathbb{R}^n \\) is defined as:\n</p>\n$$\n\\text{prox}_h(x) = \\arg\\min_u \\left( h(u) + \\frac{1}{2} \\|u - x\\|_2^2 \\right)\n$$\n<hr>\n<b>What This Means</b><br>\n<p>\nThe proximal operator returns a point \\( u \\) that is a compromise between minimizing \\( h(u) \\) and staying close to \\( x \\). The second term\n$$\n\\frac{1}{2} \\|u - x\\|_2^2\n$$\nacts as a penalty for straying too far from \\( x \\).\n</p>",
@@ -3316,6 +3316,66 @@
     "understanding": 1
   },
   {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<p>\nSystem controllable if <b>controllability matrix</b> has full rank\n</p>\n\n<p>\n<b><u>Key Condition</u></b> <br>\n$$\nrank(\\mathcal{C}) = n\n$$\n<br>\n$$\n\\mathcal{C} = [B \\; AB \\; A^{2}B \\; \\dots \\; A^{n-1}B ]\n$$\n</p>",
+    "front": "controllability (of continuous time linear systems)",
+    "id": 1745434247355,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<p>\nSystem <b>stabilizeable</b> if all unstable modes of the system can be controlled, even if the system isn't fully controllable, i.e., all eigenvalues of $A$ with non-negative real parts must be controllable.\n</p>\n\n<p>\n<b><u>Key Condition</u></b> <br>\nAll eigenvalues of $A$ with non-negative real parts must be controllable.\n</p>",
+    "front": "stabilizability (of continuous time linear systems)",
+    "id": 1745434265859,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<p>\nSystem <b>observable</b> if state can be determined from output measurements over a finite time.\n</p>\n\n<p>\n<b><u>Key Condition</u></b> <br>\n$$\n\\text{rank}(\\mathcal{O}) = n\n$$\n<br>\n$$\n\\mathcal{O} = \n\\begin{bmatrix}\nC \\\\\nCA \\\\\nCA^2 \\\\\n\\vdots \\\\\nCA^{n-1}\n\\end{bmatrix}\n$$\n</p>",
+    "front": "observability",
+    "id": 1745434271278,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "<p>\nSystem <b>detectable</b> if all unobservable modes are stable.\n</p>\n<p>\n<b><u>Key Condition</u></b> <br>\nAny eigenvalue of $A$ with non-negative real part must be observable.\n</p>\n",
+    "front": "detectability",
+    "id": 1745434276504,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "TODO: quiz 1 concepts",
+    "id": 1745434125580,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
     "absolutelyRequired": false,
     "attempts": [],
     "back": "<u><b>Definition</b></u><br>\n<p>\nA <b>Value Function</b> represents the minimum \"cost-to-go\" from a given state \\( x \\) at time \\( t \\), defining the optimal cost for reaching a goal while following an optimal control policy.\n</p>\n<br>\n\n<u><b>Usage</b></u><br>\n<p>\nIn Optimal Control Theory, the Value Function is used to determine the optimal control policy by solving the HJB equation. It quantifies the best possible performance given any initial state, helping in applications such as trajectory optimization, robotics, and economic decision-making.\n</p>\n<br>\n\n<u><b>Procedure</b></u><br>\n<ol>\n  <li>Define the cost functional for the optimal control problem.</li>\n  <li>Set up the system dynamics using differential or difference equations.</li>\n  <li>Apply the Hamilton-Jacobi-Bellman (HJB) equation to characterize the optimal value function.</li>\n  <li>Use numerical methods or analytical solutions to compute the value function iteratively.</li>\n</ol>\n<br>\n",
@@ -3413,5 +3473,113 @@
       "16.32"
     ],
     "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "lecture 17 <br>\nTODO: New back content",
+    "front": "discrete kalman filter (equations)",
+    "id": 1745433720086,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "lecture 16 <br>\nTODO: New back content",
+    "front": "stochastic process",
+    "id": 1745434051861,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "lecture 15 <br>\nTODO: New back content",
+    "front": "static estimation",
+    "id": 1745433981459,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "id": 1745437408307,
+    "front": "duality of LQR and Kalman Filter",
+    "back": "Control ARE <br>\nFilter ARE<br>\nDuality Map <br>\n\n<br> TODO: New back content",
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745437146671,
+    "front": "Certainty Equivalence Principle",
+    "back": "<p>\nCertainty equivalence says \u201cuse the estimate as truth\u201d without loss of optimality.\n</p>\n\n<p>\nHolds for LQG but definitely not always! <br>\nTODO: New back content\n</p>",
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745437106524,
+    "front": "orthogonal projection theorem",
+    "back": "TODO: New back content",
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745437603399,
+    "front": "Orthogonal Projection Theorem \u21d2 Kalman Filter",
+    "back": "<p>\nOrthogonal projection proves the KF update is the MSE\u2010optimal linear estimator.\n</p>\n<p>\nThe Kalman filter arises by viewing <br>\n$$\n\\hat x(t) = \\mathbb{E}[x(t)\\mid \\mathcal Y_t]\n$$\n<br>\nas the orthogonal projection of the state onto the space spanned by past measurements $\\mathcal{Y_t}$.\n<br>\n\nTODO: fix this <br><br>\n\n\t\u2022\tThe innovation\nr(t) = dy(t) - C\\,\\hat x(t)\\,dt\nis orthogonal to all past r(s), s<t.\n\t\u2022\tProjection \u21a6 minimal MSE estimator \u21d2 update law\nd\\hat x = A\\hat x\\,dt + B\\,u\\,dt + L(t)\\,r(t),\n\\quad L(t)=P_f(t)\\,C^\\top\\,V^{-1}.\n</p>",
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745437118740,
+    "front": "Separation Principle",
+    "back": "<p>\nSeparation lets you design estimator and controller independently\n</p>\n\n<p>\nHolds for LQG but definitely not always! <br>\nTODO: New back content\n</p>",
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
+  },
+  {
+    "id": 1745437088820,
+    "front": "LQG",
+    "back": "TODO: list of symbols and meaning <br>\nTODO: New back content",
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1,
+    "absolutelyRequired": true,
+    "attempts": []
   }
 ]
