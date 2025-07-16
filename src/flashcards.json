@@ -1,7 +1,12 @@
 [
   {
     "absolutelyRequired": true,
-    "attempts": [],
+    "attempts": [
+      {
+        "correct": true,
+        "timestamp": 1745595072258
+      }
+    ],
     "back": "TODO: New back content",
     "front": "How to factor a cube polynomial e.g. characteristic polynomial for 3x3 matrix for eigenvalues.",
     "id": 1742438698251,
@@ -12,7 +17,13 @@
   },
   {
     "absolutelyRequired": true,
-    "attempts": [],
+    "attempts": [
+      {
+        "correct": false,
+        "reason": "i did this wrong",
+        "timestamp": 1745595076988
+      }
+    ],
     "back": "<p>\nTaylor series is the infinite series:<br>\n$$\nf(x) = \\sum_{n=0}^{\\inf}{\\frac{f^{(n)}(a)}{n!}(x - a)^{n}}\n$$\n</p>\n<br>\n\n<p>\nTaylor series \"expansion\" or \"Taylor expansion\" of a function typically implies truncation, meaning we approximate the function $f(x)$ by a finite number of terms. <br>\n$$\nf(x) \\approx f(a) + f^{\\prime}(a)(x-a) + \\dots + \\frac{f^{(N)}(a)}{N!} (x-a)^N.\n$$\n</p>\n<br>",
     "front": "<b>Taylor Series vs. Taylor Expansion</b>  \n<ul>  \n  <li><b>Define:</b> What is the Taylor series of \\( f(x) \\) at \\( x = a \\)?</li>  \n  <li><b>Define:</b> What is the Taylor series expansion of \\( f(x) \\) at/around \\( x = a \\)?</li>  \n  <li><b>Difference:</b> How do the Taylor series and Taylor expansion differ in meaning and usage?</li>  \n</ul>  ",
     "id": 1742426830175,
@@ -2390,7 +2401,7 @@
     "understanding": 1
   },
   {
-    "absolutelyRequired": false,
+    "absolutelyRequired": true,
     "attempts": [
       {
         "correct": true,
@@ -2405,6 +2416,7 @@
     "front": "spectral radius",
     "id": 1745099607146,
     "tags": [
+      "16.32",
       "18.065",
       "midterm2"
     ],
@@ -3511,75 +3523,281 @@
     "understanding": 1
   },
   {
-    "id": 1745437408307,
-    "front": "duality of LQR and Kalman Filter",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "Control ARE <br>\nFilter ARE<br>\nDuality Map <br>\n\n<br> TODO: New back content",
+    "front": "duality of LQR and Kalman Filter",
+    "id": 1745437408307,
     "tags": [
       "16.32",
       "final"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745437146671,
-    "front": "Certainty Equivalence Principle",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "<p>\nCertainty equivalence says \u201cuse the estimate as truth\u201d without loss of optimality.\n</p>\n\n<p>\nHolds for LQG but definitely not always! <br>\nTODO: New back content\n</p>",
+    "front": "Certainty Equivalence Principle",
+    "id": 1745437146671,
     "tags": [
       "16.32",
       "final"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745437106524,
-    "front": "orthogonal projection theorem",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "TODO: New back content",
+    "front": "orthogonal projection theorem",
+    "id": 1745437106524,
     "tags": [
       "16.32",
       "final"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745437603399,
-    "front": "Orthogonal Projection Theorem \u21d2 Kalman Filter",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "<p>\nOrthogonal projection proves the KF update is the MSE\u2010optimal linear estimator.\n</p>\n<p>\nThe Kalman filter arises by viewing <br>\n$$\n\\hat x(t) = \\mathbb{E}[x(t)\\mid \\mathcal Y_t]\n$$\n<br>\nas the orthogonal projection of the state onto the space spanned by past measurements $\\mathcal{Y_t}$.\n<br>\n\nTODO: fix this <br><br>\n\n\t\u2022\tThe innovation\nr(t) = dy(t) - C\\,\\hat x(t)\\,dt\nis orthogonal to all past r(s), s<t.\n\t\u2022\tProjection \u21a6 minimal MSE estimator \u21d2 update law\nd\\hat x = A\\hat x\\,dt + B\\,u\\,dt + L(t)\\,r(t),\n\\quad L(t)=P_f(t)\\,C^\\top\\,V^{-1}.\n</p>",
+    "front": "Orthogonal Projection Theorem \u21d2 Kalman Filter",
+    "id": 1745437603399,
     "tags": [
       "16.32",
       "final"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745437118740,
-    "front": "Separation Principle",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "<p>\nSeparation lets you design estimator and controller independently\n</p>\n\n<p>\nHolds for LQG but definitely not always! <br>\nTODO: New back content\n</p>",
+    "front": "Separation Principle",
+    "id": 1745437118740,
     "tags": [
       "16.32",
       "final"
     ],
-    "understanding": 1,
-    "absolutelyRequired": true,
-    "attempts": []
+    "understanding": 1
   },
   {
-    "id": 1745437088820,
-    "front": "LQG",
+    "absolutelyRequired": true,
+    "attempts": [],
     "back": "TODO: list of symbols and meaning <br>\nTODO: New back content",
+    "front": "LQG",
+    "id": 1745437088820,
     "tags": [
       "16.32",
       "final"
     ],
-    "understanding": 1,
+    "understanding": 1
+  },
+  {
     "absolutelyRequired": true,
-    "attempts": []
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Principle of Least Action",
+    "id": 1745595129057,
+    "tags": [
+      "16.32",
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content <br>\n\n\t\u2022\t2-norm (energy)\n\\|u(t)\\|2 \\;=\\;\\Bigl(\\!\\!\\int{-\\infty}^{\\infty}u^2(t)\\,dt\\Bigr)^{\\!1/2},\n\t\u2022\t\u221e-norm (peak)\n\\|u(t)\\|_\\infty = \\max_t |u(t)|.",
+    "front": "Signal norms",
+    "id": 1746038938792,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "$$\n\\| G(s) \\|_{\\infty} = \\underset{\\omega}{\\sup} \\bar{\\sigma}[G(j \\omega)]\n$$\n<br>\n<div style=\"width: 100%; height: 100%;\"><img class=\"embedded-card-image\" src=\"/assets/Screenshot_2025-04-30_at_3.25.28_PM.png\"></div>",
+    "front": "$\\mathcal{H}_{\\infty}$ system norm",
+    "id": 1746040771901,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content <br>\n\n\t\u2022\tSystem (operator) norms for a stable LTI G(s):\n\t\u2022\tH\u2082 norm\n\\|G\\|2^2\n= \\frac1{2\\pi}\\!\\int{-\\infty}^{\\infty}\\mathrm{trace}[G^H(j\u03c9)G(j\u03c9)]\\,d\u03c9,\nmeasures average energy gain.\n\t\u2022\tH\u221e norm\n\\|G\\|\\infty = \\sup{\u03c9}\\,\\bar\u03c3\\!\\bigl[G(j\u03c9)\\bigr],\nthe peak (worst-case) L\u2082\u2192L\u2082 gain:\n\\|G\\|\\infty = \\sup{u\\neq0}\\|y\\|_2/\\|u\\|_2.",
+    "front": "System (operator) norms",
+    "id": 1746039478644,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Checking \\( \\|G\\|_\\infty < \\gamma \\) via Hamiltonian Tests\n",
+    "id": 1746039483502,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "$\\gamma$-iteration (bisection search)",
+    "id": 1746039639489,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [
+      {
+        "timestamp": 1752636630371,
+        "correct": false,
+        "reason": "forgot risk-sensitive stochastic LQG"
+      },
+      {
+        "timestamp": 1752636633700,
+        "correct": true
+      },
+      {
+        "timestamp": 1752636635266,
+        "correct": true
+      },
+      {
+        "timestamp": 1752636636104,
+        "correct": true
+      },
+      {
+        "timestamp": 1752636636961,
+        "correct": true
+      }
+    ],
+    "back": "$H_{\\infty}$ minimizes the risk-sensitive (stochastic) LQG problem. Instead of minimizing $J = E[G]$, where\n<br>\n$$\nG = \\int{x^T R_{xx} x + u^T R_{uu} u } \\text{dt}\n$$\n<br>\nminimize \n<br>\n$$\nJ = - \\frac{2}{\\theta} \\log( \\text{E} [e^{\\frac{1}{2} \\theta G}])\n$$",
+    "front": "$H_{\\infty}$ minimizes the ___.",
+    "id": 1746039943596,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "nonlinear least squares",
+    "id": 1746041762849,
+    "tags": [
+      "16.32",
+      "final"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "Jaynes, 2003, Probability Theory the Logic of Science <br>\nTODO: New back content",
+    "front": "Jaynes desirable properties of plausible inference",
+    "id": 1745595545829,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "Jaynes, 2003, Probability Theory the Logic of Science <br>\nTODO: New back content",
+    "front": "Maximum Entropy Principle",
+    "id": 1745595158376,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "Jaynes, 2003, Probability Theory the Logic of Science <br>\nTODO: New back content",
+    "front": "Uniform distribution deriviation from entropy maximum principle",
+    "id": 1745595164840,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "Jaynes, 2003, Probability Theory the Logic of Science <br>\nTODO: New back content",
+    "front": "Gaussian distribution deriviation from entropy maximum principle",
+    "id": 1745595189975,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Clopper-Pearson Confidence Intervals vs. Bayesian Credibility Interval",
+    "id": 1745595801398,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Frequentist Confidence Interval vs. Bayesian Credibility Interval",
+    "id": 1745595922584,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "Bayes Rule",
+    "id": 1745595832084,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
+  },
+  {
+    "absolutelyRequired": true,
+    "attempts": [],
+    "back": "TODO: New back content",
+    "front": "TODO: New front content",
+    "id": 1745595845914,
+    "tags": [
+      "research"
+    ],
+    "understanding": 1
   }
 ]
